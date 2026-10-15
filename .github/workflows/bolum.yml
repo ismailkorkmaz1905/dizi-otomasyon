@@ -1,0 +1,82 @@
+name: 1 - Bölüm hazırla
+run-name: >-
+  ${{ github.event_name == 'schedule'
+      && format('{0} - otomatik arama', contains(github.event.schedule, '1-12') && 'Yeraltı' || 'Muhtemel Aşk')
+      || format('{0}{1} - {2}', inputs.dizi == 'yeralti' && 'Yeraltı' || 'Muhtemel Aşk',
+                inputs.bolum && format(' {0}', inputs.bolum) || '',
+                inputs.is == 'kontrol' && 'kurulum kontrolü' || inputs.is == 'saatler' && 'yükleme saatleri' || inputs.is == 'temizlik' && 'temizlik' || 'elle hazırlama') }}
+
+# YouTube'a bakar, yeni bolum varsa indirir, Scribe ile Turkce metni cikarir, ceviri girdisini bolumler/ altina koyar.
+# Saatler gecmis yuklemelere gore (python otomasyon.py saatler, 13 Ekim 2026), hepsi UTC:
+#   Muhtemel Ask: 17 bolumun 16'si cuma 01:00-01:04 TR (persembe 22:00 UTC) yuklendi -> 22:02'den itibaren 5 dk'da bir,
+#     sonra 15 dk'da bir, cuma saatte bir, cumartesi 3 saatte bir (yedek).
+#   Yeralti: son bolumler persembe 00:07-00:33 TR (carsamba 21:07-21:33 UTC) -> 20:07'den 15 dk'da bir, 21:00-22:00 arasi
+#     5 dk'da bir, sonra 15 dk'da bir, persembe saatte bir, cuma 3 saatte bir. Yeralti satirlari ay alaninda 1-12 yazar
+#     (ayni anlam), DIZI bununla ayrilir.
+# Cron'lar bu dosyayi en son degistiren hesabin adina calisir. 15 Ekim 2026: bot hesabinin (claude) commit'inden sonra
+#   hic tetiklenmedi, Ismail'in web'den attigi commit'ten sonra calisti. Bu dosya degisince Ismail web'den bir commit atar.
+#   GitHub cron'u 20-30 dk gecikebilir; Claude rutini yedek olarak hazirligi kendisi de baslatir.
+# Elle: "kontrol" kurulumu dener (bir sey gondermez, kredi harcamaz), "saatler" gecmis yukleme saatlerini yazar.
+on:
+  workflow_dispatch:
+    inputs:
+      is:
+        type: choice
+        options: [hazirla, kontrol, saatler, temizlik]
+        default: hazirla
+      dizi:
+        type: choice
+        options: [muhtemel_ask, yeralti]
+        default: muhtemel_ask
+      bolum:
+        description: 'Bos: siradaki bolum. Ornek: 18'
+        required: false
+        type: string
+  schedule:
+    - cron: '2-57/5 22 * * 4'
+    - cron: '12,27,42,57 23 * * 4'
+    - cron: '17 * * * 5'
+    - cron: '17 0-12/3 * * 6'
+    - cron: '7-52/15 20 * 1-12 3'
+    - cron: '2-57/5 21 * 1-12 3'
+    - cron: '7-52/15 22-23 * 1-12 3'
+    - cron: '37 * * 1-12 4'
+    - cron: '37 0-12/3 * 1-12 5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bolum-${{ inputs.dizi || (contains(github.event.schedule, '1-12') && 'yeralti') || 'muhtemel_ask' }}
+
+jobs:
+  hazirla:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      DIZI: ${{ inputs.dizi || (contains(github.event.schedule, '1-12') && 'yeralti') || 'muhtemel_ask' }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: denoland/setup-deno@v2   # yt-dlp, YouTube icin JS calistirici ister
+        with:
+          deno-version: v2.x
+      - run: |
+          sudo mkdir -p /content && sudo chown "$USER" /content
+          command -v ffmpeg || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null; }
+          pip install -q -r requirements.txt
+          pip install -q -U "yt-dlp[default]"
+      - id: h
+        run: python otomasyon.py ${{ inputs.is || 'hazirla' }}
+        env:
+          GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
+          GDRIVE_OAUTH: ${{ secrets.GDRIVE_OAUTH }}
+          BOLUM: ${{ inputs.bolum }}
+      - if: always() && steps.h.outputs.anahtar != ''   # yakma isi videoyu tekrar indirmesin (Drive'a yazma hata verse de)
+        uses: actions/cache/save@v5
+        with:
+          path: /tmp/video
+          key: ${{ steps.h.outputs.anahtar }}

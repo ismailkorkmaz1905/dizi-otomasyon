@@ -1,0 +1,202 @@
+name: 2 - Yak ve gönder
+run-name: >-
+  ${{ github.event_name == 'push' && format('{0} | yak ve gönder', github.event.head_commit.message)
+      || format('{0} {1} - elle yak ve gönder', inputs.dizi == 'yeralti' && 'Yeraltı' || 'Muhtemel Aşk', inputs.bolum) }}
+
+# Ceviri bitince Claude rutini bolumler/<dizi>/SxxEyy/ceviri.txt'yi koyar (ya da elle .ind.srt); bu is o push'la baslar.
+# SRT, Turkce zamanlarla burada kurulur.
+# Video 12 parcaya bolunur, 12 makinede ayni anda yakilir, birlestirilip Telegram'a gonderilir.
+# Kalite, yazi stili ve Telegram gonderimi Drive'daki pipeline.py'den gelir (Colab'daki "2 - Yak ve Gonder" ile ayni).
+on:
+  push:
+    branches: [main]
+    paths: ['bolumler/**/ceviri.txt', 'bolumler/**/*.ind.srt']
+  workflow_dispatch:
+    inputs:
+      dizi:
+        type: choice
+        options: [muhtemel_ask, yeralti]
+        default: muhtemel_ask
+      bolum:
+        description: 'SxxEyy (bolumler/ altinda ceviri.txt ya da .ind.srt olan)'
+        required: true
+        type: string
+      telegram:
+        description: "Telegram'a gonder"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write   # temizlik: bolumun gecici dosyalari repodan silinir
+  actions: write   # rapor: islerin sureleri; temizlik: cache ve eski isler silinir
+
+concurrency:
+  group: yak
+  cancel-in-progress: false
+
+env:
+  PARCA: '12'
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    outputs:
+      dizi: ${{ steps.b.outputs.dizi }}
+      bolum: ${{ steps.b.outputs.bolum }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 20
+      - id: b
+        name: Hangi bolum
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            f=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'bolumler/*/*/ceviri.txt' 'bolumler/*/*/*.ind.srt' | tail -1)
+            echo "dizi=$(echo "$f" | cut -d/ -f2)" >> "$GITHUB_OUTPUT"
+            echo "bolum=$(echo "$f" | cut -d/ -f3)" >> "$GITHUB_OUTPUT"
+          else
+            echo "dizi=${{ inputs.dizi }}" >> "$GITHUB_OUTPUT"
+            echo "bolum=$(echo '${{ inputs.bolum }}' | tr a-z A-Z)" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Kurulum
+        run: |
+          sudo mkdir -p /content && sudo chown "$USER" /content
+          command -v ffmpeg || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null; }
+          pip install -q -r requirements.txt
+          pip install -q -U "yt-dlp[default]"
+      - uses: actions/cache/restore@v5   # hazirlik isinin indirdigi video (varsa)
+        with:
+          path: /tmp/video
+          key: video-${{ steps.b.outputs.dizi }}-${{ steps.b.outputs.bolum }}
+      - id: p
+        run: python otomasyon.py plan
+        env:
+          GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
+          DIZI: ${{ steps.b.outputs.dizi }}
+          BOLUM: ${{ steps.b.outputs.bolum }}
+      - uses: actions/cache/save@v5   # bu calismanin makineleri icin
+        with:
+          path: /tmp/video
+          key: video-${{ github.run_id }}
+
+  parca:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: true
+      matrix:
+        i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v6
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-liberation > /dev/null
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/video
+          key: video-${{ github.run_id }}
+          fail-on-cache-miss: true
+      - run: python3 otomasyon.py parca ${{ matrix.i }}
+      - uses: actions/cache/save@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-${{ matrix.i }}
+
+  birlestir:
+    needs: [plan, parca]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0   # rapor: bolumun commitleri
+      - name: Yer ac
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup; df -h / | tail -1
+          sudo mkdir -p /content && sudo chown "$USER" /content
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: |
+          command -v ffmpeg || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null; }
+          pip install -q -r requirements.txt
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/video
+          key: video-${{ github.run_id }}
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-0
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-1
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-2
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-3
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-4
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-5
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-6
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-7
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-8
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-9
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-10
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v5
+        with:
+          path: /tmp/parcalar
+          key: parca-${{ github.run_id }}-11
+          fail-on-cache-miss: true
+      - run: python otomasyon.py birlestir
+        env:
+          DIZI: ${{ needs.plan.outputs.dizi }}
+          GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
+          GDRIVE_OAUTH: ${{ secrets.GDRIVE_OAUTH }}
+          TELEGRAM: ${{ (github.event_name == 'push' || inputs.telegram) && '1' || '' }}
+          GITHUB_TOKEN: ${{ github.token }}
