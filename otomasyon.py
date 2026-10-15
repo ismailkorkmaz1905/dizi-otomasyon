@@ -644,10 +644,29 @@ def saatler():
         print(r.stderr[-1500:])
 
 
+def bekle(dk: int = 100):
+    """BOLUM=bekle: bolum YouTube'a dusene kadar ~5 dk'da bir hazirla calistirir (bakmak ~1 dk + 4 dk ara; isin
+    120 dk sinirina sigar).
+    GitHub cron'u gecikip dustugu icin Claude rutini bunu bolum saatinden once bir kez baslatir."""
+    son, out = time.time() + dk * 60, Path(os.environ.get('GITHUB_OUTPUT', '/dev/null'))
+    while True:
+        r = subprocess.run([sys.executable, __file__, 'hazirla'], env=dict(os.environ, BOLUM=''))
+        if r.returncode:   # gercek hata: tekrar denenmez (Scribe'a tekrar para gidebilir)
+            sys.exit(r.returncode)
+        if out.is_file() and 'anahtar=' in out.read_text():
+            return
+        if time.time() + 240 > son:
+            print(f'{dk} dk beklendi, bolum gelmedi.')
+            return
+        time.sleep(240)
+
+
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else ''
     steps = dict(kontrol=kontrol, saatler=saatler, hazirla=hazirla, plan=plan, birlestir=birlestir, temizlik=temizlik)
-    if cmd == 'parca':
+    if cmd == 'hazirla' and os.environ.get('BOLUM', '').strip().lower() == 'bekle':
+        bekle()
+    elif cmd == 'parca':
         parca(int(sys.argv[2]))
     elif cmd in steps:
         steps[cmd]()
