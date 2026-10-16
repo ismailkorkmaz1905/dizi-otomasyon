@@ -72,7 +72,7 @@ Kontrol ajanı 30 dakika içinde dönmezse ve `ceviri_tum.txt` check'ten geçiyo
 - Son dosyayı `check.py` ile doğrula; sonuç OK olmalı.
 - Dosyayı repoda `bolumler/<dizi>/<SxxEyy>/ceviri.txt` olarak koy.
 - Aynı klasöre `ozet.md` yaz: Türkçe, 8-15 madde. Bölümün olayları, kim kime ne hitap etti, yeni isimler. Kaynak: ajan raporları. Sonraki bölümün çevirmenleri bunu okuyacak.
-- İkisini tek commit'te push et, mesaj tek satır: `<Dizi adı> <SxxEyy> - çeviri (<N> satır)`, örnek `Yeraltı S02E01 - çeviri (2324 satır)`.
+- İkisini tek commit'te push et, mesaj tek satır: `<Dizi adı> <SxxEyy> - çeviri (<N> satır)`, örnek `Muhtemel Aşk S01E18 - çeviri (2307 satır)`.
   - Önce `git pull --rebase`, push reddedilirse tekrar dene.
 - Push yakmayı başlatır. Drive'a yazma, workflow tetikleme.
 - Thread'e kısa not: hangi bölüm, kaç satır, kaç satır düzeltildi.
