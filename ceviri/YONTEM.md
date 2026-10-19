@@ -49,7 +49,7 @@ Her ajana Agent aracıyla `model: opus` ver ve aşağıdaki metni `<...>` yerler
 
 Ajanların raporlarını `raporlar.md`'ye yaz. Her parçayı kendin de `check.py` ile doğrula. Hata varsa aynı ajana düzelttir.
 
-## 3. Tek geçişli kontrol (1 Opus ajan)
+## 3. İki turlu kontrol (1 Opus ajan)
 `parca_1..8.txt` dosyalarını sırayla birleştirip `ceviri_v1.txt` yap. Sonra bir Opus ajana şunu gönder:
 
 > Klasör: <çalışma klasörü>.
@@ -63,10 +63,10 @@ Ajanların raporlarını `raporlar.md`'ye yaz. Her parçayı kendin de `check.py
 >   6. Kitap dili.
 > - Satır numaraları ve satır sayısı aynen kalır. Karakter sınırları aynı.
 > - Sonucu TEK SEFERDE `ceviri_tum.txt` olarak yaz ve doğrula: `python3 check.py ceviri_girdi.txt ceviri_tum.txt 1 <N>`, sonuç OK olmalı, LONG kalmamalı.
-> - Doğrulayınca HEMEN bitir. İkinci tur okuma yapma.
-> - Döndür: değiştirdiğin satır sayısı ve en önemli 10 değişiklik.
+> - Doğrulayınca bitirme, ikinci tur yap: `ceviri_tum.txt`'yi `ceviri_girdi.txt` ile baştan sona bir kez daha oku; ilk turda kaçan anlam hataları, hitap/isim tutarsızlıkları ve doğal olmayan satırları düzelt. Aynı dosyaya yaz, tekrar doğrula (OK, LONG yok), sonra bitir. Üçüncü tur yok.
+> - Döndür: iki turda ayrı ayrı değiştirdiğin satır sayısı ve en önemli 10 değişiklik.
 
-Kontrol ajanı 30 dakika içinde dönmezse ve `ceviri_tum.txt` check'ten geçiyorsa ajanı durdur ve o dosyayı kullan. Dosya yoksa `ceviri_v1.txt`'yi kullan.
+Kontrol ajanı 45 dakika içinde dönmezse ve `ceviri_tum.txt` check'ten geçiyorsa ajanı durdur ve o dosyayı kullan. Dosya yoksa `ceviri_v1.txt`'yi kullan.
 
 ## 4. Teslim
 - Son dosyayı `check.py` ile doğrula; sonuç OK olmalı.
