@@ -1,7 +1,7 @@
 name: 2 - Yak ve gönder
 run-name: >-
   ${{ github.event_name == 'push' && format('{0} | yak ve gönder', github.event.head_commit.message)
-      || format('{0} {1} - elle yak ve gönder', inputs.dizi == 'yeralti' && 'Yeraltı' || 'Muhtemel Aşk', inputs.bolum) }}
+      || format('{0} {1} - elle yak ve gönder', inputs.dizi == 'yeralti' && 'Yeraltı' || inputs.dizi == 'baskalarinin_hayati' && 'Başkalarının Hayatı' || 'Muhtemel Aşk', inputs.bolum) }}
 
 # Ceviri bitince Claude rutini bolumler/<dizi>/SxxEyy/ceviri.txt'yi koyar (ya da elle .ind.srt); bu is o push'la baslar.
 # SRT, Turkce zamanlarla burada kurulur.
@@ -15,7 +15,7 @@ on:
     inputs:
       dizi:
         type: choice
-        options: [muhtemel_ask, yeralti]
+        options: [muhtemel_ask, yeralti, baskalarinin_hayati]
         default: muhtemel_ask
       bolum:
         description: 'SxxEyy (bolumler/ altinda ceviri.txt ya da .ind.srt olan)'
