@@ -2,7 +2,7 @@ name: 1 - Bölüm hazırla
 run-name: >-
   ${{ github.event_name == 'schedule'
       && 'Muhtemel Aşk - otomatik arama'
-      || format('{0}{1} - {2}', inputs.dizi == 'yeralti' && 'Yeraltı' || 'Muhtemel Aşk',
+      || format('{0}{1} - {2}', inputs.dizi == 'yeralti' && 'Yeraltı' || inputs.dizi == 'baskalarinin_hayati' && 'Başkalarının Hayatı' || 'Muhtemel Aşk',
                 inputs.bolum && format(' {0}', inputs.bolum) || '',
                 inputs.is == 'kontrol' && 'kurulum kontrolü' || inputs.is == 'saatler' && 'yükleme saatleri' || inputs.is == 'temizlik' && 'temizlik' || 'elle hazırlama') }}
 
@@ -11,6 +11,7 @@ run-name: >-
 #   Muhtemel Ask: 17 bolumun 16'si cuma 01:00-01:04 TR (persembe 22:00 UTC) yuklendi -> 22:02'den itibaren 5 dk'da bir,
 #     sonra 15 dk'da bir, cuma saatte bir, cumartesi 3 saatte bir (yedek).
 #   Yeralti 16 Ekim 2026'da otomatik takipten cikarildi; elle hazirlama (dizi: yeralti) hala calisir.
+#   Baskalarinin Hayati (19 Ekim 2026) burada cron'suz: hazirligi Claude rutini bekleme isiyle baslatir.
 # Cron'lar bu dosyayi en son degistiren hesabin adina calisir. 15 Ekim 2026: bot hesabinin (claude) commit'inden sonra
 #   hic tetiklenmedi, Ismail'in web'den attigi commit'ten sonra calisti. Bu dosya degisince Ismail web'den bir commit atar.
 #   GitHub cron'u 20-30 dk gecikebilir; Claude rutini yedek olarak hazirligi kendisi de baslatir.
@@ -24,7 +25,7 @@ on:
         default: hazirla
       dizi:
         type: choice
-        options: [muhtemel_ask, yeralti]
+        options: [muhtemel_ask, yeralti, baskalarinin_hayati]
         default: muhtemel_ask
       bolum:
         description: 'Bos: siradaki bolum. Ornek: 18'

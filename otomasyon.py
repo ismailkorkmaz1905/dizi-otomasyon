@@ -13,7 +13,7 @@ Bolum teslim edilince sadece yakili video ve scribe_raw.json kalir, gerisi silin
   python otomasyon.py birlestir    parcalari birlestir, sesi ekle, Telegram'a gonder, sonra gecici dosyalari sil
   python otomasyon.py temizlik     bitmis butun bolumlerin gecici dosyalari ve yedekler (Drive cop kutusuna)
 
-Ortam: GDRIVE_SA (servis hesabi anahtari, okuma), GDRIVE_OAUTH (senin hesabin, yazma; yoksa Drive'a yazilmaz), DIZI (muhtemel_ask / yeralti), BOLUM (bos = siradaki; ya da 18 / S01E18),
+Ortam: GDRIVE_SA (servis hesabi anahtari, okuma), GDRIVE_OAUTH (senin hesabin, yazma; yoksa Drive'a yazilmaz), DIZI (muhtemel_ask / yeralti / baskalarinin_hayati), BOLUM (bos = siradaki; ya da 18 / S01E18),
        PARCA (yakma parca sayisi), TELEGRAM (1 = gonder)
 """
 from __future__ import annotations
@@ -35,7 +35,14 @@ PARTS = Path('/tmp/parcalar')
 API = 'https://www.googleapis.com/drive/v3/files'
 FOLDER = 'application/vnd.google-apps.folder'
 SYSTEM_FILES = ('pipeline.py', 'elevenlabs.json', 'youtube_cookies.txt', 'telegram.json', 'Çeviri Talimatı.md')
-NAMES = {'muhtemel_ask': 'Muhtemel Aşk', 'yeralti': 'Yeraltı'}
+NAMES = {'muhtemel_ask': 'Muhtemel Aşk', 'yeralti': 'Yeraltı', 'baskalarinin_hayati': 'Başkalarının Hayatı'}
+# Drive'daki pipeline.py'de olmayan diziler (pipeline.py'ye dokunulmaz, ayar buradan eklenir). Bunlarin sistem/
+# klasorunde sadece Çeviri Talimatı.md durur; pipeline.py, anahtarlar, cerez ve Telegram Muhtemel Ask'tan alinir.
+EXTRA = {'baskalarinin_hayati': dict(
+    root='Başkalarının Hayatı', prefix='Baskalarinin.Hayati',
+    search='Başkalarının Hayatı {ep}. Bölüm',   # Star TV, cumartesi 20:00 TR; tam bolum resmi YouTube kanalinda
+    kanal='Başkalarının Hayatı',
+    prompt='Hülya, Neslihan, Erim, Sarp, Fikret, Mediha, Haluk, Jale, Salih, Özkaran, Korhanlı, Sezginel.')}
 KEEP = ('ceviri_girdi.txt', 'tr_cues.json', 'kaynak.json')   # repoya giden hazirlik dosyalari (+ talimat.md, rapor.json)
 DIZI = os.environ.get('DIZI') or 'muhtemel_ask'
 RUN_URL = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}"
@@ -63,13 +70,13 @@ def ls(s, folder_id: str) -> dict[str, dict]:
             return out
 
 
-def series_root(s) -> dict:
-    r = s.get(API, params=dict(q=f"sharedWithMe and mimeType='{FOLDER}' and name='{NAMES[DIZI]}' and trashed=false",
+def series_root(s, dizi: str = DIZI) -> dict:
+    r = s.get(API, params=dict(q=f"sharedWithMe and mimeType='{FOLDER}' and name='{NAMES[dizi]}' and trashed=false",
                                fields='files(id,name)'))
     r.raise_for_status()
     hits = r.json().get('files', [])
     if not hits:
-        raise SystemExit(f"'{NAMES[DIZI]}' klasoru servis hesabiyla paylasilmamis.")
+        raise SystemExit(f"'{NAMES[dizi]}' klasoru servis hesabiyla paylasilmamis.")
     return dict(hits[0], kids=ls(s, hits[0]['id']))
 
 
@@ -80,6 +87,8 @@ def load_pipeline():
     system = MIRROR / root['name'] / 'sistem'
     system.mkdir(parents=True, exist_ok=True)
     have = ls(s, root['kids']['sistem']['id'])
+    if DIZI in EXTRA:
+        have = ls(s, series_root(s, 'muhtemel_ask')['kids']['sistem']['id']) | have
     for name in SYSTEM_FILES:
         if name in have:
             r = s.get(f"{API}/{have[name]['id']}", params={'alt': 'media'}, timeout=120)
@@ -92,6 +101,8 @@ def load_pipeline():
     sys.path.insert(0, str(system))
     import pipeline
     pipeline.DRIVE = MIRROR
+    if DIZI in EXTRA:
+        pipeline.SERIES.setdefault(DIZI, EXTRA[DIZI])
     pipeline.LOCAL = Path('/content/altyazi_tmp')
     return pipeline, s, root
 
