@@ -1,0 +1,20 @@
+name: ffmpeg kur
+description: ffmpeg ve fonts-liberation; .deb'ler GitHub cache'inden, cache yoksa apt'den indirilip cache'e konur (bkz. kur.sh)
+runs:
+  using: composite
+  steps:
+    - id: k   # runner image'i degisince yeni cache (paket surumleri ona gore)
+      shell: bash
+      run: echo "anahtar=apt-ffmpeg-$ImageOS-$ImageVersion" >> "$GITHUB_OUTPUT"
+    - id: c
+      uses: actions/cache/restore@v5
+      with:
+        path: /tmp/apt-deb
+        key: ${{ steps.k.outputs.anahtar }}
+    - shell: bash
+      run: bash "$GITHUB_ACTION_PATH/kur.sh"
+    - if: steps.c.outputs.cache-hit != 'true'
+      uses: actions/cache/save@v5
+      with:
+        path: /tmp/apt-deb
+        key: ${{ steps.k.outputs.anahtar }}

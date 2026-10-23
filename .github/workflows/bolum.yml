@@ -58,9 +58,9 @@ jobs:
       - uses: denoland/setup-deno@v2   # yt-dlp, YouTube icin JS calistirici ister
         with:
           deno-version: v2.x
+      - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
       - run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
-          command -v ffmpeg || bash kur.sh ffmpeg
           pip install -q -r requirements.txt
           pip install -q -U "yt-dlp[default]"
       - id: h

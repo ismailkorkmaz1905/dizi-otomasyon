@@ -66,10 +66,10 @@ jobs:
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
+      - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
       - name: Kurulum
         run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
-          command -v ffmpeg || bash kur.sh ffmpeg
           pip install -q -r requirements.txt
           pip install -q -U "yt-dlp[default]"
       - uses: actions/cache/restore@v5   # hazirlik isinin indirdigi video (varsa)
@@ -97,7 +97,7 @@ jobs:
         i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     steps:
       - uses: actions/checkout@v6
-      - run: bash kur.sh ffmpeg fonts-liberation
+      - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
       - uses: actions/cache/restore@v5
         with:
           path: /tmp/video
@@ -125,9 +125,8 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      - run: |
-          command -v ffmpeg || bash kur.sh ffmpeg
-          pip install -q -r requirements.txt
+      - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
+      - run: pip install -q -r requirements.txt
       - uses: actions/cache/restore@v5
         with:
           path: /tmp/video
