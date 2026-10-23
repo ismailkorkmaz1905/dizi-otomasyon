@@ -60,7 +60,7 @@ jobs:
           deno-version: v2.x
       - run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
-          command -v ffmpeg || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null; }
+          command -v ffmpeg || bash kur.sh ffmpeg
           pip install -q -r requirements.txt
           pip install -q -U "yt-dlp[default]"
       - id: h
