@@ -50,7 +50,11 @@ Her ajana Agent aracıyla `model: opus` ver ve aşağıdaki metni `<...>` yerler
 Ajanların raporlarını `raporlar.md`'ye yaz. Her parçayı kendin de `check.py` ile doğrula. Hata varsa aynı ajana düzelttir.
 
 ## 3. İki turlu kontrol (1 Opus ajan)
-`parca_1..8.txt` dosyalarını sırayla birleştirip `ceviri_v1.txt` yap. Sonra bir Opus ajana şunu gönder:
+`parca_1..8.txt` dosyalarını sırayla birleştirip `ceviri_v1.txt` yap.
+
+Kontrol ajanını başlatmadan önce İsmail'e (thread'e ya da sohbete) tek satır sor: kontrol ajanının effort'u `medium` mı `high` mı olsun? Cevabı Agent aracının `effort` alanına ver; 8 çeviri ajanı her zaman `medium` (effort verme). 30 dakika içinde cevap gelmezse (kimsenin izlemediği rutin) `medium` ile devam et ve thread'e bunu not düş. Bir oturumda verilen cevap o oturumun sonraki bölümleri için de geçerli, tekrar sorma.
+
+Sonra bir Opus ajana şunu gönder:
 
 > Klasör: <çalışma klasörü>.
 > - Önce `talimat.md`, `onceki_ozet.md` (varsa) ve `raporlar.md`'yi oku.
