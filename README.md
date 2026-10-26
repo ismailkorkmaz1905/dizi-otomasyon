@@ -2,6 +2,8 @@
 
 Deneysel, Colab'ın yerine çalışıyor. Asıl sistem Google Drive'da duruyor: Colab dosyalarına ve `sistem/` klasörüne dokunulmaz. Bölüm çıktıları (video, `_iş/SxxEyy`, SRT, `Yakılı/`) Colab'daki gibi Drive'a yazılır. Drive'da zaten olan dosyanın üstüne yazılmaz. Bölüm Telegram'a ve Drive'a gidince geçici her şey silinir: Drive'da sadece yakılı video ve `_iş/SxxEyy/scribe_raw.json` kalır, repoda sadece son bölümün `ozet.md`'si, GitHub cache'leri ve 7 günden eski işler de silinir. Eski bölümler için elle: "1 - Bölüm hazırla", iş = temizlik.
 
+Son durum, krediler ve bilinen sorunlar: `DURUM.md`.
+
 ## Akış
 
 1. **Bölümü hazırla** (`bolum.yml`): Geçmiş bölümlerin YouTube'a yüklendiği saatlerde 5 dakikada bir, sonra seyrekleşerek YouTube'a bakar (saatler `bolum.yml`'in başında). Yeni bölüm varsa videoyu indirir, Scribe ile Türkçe metni çıkarır, çeviri girdisini `bolumler/<dizi>/SxxEyy/` altına koyar.

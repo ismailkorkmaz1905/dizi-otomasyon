@@ -9,6 +9,7 @@ Bu dosyayı Claude rutini okur ve uygular. GitHub hazırlık işi her yeni böl�
 Rutinin işi o bölümü çevirip aynı klasöre `ceviri.txt` koymak. Push yakmayı ve Telegram'ı kendiliğinden başlatır, SRT GitHub'da kurulur.
 
 ## 0. Hazırlık
+- Önce repodaki `DURUM.md`'yi oku: dizilerin son durumu, krediler, bilinen tuhaflıklar.
 - Repoyu `ismailkorkmaz1905/dizi-otomasyon` klonla (`main`). Erişim yoksa önce `add_repo` ile ekle.
 - Bekleyen bölüm: `ceviri_girdi.txt` dosyası olan ama içinde `ceviri.txt` ya da `*.ind.srt` olmayan `bolumler/*/*/` klasörleri.
 - Önce son 2 saatte kırmızı biten iş var mı bak: `gh api 'repos/ismailkorkmaz1905/dizi-otomasyon/actions/runs?status=failure&per_page=5'`. Varsa ve daha önce haber verilmediyse thread'e kısa yaz: hangi iş, hangi dizi, logdaki hata satırı, ne yapılacağı. Scribe'a tekrar para gidebilecek bir işi kendiliğinden yeniden çalıştırma.
