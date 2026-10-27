@@ -8,6 +8,8 @@ Bu dosyayı Claude rutini okur ve uygular. GitHub hazırlık işi her yeni böl�
 
 Rutinin işi o bölümü çevirip aynı klasöre `ceviri.txt` koymak. Push yakmayı ve Telegram'ı kendiliğinden başlatır, SRT GitHub'da kurulur.
 
+**Maliyet kuralı (27 Ekim):** Her bölüm yeni bir thread/oturumda çevrilir (proje sohbetine "<dizi> <N>. bölümü çevir" yazılır). Teslim ve rapordan sonra o oturumda başka iş yapılmaz, yeni iş yeni oturumda. Ana oturum Sonnet'te çalışır; 8 çevirmen ve kontrol ajanı Opus kalır. Sebep: 4 bölümdür açık duran oturum ~500k bağlama şişti ve tek başına bölüm başına ~$4-5 yaktı.
+
 ## 0. Hazırlık
 - Önce repodaki `DURUM.md`'yi oku: dizilerin son durumu, krediler, bilinen tuhaflıklar.
 - Repoyu `ismailkorkmaz1905/dizi-otomasyon` klonla (`main`). Erişim yoksa önce `add_repo` ile ekle.
