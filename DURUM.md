@@ -2,6 +2,10 @@
 
 Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.md`'yi okusun. Akışın kendisi `README.md`'de.
 
+## Muhtemel Aşk arası (29 Ekim 2026)
+
+İsmail: MA ara vermiş, 5 Kasım Perşembe gecesi devam edecek. S01E20 en erken 6 Kasım Cuma 01:00 TR (06:00 SGT) YouTube'a düşer. O zamana kadar çeviri başlatma. `bolum.yml` cron'u arada tetiklenirse "Yeni bolum yok" der ve bitirir, kredi harcamaz (29 Ekim'de elle denendi). 6 Kasım'da yeni thread: "MA 20. bölümü çevir".
+
 ## Diziler
 
 | Dizi | `dizi` değeri | Son teslim | Yayın | YouTube'a düşme | Otomatik arama |
