@@ -1,20 +1,11 @@
 name: 1 - Bölüm hazırla
 run-name: >-
-  ${{ github.event_name == 'schedule'
-      && 'Muhtemel Aşk - otomatik arama'
-      || format('{0}{1} - {2}', inputs.dizi == 'yeralti' && 'Yeraltı' || inputs.dizi == 'baskalarinin_hayati' && 'Başkalarının Hayatı' || 'Muhtemel Aşk',
+  ${{ format('{0}{1} - {2}', inputs.dizi == 'yeralti' && 'Yeraltı' || inputs.dizi == 'baskalarinin_hayati' && 'Başkalarının Hayatı' || 'Muhtemel Aşk',
                 inputs.bolum && format(' {0}', inputs.bolum) || '',
                 inputs.is == 'kontrol' && 'kurulum kontrolü' || inputs.is == 'saatler' && 'yükleme saatleri' || inputs.is == 'temizlik' && 'temizlik' || 'elle hazırlama') }}
 
 # YouTube'a bakar, yeni bolum varsa indirir, Scribe ile Turkce metni cikarir, ceviri girdisini bolumler/ altina koyar.
-# Saatler gecmis yuklemelere gore (python otomasyon.py saatler, 13 Ekim 2026), hepsi UTC:
-#   Muhtemel Ask: 17 bolumun 16'si cuma 01:00-01:04 TR (persembe 22:00 UTC) yuklendi -> 22:02'den itibaren 5 dk'da bir,
-#     sonra 15 dk'da bir, cuma saatte bir, cumartesi 3 saatte bir (yedek).
-#   Yeralti 16 Ekim 2026'da otomatik takipten cikarildi; elle hazirlama (dizi: yeralti) hala calisir.
-#   Baskalarinin Hayati (19 Ekim 2026) burada cron'suz: hazirligi Claude rutini bekleme isiyle baslatir.
-# Cron'lar bu dosyayi en son degistiren hesabin adina calisir. 15 Ekim 2026: bot hesabinin (claude) commit'inden sonra
-#   hic tetiklenmedi, Ismail'in web'den attigi commit'ten sonra calisti. Bu dosya degisince Ismail web'den bir commit atar.
-#   GitHub cron'u 20-30 dk gecikebilir; Claude rutini yedek olarak hazirligi kendisi de baslatir.
+# 6 Kasim 2026: zamanlanmis (cron) tetikleyiciler kaldirildi, yalnizca elle calisir (workflow_dispatch).
 # Elle: "kontrol" kurulumu dener (bir sey gondermez, kredi harcamaz), "saatler" gecmis yukleme saatlerini yazar.
 on:
   workflow_dispatch:
@@ -31,11 +22,6 @@ on:
         description: 'Bos: siradaki bolum. Ornek: 18'
         required: false
         type: string
-  schedule:
-    - cron: '2-57/5 22 * * 4'
-    - cron: '12,27,42,57 23 * * 4'
-    - cron: '17 * * * 5'
-    - cron: '17 0-12/3 * * 6'
 
 permissions:
   contents: write
