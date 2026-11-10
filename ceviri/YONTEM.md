@@ -1,92 +1,60 @@
 # Çeviri rutini: Türkçe -> Endonezce altyazı
 
-Bu dosyayı Claude rutini okur ve uygular. GitHub hazırlık işi her yeni bölüm için `bolumler/<dizi>/SxxEyy/` altına şunları koyar:
-- `ceviri_girdi.txt`: numaralı Türkçe satırlar
-- `tr_cues.json`: zamanlar
-- `kaynak.json`: YouTube kaynağı
-- `talimat.md`: dizinin Drive'daki "Çeviri Talimatı.md" dosyasının kopyası
+GitHub hazırlık işi her yeni bölüm için `bolumler/<dizi>/SxxEyy/` altına `ceviri_girdi.txt` (numaralı Türkçe satırlar), `tr_cues.json` (zamanlar), `kaynak.json` ve `talimat.md` (Drive'daki "Çeviri Talimatı.md" kopyası) koyar. Rutinin işi aynı klasöre `ceviri.txt` ve `ozet.md` koymak. Push yakmayı ve Telegram'ı kendiliğinden başlatır.
 
-Rutinin işi o bölümü çevirip aynı klasöre `ceviri.txt` koymak. Push yakmayı ve Telegram'ı kendiliğinden başlatır, SRT GitHub'da kurulur.
+## Token kuralları (10 Kasım 2026)
 
-**Maliyet kuralı (27 Ekim):** Her bölüm yeni bir thread/oturumda çevrilir (proje sohbetine "<dizi> <N>. bölümü çevir" yazılır). Teslim ve rapordan sonra o oturumda başka iş yapılmaz, yeni iş yeni oturumda. Ana oturum Sonnet'te çalışır; 8 çevirmen ve kontrol ajanı Opus kalır. Sebep: 4 bölümdür açık duran oturum ~500k bağlama şişti ve tek başına bölüm başına ~$4-5 yaktı.
+Bölüm başına harcamanın çoğu çeviri metninden değil, tekrar okunan bağlamdan ve gereksiz yazılan çıktıdan geliyor. Bu yüzden:
+
+- Her bölüm yeni bir thread'de çevrilir. Teslim ve rapordan sonra o thread'de başka iş yapılmaz.
+- Ana oturum Sonnet'te çalışır ve büyük dosyaları (`ceviri_girdi.txt`, `parca_*.txt`, `ceviri_*.txt`, `yan_yana.txt`, `tr_cues.json`) ASLA Read ile açmaz, `cat`/`head` ile de basmaz. Bölme, birleştirme, doğrulama `ceviri/arac.py` ile yapılır; ana oturum sadece komutun kısa çıktısını görür.
+- Her ajan sadece kendi dosyasını okur (`girdi_<k>.txt` ya da `yan_yana.txt`), bütün girdiyi değil.
+- Kontrol ajanı bütün çeviriyi yeniden yazmaz, sadece değişen satırları yazar.
+- Alt ajan sayısı: parça başına ~450 satır (Başkalarının Hayatı 4, Muhtemel Aşk 5 parça). Daha fazla ajan aynı talimatı daha çok kez okutur, kaliteye katkısı yok, parça sınırı sayısını artırır.
+- Thread'e kısa notlar: başladı, çeviri bitti, push, rapor. Ajan çıktısını thread'e yapıştırma.
 
 ## 0. Hazırlık
-- Önce repodaki `DURUM.md`'yi oku: dizilerin son durumu, krediler, bilinen tuhaflıklar.
-- Repoyu `ismailkorkmaz1905/dizi-otomasyon` klonla (`main`). Erişim yoksa önce `add_repo` ile ekle.
-- Bekleyen bölüm: `ceviri_girdi.txt` dosyası olan ama içinde `ceviri.txt` ya da `*.ind.srt` olmayan `bolumler/*/*/` klasörleri.
-- Önce son 2 saatte kırmızı biten iş var mı bak: `gh api 'repos/ismailkorkmaz1905/dizi-otomasyon/actions/runs?status=failure&per_page=5'`. Varsa ve daha önce haber verilmediyse thread'e kısa yaz: hangi iş, hangi dizi, logdaki hata satırı, ne yapılacağı. Scribe'a tekrar para gidebilecek bir işi kendiliğinden yeniden çalıştırma.
-  - **Hiç yoksa:** "Bekleyen bölüm yok" de ve hemen bitir. Başka hiçbir şey yapma.
-  - **Birden fazlaysa:** sırayla hepsini yap, eskisinden başla.
-- Bölüm başına bir çalışma klasörü aç: `/tmp/ceviri/<dizi>_<SxxEyy>/`. İçine şunları kopyala: `ceviri_girdi.txt`, `talimat.md`, `ceviri/check.py`. Varsa aynı dizinin bir önceki bölümünün `ozet.md` dosyasını da `onceki_ozet.md` adıyla kopyala.
 
-## 1. Sekiz parçaya böl
-- Satır sayısı N: girdideki son satır numarası.
-- 1..N aralığını 8 eşit parçaya böl; parça sınırlarını not et.
+- `DURUM.md`'yi oku. Repo `ismailkorkmaz1905/dizi-otomasyon`, dal `main`.
+- Bekleyen bölüm: `ceviri_girdi.txt` olan ama `ceviri.txt` ya da `*.ind.srt` olmayan `bolumler/*/*/` klasörü. Yoksa "Bekleyen bölüm yok" de ve bitir. Birden fazlaysa eskisinden başla.
+- Son 2 saatte kırmızı biten iş varsa (`actions_list` ya da `gh api 'repos/ismailkorkmaz1905/dizi-otomasyon/actions/runs?status=failure&per_page=5'`) thread'e kısa yaz. Scribe'a tekrar para gidebilecek bir işi kendiliğinden yeniden çalıştırma.
+- Böl: `python3 ceviri/arac.py bol bolumler/<dizi>/<SxxEyy> /tmp/ceviri/<dizi>_<SxxEyy>`. Çalışma klasörüne `talimat.md`, `onceki_ozet.md` (varsa), `check.py`, `arac.py`, `girdi_<k>.txt` dosyalarını koyar, parça sınırlarını sahne arası sessizliklere denk getirir ve yazdırır.
+- Aynı mesajda İsmail'e tek satır sor: kontrol ajanının effort'u `medium` mı `high` mı? Cevabı BEKLEME, çeviri ajanlarını hemen başlat. Çeviri bittiğinde cevap yoksa `medium` kullan ve thread'e not düş.
 
-## 2. Sekiz Opus ajan (paralel, tek mesajda)
-Her ajana Agent aracıyla `model: opus` ver ve aşağıdaki metni `<...>` yerlerini doldurarak gönder:
+## 1. Çeviri ajanları (paralel, tek mesajda)
+
+Model: İsmail başlatırken başka bir şey demediyse `opus`. Effort verme. Her parça için Agent aracıyla şunu gönder:
 
 > Klasör: <çalışma klasörü>. Türkçe dizi altyazısını Endonezceye çeviriyorsun.
-> 1. Önce şunları baştan sona oku:
->    - `talimat.md`: HER kuralına uy (girdi/çıktı formatı, hitap tablosu, "Yalancı eşdeğerler" tablosu, `-` satırları, `|` kullanımı, karakter sınırı).
->    - Varsa `onceki_ozet.md`: önceki bölümün olayları, ilişkileri ve hitapları.
-> 2. `ceviri_girdi.txt`'den <BAS>..<SON> aralığını çevir. Bağlam için aralığın 40 satır öncesini ve 20 satır sonrasını da oku ama ÇEVİRME.
-> 3. Çıktıyı `parca_<k>.txt` dosyasına yaz:
->    - Her satır `NNNN metin` biçiminde olsun.
->    - Aralıktaki her numara tam bir kez geçsin, başka numara olmasın.
->    - Boş satır olmasın.
-> 4. Doğrula: `python3 check.py ceviri_girdi.txt parca_<k>.txt <BAS> <SON>`. Sonuç `OK` olana ve hiç `LONG` kalmayana kadar düzelt.
+> 1. Sırayla ve birer kez oku: `talimat.md` (her kuralına uy), varsa `onceki_ozet.md`, sonra `girdi_<k>.txt`. Başka dosya okuma.
+> 2. `girdi_<k>.txt`'de sadece `=== CEVIR: <BAS>-<SON> ===` başlığının altındaki satırları çevir. `=== BAGLAM ===` altındakiler sadece bağlam.
+> 3. Çıktıyı tek seferde `parca_<k>.txt`'ye yaz: her satır `NNNN metin`, aralıktaki her numara tam bir kez, boş satır yok.
+> 4. Doğrula: `python3 check.py ceviri_girdi.txt parca_<k>.txt <BAS> <SON>`. `OK` çıkana ve `LONG` kalmayana kadar sadece hatalı satırları Edit ile düzelt, dosyayı baştan yazma.
 >
-> Kurallar:
-> - Doğal, günlük konuşma Endonezcesi kullan (aku/kamu, nggak, udah, aja, banget, sih, kok, dong). Kitap dili kullanma.
-> - `K3` ve `K2>K1` gibi etiketler sadece konuşmacı ipucu, çıktıya YAZMA. Satırda iki ayrı kişi konuşuyorsa `- birinci|- ikinci` yaz.
-> - `{W: ...}` ikinci duyuşu gösterir. Ana metin anlamsızsa ona bak, çıktıya YAZMA.
-> - `[kelime?]` ve `(?)` şüpheli yerler. Bağlama en uygun tahmini yap.
-> - Bir ekran satırı en fazla 42 karakter (kesin sınır 46), bir altyazı en fazla 2 satır. `[Xs|N]` içindeki N, `|` hariç toplam karakter sınırıdır.
-> - Başka dosyaya dokunma, git'e dokunma, mesaj gönderme.
->
-> Bitince kısa döndür:
-> - check sonucu
-> - emin olmadığın satırlar: en fazla 10, her biri bir cümle
-> - bu aralıktaki önemli olaylar: 3-6 madde, Türkçe
+> Başka dosyaya ve git'e dokunma. Bitince kısa döndür: check sonucu; emin olmadığın en fazla 10 satır (birer cümle); bu aralıktaki önemli olaylar ve yeni hitaplar (3-6 madde, Türkçe).
 
-Ajanların raporlarını `raporlar.md`'ye yaz. Her parçayı kendin de `check.py` ile doğrula. Hata varsa aynı ajana düzelttir.
+Dönen raporları `raporlar.md`'ye yaz. Sonra `python3 arac.py birlestir <çalışma klasörü>`: parçaları `ceviri_v1.txt` ve `ceviri_tum.txt` yapar, doğrular, `yan_yana.txt`'yi üretir. Hata verirse ilgili ajana düzelttir.
 
-## 3. İki turlu kontrol (1 Opus ajan)
-`parca_1..8.txt` dosyalarını sırayla birleştirip `ceviri_v1.txt` yap.
+## 2. İki turlu kontrol (1 Opus ajan, effort İsmail'in cevabı)
 
-Kontrol ajanını başlatmadan önce İsmail'e (thread'e ya da sohbete) tek satır sor: kontrol ajanının effort'u `medium` mı `high` mı olsun? Cevabı Agent aracının `effort` alanına ver; 8 çeviri ajanı her zaman `medium` (effort verme). 30 dakika içinde cevap gelmezse (kimsenin izlemediği rutin) `medium` ile devam et ve thread'e bunu not düş. Bir oturumda verilen cevap o oturumun sonraki bölümleri için de geçerli, tekrar sorma.
+> Klasör: <çalışma klasörü>. Türkçeden Endonezceye çevrilmiş dizi altyazısını kontrol ediyorsun.
+> - Oku: `talimat.md`, varsa `onceki_ozet.md`, `raporlar.md`, sonra `yan_yana.txt` (her satır: `NNNN [süre|sınır] Türkçe => Endonezce`). Başka dosya okuma.
+> - Baştan sona oku ve şunlara bak: anlam hataları; hitap tutarlılığı (aynı iki kişi her yerde aynı hitap); isim yazımları ve talimattaki karıştırılan isimler; parça sınırları (<sınırlar>) çevresinde kopukluk ya da tekrar; `(?)` ve `[kelime?]` işaretli ve raporlarda şüpheli denen satırlar; "Yalancı eşdeğerler" tablosu; kitap dili.
+> - Bütün çeviriyi yeniden YAZMA. Sadece değiştirdiğin satırları `duzeltme_1.txt`'ye yaz (`NNNN yeni metin`, satırın tamamı). Sonra `python3 arac.py uygula . duzeltme_1.txt`. Hata verirse düzeltme dosyasını onar ve tekrar çalıştır. `DEGISEN n satir` çıkınca `ceviri_tum.txt` ve `yan_yana.txt` güncellenmiştir.
+> - İkinci tur: güncel `yan_yana.txt`'yi baştan sona bir kez daha oku; kaçan anlam hatalarını, hitap/isim tutarsızlıklarını ve doğal olmayan satırları `duzeltme_2.txt`'ye yaz ve aynı şekilde uygula. Üçüncü tur yok.
+> - Döndür: iki turun `DEGISEN` sayıları ve en önemli 10 değişiklik.
 
-Sonra bir Opus ajana şunu gönder:
+45 dakika içinde dönmezse ajanı durdur; `ceviri_tum.txt` her zaman doğrulanmış son hâldir, onu kullan.
 
-> Klasör: <çalışma klasörü>.
-> - Önce `talimat.md`, `onceki_ozet.md` (varsa) ve `raporlar.md`'yi oku.
-> - Sonra `ceviri_v1.txt`'yi `ceviri_girdi.txt` ile yan yana baştan sona oku ve düzelt:
->   1. Hitap tutarlılığı: aynı iki kişi her yerde aynı hitabı kullanmalı.
->   2. İsim yazımları ve talimattaki karıştırılan isimler.
->   3. Parça sınırları (<sınırlar>): her sınırın 15 satır öncesi ve sonrası. Kopukluk, tekrar ya da yarım cümle olmasın.
->   4. Şüpheli işaretli satırlar ve raporlarda şüpheli denen satırlar.
->   5. Talimattaki "Yalancı eşdeğerler" tablosu.
->   6. Kitap dili.
-> - Satır numaraları ve satır sayısı aynen kalır. Karakter sınırları aynı.
-> - Sonucu TEK SEFERDE `ceviri_tum.txt` olarak yaz ve doğrula: `python3 check.py ceviri_girdi.txt ceviri_tum.txt 1 <N>`, sonuç OK olmalı, LONG kalmamalı.
-> - Doğrulayınca bitirme, ikinci tur yap: `ceviri_tum.txt`'yi `ceviri_girdi.txt` ile baştan sona bir kez daha oku; ilk turda kaçan anlam hataları, hitap/isim tutarsızlıkları ve doğal olmayan satırları düzelt. Aynı dosyaya yaz, tekrar doğrula (OK, LONG yok), sonra bitir. Üçüncü tur yok.
-> - Döndür: iki turda ayrı ayrı değiştirdiğin satır sayısı ve en önemli 10 değişiklik.
+## 3. Teslim
 
-Kontrol ajanı 45 dakika içinde dönmezse ve `ceviri_tum.txt` check'ten geçiyorsa ajanı durdur ve o dosyayı kullan. Dosya yoksa `ceviri_v1.txt`'yi kullan.
+- `ceviri_tum.txt`'yi repoda `bolumler/<dizi>/<SxxEyy>/ceviri.txt` olarak kopyala (`cp`).
+- Aynı klasöre `ozet.md` yaz: Türkçe, 8-15 madde. Olaylar, kim kime ne hitap etti, yeni isimler. Kaynak: `raporlar.md`. Sonraki bölümün çevirmenleri okuyacak.
+- İkisini tek commit'te `main`'e push et, mesaj tek satır: `<Dizi adı> <SxxEyy> - çeviri (<N> satır)`. Önce `git pull --rebase`.
+- Drive'a yazma, workflow tetikleme. Thread'e kısa not: bölüm, satır sayısı, iki turda düzeltilen satır sayıları.
 
-## 4. Teslim
-- Son dosyayı `check.py` ile doğrula; sonuç OK olmalı.
-- Dosyayı repoda `bolumler/<dizi>/<SxxEyy>/ceviri.txt` olarak koy.
-- Aynı klasöre `ozet.md` yaz: Türkçe, 8-15 madde. Bölümün olayları, kim kime ne hitap etti, yeni isimler. Kaynak: ajan raporları. Sonraki bölümün çevirmenleri bunu okuyacak.
-- İkisini tek commit'te push et, mesaj tek satır: `<Dizi adı> <SxxEyy> - çeviri (<N> satır)`, örnek `Muhtemel Aşk S01E18 - çeviri (2307 satır)`.
-  - Önce `git pull --rebase`, push reddedilirse tekrar dene.
-- Push yakmayı başlatır. Drive'a yazma, workflow tetikleme.
-- Thread'e kısa not: hangi bölüm, kaç satır, kaç satır düzeltildi.
+## 4. Rapor
 
-## 5. Rapor (her bölümün sonunda)
-- Push'un başlattığı "Yak ve gonder" işini bul: `gh api 'repos/ismailkorkmaz1905/dizi-otomasyon/actions/runs?head_sha=<push sha>' --jq '.workflow_runs[0].id'` (birkaç saniye sonra çıkar).
-- Bitmesini arka planda bekle (Bash, `run_in_background`, timeout 3 saat): `while [ "$(gh api repos/ismailkorkmaz1905/dizi-otomasyon/actions/runs/<id> --jq .status)" != completed ]; do sleep 60; done`. Beklerken başka bir şey yapma, turu bitir; iş bitince uyandırılırsın.
-- Yeşil bittiyse `birlestir` işinin logundan `===== RAPOR =====` ile `===== RAPOR SONU =====` arasını al (`mcp__github__get_job_logs`, `tail_lines` 60). Thread'e tek mesaj at: raporu Türkçe harflerle madde madde yaz, çeviri satırına bu oturumdaki süreleri ekle (rutin başladı, 8 ajan bitti, kontrol bitti, push), commitleri `https://github.com/ismailkorkmaz1905/dizi-otomasyon/commit/<sha>` linkiyle ver.
-- Kırmızı bittiyse: hangi iş ve adım, logdaki hata, ne yapılacağı. Kendiliğinden yeniden çalıştırma.
-  - İstisna: sadece `birlestir` Telegram hatasıyla düştüyse ve logda hiç "gitti" satırı yoksa bir kez `gh api -X POST repos/ismailkorkmaz1905/dizi-otomasyon/actions/runs/<id>/rerun-failed-jobs` çalıştır ve onu da bekle. Yakılmış 12 parça saklı, yeniden yakmaz, para tutmaz.
+- Push'un başlattığı "Yak ve gonder" işini bul (`head_sha=<push sha>`), bitmesini arka planda bekle (Bash `run_in_background`, 60 sn'de bir durum, timeout 3 saat) ve turu bitir.
+- Yeşil bittiyse `birlestir` işinin logundan `===== RAPOR =====` bloğunu al (`get_job_logs`, `tail_lines` 60) ve thread'e tek mesajla Türkçe harflerle yaz; bu oturumun sürelerini (başladı, çeviri bitti, kontrol bitti, push) ve commit linklerini ekle.
+- Kırmızı bittiyse: hangi iş ve adım, logdaki hata, ne yapılacağı. Kendiliğinden yeniden çalıştırma. İstisna: sadece `birlestir` Telegram hatasıyla düştüyse ve logda hiç "gitti" satırı yoksa bir kez `rerun-failed-jobs` çalıştır ve onu da bekle (yakılmış parçalar saklı, para tutmaz).
