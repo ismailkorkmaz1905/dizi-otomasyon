@@ -1,17 +1,13 @@
-# Son durum ve notlar (26 Ekim 2026)
+# Son durum ve notlar (10 Kasım 2026)
 
 Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.md`'yi okusun. Akışın kendisi `README.md`'de.
-
-## Muhtemel Aşk arası (29 Ekim 2026)
-
-İsmail: MA ara vermiş, 5 Kasım Perşembe gecesi devam edecek. S01E20 en erken 6 Kasım Cuma 01:00 TR (06:00 SGT) YouTube'a düşer. O zamana kadar çeviri başlatma. `bolum.yml` cron'u arada tetiklenirse "Yeni bolum yok" der ve bitirir, kredi harcamaz (29 Ekim'de elle denendi). 6 Kasım'da yeni thread: "MA 20. bölümü çevir".
 
 ## Diziler
 
 | Dizi | `dizi` değeri | Son teslim | Yayın | YouTube'a düşme | Otomatik arama |
 |---|---|---|---|---|---|
-| Muhtemel Aşk | `muhtemel_ask` | S01E19 (23 Ekim) | perşembe gecesi | cuma 01:00-01:04 TR | var (`bolum.yml` cron), ama güvenilmez |
-| Başkalarının Hayatı | `baskalarinin_hayati` | S01E05 (25 Ekim) | cumartesi 20:00 Star TV | gece 23:30-00:30 TR (E3: 00:16, E4: 23:39, E5: 04:34 SGT = 23:34 TR) | **yok**, elle başlat |
+| Muhtemel Aşk | `muhtemel_ask` | S01E20 (6 Kasım) | perşembe gecesi | cuma 01:00-01:04 TR | var (`bolum.yml` cron), ama güvenilmez |
+| Başkalarının Hayatı | `baskalarinin_hayati` | S01E06 (8 Kasım) | cumartesi 20:00 Star TV | gece 23:30-00:30 TR (E3: 00:16, E4: 23:39, E5: 04:34 SGT = 23:34 TR) | **yok**, elle başlat |
 | Yeraltı | `yeralti` | - | - | - | 16 Ekim'de takipten çıktı |
 
 ## Bölüm nasıl başlatılır
@@ -25,14 +21,14 @@ Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.
 
 ## Krediler ve kotalar
 
-- **Scribe (ElevenLabs):** kalan 5.345 / 31.729 kredi, yenilenme 13.11.2026. Bölüm başına 2.900-3.700 kredi (E3 3.721, E4 3.222, MA E19 3.336, E5 2.858). Kalanla ~1-2 bölüm.
+- **Scribe (ElevenLabs):** iki anahtar var, kod kredisi olanı seçer. 8 Kasım: kalan 36.745 / 40.000 kredi (yenilenme 06.12.2026), diğer anahtarda 2.062. Bölüm başına 2.900-3.700 kredi.
 - **Google Drive:** 25 Ekim'de dolmuştu (yükleme `403 Forbidden`), İsmail depolamayı yükseltti, sonra sorunsuz.
-- **Claude:** bulut oturumu için verilen hediye kredi 26 Ekim'de bitti. Rutinin hâlâ çalışıp çalışmadığı kontrol edilmeli.
+- **Claude:** çeviri İsmail'in plan limitinden harcar. Her bölüm yeni thread'de çevrilir; token kuralları `ceviri/YONTEM.md`'nin başında.
 
-## Bu hafta yapılan değişiklikler
+## Son değişiklikler
 
 - **ffmpeg önbelleği** (`.github/actions/ffmpeg/`): runner'ın Azure Ubuntu mirror'ı aralıklı ~60 KB/sn'ye düşüyor, 94 MB'lık ffmpeg 16-33 dk sürüyordu (S01E19 yakması ~1 saat gecikti). Artık `.deb`'ler GitHub cache'inde (anahtar runner image sürümüne bağlı), kurulum 8-18 sn. Cache yoksa apt: 3 dk varsayılan mirror, olmazsa Azure çıkarılıp ana Ubuntu sunucusundan 10 dk. Yedek yol gerçek bir yavaşlıkta henüz denenmedi.
-- **YONTEM.md:** kontrol ajanının effort'u (`medium`/`high`) başlamadan İsmail'e sorulur; 30 dk cevap yoksa `medium`. Çeviri ajanları her zaman `medium`. İsmail bir sonraki bölümde `high` denemek istedi (kıyas için: E3 95+30, E4 83+62, MA E19 135+22, E5 83+19 satır düzeltme, hepsi `medium`).
+- **YONTEM.md (10 Kasım):** parça başına ~450 satır (4-5 ajan), ajanlar sadece kendi `girdi_<k>.txt` dosyasını okur, kontrol ajanı sadece değişen satırları yazar (`ceviri/arac.py`). Kontrol effort'u başta sorulur, cevap beklenmez; yoksa `medium`. Kıyas için iki turda düzeltilen satırlar: E3 95+30, E4 83+62, MA E19 135+22, E5 83+19 (Opus çevirmen, `medium`); BH E6 307+59 (Sonnet çevirmen).
 
 ## Bilinen tuhaflıklar
 

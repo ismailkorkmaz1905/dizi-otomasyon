@@ -7,7 +7,7 @@ Son durum, krediler ve bilinen sorunlar: `DURUM.md`.
 ## Akış
 
 1. **Bölümü hazırla** (`bolum.yml`): Geçmiş bölümlerin YouTube'a yüklendiği saatlerde 5 dakikada bir, sonra seyrekleşerek YouTube'a bakar (saatler `bolum.yml`'in başında). Yeni bölüm varsa videoyu indirir, Scribe ile Türkçe metni çıkarır, çeviri girdisini `bolumler/<dizi>/SxxEyy/` altına koyar.
-2. **Çeviri:** Claude rutini (Perşembe-Cumartesi, Singapur saatiyle 2 saatte bir) bekleyen bölüm var mı bakar. Varsa `ceviri/YONTEM.md`'ye göre 8 Opus ajanla çevirir ve aynı klasöre `ceviri.txt` ile `ozet.md` koyar. Çeviri kuralları her bölümde Drive'daki "Çeviri Talimatı.md"den (`talimat.md`) gelir.
+2. **Çeviri:** Proje sohbetine "<dizi> <N>. bölümü çevir" yazılır; yeni bir Claude thread'i `ceviri/YONTEM.md`'ye göre çevirir ve aynı klasöre `ceviri.txt` ile `ozet.md` koyar. Çeviri kuralları her bölümde Drive'daki "Çeviri Talimatı.md"den (`talimat.md`) gelir.
 3. **Yak ve gönder** (`yak.yml`): Çeviri gelince kendiliğinden başlar, SRT'yi Türkçe zamanlarla kurar. Video 12 parçaya bölünür ve 12 makinede aynı anda yakılır. Parçalar birleştirilip Telegram'a gönderilir.
 
 İşin kendisini Drive'daki `sistem/pipeline.py` yapar: Colab'daki kod, kalite ve yazı stili aynıdır. Drive'da kod değişirse burası da otomatik olarak yenisini kullanır.
