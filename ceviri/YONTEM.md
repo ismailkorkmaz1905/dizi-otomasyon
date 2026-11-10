@@ -13,6 +13,16 @@ Bölüm başına harcamanın çoğu çeviri metninden değil, tekrar okunan bağ
 - Alt ajan sayısı: parça başına ~450 satır (Başkalarının Hayatı 4, Muhtemel Aşk 5 parça). Daha fazla ajan aynı talimatı daha çok kez okutur, kaliteye katkısı yok, parça sınırı sayısını artırır.
 - Thread'e kısa notlar: başladı, çeviri bitti, push, rapor. Ajan çıktısını thread'e yapıştırma.
 
+## Modeller
+
+| İş | Model | Effort |
+|---|---|---|
+| Ana oturum (thread) | Sonnet | varsayılan |
+| Çeviri ajanları | Opus | verme (medium) |
+| Kontrol ajanı, iki tur | Opus | medium (İsmail `high` derse high) |
+
+10 Kasım 2026 testi (BH E06 430-896 ve MA E20 882-1336, toplam 922 satır, kör Opus hakem, önemli hata sayısı): Opus taslak + kontrol 0, Sonnet taslak + kontrol 9, eski akışla teslim edilen 11. Kontrol, Opus taslağın %7-13'ünü, Sonnet taslağın %24-30'unu değiştirdi. Sonnet çevirmen ucuz ama kontrolden sonra da hata kalıyor; İsmail açıkça istemedikçe kullanma.
+
 ## 0. Hazırlık
 
 - `DURUM.md`'yi oku. Repo `ismailkorkmaz1905/dizi-otomasyon`, dal `main`.
@@ -23,13 +33,13 @@ Bölüm başına harcamanın çoğu çeviri metninden değil, tekrar okunan bağ
 
 ## 1. Çeviri ajanları (paralel, tek mesajda)
 
-Model: İsmail başlatırken başka bir şey demediyse `opus`. Effort verme. Her parça için Agent aracıyla şunu gönder:
+Model `opus`, effort verme. Her parça için Agent aracıyla şunu gönder:
 
 > Klasör: <çalışma klasörü>. Türkçe dizi altyazısını Endonezceye çeviriyorsun.
 > 1. Sırayla ve birer kez oku: `talimat.md` (her kuralına uy), varsa `onceki_ozet.md`, sonra `girdi_<k>.txt`. Başka dosya okuma.
 > 2. `girdi_<k>.txt`'de sadece `=== CEVIR: <BAS>-<SON> ===` başlığının altındaki satırları çevir. `=== BAGLAM ===` altındakiler sadece bağlam.
 > 3. Çıktıyı tek seferde `parca_<k>.txt`'ye yaz: her satır `NNNN metin`, aralıktaki her numara tam bir kez, boş satır yok.
-> 4. Doğrula: `python3 check.py ceviri_girdi.txt parca_<k>.txt <BAS> <SON>`. `OK` çıkana ve `LONG` kalmayana kadar sadece hatalı satırları Edit ile düzelt, dosyayı baştan yazma.
+> 4. Doğrula: `python3 check.py ceviri_girdi.txt parca_<k>.txt <BAS> <SON>`. `LONG` ya da hata çıkarsa bütün hatalı satırları tek seferde düzelt (tek komut ya da tek düzenleme, satır satır ayrı çağrı yapma), dosyayı baştan yazma, tekrar doğrula. `OK` çıkıp `LONG` kalmayınca bitir.
 >
 > Başka dosyaya ve git'e dokunma. Bitince kısa döndür: check sonucu; emin olmadığın en fazla 10 satır (birer cümle); bu aralıktaki önemli olaylar ve yeni hitaplar (3-6 madde, Türkçe).
 
@@ -39,7 +49,7 @@ Dönen raporları `raporlar.md`'ye yaz. Sonra `python3 arac.py birlestir <çalı
 
 > Klasör: <çalışma klasörü>. Türkçeden Endonezceye çevrilmiş dizi altyazısını kontrol ediyorsun.
 > - Oku: `talimat.md`, varsa `onceki_ozet.md`, `raporlar.md`, sonra `yan_yana.txt` (her satır: `NNNN [süre|sınır] Türkçe => Endonezce`). Başka dosya okuma.
-> - Baştan sona oku ve şunlara bak: anlam hataları; hitap tutarlılığı (aynı iki kişi her yerde aynı hitap); isim yazımları ve talimattaki karıştırılan isimler; parça sınırları (<sınırlar>) çevresinde kopukluk ya da tekrar; `(?)` ve `[kelime?]` işaretli ve raporlarda şüpheli denen satırlar; "Yalancı eşdeğerler" tablosu; kitap dili.
+> - Baştan sona oku ve şunlara bak: anlam hataları; hitap tutarlılığı (aynı iki kişi her yerde aynı hitap); isim yazımları ve talimattaki karıştırılan isimler; parça sınırları (<sınırlar>) çevresinde kopukluk ya da tekrar; `(?)` ve `[kelime?]` işaretli ve raporlarda şüpheli denen satırlar; "Yalancı eşdeğerler" tablosu; kitap dili. `|` eksikliği hata değil, sadece bunun için satır değiştirme.
 > - Bütün çeviriyi yeniden YAZMA. Sadece değiştirdiğin satırları `duzeltme_1.txt`'ye yaz (`NNNN yeni metin`, satırın tamamı). Sonra `python3 arac.py uygula . duzeltme_1.txt`. Hata verirse düzeltme dosyasını onar ve tekrar çalıştır. `DEGISEN n satir` çıkınca `ceviri_tum.txt` ve `yan_yana.txt` güncellenmiştir.
 > - İkinci tur: güncel `yan_yana.txt`'yi baştan sona bir kez daha oku; kaçan anlam hatalarını, hitap/isim tutarsızlıklarını ve doğal olmayan satırları `duzeltme_2.txt`'ye yaz ve aynı şekilde uygula. Üçüncü tur yok.
 > - Döndür: iki turun `DEGISEN` sayıları ve en önemli 10 değişiklik.
