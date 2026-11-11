@@ -65,6 +65,8 @@ Dönen raporları `raporlar.md`'ye yaz. Sonra `python3 arac.py birlestir <çalı
 
 ## 4. Rapor
 
+- Limit ölçümü (İsmail dolar değil limit yüzdesi ister): thread'in başında ve push'tan sonra birer kez `mcp__claude-code-remote__get_session` (kendi oturum id'si) ve `list_events` (`kinds: ["rate_limit_event"]`, `limit: 100`) çağır, son olaydaki `unifiedWindows.five_hour.utilization` ve `seven_day.utilization` değerlerini not et. Rapora "5 saatlik limit %x -> %y, haftalık %x -> %y" satırını ekle. Araç yoksa "ölçülemedi" yaz, tahmin etme.
+
 - Push'un başlattığı "Yak ve gonder" işini bul (`head_sha=<push sha>`), bitmesini arka planda bekle (Bash `run_in_background`, 60 sn'de bir durum, timeout 3 saat) ve turu bitir.
 - Yeşil bittiyse `birlestir` işinin logundan `===== RAPOR =====` bloğunu al (`get_job_logs`, `tail_lines` 60) ve thread'e tek mesajla Türkçe harflerle yaz; bu oturumun sürelerini (başladı, çeviri bitti, kontrol bitti, push) ve commit linklerini ekle.
 - Kırmızı bittiyse: hangi iş ve adım, logdaki hata, ne yapılacağı. Kendiliğinden yeniden çalıştırma. İstisna: sadece `birlestir` Telegram hatasıyla düştüyse ve logda hiç "gitti" satırı yoksa bir kez `rerun-failed-jobs` çalıştır ve onu da bekle (yakılmış parçalar saklı, para tutmaz).
