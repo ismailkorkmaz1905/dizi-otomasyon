@@ -1,0 +1,40 @@
+name: deneme-yt2
+run-name: YouTube cerezsiz - bgutil ve alternatif kaynak
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yt2.yml']
+permissions:
+  contents: read
+env:
+  VID: https://www.youtube.com/watch?v=eGJjWJ__cBw
+jobs:
+  bgutil:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - uses: denoland/setup-deno@v2
+        with: {deno-version: v2.x}
+      - run: |
+          pip install -q -U "yt-dlp[default]" bgutil-ytdlp-pot-provider
+          docker run -d --name pot -p 4416:4416 brainicism/bgutil-ytdlp-pot-provider
+          sleep 8; curl -s localhost:4416/ping; echo
+          for C in default tv_simply mweb web_safari 'mweb,web_safari,tv_simply'; do
+            A=""; [ "$C" != default ] && A="--extractor-args youtube:player_client=$C"
+            rm -f /tmp/t.mp4
+            yt-dlp --no-playlist $A -f 'bv*[height<=1080]+ba/b' --download-sections '*0-15' -o /tmp/t.mp4 "$VID" 2>&1 | tail -4
+            ls -la /tmp/t.mp4 >/dev/null 2>&1 && echo "SONUC TAMAM bgutil $C" || echo "SONUC OLMADI bgutil $C"
+          done
+  kaynak:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - run: |
+          curl -s https://ipinfo.io/country; echo
+          for U in https://www.startv.com.tr/dizi/baskalarinin-hayati https://www.showtv.com.tr/dizi/muhtemel-ask https://www.showtv.com.tr/dizi/muhtemel-ask/bolumler; do
+            echo "== $U"; curl -sL -m 20 -A 'Mozilla/5.0' -o /tmp/p.html -w '%{http_code} %{size_download}\n' "$U"
+            grep -oE 'https?://[^"'"'"' ]+\.m3u8[^"'"'"' ]*' /tmp/p.html | head -3
+            grep -oiE '(href|url)":?"?[^" ]*bolum[^" ]*' /tmp/p.html | head -6
+          done
