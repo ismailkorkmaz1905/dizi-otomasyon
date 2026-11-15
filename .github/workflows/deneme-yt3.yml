@@ -1,0 +1,21 @@
+name: deneme-yt3
+run-name: Star TV / Show TV kaynak kesfi
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yt3.yml']
+permissions:
+  contents: read
+jobs:
+  kaynak:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - run: |
+          pip install -q -U "yt-dlp[default]"
+          U=https://www.startv.com.tr/dizi/baskalarinin-hayati/bolumler/7-bolum
+          curl -sL -m 20 -A 'Mozilla/5.0' -o /tmp/p.html -w '%{http_code} %{size_download}\n' "$U"
+          echo "-- m3u8/mp4/media"; grep -oE 'https?:[^"'"'"' <>\\]+\.(m3u8|mp4|mpd)[^"'"'"' <>\\]*' /tmp/p.html | sort -u | head -10
+          echo "-- ldjson"; grep -oE '"(contentUrl|embedUrl|duration|uploadDate)":"[^"]*"' /tmp/p.html | sort -u | head
+          echo "-- yt-dlp generic"; yt-dlp --no-playlist -F "$U" 2>&1 | tail -15
+          echo "== show tv arama"; curl -sL -m 20 -A 'Mozilla/5.0' 'https://www.showtv.com.tr/' | grep -oE 'href="/dizi/[^"]*"' | sort -u | head -20
