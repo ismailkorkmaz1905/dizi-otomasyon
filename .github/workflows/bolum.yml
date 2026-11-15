@@ -59,6 +59,11 @@ jobs:
         with:
           deno-version: v2.x
       - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
+      - uses: actions/cache@v5   # WARP hesabi (yedek yol, warp.py): her kosuda yeni kayit 429 verdigi icin saklanir (~2 KB)
+        with:
+          path: /tmp/warp-hesap
+          key: warp-hesap-${{ github.run_id }}
+          restore-keys: warp-hesap-
       - run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
           pip install -q -r requirements.txt

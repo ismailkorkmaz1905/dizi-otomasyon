@@ -17,6 +17,7 @@ WGCF = 'https://github.com/ViRb3/wgcf/releases/download/v2.2.29/wgcf_2.2.29_linu
 WIREPROXY = 'https://github.com/pufferffish/wireproxy/releases/download/v1.0.9/wireproxy_linux_amd64.tar.gz'
 PORT = 25344
 DIR = Path('/tmp/warp')
+HESAP = Path('/tmp/warp-hesap')   # actions/cache ile kosular arasi saklanir: her kosuda yeni kayit Cloudflare'de 429 veriyor
 PROBE = 'https://www.youtube.com/watch?v=jNQXAC9IBTc'   # kisa, herkese acik; sadece "bot engeli yok mu" sinanir
 _state = {'args': None, 'proc': None}
 
@@ -58,13 +59,23 @@ def baslat(deneme: int = 8) -> list[str]:
         _durdur()
         for f in DIR.glob('wgcf-*'):
             f.unlink()
-        r = _sh([str(DIR / 'wgcf'), 'register', '--accept-tos'], cwd=DIR)
-        if r.returncode == 0:
-            r = _sh([str(DIR / 'wgcf'), 'generate'], cwd=DIR)
+        kayitli = n == 1 and (HESAP / 'wgcf-profile.conf').exists()   # ilk deneme: saklanan hesap; olmazsa yeni kayit
+        if kayitli:
+            for f in HESAP.glob('wgcf-*'):
+                shutil.copyfile(f, DIR / f.name)
+            r = subprocess.CompletedProcess([], 0, '', '')
+        else:
+            r = _sh([str(DIR / 'wgcf'), 'register', '--accept-tos'], cwd=DIR)
+            if r.returncode == 0:
+                r = _sh([str(DIR / 'wgcf'), 'generate'], cwd=DIR)
+            if r.returncode == 0 and (DIR / 'wgcf-profile.conf').exists():
+                HESAP.mkdir(exist_ok=True)
+                for f in DIR.glob('wgcf-*'):
+                    shutil.copyfile(f, HESAP / f.name)
         if r.returncode != 0 or not (DIR / 'wgcf-profile.conf').exists():
             son = 'wgcf: ' + re.sub(r'\s+', ' ', (r.stderr or r.stdout))[-120:]
             log(f'deneme {n}/{deneme}: kayit olmadi ({son}), tekrar')
-            time.sleep(8)
+            time.sleep(20)
             continue
         conf = DIR / 'wgcf-profile.conf'
         conf.write_text(conf.read_text() + f'\n[Socks5]\nBindAddress = 127.0.0.1:{PORT}\n')
@@ -79,7 +90,7 @@ def baslat(deneme: int = 8) -> list[str]:
         y = _sh([sys.executable, '-m', 'yt_dlp', '--no-warnings', '--no-playlist', '--simulate', '--socket-timeout', '30'] + args + [PROBE], timeout=150)
         if y.returncode == 0:
             colo = re.search(r'colo=(\w+)', t.stdout)
-            log(f'hazir (deneme {n}, cikis {colo.group(1) if colo else "?"}), YouTube bot engeli yok')
+            log(f'hazir (deneme {n}, {"saklanan hesap" if kayitli else "yeni hesap"}, cikis {colo.group(1) if colo else "?"}), YouTube bot engeli yok')
             _state['args'] = args
             return args
         son = 'YouTube: ' + ('bot engeli' if 'confirm' in y.stderr else re.sub(r'\s+', ' ', y.stderr)[-100:])

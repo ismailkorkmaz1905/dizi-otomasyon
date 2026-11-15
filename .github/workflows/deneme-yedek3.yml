@@ -3,7 +3,7 @@ run-name: Yedek sira testi - WARP zinciri
 on:
   push:
     branches: [claude/project-thread-r1c6ze]
-    paths: ['.github/workflows/deneme-yedek3.yml', 'kaynaklar.py', 'otomasyon.py', 'warp.py']
+    paths: ['.github/workflows/deneme-yedek3.yml','.github/workflows/bolum.yml', 'kaynaklar.py', 'otomasyon.py', 'warp.py']
 permissions:
   contents: read
 jobs:
@@ -26,6 +26,11 @@ jobs:
       - uses: denoland/setup-deno@v2
         with: {deno-version: v2.x}
       - uses: ./.github/actions/ffmpeg
+      - uses: actions/cache@v5
+        with:
+          path: /tmp/warp-hesap
+          key: warp-hesap-${{ github.run_id }}
+          restore-keys: warp-hesap-
       - run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
           pip install -q -r requirements.txt
