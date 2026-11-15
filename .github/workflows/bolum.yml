@@ -74,4 +74,7 @@ jobs:
         with:
           path: /tmp/video
           key: ${{ steps.h.outputs.anahtar }}
-          
+      - if: failure()   # hata sessiz kalmasin (S01E07'de 45 dk gec fark edildi)
+        run: python otomasyon.py hata
+        env:
+          GDRIVE_SA: ${{ secrets.GDRIVE_SA }}

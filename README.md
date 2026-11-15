@@ -18,7 +18,7 @@ Elle çalıştırmak için **Actions** sekmesine gir, işi seç ve **Run workflo
 
 | Ne | Belirti | Ne yapılır |
 |---|---|---|
-| YouTube çerezi eskir | Hazırla işi "bot engeli" hatası verir | Colab'da yaptığın gibi `sistem/youtube_cookies.txt` dosyasını yenile |
+| YouTube çerezi eskir | "3 - Çerez kontrol" kırmızı olur ve Telegram'a yazar; hazırla işi "bot engeli" verir | Aşağıdaki "Çerez yenileme" |
 | Scribe kalan kredi "okunamadi" | Rapor ve kontrol kalan krediyi göstermez | ElevenLabs'ta API anahtarına "User: Read" izni ver |
 | ElevenLabs kredisi biter ya da anahtar iptal olur | Hazırla işi "Scribe 401/402" hatası verir | Krediyi yükle ya da `sistem/elevenlabs.json`'daki anahtarı yenile. Burada Whisper yedeği yok |
 | Telegram oturumu düşer (Telegram'da "Aktif oturumlar"dan kapatılırsa) | Yak işi Telegram adımında hata verir | Colab'da "2 - Yak ve Gönder" ile bir kez giriş yap |
@@ -29,3 +29,11 @@ Elle çalıştırmak için **Actions** sekmesine gir, işi seç ve **Run workflo
 | Claude rutini | Çeviri gelmez | Claude planının 5 saatlik limitinden harcar. Limit dolarsa rutin, pencere sıfırlanana kadar çalışmaz |
 
 Her bölüm bitince yakma işinin özet sayfasında ve logunda bir rapor çıkar (yakalanma saati, süreler, commitler); Claude bunu thread'e taşır. Hata olunca GitHub e-posta atar. İşin logu Actions sekmesinde durur.
+
+## Çerez yenileme
+
+Kontrol (`cerez.yml`): her gün 02:00 UTC, Muhtemel Aşk için perşembe 10:00 UTC, Başkalarının Hayatı için cumartesi 11:00 UTC. İndirmez, kredi harcamaz. Çerez ölmüşse Telegram'a tarifle birlikte yazar. Cron geciktiği/atladığı olur: bölümden önce **Actions > 3 - Çerez kontrol > Run workflow** ile elle de çalıştırılabilir. "1 - Bölüm hazırla" hata verirse de Telegram'a haber gider.
+
+Tek satır: gizli pencerede YouTube'a gir, aynı sekmede `youtube.com/robots.txt` aç, çerez eklentisiyle Export et, Drive'daki `sistem/youtube_cookies.txt`'in üstüne aynı adla yükle (Yeni dosya değil, "Yeni sürüm yükle"), pencereyi hemen kapat, "3 - Çerez kontrol"ü çalıştır.
+
+Telefondan (iOS): Safari ve iOS Chrome çerez dosyası vermez. Tek yol eklenti destekleyen bir tarayıcı (Orion) ya da bir bilgisayar. Dosya Drive'a Drive uygulaması ya da Dosyalar uygulamasıyla yüklenir.

@@ -6,6 +6,8 @@ Bolum ciktilari (video, _iş/SxxEyy, SRT, Yakılı) Colab'daki gibi Drive'a yazi
 Bolum teslim edilince sadece yakili video ve scribe_raw.json kalir, gerisi silinir.
 
   python otomasyon.py kontrol      kurulumu dener: Drive, YouTube cerezi (1 dk indirme), Telegram oturumu
+  python otomasyon.py cerez        YouTube cerezi calisiyor mu (indirmeden); olmazsa Telegram'a haber verir
+  python otomasyon.py hata         Telegram'a kisa uyari gonderir (is basarisiz olunca)
   python otomasyon.py saatler      gecmis bolumlerin YouTube'a yuklenme saatleri
   python otomasyon.py hazirla      yeni bolumu indir, Scribe ile Turkce metin, ceviri girdisini bolumler/'e koy
   python otomasyon.py plan         yakma: video cache'te yoksa indir, parcalari planla
@@ -228,6 +230,69 @@ def kontrol():
         r = w.get(f"{API}/{root['id']}", params={'fields': 'capabilities(canAddChildren)'})
         ok = r.ok and r.json()['capabilities']['canAddChildren']
         print('Drive yazma:', 'hazir' if ok else f'OLMADI ({r.status_code} {r.text[:300]})')
+
+
+# ---------------------------------------------------------------- cerez kontrolu
+
+COOKIE_HOWTO = ("Yenile: gizli pencere > youtube.com'a giris > ayni sekmede youtube.com/robots.txt ac > "
+                "cerez eklentisiyle Export > Drive'da sistem/youtube_cookies.txt'in ustune yukle (ayni ad) > "
+                "pencereyi hemen kapat > Actions'ta '3 - Cerez kontrol' calistir.")
+
+
+def telegram_mesaj(system: Path, text: str):
+    """Kisa Telegram mesaji: sistem/telegram.json'daki hesapla, 'hedef' numaraya."""
+    import asyncio
+    from telethon import TelegramClient
+    from telethon.sessions import StringSession
+    from telethon.tl.functions.contacts import ImportContactsRequest
+    from telethon.tl.types import InputPhoneContact
+    tg = json.loads((system / 'telegram.json').read_text())
+
+    async def go():
+        client = TelegramClient(StringSession(tg['oturum']), int(tg['api_id']), tg['api_hash'])
+        await client.connect()
+        try:
+            if not await client.is_user_authorized():
+                raise SystemExit('Telegram oturumu gecersiz, uyari gonderilemedi.')
+            try:
+                to = await client.get_entity(tg['hedef'])
+            except Exception:
+                to = (await client(ImportContactsRequest([InputPhoneContact(0, tg['hedef'], 'Dizi', 'Alici')]))).users[0]
+            await client.send_message(to, text)
+        finally:
+            await client.disconnect()
+    asyncio.run(go())
+
+
+def hata():
+    _, _, root = load_pipeline()
+    telegram_mesaj(MIRROR / root['name'] / 'sistem', f"{NAMES[DIZI]}: is basarisiz oldu.\n{RUN_URL}")
+
+
+def cerez():
+    """Cerezle YouTube'dan format listesi alir (indirme yok, Scribe yok). Olmazsa Telegram + kirmizi is."""
+    pipeline, _, root = load_pipeline()
+    system = MIRROR / root['name'] / 'sistem'
+    c = pipeline.cfg(DIZI)
+    err = ''
+    for attempt in range(2):   # gecici ag hatasi yanlis alarm vermesin
+        cookies = pipeline._cookies(c)
+        try:
+            hit = pipeline.find_source(c, '', '', cookies)
+            r = subprocess.run([sys.executable, '-m', 'yt_dlp', '--no-warnings', '--no-playlist', '--simulate'] + cookies + [
+                '-f', pipeline.YT_FORMAT, '--print', 'TAMAM %(id)s %(format_id)s', hit['url']], capture_output=True, text=True)
+            if r.returncode == 0:
+                print(r.stdout.strip())
+                return
+            err = r.stderr[-800:]
+        except BaseException as e:   # find_source bot engelinde SystemExit atar
+            err = str(e)[-800:]
+        print(f'Deneme {attempt + 1} olmadi: {err}')
+        time.sleep(30)
+    bot = pipeline._bot_block(err)
+    telegram_mesaj(system, f"{NAMES[DIZI]}: YouTube cerezi " + ('OLDU (bot engeli).' if bot else 'denemesi basarisiz (cerez disi hata?).')
+                   + f"\n{COOKIE_HOWTO}\n{RUN_URL}")
+    raise SystemExit('Cerez calismiyor: ' + err)
 
 
 # ---------------------------------------------------------------- hazirla
@@ -674,7 +739,7 @@ def bekle(dk: int = 100):
 
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else ''
-    steps = dict(kontrol=kontrol, saatler=saatler, hazirla=hazirla, plan=plan, birlestir=birlestir, temizlik=temizlik)
+    steps = dict(cerez=cerez, hata=hata, kontrol=kontrol, saatler=saatler, hazirla=hazirla, plan=plan, birlestir=birlestir, temizlik=temizlik)
     if cmd == 'hazirla' and os.environ.get('BOLUM', '').strip().lower() == 'bekle':
         bekle()
     elif cmd == 'parca':
