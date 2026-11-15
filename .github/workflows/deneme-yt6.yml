@@ -1,0 +1,25 @@
+name: deneme-yt6
+run-name: Show TV mp4 indirme ve Star TV oynatici API
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yt6.yml']
+permissions:
+  contents: read
+jobs:
+  kaynak:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - run: |
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36'
+          M=https://vmcdn.ciner.com.tr/ht/2026/11/12/41DEEABD9480EA5B566DCCBDDFAF8998_1920x1080.mp4
+          echo "== SHOW HEAD"; curl -sI -m 20 -A "$UA" "$M" | head -12
+          echo "== SHOW 30MB aralik, hiz"; curl -s -m 60 -A "$UA" -r 0-31457279 -o /tmp/a.mp4 -w 'kod %{http_code} boyut %{size_download} hiz %{speed_download} B/s\n' "$M"
+          echo "== SHOW referersiz tam HEAD ile ffprobe"; ffprobe -v error -show_entries format=duration,bit_rate:stream=codec_name,width,height,r_frame_rate -of compact "$M" 2>&1 | head -6
+          echo "== STAR chunk"; curl -sL -m 30 -A "$UA" -o /tmp/s.html https://www.startv.com.tr/dizi/baskalarinin-hayati/bolumler/7-bolum
+          for c in $(grep -oE 'https://cdn-prod.startv.com.tr/[0-9]+/_next/static/chunks/[^"]*(dizi|main-app|layout)[^"]*\.js' /tmp/s.html | sort -u | sed 's/%5B/[/g;s/%5D/]/g' ); do echo $c; done | head -5
+          grep -oE 'dyg[A-Za-z_./-]*|dygvideo[^"'"'"' ]*|\.dygdigital[^"'"'"' ]*' /tmp/s.html | sort -u | head
+          grep -oE 'src="[^"]*(dyg|player|embed)[^"]*"' /tmp/s.html | sort -u | head
+          grep -oE '"(PublisherId|ReferenceId|publisherId|referenceId|videoId|dygId|mediaId)":"?[^,"}]*' /tmp/s.html | sort -u | head
+          grep -oE '.{0,60}dyg-player.{0,200}' /tmp/s.html | head -3
