@@ -1,0 +1,20 @@
+name: deneme-yt7
+run-name: Star TV DYG SDK ayarlari
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yt7.yml']
+permissions:
+  contents: read
+jobs:
+  kaynak:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - run: |
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36'
+          curl -sL -m 30 -A "$UA" -o /tmp/s.html https://www.startv.com.tr/dizi/baskalarinin-hayati/bolumler/7-bolum
+          sed 's/\\\\n/\n/g;s/\\n/\n/g;s/\\u003c/</g;s/\\u003e/>/g;s/\\"/"/g' /tmp/s.html > /tmp/u.html
+          echo "== SDK baglam"; grep -n -B25 -A6 "videoSelectors" /tmp/u.html | head -70
+          echo "== bundle"; curl -sL -m 30 -A "$UA" -o /tmp/b.js https://yer-assets.dygdigital.com/prod/js/bundle.js; wc -c /tmp/b.js
+          grep -oE 'https?://[a-zA-Z0-9./_-]*dyg[a-zA-Z0-9./_?=&-]*' /tmp/b.js | sort -u | head -15
