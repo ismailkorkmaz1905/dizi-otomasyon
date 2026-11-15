@@ -1,0 +1,35 @@
+name: deneme-warp
+run-name: YouTube cerezsiz - Cloudflare WARP
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-warp.yml']
+permissions:
+  contents: read
+env:
+  VID: https://www.youtube.com/watch?v=eGJjWJ__cBw
+jobs:
+  warp:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - uses: denoland/setup-deno@v2
+        with: {deno-version: v2.x}
+      - run: |
+          pip install -q -U "yt-dlp[default]"
+          cd /tmp
+          curl -sL -o wgcf https://github.com/ViRb3/wgcf/releases/download/v2.2.29/wgcf_2.2.29_linux_amd64 && chmod +x wgcf
+          curl -sL -o w.tgz https://github.com/pufferffish/wireproxy/releases/download/v1.0.9/wireproxy_linux_amd64.tar.gz && tar xzf w.tgz
+          ./wgcf register --accept-tos >/dev/null 2>&1; ./wgcf generate >/dev/null 2>&1; ls wgcf-profile.conf
+          printf '\n[Socks5]\nBindAddress = 127.0.0.1:25344\n' >> wgcf-profile.conf
+          nohup ./wireproxy -c wgcf-profile.conf >/tmp/wp.log 2>&1 &
+          sleep 6
+          echo "WARP cikis:"; curl -s --socks5-hostname 127.0.0.1:25344 https://ipinfo.io/org; echo
+          for C in default tv mweb web_safari android_vr; do
+            A=""; [ "$C" != default ] && A="--extractor-args youtube:player_client=$C"
+            rm -f /tmp/t.mp4
+            yt-dlp --proxy socks5://127.0.0.1:25344 --no-playlist $A -f 'bv*[height<=1080]+ba/b' --download-sections '*0-20' -o /tmp/t.mp4 "$VID" 2>&1 | grep -E "ERROR|Downloading 1 format" | head -2
+            ls -la /tmp/t.mp4 >/dev/null 2>&1 && echo "SONUC TAMAM warp $C" || echo "SONUC OLMADI warp $C"
+          done
