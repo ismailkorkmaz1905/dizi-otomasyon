@@ -26,7 +26,7 @@ jobs:
       - uses: denoland/setup-deno@v2
         with: {deno-version: v2.x}
       - uses: ./.github/actions/ffmpeg
-      - uses: actions/cache@v5
+      - uses: actions/cache/restore@v5
         with:
           path: /tmp/warp-hesap
           key: warp-hesap-${{ github.run_id }}
@@ -38,3 +38,10 @@ jobs:
       - run: python otomasyon.py yedek > /tmp/out.txt 2>&1; echo "cikis $?"; grep -aE " (YEDEK|WARP|AKIS|UYARI) |Bulunan|Indi|format\||rror|Traceback" /tmp/out.txt | cut -c1-220 | tail -25
         env:
           GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
+          WARP_DENEME: '16'
+      - if: always()
+        uses: actions/cache/save@v5
+        continue-on-error: true
+        with:
+          path: /tmp/warp-hesap
+          key: warp-hesap-${{ github.run_id }}

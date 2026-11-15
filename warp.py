@@ -6,6 +6,7 @@ Kullanim: ARGS = warp.baslat(); yt-dlp cmd'ye ARGS eklenir (pipeline'da 'cookies
 NOT: yt-dlp --download-sections ffmpeg kullanir ve vekili GORMEZ (googlevideo 403); tam indirmede sorun yok.
 """
 import atexit
+import os
 import re
 import shutil
 import subprocess
@@ -47,11 +48,12 @@ def _durdur():
     _state['proc'] = None
 
 
-def baslat(deneme: int = 8) -> list[str]:
+def baslat(deneme: int = 0) -> list[str]:
     """WARP vekilini kurar ve YouTube'da bot engeli olmadigini dogrular; yt-dlp icin ['--proxy', ...] doner.
     Her denemede yeni anonim hesap acilir (her kayit baska bir Cloudflare IP'si verir). Olmazsa RuntimeError."""
     if _state['args']:
         return _state['args']
+    deneme = deneme or int(os.environ.get('WARP_DENEME') or 8)
     _kur()
     atexit.register(_durdur)
     son = ''
@@ -88,12 +90,14 @@ def baslat(deneme: int = 8) -> list[str]:
             log(f'deneme {n}/{deneme}: {son}, tekrar')
             continue
         y = _sh([sys.executable, '-m', 'yt_dlp', '--no-warnings', '--no-playlist', '--simulate', '--socket-timeout', '30'] + args + [PROBE], timeout=150)
-        if y.returncode == 0:
+        bot = 'confirm' in y.stderr and 'bot' in y.stderr
+        ag = any(k in y.stderr for k in ('Unable to connect', 'timed out', 'Connection', 'Proxy'))
+        if y.returncode == 0 or not (bot or ag):   # "video unavailable" gibi cevaplar da IP'nin engelli olmadigini gosterir
             colo = re.search(r'colo=(\w+)', t.stdout)
             log(f'hazir (deneme {n}, {"saklanan hesap" if kayitli else "yeni hesap"}, cikis {colo.group(1) if colo else "?"}), YouTube bot engeli yok')
             _state['args'] = args
             return args
-        son = 'YouTube: ' + ('bot engeli' if 'confirm' in y.stderr else re.sub(r'\s+', ' ', y.stderr)[-100:])
+        son = 'YouTube: ' + ('bot engeli' if bot else re.sub(r'\s+', ' ', y.stderr)[-100:])
         log(f'deneme {n}/{deneme}: {son}, yeni IP ile tekrar')
     _durdur()
     raise RuntimeError('WARP kurulamadi: ' + son)
