@@ -1,0 +1,36 @@
+name: 9 - Kaynak denemesi
+run-name: Kaynak denemesi (indirmez, kredi harcamaz)
+
+# Gecici: YouTube cerezi olmadan hangi kaynak/istemci calisiyor, sadece format listesi alir.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dene:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - run: pip install -q -U "yt-dlp[default]"
+      - name: Star TV sitesi
+        continue-on-error: true
+        run: |
+          yt-dlp --simulate --print "TAMAM %(title)s | %(duration)s sn" -F \
+            "https://www.startv.com.tr/dizi/baskalarinin-hayati/bolumler/7-bolum" 2>&1 | tail -40
+      - name: YouTube cerezsiz, farkli istemciler
+        continue-on-error: true
+        run: |
+          for c in default tv tv_simply web_safari web_embedded android_vr ios mweb web_creator; do
+            echo "=== $c"
+            a=""; [ "$c" != default ] && a="--extractor-args youtube:player_client=$c"
+            yt-dlp --simulate $a --print "TAMAM %(format_id)s %(height)sp %(vcodec)s %(tbr)s" \
+              -f "bv*[height<=1080]+ba/b" "https://www.youtube.com/watch?v=eGJjWJ__cBw" 2>&1 | tail -2 | cut -c1-220
+          done
