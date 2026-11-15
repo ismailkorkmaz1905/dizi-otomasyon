@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/ffmpeg
       - uses: actions/setup-python@v6
         with: {python-version: '3.12'}
       - uses: denoland/setup-deno@v2
@@ -27,9 +29,9 @@ jobs:
           nohup ./wireproxy -c wgcf-profile.conf >/tmp/wp.log 2>&1 &
           sleep 6
           echo "WARP cikis:"; curl -s --socks5-hostname 127.0.0.1:25344 https://ipinfo.io/org; echo
-          for C in default tv mweb web_safari android_vr; do
-            A=""; [ "$C" != default ] && A="--extractor-args youtube:player_client=$C"
-            rm -f /tmp/t.mp4
-            yt-dlp --proxy socks5://127.0.0.1:25344 --no-playlist $A -f 'bv*[height<=1080]+ba/b' --download-sections '*0-20' -o /tmp/t.mp4 "$VID" 2>&1 | grep -E "ERROR|Downloading 1 format" | head -2
-            ls -la /tmp/t.mp4 >/dev/null 2>&1 && echo "SONUC TAMAM warp $C" || echo "SONUC OLMADI warp $C"
-          done
+          P="--proxy socks5://127.0.0.1:25344"
+          echo "== formatlar"; yt-dlp $P --no-playlist -F "$VID" 2>&1 | grep -E "^[0-9]+ .*(mp4|webm|m4a)" | awk '{print $1,$2,$3,$4,$5}' | head -25
+          echo "== 1080p h264 + ses, 3 dk"
+          ( time yt-dlp $P --no-playlist -f 'bv*[height<=1080][vcodec^=avc1]+140/bv*[height<=1080]+ba/b' --download-sections '*600-780' -o /tmp/t.mp4 "$VID" 2>&1 | grep -E "ERROR|Downloading 1 format|100%" | head -4 ) 2>&1 | grep -E "real|format|ERROR|100%"
+          ls -la /tmp/t.mp4; ffprobe -v error -show_entries stream=codec_name,width,height,bit_rate -of compact /tmp/t.mp4
+          echo "== proxy'siz kontrol"; yt-dlp --no-playlist --simulate "$VID" 2>&1 | grep -c "not a bot"
