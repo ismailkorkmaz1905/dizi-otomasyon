@@ -1,0 +1,31 @@
+name: deneme-yt
+run-name: YouTube cerezsiz indirme denemeleri
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yt.yml']
+permissions:
+  contents: read
+env:
+  VID: https://www.youtube.com/watch?v=eGJjWJ__cBw
+jobs:
+  istemci:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        ytdlp: [stable, nightly]
+        client: [default, tv, web_safari, mweb, android_vr, ios, tv_simply, web_embedded, 'tv,web_safari,mweb,android_vr']
+    steps:
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - uses: denoland/setup-deno@v2
+        with: {deno-version: v2.x}
+      - run: |
+          if [ "${{ matrix.ytdlp }}" = nightly ]; then pip install -q -U --pre "yt-dlp[default]"; else pip install -q -U "yt-dlp[default]"; fi
+          yt-dlp --version; curl -s https://ipinfo.io/org; echo
+      - run: |
+          A=""; [ "${{ matrix.client }}" != default ] && A="--extractor-args youtube:player_client=${{ matrix.client }}"
+          yt-dlp --no-playlist $A -f 'bv*[height<=1080]+ba/b' --download-sections '*0-15' --force-keyframes-at-cuts -o /tmp/t.mp4 "$VID" 2>&1 | tail -12
+          ls -la /tmp/t.mp4 && echo "SONUC TAMAM ${{ matrix.ytdlp }} ${{ matrix.client }}" || echo "SONUC OLMADI ${{ matrix.ytdlp }} ${{ matrix.client }}"
