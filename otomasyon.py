@@ -157,7 +157,7 @@ def yedekli(pipeline):
             try:
                 dl(url, dest, warp.baslat())
                 pipeline.log('AKIS YouTube 1080p, WARP, cerezsiz')
-                pipeline.log('UYARI: YouTube cerez olmadan WARP uzerinden indi (Premium akis yok)')
+                pipeline.log('UYARI: YouTube cerezsiz, WARP uzerinden indi (cerez olu olabilir, yenile)')
                 return
             except (Exception, SystemExit) as e:
                 kaynaklar.log(f'WARP ile indirme olmadi ({str(e)[:100]}); dizinin sitesi deneniyor')
