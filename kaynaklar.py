@@ -17,7 +17,8 @@ UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 MIN_DK = 90   # bundan kisa icerik fragman/klip sayilir
 SITELER = {
     'muhtemel_ask': dict(tur='showtv', sayfalar=['https://www.showtv.com.tr/dizi/tanitim/muhtemel-ask/3072'], slug='muhtemel-ask'),
-    'baskalarinin_hayati': dict(tur='startv', slug='baskalarinin-hayati'),
+    # Star TV (BH) kapali: site sadece 360p veriyor (13 Kas 2026), kalite kabul edilmedi. Kod duruyor:
+    # 'baskalarinin_hayati': dict(tur='startv', slug='baskalarinin-hayati'),
 }
 
 

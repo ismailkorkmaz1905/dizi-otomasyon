@@ -31,6 +31,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import kaynaklar
+import warp
 
 REPO = Path(__file__).resolve().parent
 MIRROR = Path('/tmp/drive')   # Drive'in yerel kopyasi: pipeline.py burayi Drive sanar
@@ -112,11 +113,10 @@ def load_pipeline():
 
 
 def yedekli(pipeline):
-    """YouTube basarisiz olursa (bot engeli, cerez olu, bolum henuz yok) dizinin kendi sitesi denenir (kaynaklar.py).
-    Sira: 1) YouTube + cerez  2) Show TV mp4 (Muhtemel Ask) / Star TV HLS (Baskalarinin Hayati).
+    """YouTube basarisiz olursa (bot engeli, cerez olu) otomatik siradaki yontem denenir:
+      1) YouTube + cerez (mevcut)   2) YouTube cerezsiz, Cloudflare WARP uzerinden (warp.py; 1080p, Premium yok)
+      3) dizinin sitesi (kaynaklar.py; sadece Show TV 1080p. Star TV 360p oldugu icin kapali)
     Sadece hazirla ve plan kullanir; cerez/kontrol YouTube'u ayri sinar."""
-    if DIZI not in kaynaklar.SITELER:
-        return
     find, dl = pipeline.find_source, pipeline.youtube_download
 
     def ep_of(c_, episode):
@@ -132,26 +132,39 @@ def yedekli(pipeline):
         except (Exception, SystemExit) as e:
             if url:
                 raise
+            err = e
+        kaynaklar.log(f'YouTube+cerez olmadi ({str(err)[:100]}); WARP ile cerezsiz deneniyor')
+        try:
+            hit = find(c_, episode, url, warp.baslat())
+            pipeline.log('UYARI: YouTube bolumu cerezsiz, WARP uzerinden bulundu (cerez olu olabilir)')
+            return hit
+        except (Exception, SystemExit) as e:
+            err = e
+        if DIZI in kaynaklar.SITELER:
             ep = ep_of(c_, episode)
-            kaynaklar.log(f'YouTube olmadi ({str(e)[:100]}); {ep}. bolum icin dizinin sitesi deneniyor')
-            alt = kaynaklar.bul(DIZI, ep)
-            if not alt:
-                kaynaklar.log('yedek kaynakta da yok')
-                raise
-            kaynaklar.log(f"yedek kaynak bulundu: {alt['title']}, {alt['dakika']} dk")
-            return dict(season=1, ep=ep, url=alt['url'], title=alt['title'])
+            kaynaklar.log(f'WARP da olmadi ({str(err)[:100]}); {ep}. bolum icin dizinin sitesi deneniyor')
+            if alt := kaynaklar.bul(DIZI, ep):
+                kaynaklar.log(f"yedek kaynak bulundu: {alt['title']}, {alt['dakika']} dk")
+                return dict(season=1, ep=ep, url=alt['url'], title=alt['title'])
+        raise err
 
     def youtube_download(url, dest, cookies):
-        yt = any(h in url for h in ('youtube.com', 'youtu.be'))
-        if yt:
+        if any(h in url for h in ('youtube.com', 'youtu.be')):
             try:
                 return dl(url, dest, cookies)
             except (Exception, SystemExit) as e:
-                kaynaklar.log(f'YouTube indirme olmadi ({str(e)[:100]}); dizinin sitesi deneniyor')
+                kaynaklar.log(f'YouTube indirme (cerez) olmadi ({str(e)[:100]}); WARP ile cerezsiz deneniyor')
+            try:
+                dl(url, dest, warp.baslat())
+                pipeline.log('AKIS YouTube 1080p, WARP, cerezsiz')
+                pipeline.log('UYARI: YouTube cerez olmadan WARP uzerinden indi (Premium akis yok)')
+                return
+            except (Exception, SystemExit) as e:
+                kaynaklar.log(f'WARP ile indirme olmadi ({str(e)[:100]}); dizinin sitesi deneniyor')
         ep = kaynaklar.ep_numarasi(dest)
         alt = ep and kaynaklar.bul(DIZI, ep)
         if not alt:
-            raise RuntimeError('Video indirilemedi: YouTube olmadi, yedek kaynakta da bolum yok.')
+            raise RuntimeError('Video indirilemedi: YouTube (cerezli ve WARP) olmadi, yedek kaynakta da bolum yok.')
         Path(dest).unlink(missing_ok=True)
         kaynaklar.indir(alt, Path(dest))
         pipeline.log('AKIS ' + alt['akis'])
@@ -343,28 +356,28 @@ def cerez():
         time.sleep(30)
     bot = pipeline._bot_block(err)
     telegram_mesaj(system, f"{NAMES[DIZI]}: YouTube cerezi " + ('OLDU (bot engeli).' if bot else 'denemesi basarisiz (cerez disi hata?).')
-                   + (" Yedek kaynak var (" + ('Show TV 1080p' if DIZI == 'muhtemel_ask' else 'Star TV, sadece 360p') + "), bolum yine de hazirlanir."
-                      if DIZI in kaynaklar.SITELER else '')
+                   + " Yedek yol: WARP ile cerezsiz (1080p)" + (", o da olmazsa Show TV 1080p" if DIZI in kaynaklar.SITELER else "") + "; bolum yine de hazirlanir."
                    + f"\n{COOKIE_HOWTO}\n{RUN_URL}")
     raise SystemExit('Cerez calismiyor: ' + err)
 
 
 def yedek():
-    """Deneme: YouTube'un olu oldugunu varsayip yedek sirayi dener (BOLUM = bolum no; ilk 60 sn iner). Scribe/Drive yazma yok."""
+    """Deneme: cerezli YouTube'un olu oldugunu varsayip yedek sirayi dener (BOLUM = bolum no). Tam video iner, Scribe/Drive yazma yok."""
     pipeline, _, _ = load_pipeline()
+    f0, d0 = pipeline.find_source, pipeline.youtube_download
 
     def olu(*a, **k):
         raise SystemExit('YouTube bot engeli (yapay deneme)')
-    pipeline.find_source, pipeline.youtube_download = olu, olu
+    pipeline.find_source = lambda c, e, u, ck: f0(c, e, u, ck) if '--proxy' in ck else olu()
+    pipeline.youtube_download = lambda u, d, ck: d0(u, d, ck) if '--proxy' in ck else olu()
     yedekli(pipeline)
     ep = int(os.environ.get('BOLUM') or 0) or 1
     hit = pipeline.find_source(pipeline.cfg(DIZI), str(ep), '', [])
     print('Bulunan:', hit)
     dest = VIDEO_DIR / f'{pipeline.ep_name(pipeline.cfg(DIZI), 1, ep)}.mp4'
-    indir = kaynaklar.indir
-    kaynaklar.indir = lambda info, d, bolge='': indir(info, d, '*0-60')
     pipeline.youtube_download(hit['url'], dest, [])
     print('Indi:', dest.stat().st_size, 'bayt')
+    subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration:stream=codec_name,width,height', '-of', 'compact', str(dest)])
 
 
 # ---------------------------------------------------------------- hazirla

@@ -1,0 +1,35 @@
+name: deneme-yedek3
+run-name: Yedek sira testi - WARP zinciri
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yedek3.yml', 'kaynaklar.py', 'otomasyon.py', 'warp.py']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {dizi: muhtemel_ask, bolum: '21'}
+          - {dizi: baskalarinin_hayati, bolum: '7'}
+    env:
+      DIZI: ${{ matrix.dizi }}
+      BOLUM: ${{ matrix.bolum }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12', cache: pip}
+      - uses: denoland/setup-deno@v2
+        with: {deno-version: v2.x}
+      - uses: ./.github/actions/ffmpeg
+      - run: |
+          sudo mkdir -p /content && sudo chown "$USER" /content
+          pip install -q -r requirements.txt
+          pip install -q -U "yt-dlp[default]"
+      - run: python otomasyon.py yedek > /tmp/out.txt 2>&1; echo "cikis $?"; grep -aE " (YEDEK|WARP|AKIS|UYARI) |Bulunan|Indi|format\||rror|Traceback" /tmp/out.txt | cut -c1-220 | tail -25
+        env:
+          GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
