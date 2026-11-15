@@ -1,0 +1,23 @@
+name: deneme-yedek
+run-name: Yedek kaynak testi (Show TV, Star TV)
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yedek.yml', 'kaynaklar.py']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - uses: ./.github/actions/ffmpeg
+      - run: pip install -q -U playwright "yt-dlp[default]"
+      - run: |
+          python kaynaklar.py test muhtemel_ask 21
+          python kaynaklar.py test muhtemel_ask 22
+          python kaynaklar.py test baskalarinin_hayati 7
+          python kaynaklar.py test baskalarinin_hayati 8
