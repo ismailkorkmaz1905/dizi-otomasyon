@@ -1,0 +1,33 @@
+name: deneme-yedek2
+run-name: Yedek sira testi (YouTube olu varsayimi)
+on:
+  push:
+    branches: [claude/project-thread-r1c6ze]
+    paths: ['.github/workflows/deneme-yedek2.yml', 'kaynaklar.py', 'otomasyon.py']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {dizi: muhtemel_ask, bolum: '21'}
+          - {dizi: baskalarinin_hayati, bolum: '7'}
+    env:
+      DIZI: ${{ matrix.dizi }}
+      BOLUM: ${{ matrix.bolum }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12', cache: pip}
+      - uses: ./.github/actions/ffmpeg
+      - run: |
+          sudo mkdir -p /content && sudo chown "$USER" /content
+          pip install -q -r requirements.txt
+          pip install -q -U "yt-dlp[default]"
+      - run: python otomasyon.py yedek 2>&1 | grep -E "YEDEK|Bulunan|Indi|AKIS|UYARI|Error|Traceback|rror" | head -30
+        env:
+          GDRIVE_SA: ${{ secrets.GDRIVE_SA }}

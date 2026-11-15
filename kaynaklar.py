@@ -107,7 +107,7 @@ def indir(info: dict, dest: Path, bolge: str = ''):
         else:
             subprocess.run(['curl', '-L', '--fail', '--retry', '8', '--retry-all-errors', '--retry-delay', '10', '-C', '-', '-sS',
                             '-A', UA, '-o', str(dest), info['mp4']], check=True)
-        info['akis'] = f"Show TV mp4 1080p"
+        info['akis'] = 'Show TV mp4 1080p'
         return
     m3u8 = _m3u8(info['url'])
     cmd = [sys.executable, '-m', 'yt_dlp', '--no-warnings', '--newline', '--progress-delta', '30', '-f', 'bv*[height<=1080]+ba/b',
@@ -115,7 +115,7 @@ def indir(info: dict, dest: Path, bolge: str = ''):
     if bolge:
         cmd += ['--download-sections', bolge]
     subprocess.run(cmd + [m3u8], check=True)
-    info['akis'] = 'Star TV HLS'
+    info['akis'] = 'Star TV HLS 360p'
 
 
 def ep_numarasi(dest: Path | str) -> int | None:

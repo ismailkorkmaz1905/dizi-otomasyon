@@ -30,6 +30,8 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+import kaynaklar
+
 REPO = Path(__file__).resolve().parent
 MIRROR = Path('/tmp/drive')   # Drive'in yerel kopyasi: pipeline.py burayi Drive sanar
 VIDEO_DIR = Path('/tmp/video')
@@ -109,6 +111,54 @@ def load_pipeline():
     return pipeline, s, root
 
 
+def yedekli(pipeline):
+    """YouTube basarisiz olursa (bot engeli, cerez olu, bolum henuz yok) dizinin kendi sitesi denenir (kaynaklar.py).
+    Sira: 1) YouTube + cerez  2) Show TV mp4 (Muhtemel Ask) / Star TV HLS (Baskalarinin Hayati).
+    Sadece hazirla ve plan kullanir; cerez/kontrol YouTube'u ayri sinar."""
+    if DIZI not in kaynaklar.SITELER:
+        return
+    find, dl = pipeline.find_source, pipeline.youtube_download
+
+    def ep_of(c_, episode):
+        if se := pipeline.parse_episode(episode):
+            return se[1]
+        bitti = list((c_['root'] / 'Sezon 1').glob('*.ind.srt')) + list((c_['root'] / pipeline.BURN_DIR).glob('*.S01E*.ind.*.mp4'))
+        done = [int(m.group(1)) for x in bitti if (m := re.search(r'S\d+E(\d+)', x.name))]
+        return max(done) + 1 if done else 1
+
+    def find_source(c_, episode, url, cookies):
+        try:
+            return find(c_, episode, url, cookies)
+        except (Exception, SystemExit) as e:
+            if url:
+                raise
+            ep = ep_of(c_, episode)
+            kaynaklar.log(f'YouTube olmadi ({str(e)[:100]}); {ep}. bolum icin dizinin sitesi deneniyor')
+            alt = kaynaklar.bul(DIZI, ep)
+            if not alt:
+                kaynaklar.log('yedek kaynakta da yok')
+                raise
+            kaynaklar.log(f"yedek kaynak bulundu: {alt['title']}, {alt['dakika']} dk")
+            return dict(season=1, ep=ep, url=alt['url'], title=alt['title'])
+
+    def youtube_download(url, dest, cookies):
+        yt = any(h in url for h in ('youtube.com', 'youtu.be'))
+        if yt:
+            try:
+                return dl(url, dest, cookies)
+            except (Exception, SystemExit) as e:
+                kaynaklar.log(f'YouTube indirme olmadi ({str(e)[:100]}); dizinin sitesi deneniyor')
+        ep = kaynaklar.ep_numarasi(dest)
+        alt = ep and kaynaklar.bul(DIZI, ep)
+        if not alt:
+            raise RuntimeError('Video indirilemedi: YouTube olmadi, yedek kaynakta da bolum yok.')
+        Path(dest).unlink(missing_ok=True)
+        kaynaklar.indir(alt, Path(dest))
+        pipeline.log('AKIS ' + alt['akis'])
+        pipeline.log('UYARI: YEDEK KAYNAK kullanildi (' + alt['akis'] + '), YouTube olmadi')
+    pipeline.find_source, pipeline.youtube_download = find_source, youtube_download
+
+
 def writer():
     """Drive'a yazan oturum: senin hesabinla, cunku servis hesabinin depolama kotasi yok. GDRIVE_OAUTH yoksa None."""
     if not os.environ.get('GDRIVE_OAUTH'):
@@ -165,7 +215,9 @@ def output(**kv):
 
 
 def upload_time(url: str, cookies: list[str]) -> int | None:
-    """Videonun YouTube'a yuklendigi an (unix sn)."""
+    """Videonun YouTube'a yuklendigi an (unix sn). Yedek kaynakta (YouTube degil) None."""
+    if 'youtu' not in url:
+        return None
     r = subprocess.run([sys.executable, '-m', 'yt_dlp', '--no-warnings', '--skip-download', '--ignore-no-formats-error',
                         '--no-playlist'] + cookies + ['--print', '%(release_timestamp)s|%(timestamp)s', url],
                        capture_output=True, text=True, timeout=180)
@@ -291,8 +343,28 @@ def cerez():
         time.sleep(30)
     bot = pipeline._bot_block(err)
     telegram_mesaj(system, f"{NAMES[DIZI]}: YouTube cerezi " + ('OLDU (bot engeli).' if bot else 'denemesi basarisiz (cerez disi hata?).')
+                   + (" Yedek kaynak var (" + ('Show TV 1080p' if DIZI == 'muhtemel_ask' else 'Star TV, sadece 360p') + "), bolum yine de hazirlanir."
+                      if DIZI in kaynaklar.SITELER else '')
                    + f"\n{COOKIE_HOWTO}\n{RUN_URL}")
     raise SystemExit('Cerez calismiyor: ' + err)
+
+
+def yedek():
+    """Deneme: YouTube'un olu oldugunu varsayip yedek sirayi dener (BOLUM = bolum no; ilk 60 sn iner). Scribe/Drive yazma yok."""
+    pipeline, _, _ = load_pipeline()
+
+    def olu(*a, **k):
+        raise SystemExit('YouTube bot engeli (yapay deneme)')
+    pipeline.find_source, pipeline.youtube_download = olu, olu
+    yedekli(pipeline)
+    ep = int(os.environ.get('BOLUM') or 0) or 1
+    hit = pipeline.find_source(pipeline.cfg(DIZI), str(ep), '', [])
+    print('Bulunan:', hit)
+    dest = VIDEO_DIR / f'{pipeline.ep_name(pipeline.cfg(DIZI), 1, ep)}.mp4'
+    indir = kaynaklar.indir
+    kaynaklar.indir = lambda info, d, bolge='': indir(info, d, '*0-60')
+    pipeline.youtube_download(hit['url'], dest, [])
+    print('Indi:', dest.stat().st_size, 'bayt')
 
 
 # ---------------------------------------------------------------- hazirla
@@ -300,6 +372,7 @@ def cerez():
 def hazirla():
     pipeline, s, root = load_pipeline()
     pipeline._whisper = lambda *a, **k: False   # GPU yok: sadece Scribe (Scribe olmazsa is durur)
+    yedekli(pipeline)
     c = pipeline.cfg(DIZI)
     # biten bolumler yerel kopyada bos .ind.srt ile isaretlenir; prepare() siradaki bolumu bunlardan bulur
     done = [(name, n) for name, f in root['kids'].items() if name.startswith('Sezon ') and f['mimeType'] == FOLDER
@@ -393,6 +466,7 @@ def plan():
     if not m or not (work / 'tr_cues.json').exists():
         raise SystemExit(f'bolumler/{DIZI}/{bolum}/ hazirlanmamis.')
     pipeline, _, _ = load_pipeline()
+    yedekli(pipeline)
     name = pipeline.ep_name(pipeline.cfg(DIZI), int(m.group(1)), int(m.group(2)))
     VIDEO_DIR.mkdir(exist_ok=True)
     srt = next(work.glob('*.ind.srt'), None)
@@ -739,7 +813,7 @@ def bekle(dk: int = 100):
 
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else ''
-    steps = dict(cerez=cerez, hata=hata, kontrol=kontrol, saatler=saatler, hazirla=hazirla, plan=plan, birlestir=birlestir, temizlik=temizlik)
+    steps = dict(yedek=yedek, cerez=cerez, hata=hata, kontrol=kontrol, saatler=saatler, hazirla=hazirla, plan=plan, birlestir=birlestir, temizlik=temizlik)
     if cmd == 'hazirla' and os.environ.get('BOLUM', '').strip().lower() == 'bekle':
         bekle()
     elif cmd == 'parca':
