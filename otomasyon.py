@@ -320,7 +320,13 @@ def hazirla():
     find, log = pipeline.find_source, pipeline.log
 
     def find_source(c_, episode, url, cookies):
-        hit = find(c_, episode, url, cookies)
+        try:
+            hit = find(c_, episode, url, cookies)
+        except SystemExit as exc:   # girisli cerezle arama kisisellesiyor, bolumu atlayabiliyor (S01E07): cerezsiz bir kez daha ara
+            if 'henuz yok' not in str(exc) or not cookies:
+                raise
+            hit = find(c_, episode, url, [])
+            log('Girisli aramada cikmadi, cerezsiz aramada bulundu')
         rapor.update(bulundu=time.time(), yuklenme=upload_time(hit['url'], cookies))
         return hit
 
