@@ -20,17 +20,13 @@ jobs:
         with:
           deno-version: v2.x
       - run: pip install -q -U "yt-dlp[default]"
-      - name: Star TV sitesi
+      - name: Star TV sayfasi
         continue-on-error: true
         run: |
-          yt-dlp --simulate --print "TAMAM %(title)s | %(duration)s sn" -F \
-            "https://www.startv.com.tr/dizi/baskalarinin-hayati/bolumler/7-bolum" 2>&1 | tail -40
-      - name: YouTube cerezsiz, farkli istemciler
-        continue-on-error: true
-        run: |
-          for c in default tv tv_simply web_safari web_embedded android_vr ios mweb web_creator; do
-            echo "=== $c"
-            a=""; [ "$c" != default ] && a="--extractor-args youtube:player_client=$c"
-            yt-dlp --simulate $a --print "TAMAM %(format_id)s %(height)sp %(vcodec)s %(tbr)s" \
-              -f "bv*[height<=1080]+ba/b" "https://www.youtube.com/watch?v=eGJjWJ__cBw" 2>&1 | tail -2 | cut -c1-220
+          for u in https://www.startv.com.tr/dizi/baskalarinin-hayati https://www.startv.com.tr/dizi/baskalarinin-hayati/bolumler https://www.startv.com.tr/dizi/baskalarinin-hayati/bolumler/7-bolum; do
+            echo "=== $u"
+            curl -sS -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130 Safari/537.36" -o p.html -w "%{http_code} %{size_download} %{url_effective}\n" "$u" || true
+            grep -oE '<title>[^<]*' p.html | head -1
+            grep -oE '/dizi/baskalarinin-hayati/[a-z0-9/-]*' p.html | sort -u | head -25
+            grep -oE '[^" ]*(m3u8|\.mp4|videoUrl|referenceId|video-id|player)[^" ]{0,120}' p.html | sort -u | head -25 | cut -c1-240
           done
