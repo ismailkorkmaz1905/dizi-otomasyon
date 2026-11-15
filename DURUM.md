@@ -7,7 +7,7 @@ Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.
 | Dizi | `dizi` değeri | Son teslim | Yayın | YouTube'a düşme | Otomatik arama |
 |---|---|---|---|---|---|
 | Muhtemel Aşk | `muhtemel_ask` | S01E20 (6 Kasım) | perşembe gecesi | cuma 01:00-01:04 TR | var (`bolum.yml` cron), ama güvenilmez |
-| Başkalarının Hayatı | `baskalarinin_hayati` | S01E06 (8 Kasım) | cumartesi 20:00 Star TV | gece 23:30-00:30 TR (E3: 00:16, E4: 23:39, E5: 04:34 SGT = 23:34 TR) | **yok**, elle başlat |
+| Başkalarının Hayatı | `baskalarinin_hayati` | S01E07 (15 Kasım) | cumartesi 20:00 Star TV | gece 23:30-00:30 TR (E3: 00:16, E4: 23:39, E5: 04:34 SGT = 23:34 TR) | **yok**, elle başlat |
 | Yeraltı | `yeralti` | - | - | - | 16 Ekim'de takipten çıktı |
 
 ## Bölüm nasıl başlatılır
@@ -32,6 +32,7 @@ Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.
 
 ## Bilinen tuhaflıklar
 
+- **YouTube çerezi (15 Kasım, S01E07):** hazırlık "Sign in to confirm you're not a bot" ile düşerse çerez ölmüştür. Girişsiz alınan çerez (~1,2 KB) işe yaramaz, girişli çerez ~20 KB olur. Girişli çerezle arama kişiselleşip bölümü listelemeyebiliyor ("Yeni bolum yok"); `otomasyon.py` bu durumda aramayı çerezsiz tekrarlar. Hazırlığı başlattıktan 2 dk sonra işin durumuna bak, sadece girdi dosyasını bekleme.
 - **Cron:** `bolum.yml` cron'u bazen hiç tetiklenmiyor (22 Ekim akşamı çalışmadı, elle başlatıldı). Dosyanın başındaki nota bak.
 - **Hazırlık işi kırmızı ama girdi gelmiş:** commit, Drive yüklemesinden önce yapılıyor. Drive hatası işi kırmızı yapar ama çeviri ve yakma etkilenmez.
 - **YouTube Premium akışı:** S01E19 ve S01E05'te "Premium 1080p akışını sunmadı, standart akış iniyor" uyarısı çıktı (h264 ~1,55 Mbps; E3/E4 Premium vp9 ~1,7-1,8 Mbps). Nedeni araştırılmadı.
