@@ -16,6 +16,7 @@ run-name: >-
 #   hic tetiklenmedi, Ismail'in web'den attigi commit'ten sonra calisti. Bu dosya degisince Ismail web'den bir commit atar.
 #   GitHub cron'u 20-30 dk gecikebilir; Claude rutini yedek olarak hazirligi kendisi de baslatir.
 # Elle: "kontrol" kurulumu dener (bir sey gondermez, kredi harcamaz), "saatler" gecmis yukleme saatlerini yazar.
+# YouTube istekleri Cloudflare WARP uzerinden gider (.github/actions/warp): GitHub IP'leri bot engeline takiliyor.
 on:
   workflow_dispatch:
     inputs:
@@ -59,15 +60,11 @@ jobs:
         with:
           deno-version: v2.x
       - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
-      - uses: actions/cache/restore@v5   # WARP hesabi (yedek yol, warp.py): her kosuda yeni kayit Cloudflare'de 429 verdigi icin saklanir (~2 KB)
-        with:
-          path: /tmp/warp-hesap
-          key: warp-hesap-${{ github.run_id }}
-          restore-keys: warp-hesap-
       - run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
           pip install -q -r requirements.txt
           pip install -q -U "yt-dlp[default]"
+      - uses: ./.github/actions/warp
       - id: h
         run: python otomasyon.py ${{ inputs.is || 'hazirla' }}
         env:
@@ -83,9 +80,3 @@ jobs:
         run: python otomasyon.py hata
         env:
           GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
-      - if: always()   # yeni WARP hesabi acildiysa sonraki kosular kullansin (kayit yoksa sessizce gecer)
-        uses: actions/cache/save@v5
-        continue-on-error: true
-        with:
-          path: /tmp/warp-hesap
-          key: warp-hesap-${{ github.run_id }}
