@@ -4,6 +4,7 @@ run-name: YouTube çerez kontrolü
 # Indirmeden, Scribe'a dokunmadan YouTube cerezinin hala calistigini dener; olmazsa Telegram'a yenileme tarifiyle yazar.
 # Saatler UTC: her gun 02:00, Muhtemel Ask persembe 10:00 (yuklenme persembe 22:00), Baskalarinin Hayati cumartesi 11:00
 # (yuklenme ~20:30). Cron gecikebilir/atlayabilir; elle de calisir.
+# YouTube istekleri Cloudflare WARP uzerinden gider (.github/actions/warp): GitHub IP'leri bot engeline takiliyor.
 on:
   workflow_dispatch:
   schedule:
@@ -31,6 +32,7 @@ jobs:
           sudo mkdir -p /content && sudo chown "$USER" /content
           pip install -q -r requirements.txt
           pip install -q -U "yt-dlp[default]"
+      - uses: ./.github/actions/warp
       - run: python otomasyon.py cerez
         env:
           GDRIVE_SA: ${{ secrets.GDRIVE_SA }}

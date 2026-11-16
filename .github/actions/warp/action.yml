@@ -1,0 +1,30 @@
+name: WARP kur
+description: Cloudflare WARP (wgcf + wireproxy) kurar, yt-dlp'yi yerel SOCKS5 proxy'sine yonlendirir. Kurulamazsa uyari verir, proxysiz devam eder.
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        cd /tmp
+        curl -sL --retry 3 -o wgcf https://github.com/ViRb3/wgcf/releases/download/v2.2.29/wgcf_2.2.29_linux_amd64 && chmod +x wgcf
+        curl -sL --retry 3 -o w.tgz https://github.com/pufferffish/wireproxy/releases/download/v1.0.9/wireproxy_linux_amd64.tar.gz && tar xzf w.tgz
+        ok=0
+        for i in 1 2 3 4 5; do   # kayit zaman zaman reddediliyor (8 denemenin 2'si dustu)
+          rm -f wgcf-account.toml wgcf-profile.conf
+          if ./wgcf register --accept-tos >/dev/null 2>&1 && ./wgcf generate >/dev/null 2>&1 && [ -f wgcf-profile.conf ]; then ok=1; break; fi
+          sleep $((i * 5))
+        done
+        if [ "$ok" != 1 ]; then echo "::warning::WARP kaydi olmadi, proxysiz devam"; exit 0; fi
+        printf '\n[Socks5]\nBindAddress = 127.0.0.1:25344\n' >> wgcf-profile.conf
+        nohup ./wireproxy -c wgcf-profile.conf >/tmp/wp.log 2>&1 &
+        sleep 6
+        iz=$(curl -s --max-time 20 --socks5-hostname 127.0.0.1:25344 https://www.cloudflare.com/cdn-cgi/trace | grep -E '^(colo|warp)=' | tr '\n' ' ')
+        echo "WARP cikis: $iz"
+        case "$iz" in
+          *warp=on*)
+            mkdir -p ~/.config/yt-dlp
+            echo '--proxy socks5://127.0.0.1:25344' > ~/.config/yt-dlp/config ;;
+          *)
+            echo "::warning::WARP acilmadi, proxysiz devam"
+            pkill wireproxy || true ;;
+        esac
