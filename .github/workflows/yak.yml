@@ -72,7 +72,6 @@ jobs:
           sudo mkdir -p /content && sudo chown "$USER" /content
           pip install -q -r requirements.txt
           pip install -q -U "yt-dlp[default]"
-      - uses: ./.github/actions/warp
       - uses: actions/cache/restore@v5   # hazirlik isinin indirdigi video (varsa)
         with:
           path: /tmp/video
