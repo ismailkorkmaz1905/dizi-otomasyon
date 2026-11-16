@@ -59,6 +59,11 @@ jobs:
         with:
           deno-version: v2.x
       - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
+      - uses: actions/cache/restore@v5   # WARP hesabi (yedek yol, warp.py): her kosuda yeni kayit Cloudflare'de 429 verdigi icin saklanir (~2 KB)
+        with:
+          path: /tmp/warp-hesap
+          key: warp-hesap-${{ github.run_id }}
+          restore-keys: warp-hesap-
       - run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
           pip install -q -r requirements.txt
@@ -78,3 +83,9 @@ jobs:
         run: python otomasyon.py hata
         env:
           GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
+      - if: always()   # yeni WARP hesabi acildiysa sonraki kosular kullansin (kayit yoksa sessizce gecer)
+        uses: actions/cache/save@v5
+        continue-on-error: true
+        with:
+          path: /tmp/warp-hesap
+          key: warp-hesap-${{ github.run_id }}

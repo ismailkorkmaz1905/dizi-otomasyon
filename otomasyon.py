@@ -30,6 +30,9 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+import kaynaklar
+import warp
+
 REPO = Path(__file__).resolve().parent
 MIRROR = Path('/tmp/drive')   # Drive'in yerel kopyasi: pipeline.py burayi Drive sanar
 VIDEO_DIR = Path('/tmp/video')
@@ -109,6 +112,66 @@ def load_pipeline():
     return pipeline, s, root
 
 
+def yedekli(pipeline):
+    """YouTube basarisiz olursa (bot engeli, cerez olu) otomatik siradaki yontem denenir:
+      1) YouTube + cerez (mevcut)   2) YouTube cerezsiz, Cloudflare WARP uzerinden (warp.py; 1080p, Premium yok)
+      3) dizinin sitesi (kaynaklar.py; sadece Show TV 1080p. Star TV 360p oldugu icin kapali)
+    Sadece hazirla ve plan kullanir; cerez/kontrol YouTube'u ayri sinar."""
+    find, dl = pipeline.find_source, pipeline.youtube_download
+
+    def ep_of(c_, episode):
+        if se := pipeline.parse_episode(episode):
+            return se[1]
+        bitti = list((c_['root'] / 'Sezon 1').glob('*.ind.srt')) + list((c_['root'] / pipeline.BURN_DIR).glob('*.S01E*.ind.*.mp4'))
+        done = [int(m.group(1)) for x in bitti if (m := re.search(r'S\d+E(\d+)', x.name))]
+        return max(done) + 1 if done else 1
+
+    def find_source(c_, episode, url, cookies):
+        try:
+            return find(c_, episode, url, cookies)
+        except (Exception, SystemExit) as e:
+            if url:
+                raise
+            err = e
+        kaynaklar.log(f'YouTube+cerez olmadi ({str(err)[:100]}); WARP ile cerezsiz deneniyor')
+        try:
+            hit = find(c_, episode, url, warp.baslat())
+            pipeline.log('UYARI: YouTube bolumu cerezsiz, WARP uzerinden bulundu (cerez olu olabilir)')
+            return hit
+        except (Exception, SystemExit) as e:
+            err = e
+        if DIZI in kaynaklar.SITELER:
+            ep = ep_of(c_, episode)
+            kaynaklar.log(f'WARP da olmadi ({str(err)[:100]}); {ep}. bolum icin dizinin sitesi deneniyor')
+            if alt := kaynaklar.bul(DIZI, ep):
+                kaynaklar.log(f"yedek kaynak bulundu: {alt['title']}, {alt['dakika']} dk")
+                return dict(season=1, ep=ep, url=alt['url'], title=alt['title'])
+        raise err
+
+    def youtube_download(url, dest, cookies):
+        if any(h in url for h in ('youtube.com', 'youtu.be')):
+            try:
+                return dl(url, dest, cookies)
+            except (Exception, SystemExit) as e:
+                kaynaklar.log(f'YouTube indirme (cerez) olmadi ({str(e)[:100]}); WARP ile cerezsiz deneniyor')
+            try:
+                dl(url, dest, warp.baslat())
+                pipeline.log('AKIS YouTube 1080p, WARP, cerezsiz')
+                pipeline.log('UYARI: YouTube cerezsiz, WARP uzerinden indi (cerez olu olabilir, yenile)')
+                return
+            except (Exception, SystemExit) as e:
+                kaynaklar.log(f'WARP ile indirme olmadi ({str(e)[:100]}); dizinin sitesi deneniyor')
+        ep = kaynaklar.ep_numarasi(dest)
+        alt = ep and kaynaklar.bul(DIZI, ep)
+        if not alt:
+            raise RuntimeError('Video indirilemedi: YouTube (cerezli ve WARP) olmadi, yedek kaynakta da bolum yok.')
+        Path(dest).unlink(missing_ok=True)
+        kaynaklar.indir(alt, Path(dest))
+        pipeline.log('AKIS ' + alt['akis'])
+        pipeline.log('UYARI: YEDEK KAYNAK kullanildi (' + alt['akis'] + '), YouTube olmadi')
+    pipeline.find_source, pipeline.youtube_download = find_source, youtube_download
+
+
 def writer():
     """Drive'a yazan oturum: senin hesabinla, cunku servis hesabinin depolama kotasi yok. GDRIVE_OAUTH yoksa None."""
     if not os.environ.get('GDRIVE_OAUTH'):
@@ -165,7 +228,9 @@ def output(**kv):
 
 
 def upload_time(url: str, cookies: list[str]) -> int | None:
-    """Videonun YouTube'a yuklendigi an (unix sn)."""
+    """Videonun YouTube'a yuklendigi an (unix sn). Yedek kaynakta (YouTube degil) None."""
+    if 'youtu' not in url:
+        return None
     r = subprocess.run([sys.executable, '-m', 'yt_dlp', '--no-warnings', '--skip-download', '--ignore-no-formats-error',
                         '--no-playlist'] + cookies + ['--print', '%(release_timestamp)s|%(timestamp)s', url],
                        capture_output=True, text=True, timeout=180)
@@ -291,8 +356,28 @@ def cerez():
         time.sleep(30)
     bot = pipeline._bot_block(err)
     telegram_mesaj(system, f"{NAMES[DIZI]}: YouTube cerezi " + ('OLDU (bot engeli).' if bot else 'denemesi basarisiz (cerez disi hata?).')
+                   + " Yedek yol: WARP ile cerezsiz (1080p)" + (", o da olmazsa Show TV 1080p" if DIZI in kaynaklar.SITELER else "") + "; bolum yine de hazirlanir."
                    + f"\n{COOKIE_HOWTO}\n{RUN_URL}")
     raise SystemExit('Cerez calismiyor: ' + err)
+
+
+def yedek():
+    """Deneme: cerezli YouTube'un olu oldugunu varsayip yedek sirayi dener (BOLUM = bolum no). Tam video iner, Scribe/Drive yazma yok."""
+    pipeline, _, _ = load_pipeline()
+    f0, d0 = pipeline.find_source, pipeline.youtube_download
+
+    def olu(*a, **k):
+        raise SystemExit('YouTube bot engeli (yapay deneme)')
+    pipeline.find_source = lambda c, e, u, ck: f0(c, e, u, ck) if '--proxy' in ck else olu()
+    pipeline.youtube_download = lambda u, d, ck: d0(u, d, ck) if '--proxy' in ck else olu()
+    yedekli(pipeline)
+    ep = int(os.environ.get('BOLUM') or 0) or 1
+    hit = pipeline.find_source(pipeline.cfg(DIZI), str(ep), '', [])
+    print('Bulunan:', hit)
+    dest = VIDEO_DIR / f'{pipeline.ep_name(pipeline.cfg(DIZI), 1, ep)}.mp4'
+    pipeline.youtube_download(hit['url'], dest, [])
+    print('Indi:', dest.stat().st_size, 'bayt')
+    subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration:stream=codec_name,width,height', '-of', 'compact', str(dest)])
 
 
 # ---------------------------------------------------------------- hazirla
@@ -300,6 +385,7 @@ def cerez():
 def hazirla():
     pipeline, s, root = load_pipeline()
     pipeline._whisper = lambda *a, **k: False   # GPU yok: sadece Scribe (Scribe olmazsa is durur)
+    yedekli(pipeline)
     c = pipeline.cfg(DIZI)
     # biten bolumler yerel kopyada bos .ind.srt ile isaretlenir; prepare() siradaki bolumu bunlardan bulur
     done = [(name, n) for name, f in root['kids'].items() if name.startswith('Sezon ') and f['mimeType'] == FOLDER
@@ -399,6 +485,7 @@ def plan():
     if not m or not (work / 'tr_cues.json').exists():
         raise SystemExit(f'bolumler/{DIZI}/{bolum}/ hazirlanmamis.')
     pipeline, _, _ = load_pipeline()
+    yedekli(pipeline)
     name = pipeline.ep_name(pipeline.cfg(DIZI), int(m.group(1)), int(m.group(2)))
     VIDEO_DIR.mkdir(exist_ok=True)
     srt = next(work.glob('*.ind.srt'), None)
@@ -745,7 +832,7 @@ def bekle(dk: int = 100):
 
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else ''
-    steps = dict(cerez=cerez, hata=hata, kontrol=kontrol, saatler=saatler, hazirla=hazirla, plan=plan, birlestir=birlestir, temizlik=temizlik)
+    steps = dict(yedek=yedek, cerez=cerez, hata=hata, kontrol=kontrol, saatler=saatler, hazirla=hazirla, plan=plan, birlestir=birlestir, temizlik=temizlik)
     if cmd == 'hazirla' and os.environ.get('BOLUM', '').strip().lower() == 'bekle':
         bekle()
     elif cmd == 'parca':
