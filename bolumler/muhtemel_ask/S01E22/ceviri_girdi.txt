@@ -1,0 +1,2113 @@
+0001 [1.5s|30] K0 Tolga ben ölüyorum.
+0002 [4.5s|84] K0 Benim ömrüm bu kadarmış. Kaderim buymuş ya. Kabullen sen de.
+0003 [1.6s|32] K0 Ölüyorum ben.
+0004 [1.7s|34] K0 Anneme, kardeşlerime,
+0005 [1.6s|33] K0 oğluma doyamadan ölüyorum.
+0006 [1.8s|36] K1 Ya ben sadece korkuyorum.
+0007 [1.0s|20] K0 Neden?
+0008 [1.5s|30] K1 E geleceğim bir gün yine.
+0009 [1.8s|36] K1 Bakacağım bu odaya.
+0010 [1.2s|24] K1 Bomboş
+0011 [1.2s|24] K1 görürsem diye.
+0012 [1.6s|32] K0 Düğününüz bu hafta olsun.
+0013 [3.2s|63] K0 İkinizi gelin ve damat olarak görmeden içim rahat etmeyecek.
+0014 [2.5s|49] K0>K1 Çok mutlu olun. Sağ ol canımın içi.
+0015 [1.7s|34] K0 Seni asla terk etmem ben.
+0016 [2.5s|49] K0 Edemem. Sen benim yarım elmamsın.
+0017 [2.0s|39] K0 İnanamıyorum ya.
+0018 [1.1s|22] K0 İnanamıyorum.
+0019 [1.7s|34] (?) K0 Yok ben doyamayacağım Ali [can.?]
+0020 [2.7s|53] K2 Aradığınız kişiye şu an [da?] ulaşılamıyor.
+0021 [1.5s|29] K0>K3 Alo Selim. Yengem.
+0022 [2.4s|47] K0>K3 Kadir nerede? Seninle beraber değil miydi?
+0023 [1.0s|20] K0 Yok.
+0024 [3.6s|72] K0 Yani ben evde değilim. Geceden beri de konuşmadık.
+0025 [5.1s|84] K0>K3 Aradım ama telefonu kapalı, ulaşılamıyor. Tamam, bakıyorum yenge. Arayacağım.
+0026 [4.2s|84] K4 Hazırsan soruyorum Selim. Kadir nerede? Ya bu çocuk ilk geceden nereye gitti ya?
+0027 [3.7s|74] K3>K4 Anne kurban olayım ulaşamıyorum işte [ne?] yapayım kapalı. Defne'yi ara.
+0028 [1.9s|38] K3>K5 [Ha?] yengem. Hâlâ bir haber yok mu?
+0029 [1.6s|32] K3>K4 Yok yenge. Kızım.
+0030 [4.5s|84] K4 Kızım ya! Aa bu ne rahatlık ya? Kocasının yerini bilmesi gereken sen değil misin?
+0031 [3.3s|65] K4 Gelmişsin bir de bize soruyorsun ya. Vallahi delireceğim şimdi.
+0032 [2.9s|57] K5 Selma Hanım lütfen canım burnumda zaten.
+0033 [2.2s|44] K5>K3 Tartışmayalım olur mu? Anne Allah aşkına bir sakin ol.
+0034 [4.4s|84] K4 Hayır ne oldu ilk geceden ha? Sen neredeydin? Kadir nerede?
+0035 [3.0s|59] K5>K3 Selim kulübeye baktınız mı? Yengem adamları yolladım, bakıyorlar.
+0036 [5.1s|84] K4>K5 Bana bak hey! Tövbe estağfurullah. Sana bir soru sordum. Cevap versene. Selma Hanım.
+0037 [1.1s|22] K5 Kadir yok.
+0038 [2.6s|51] K5 Oturup burada sizinle özel hayatımızı mı konuşacağız?
+0039 [3.5s|70] K5 Çeneye bak çeneye. Bu çeneyle adam ilk geceden kaçar tabii.
+0040 [2.3s|45] K5>K3 Normal. Kurban olayım otur, sakin ol.
+0041 [1.8s|35] K3 Allah aşkına sakin ol. Kurban olayım.
+0042 [1.8s|35] K4>K6 Teşekkürler. Rica ederim.
+0043 [3.0s|61] K4 Yok, yok, yok ulaşılamıyor. Hâlâ ulaşılamıyor.
+0044 [3.4s|68] K3 [Abi?] kulübeye baktım, dağıtılmış vaziyette.
+0045 [3.7s|73] K4 Ne? Nasıl dağıtılmış? Kim dağıtmış? Ne demek kulübe dağıtılmış ya?
+0046 [3.8s|76] K3>K5 Odalar darmadağın. Na-nasıl yani? Kavga edilmiş gibi falan mı ha?
+0047 [2.7s|54] K3>K4 Bilmiyorum valla. Bayılacağım. Yemin ediyorum bayılacağım şimdi.
+0048 [1.1s|22] K5 Selim,
+0049 [3.4s|67] K5 ben karakolları arıyorum. Sen de hemen hastaneleri ara olur mu?
+0050 [3.9s|78] K3 Sen de bütün adamlara haber sal. Bizim bütün evlere baksınlar, abimi arasınlar.
+0051 [1.5s|30] K3>K7 Hadi. Tamam abi.
+0052 [1.0s|20] K5 Alo?
+0053 [1.8s|36] K5>K3 tamam. Bütün hastanelere abimi sordurun.
+0054 [2.4s|48] K3 Haber bekliyorum hepinizden. Bütün İstanbul'a, her yere.
+0055 [4.1s|82] K5 Komiser bir şey rica edecektim. Biz geceden beri Kadir'e ulaşamıyoruz da.
+0056 [1.8s|35] K5 Rahatsız ediyorum. Kusura bakmayın.
+0057 [4.5s|84] K6 Değerler tahminimizden daha hızlı düşmüş son testlerden bu yana Kader Hanım.
+0058 [1.1s|21] K1 [yani?] hocam
+0059 [1.1s|22] K1 ne demek oluyor bu?
+0060 [1.6s|31] K4 Boşa ümitlenmeyin demek.
+0061 [3.6s|71] K6 Uygun donör bulunsa bile düşündüğümüzden daha az vaktimiz var.
+0062 [2.2s|45] K6 Eksik olan testlerinizde açlık varsa
+0063 [3.5s|70] K6>K4 gitmeden yaptıralım Kader Hanım. Hiç gerek yok Ayaz Bey.
+0064 [2.9s|58] K1 Tabii ki yaptıracağız hocam. Gayet de gerek var
+0065 [1.0s|20] K1 Kader.
+0066 [1.0s|20] K1 Hadi.
+0067 [2.0s|40] K6>K1>K6 Görüşmek üzere. Sağ olun. Geçmiş olsun.
+0068 [1.0s|20] K1 Sağ olun hocam.
+0069 [1.8s|36] K1 Sağ olun
+0070 [1.6s|31] K1 hocam.
+0071 [2.0s|40] K1>K6 Kolay gelsin doktor. Sağ olun.
+0072 [2.5s|50] K6>K1 Buyurun. Kadir Emindağ ben.
+0073 [1.6s|31] K1 Kader Emindağ'ın kuzeniyim.
+0074 [1.3s|26] K1 Ben zaten
+0075 [2.8s|56] K1 mevzuyu biliyorum da bir de sen anlat bana olur mu?
+0076 [1.0s|20] K6 Buyurun.
+0077 [1.1s|23] K1 Tamam, tamam.
+0078 [1.1s|22] K1 Çok şükür.
+0079 [2.8s|55] K1 Yani şöyle çok şükür. Hastanelerde falan kayıt yok.
+0080 [4.0s|81] K5>K4 Karakollarda da bir şey yokmuş. Allah'ım sana şükürler olsun ya Rabbim.
+0081 [1.0s|20] K8 Levent Bey.
+0082 [2.0s|40] K8>K1 Biri sizi görmek istiyor. Kim?
+0083 [2.1s|42] K8>K1 Sinan'mış ismi. Sinan mı?
+0084 [2.6s|51] K1 Soyadı yok mu bunun kızım? Sen soyadını sormadın mı?
+0085 [2.5s|49] K8 Başka detay vermedi. Ben de onu içeri almadım.
+0086 [3.9s|77] K1 Kesin, kesin fakir bu. Zenginler soyadlarını söylerler.
+0087 [1.9s|38] K1 Dilenci falan olmasın.
+0088 [1.6s|31] K1 Tamam, sen git işine, ben bakarım.
+0089 [0.9s|18] K1 Buyurun.
+0090 [2.2s|44] K1>K9 Siz kimsiniz? Levent Bey.
+0091 [2.5s|49] K9 Ben Sinan. Defne'yle Oğuz'un babasıyım.
+0092 [1.0s|20] K9 İyi misiniz?
+0093 [5.2s|84] K1 İyiyim, iyiyim. Şey, bi-bi-birisi gelip böyle para pul istemeye geldi sandım yani.
+0094 [1.1s|21] K1 Kusura bakmayın.
+0095 [1.2s|24] K9 Anlamadım.
+0096 [1.7s|33] K1 Önemli değil. Önemli değil.
+0097 [1.8s|36] K1 buyurun Cihat Bey. Buyurun.
+0098 [1.3s|26] K9>K1 Sinan. Gelin, gelin.
+0099 [1.3s|25] K1 Sinan Bey.
+0100 [2.2s|44] K1 On dakikayla Mine Hanım'ı kaçırdınız.
+0101 [1.3s|26] K9>K1 Ya. Kuaföre gitti.
+0102 [2.8s|55] K9 Öyle mi? Üzüldüm. Defneciğim evlenmiş.
+0103 [2.3s|45] K9 Haberini alır almaz geldim. Damadımla da tanıştım.
+0104 [2.3s|46] K1>K9 A Kadir Bey'le tanıştınız demek ha? Hı hı.
+0105 [1.3s|26] K1 düğüne de gelseydiniz.
+0106 [3.7s|73] K10>K11 rahatsızlık vermek istemedim diyelim. Ne rahatsızlığı? Biz
+0107 [2.1s|41] K11 düğünü iki sene önce yaptık.
+0108 [5.5s|84] K11 O kadar güzel, o kadar şaşaalı. Servet harcadım yani. O kadar güzel bir düğündü.
+0109 [5.4s|84] K11 Ay Mine Hanım, Mine Hanım melek gibiydi. Bir görseniz çok güzeldi.
+0110 [2.7s|53] K11 Ay şifa koru benim şifa koru. Buyurun, buyurun, buyurun.
+0111 [4.2s|84] K10>K11 ben Defne'nin düğününden bahsediyorsunuz sandım. Ya, ya olur mu öyle şey ya?
+0112 [2.5s|50] K11 Ben kendi şahsi düğünümüzden bahsediyorum.
+0113 [3.9s|78] K11 Onlarınki neydi yani? Üç beş kuruşluk [düğünümüsü?] bir şey.
+0114 [6.0s|84] K11 Aramızda kalsın. Çok avamdı. Ama bizimki, bizimki... Dediğim gibi servet harcadım.
+0115 [4.2s|84] K11 Bütün parayı koydum düğüne. Oyy, peri masalı gibi bir şey oldu.
+0116 [5.4s|84] K11 İyi ki boşanmışız da Mine Hanım prenses hayatı yaşıyor diye gurur duyardınız
+0117 [1.4s|28] K11>K10 Sadık Bey. Sinan.
+0118 [5.0s|84] K11 Bu arada bozulmuyorsunuz, değil mi? Bakın, ben yani medeni, modern bir adamım yani.
+0119 [3.7s|74] K11 O kadar medeniyim ki eski karımı da düğünüme davet ettim.
+0120 [1.0s|20] K11 Ama gelmedi.
+0121 [1.0s|20] K11 Gelmiş zaten.
+0122 [1.0s|20] K10 Çok güzel.
+0123 [1.3s|25] K1 Ne yapabiliriz peki?
+0124 [2.6s|51] K12>K1 Canlı verici lazım. Tamam, bulalım.
+0125 [3.9s|78] K12 Kan grubu uyacak, damar yapısı uygun olacak, ciğer hacmi yetecek.
+0126 [1.7s|33] K12 Bu üçü aslında zor değil.
+0127 [2.3s|46] K12>K1 Çoğu insanda tutar. O zaman mesele yok.
+0128 [2.3s|46] K12 Ameliyat çok riskli iki taraf için de.
+0129 [1.3s|25] K12 Donör az,
+0130 [1.6s|31] K12 sırada bekleyen hasta çok.
+0131 [2.8s|55] K12 Bir de nakil ekibinin değerlendirmesi var.
+0132 [1.3s|26] K12 Ama bizim vaktimiz yok.
+0133 [1.0s|20] K12 Biz
+0134 [1.5s|29] K12 donörü yakın ailede arayacağız.
+0135 [3.5s|69] K1 Tamam, benden başlayalım. Zaten diğer aile fertlerine gerek yok yani.
+0136 [1.0s|20] K12 Neden?
+0137 [2.8s|56] K1 Hastalıktan haberleri yok doktor. Ben ne diyeceğim aileme gidip?
+0138 [3.5s|69] K1 Yani işte biriniz ciğerinizi versin mi diyeceğim yani.
+0139 [3.5s|70] K1 Ben onların yanına gideceğim. Müjdemi isterim. Sorunu çözdüm diyeceğim.
+0140 [1.0s|20] K12 Tamam.
+0141 [4.7s|84] K12>K1 Umarım dediğin gibi olur. Alt kat. Kan alma. Eyvallah, eyvallah.
+0142 [1.0s|20] K1 Sağ ol doktor.
+0143 [1.0s|20] K1 Eyvallah.
+0144 [1.0s|20] K1 Şey.
+0145 [2.7s|54] K1 Eğer ben şimdi donör çıkarsam...
+0146 [1.4s|27] K1 Risk ne kadar yani?
+0147 [1.0s|20] K12 Büyük.
+0148 [1.0s|20] K1 Eyvallah.
+0149 [1.4s|27] K13 Şöyle bastırın.
+0150 [2.6s|51] K1>K13 Güzelce aldın, değil mi hemşire hanım? Tabii ki efendim.
+0151 [0.9s|18] K1 İyi.
+0152 [2.1s|42] K1 Gerekirse iyice doldur yani onu çekinme.
+0153 [3.2s|63] K1 Aldığın kanlar uğurlu gelirse vallahi bak dile benden ne dilersen.
+0154 [1.0s|20] K13 İnşallah.
+0155 [1.0s|20] K13 Şöyle.
+0156 [1.2s|24] K1 Allah sağ olsun.
+0157 [2.4s|48] K1 Defne'yi de arayamadım. Vallahi öldürecek beni.
+0158 [2.3s|46] K13>K1 Bitti işiniz. Geçmiş olsun. Eyvallah.
+0159 [2.1s|43] (?) K10 Levent Bey, buyurun. [Kan?] sonuçlarınız.
+0160 [1.5s|30] K1 Sağ olun. Teşekkürler.
+0161 [1.0s|20] K1 Kadir.
+0162 [1.4s|27] K10 Dün gece duydum sizi.
+0163 [1.0s|20] K1 Söyleyemedim.
+0164 [1.2s|24] K10 Kader gördü mü seni?
+0165 [1.9s|38] K10 Sen de mi donör olmak için geldin?
+0166 [1.0s|20] K1 Evet.
+0167 [1.1s|21] K1 Ama haberi yok.
+0168 [3.7s|73] K1>K10 Donör olmama izin vermedi. Ama sen onun için ölümü göze aldın, ha?
+0169 [1.9s|38] K1 Halledeceğiz. Halledeceğiz.
+0170 [2.8s|56] K10>K1 Halledeceğiz, değil mi? Herhalde oğlum. Hele kolay mı?
+0171 [1.7s|33] K10 Ne yapacağız şimdi peki?
+0172 [4.2s|83] K1>K10 Önce bir Kader'in karşısına çıkacağım. Şeyde, tetkik odasında.
+0173 [3.1s|61] K10 Birazdan gelir. Sen Defne'ye söyledin mi?
+0174 [5.5s|84] K1>K10 Yok, söylemedim ya. Söylesem zaten gelecek buraya. Donör olmaya kalkacak. Gelir,
+0175 [2.6s|52] K10>K1 gelir, yapar. Ben ailemi bu işin içine karıştıramam.
+0176 [2.1s|42] K1 Ne anamı, ne Zeyno'yu, ne Defne'yi.
+0177 [3.4s|67] K1 Hele bilhassa Defne'yi ya. Hâlâ kalbinde mermi var kızın.
+0178 [1.0s|20] K10 Haklısın.
+0179 [2.4s|47] K10 Dua edelim ikimizden birininki tutsun.
+0180 [2.5s|49] K10 Kader gelir şimdi. Ben geçiyorum.
+0181 [2.2s|43] K1>K10 Tamam, eyvallah. Hadi kurşun.
+0182 [2.8s|56] K1 Ya kardeş. Telefonunu kullanabilir miyim ya?
+0183 [1.4s|27] K10 Tabii ki. Hemen vereceğim.
+0184 [1.3s|25] K11 Gülüm Kadir ben.
+0185 [1.0s|20] K12 Kadir.
+0186 [2.9s|58] K12 Kadir sen neredesin, ha? Neredesin? İyi misin?
+0187 [3.8s|76] K11>K12 İyiyim, iyiyim canım. Endişe etme. Bak ben çiftliğe geldim. Kulübe dağılmış.
+0188 [2.1s|41] K12 Bir şeyler olmuş. Annen burada, Selim burada.
+0189 [3.7s|74] K12 Biz seni çok merak ettik. Bir şey oldu sandık. Neredesin sen? Ne oluyor, ha?
+0190 [1.4s|28] K11 Gülüm endişe etme. Geleceğim yanına.
+0191 [3.7s|74] K11 Sen orada bekle beni, tamam? Şimdi kapatmam lazım. Geleceğim yanına. Hadi.
+0192 [1.1s|21] K12 Kadir.
+0193 [1.3s|25] K12 Alo? Kadir.
+0194 [3.3s|65] K12>K5 Ne dedi? Ne dedi? Neredeymiş? Ne olmuş? Geliyor muymuş? İyiymiş. Sen orada kal.
+0195 [2.6s|52] K5 Ben, ben geliyorum dedi. Geliyormuş.
+0196 [3.1s|62] K5>K11 Gel, şurada bekleyelim. Gel. Çok şükür.
+0197 [1.0s|19] K5 Oh.
+0198 [4.2s|84] K5>K12 Ay iyi geldi. O fisketeler kafamda. Vallahi kafana batıyordu o bütün gece.
+0199 [3.7s|74] K5>K12 Hem de nasıl. Ne oldu fönü? [Hiç?] [öttürdü.?] [Kahkaha?] geldi.
+0200 [1.0s|20] K12 [Gelmiş?] herhalde.
+0201 [2.1s|41] K10>K5 Aynen, aynen. Minoş.
+0202 [2.2s|44] K10 Ağzımdan aldınız. Aynısını söyleyecektim.
+0203 [1.4s|28] K11>K5 İyi ki tanıştım sizinle. Minoş.
+0204 [1.3s|26] K10>K11 Çok iyi oldu. Ne güzel. Ne güzel.
+0205 [1.0s|20] K10 Çok.
+0206 [4.3s|84] K14 Minoş. Ay tamam tamam canım tamam tamam.
+0207 [1.9s|39] K11>K14 Mine hanım iyi misiniz? İyiyim, iyiyim.
+0208 [1.1s|21] K14 Allah Allah.
+0209 [1.0s|20] K14 Kader.
+0210 [1.3s|26] K14 Sen ne yapıyorsun burada?
+0211 [1.0s|20] K1 Gidiyorum.
+0212 [1.0s|20] K14 Kadir.
+0213 [1.0s|20] K1 Canım uyarız.
+0214 [2.0s|39] K14 Doğru düzgün sarılamamıştık.
+0215 [1.2s|25] K14 İyi oldu kardeşim.
+0216 [1.4s|27] K1 Daha çok sarılacağız da
+0217 [2.8s|55] K1 ben bir önden kimse yokken özlemi gereyim dedim.
+0218 [1.9s|37] K14 Özlemeye devam edeceğim diyorsun.
+0219 [2.4s|48] K1 Yok, gerek kalmayacak ki.
+0220 [1.4s|29] K1 Ayrılmayacağız sonuçta.
+0221 [1.0s|20] K14 Anladım.
+0222 [2.9s|58] K14>K1 Çocukken oynadığımız oyunu oynayacağız. Hangisi?
+0223 [3.0s|60] K14 Evde yanlışlıkla bir şeyi kırdıysak kırılmamış gibi yapmak.
+0224 [1.5s|30] K1 Anamı delirttiğimiz oyun.
+0225 [1.3s|25] K1 Oğlum hanginiz kırdı bu vazoyu?
+0226 [2.8s|55] K14>K1 Ne vazosu anne? Ana burada vazo falan yoktu.
+0227 [2.8s|56] K14 El kadar boyunuzla benle dalga mı geçiyorsunuz siz bakayım?
+0228 [1.9s|37] K1 Bak bu sefer ya bir vazo kırılacak
+0229 [2.5s|50] K1 ya da biz susmak zorunda kalacağız. Tamam.
+0230 [1.0s|20] K14 Kadir.
+0231 [2.3s|46] K14>K1 Benim çok az ömrüm kaldı. Bak Kader
+0232 [1.6s|31] K1 bana böyle şeyler söyleme.
+0233 [1.9s|37] K1 Bunu atlatacağız.
+0234 [1.9s|37] K1 Sen benim kader Eminde olduğumu unuttun herhalde ya.
+0235 [3.0s|60] K1>K14 Ben sana atlatacağız diyorum ya. Kaderime de mi kafa tutacaksın oğlum?
+0236 [1.0s|20] K1 Haşa
+0237 [3.0s|60] K1 kadere kafa tutulmaz. Ama ne derler?
+0238 [2.9s|57] K14>K1 Ne derler? Kader gayrete aşıktır.
+0239 [1.4s|28] K1 Biz de gayret edeceğiz.
+0240 [1.7s|33] K1 Anladın mı? Gayret edeceğiz.
+0241 [1.0s|20] K14 Kadir.
+0242 [1.8s|35] K14 Ben senin bilmeni istemiyordum.
+0243 [1.8s|36] K14 Tolga mı söyledi?
+0244 [1.4s|27] K1 Yok. Takip ettim sizi.
+0245 [2.2s|44] K14 Ben hâlâ kimsenin duymasını istemiyorum.
+0246 [1.4s|27] K14>K1 Öleceğimi. Bak.
+0247 [2.5s|49] K1 Kader böyle şeyler ağzından çıkmayacak artık.
+0248 [2.9s|58] K1 Bak ne güzel ailemiz kavuşmuş, bir aradayız.
+0249 [2.0s|41] K1 Ben sana diyorum. Bunu da atlatacağız.
+0250 [2.5s|50] K1 Atlatacağız. O ameliyata gireceksin.
+0251 [2.5s|50] K1 Güller gibi de çıkacaksın. O yüzden iyi düşüneceğiz.
+0252 [1.8s|36] K1 Moralimizi yüksek tutacağız. Tamam mı?
+0253 [2.4s|48] K14 Ama seninle bir anlaşma yapacağız.
+0254 [4.2s|84] K14>K1 Bu haldeyken beni kırmazsın diye düşünüyorum. Kırar mıyım seni sincap kafalı?
+0255 [1.0s|20] K14 Söz mü?
+0256 [2.9s|58] K1>K14 Söz. Gelin [biraz?] ölçelim. Bir durun.
+0257 [4.7s|84] K14>K11 İyiyim, iyiyim. Ya Mine Mine hanım yükselmeyin bakın ölçemeyeceğim tansiyonunuzu.
+0258 [1.4s|28] K14 Senin ne işin var burada?
+0259 [2.4s|47] K14 Senin benim evimde ne işin var?
+0260 [4.9s|84] K15 Ben fazla rahatsızlık vermeyeyim. Müsaadenizi isteyeyim, gideyim.
+0261 [2.4s|47] K15>K11 Daha iyi olacak. Aslında Oğuz'u bekleseydiniz.
+0262 [1.0s|20] K14 Levent bey.
+0263 [4.6s|84] K11 Babası sonuçta. Belki özlemiştir. Oğuz'la böyle bir şeyler yapmak istiyordur.
+0264 [4.4s|84] K11>K15 Onda kalmak istiyordur. Ha? Evlatlarımın kokusu burnumda tütüyor Levent Bey.
+0265 [4.2s|84] K14 Aaa öyle mi? Burnunda mı tütüyor? Neredeydin bu zamana kadar Sinan Efendi?
+0266 [1.4s|28] K14 Neredeydin?
+0267 [3.7s|74] K15 Çok talihsizlikler yaşadım Suzancığım ama bu ziyaretimin konusu bu değil.
+0268 [1.4s|28] K15 Ben kızım evlendi diye geldim.
+0269 [3.4s|67] K14 Paranın kokusunu aldım demiyorsun da böyle mi söylüyorsun sen?
+0270 [2.6s|51] K15 [Aaa?] aşk olsun, aşk olsun Mine'ciğim.
+0271 [4.2s|84] K14 Git buradan, git buradan. Bak Oğuz gelmeden burayı terk et.
+0272 [1.0s|20] K15 Baba.
+0273 [1.0s|20] K1 Oğlum.
+0274 [1.0s|20] K1 Oğlum.
+0275 [1.1s|22] K1 Aslan oğlum.
+0276 [1.2s|23] K1 Söyle bir bakayım sana.
+0277 [1.9s|38] K15 Sen nereden çıktın?
+0278 [1.0s|20] K1 Vay be!
+0279 [3.4s|67] K1>K14 Çok yakışıklı bir adam olmuşsun sen. Sana son kez söylüyorum.
+0280 [2.8s|55] K14 Benden de çocuklarımdan da uzak dur.
+0281 [2.5s|50] K15>K14>K15 Mine. Git buradan. Rica ediyorum.
+0282 [2.3s|45] K15>K14 Hasret gidereyim. Hemen gider misin?
+0283 [1.2s|24] K15 Tamam.
+0284 [1.2s|24] K15 Peki. Gidiyorum.
+0285 [3.0s|60] K15>K11 bana bir taksi çağırabilir misiniz? Tabii tabii. Ben size bir taksi çağırayım.
+0286 [2.4s|48] K15 Uygulama yok bende. Bir de buraları pek bilmiyorum.
+0287 [4.1s|81] K11 Tamam tamam. Ben size bir taksi çağırırım. Buyurun. Buyurun. Buyurun [şöyle?] buyurun.
+0288 [1.0s|20] K11 Buyurun.
+0289 [1.3s|25] K14 Defne burada.
+0290 [2.1s|42] K1 Vallahi öldürecek beni.
+0291 [3.7s|74] K14>K1 Bir sorun mu var? Sorun. Sorun [ne??] [Baş?] sorun bizim göbek adımız.
+0292 [2.7s|53] K1 Ya evliliğimizin ilk haftası bari beni [boşa?] [massal?] bana [ne?] olur.
+0293 [4.0s|79] K14 Daha dün evlendiniz. Sen de daha ilk günden kızı yalnız bıraktın.
+0294 [4.2s|84] K1 Vallahi çok kötü bakıyor. Vallahi çok fena geliyor. Çok fena geliyor.
+0295 [3.3s|65] K1 Gülüm. Vallahi açıklayabilirim gülüm. Gülüm.
+0296 [1.8s|36] K1 Vallahi açıklayabilirim canımın içi.
+0297 [2.1s|41] K1>K0 Oh canım. Neredesin sen?
+0298 [1.6s|31] K0 Neredesin sen? Neredesin?
+0299 [3.0s|60] K1 Oh, iyiyim. Buradayım, buradayım, buradayım canımın içi, buradayım.
+0300 [1.7s|33] K0 Çok korktum. Sana bir şey oldu sandım.
+0301 [4.0s|79] K1 Haklısın, haklısın gülüm. Haber vermem lazımdı sana. Hastanedeydik Kader'le de.
+0302 [4.4s|84] K0>K4 Hastane mi? Annem Neredesin ya yavrum? Çok merak ettim ben seni. Ne hastanesi ya?
+0303 [5.0s|84] K4>K0 Ne oluyor? Bir şey yok. Bir arkadaşımız üniversiteden kaza geçirmiş de.
+0304 [1.1s|21] K4 Ne?
+0305 [3.7s|73] K0 Evet. Beni aradılar dün gece. Ben de hemen Kadir'i aradım.
+0306 [2.3s|45] K0 Nasıl şimdi peki? İyi mi? Bir şey yok değil mi?
+0307 [4.9s|84] K1 Yok yok. Kimsede bir şey yok. Herkes iyi, herkes iyi olacak. Hepimiz iyi olacağız.
+0308 [2.1s|41] K4 Ay çok şükür. Valla öldüm öldüm dirildim.
+0309 [3.8s|76] K4>K1 [Ay?] çok merak ettim sizi. Valla bak bu kadar sevineceğinizi bilsek arada kayboluruz
+0310 [2.1s|42] K1>K4 yani biz. Valla alırım sizi ayağımın altına.
+0311 [3.8s|76] K4 Ha yok öyle kaybolmak maybolmak artık ya. Benim cinlerimi tepeme çıkarttırmayın.
+0312 [2.5s|50] K0 Bak ilk defa Selma Hanım'la aynı fikirdeyim ha.
+0313 [2.8s|56] K4 Valla kafamda ne senaryolar yazdım ben ya.
+0314 [1.3s|26] K0>K1 Bizim bir konuşmamız lazım. Konuşalım.
+0315 [2.9s|57] K4>K1 [Ne?] yapmış oğlum orada? Baş başa.
+0316 [3.3s|66] K4 Kilit milit taktırın ona ya. Bu ne rahatlık ya Kader?
+0317 [1.6s|31] K1 Tamam gülüm, tamam buradayım.
+0318 [1.0s|20] K1 Canım benim.
+0319 [1.4s|28] K0 Ben sana çok kızgınım.
+0320 [3.3s|65] K0 Bütün gece peşimden geleceksin diye bekledim. Gelmedin.
+0321 [2.8s|56] K1 Gülüm gelirdim normalde biliyorsun yani.
+0322 [2.4s|47] K0 Kadir sen bana böyle bir şeyi nasıl söylemezsin?
+0323 [2.5s|50] K0 Nasıl gizlersin hı?
+0324 [3.1s|61] K0>K1 O adamın bize yaşattıklarını ben sana anlattım. Biliyorum.
+0325 [3.9s|78] K0 Hem görüşmüşsün hem de bir de üstüne gitmiş otele yerleştirmişsin.
+0326 [3.7s|74] K1 Ya gülüm adamcağız düğünü duymuş gelmiş yani.
+0327 [4.0s|80] K1 Vallahi ben yani kayınpederim sonuçta ne yapacaktım yani?
+0328 [4.1s|82] K0>K1 Söyleyebilirdin Kadir. Vallahi söyleyecektim. Ertesi gün söyleyecektim ya.
+0329 [3.5s|69] K1 Yani o gün düğün günü diye gülüm moralin bozulmayiversin bir gün de diye şey
+0330 [3.7s|74] K1 yapmadım yani. Bir de adam çok düzgün hakikaten böyle kibar böyle şey geldi yani.
+0331 [2.9s|58] K0 [Ya?] [tabii?] tabii aynen çok düzgün, çok
+0332 [2.1s|43] K0 kibardır o işine geldiğinde. Aynen.
+0333 [4.0s|80] K0>K1 Gitti mi peki? Yok burada. O yeni açılan otel var ya boğazın orada.
+0334 [2.3s|45] K1 Oraya yerleştirdim. Kalacakmış bir süre daha.
+0335 [2.6s|52] K0 Kadir Niye? Niye? Niye yaptın böyle bir şeyi?
+0336 [5.0s|84] K1 Ya gülüm boş ver niyesini. Adam gelmiş yani bize yakışan bu olurdu yani.
+0337 [2.1s|43] K1 Önemli olan o değil asıl.
+0338 [2.3s|46] K1>K0 Baban seninle görüşmek istiyor. Asla!
+0339 [4.9s|84] K0 Böyle bir şey asla mümkün değil, tamam mı? O madem geldi öyle havasını alsın falan.
+0340 [2.4s|48] K0 Sonra çekip gitsin. Biz de hayatımıza
+0341 [2.3s|45] K0>K1 kaldığı gibi devam edelim. Ama yine de.
+0342 [1.3s|26] K0 Kadir
+0343 [1.0s|20] K0 lütfen.
+0344 [3.6s|71] K0 Bu zamana kadar hayatımızda yoktu, bundan sonra da olmayacak. Tamam mı?
+0345 [2.1s|41] K0 Biz hayatımıza devam edeceğiz.
+0346 [1.6s|31] K0 Hatta
+0347 [1.8s|36] K0 şöyle yapacağız.
+0348 [2.6s|51] K0 Ben gideceğim, balımı hazırlayacağım.
+0349 [1.0s|20] K1 Nereye?
+0350 [1.4s|28] K0 Nere-nereye?
+0351 [1.2s|24] K0 Paris'e.
+0352 [2.1s|41] K0>K1 Ya unuttun mu balayımız? Yok.
+0353 [2.4s|48] K0>K1 Kadir. Yok yok unutmadım.
+0354 [2.5s|50] K1>K0 Valla unutmadım. Ya Kadir sana gerçekten inanamıyorum.
+0355 [2.5s|50] K1>K0 Yok vallahi unutmadım. Ya biz daha dün evlendik.
+0356 [2.9s|57] K0 Yani cicim ayını geçti daha bizim cicim günümüz bile olmadı.
+0357 [1.8s|35] K1 [Ya?] canım ciğerim
+0358 [5.2s|84] K1 [benim?] gülüm, aşkım benim. Seninle ilgili her şey, her an, her parça benim burama
+0359 [2.6s|51] K1 kazılı ya. Benim bir şey unutmam mümkün mü?
+0360 [4.3s|84] K1 Derdim o değil hani. Holdingde hakikaten bir süredir de böyle karışıktı ortalık.
+0361 [1.7s|33] K1 Bir işler birikti.
+0362 [3.1s|62] K1 O yüzden. Hem biz bir aradayken [ayrıca?] Paris değil mi ya?
+0363 [3.2s|64] K0>K1 Bizden daha mı önemli işler? Hiçbir şey bizden daha önemli değil.
+0364 [3.4s|67] K1 Öyle bir şey değil. Sadece sana diyorum ki yani bir iki gün
+0365 [1.9s|37] K1 erteleyip de gitsek.
+0366 [2.8s|56] K0 İyi peki ne yapalım, öyle yapalım. Sonra gideriz.
+0367 [1.1s|21] K1>K0 Vallahi? Hıhı.
+0368 [3.1s|61] K1 Ya ben vallahi bak dünyanın en anlayışlı,
+0369 [1.4s|28] K1 en maviş,
+0370 [5.1s|84] K1 en takım elbise yakışan, en muhteşem kadınıyla evliyim ya vallahi.
+0371 [2.6s|52] K0 Dur yapma ya, annenin sensörlerini çalıştıracaksın.
+0372 [4.0s|80] K1 Anamın sensörleri düğünden sonra birkaç güne daha anca toparlar.
+0373 [2.4s|47] K0 İyi tamam ben de o zaman
+0374 [2.9s|57] K0 işime gücüme bakayım. İşlerimi halledeyim.
+0375 [5.0s|84] K1 Benim çalışkan karım ya. Benim evimin direği [ya?] canım benim.
+0376 [1.5s|29] K0 O zaman bak
+0377 [3.1s|61] K0 benden artık bir şey saklamıyorsun lütfen, tamam mı?
+0378 [1.3s|25] K1 Tamam gülüm.
+0379 [2.3s|46] K0 Bir daha da böyle ortadan kaybolmuyorsun.
+0380 [1.0s|20] K1 Hay hay.
+0381 [1.6s|32] K0>K1 İyi tamam. Tamam.
+0382 [1.8s|35] K0>K1 Gidiyorum. Hadi görüşürüz.
+0383 [1.0s|20] K0 Okey.
+0384 [2.6s|52] K1>K4 Benim prensim susamış mı? Hıhı.
+0385 [1.8s|36] K1 Çok mu susamış?
+0386 [2.9s|58] K1>K4 Nasıl hissediyorsun kendini? Biraz midem bulanıyor.
+0387 [1.9s|38] K1 Doktor bakacak şimdi rahat ol.
+0388 [1.9s|38] K0 Özlem Hanım sizi alabiliriz.
+0389 [4.9s|84] K0 Eşinizi bekleyebiliriz lavaboya falan gittiyse. Yok, yalnızım ben. Tamam. Buyurun.
+0390 [1.6s|33] K1 Oğuz'um. Oğlum.
+0391 [1.0s|20] K16 Neden geldin?
+0392 [2.1s|41] K8>K16 Sizi görmeye. Neden şimdi?
+0393 [1.3s|25] K8 Ablan evleniyordu.
+0394 [1.4s|27] K8 Oğuz.
+0395 [2.9s|57] K8 Bak biliyorum sana şu an her şey çok saçma geliyor ama.
+0396 [1.0s|20] K16 Saçma mı?
+0397 [1.1s|22] K16 Saçma diyorsun ha?
+0398 [3.6s|71] K16 Asıl saçma olan ne biliyor musun? Bizi daha çocukken bırakıp gitmen.
+0399 [1.8s|35] K16 Asıl saçma olan ne biliyor musun?
+0400 [3.9s|78] K16 Tüm bu olayların üstüne hiçbir şey yaşanmamış gibi elini kolunu sallayıp düğüne
+0401 [1.2s|23] K16 gelmeye niyetlenmen.
+0402 [4.5s|84] K16 Ve daha da saçması benden ya da ablamdan kendinden başka hiç kimseyi düşünmediğin
+0403 [1.6s|31] K16 için özür bile dilememen.
+0404 [1.9s|37] K8 Haklısın, çok haklısın.
+0405 [2.7s|54] K8>K16 Ama her şeyi sizin için yaptım. Ya bırak!
+0406 [2.3s|45] K16 Bırak. Bu manipülasyonlar bana sökmez.
+0407 [1.9s|38] K16>K8 Anneme söker bunlar anca. Oğlum.
+0408 [1.1s|23] K16 Efendim baba.
+0409 [1.0s|20] K16 Baba iyi değil mi?
+0410 [1.9s|37] K8 Beni görmek için geldiğini sanmıştım.
+0411 [1.9s|37] K16 seni görmeye alışık değilim.
+0412 [1.2s|24] K16 Böyle bir isteğim olmadı.
+0413 [1.0s|20] K16 Ama
+0414 [1.0s|20] K16 merak ettiğim
+0415 [2.2s|44] K16 [veya?] yıllarca cevabını aradığım sorular var.
+0416 [2.0s|40] K16 Onların da cevapları bir tek sende maalesef.
+0417 [1.0s|20] K8 Anladım.
+0418 [2.5s|49] K8 Bu cevapları duymak senin en doğal hakkın.
+0419 [1.7s|33] K8 Ve bu cevapları ben sana vereceğim.
+0420 [0.9s|18] K16 Hı hı.
+0421 [1.0s|20] K8 Hadi gel.
+0422 [2.3s|46] K8 Aynı benim gençliğimdeki gibi görünüyorsun.
+0423 [3.7s|73] K5 Keşke engel olsaydım gitmesine. Keşke buluşmasaydı.
+0424 [5.7s|84] K11 Koskoca adam [nasıl?] durduracaktınız, ha? En doğrusunu yaptınız. Gitmeyin, gitmeyin.
+0425 [2.8s|56] K5 Levent Bey'i bilmiyorsunuz. Siz o adamı tanımıyorsunuz.
+0426 [4.7s|84] K5 Ben çocuklarımı düşünüyorum. Bir şey diyecek, etkileyecek, kötü bir şey yapacak.
+0427 [2.7s|53] K11 Sakin olun, sakin olun.
+0428 [1.9s|37] K11>K5 Defne'nin haberi var mı? Yok,
+0429 [2.4s|48] K5 yok. Balayına gidecek kız. Şu an hiçbir şey söyleyemem.
+0430 [3.0s|60] K5 Onun kafasını karıştıramam. Ben ona bir şekilde anlatırım.
+0431 [4.3s|84] K5 Zaten şu an meşgul edemem. Onun kafasını böyle bir şeyle yapamam. Yok.
+0432 [1.9s|38] K16>K5 Özlem nerede? Özlem nerede?
+0433 [3.4s|67] K11>K16 Siz doktor kontrolüne gitmeyecek miydiniz? Yo, benim haberim yok.
+0434 [1.7s|33] K11 Bugün değil miydi ya doktor kontrolü?
+0435 [3.1s|61] K5 A dur. Tamam. Doğru. Evet. "Doktor kontrolüne gideceğim" dedim.
+0436 [2.7s|54] K16 Benim haberim yok. Bana, bana bir şey söylenmedi yani.
+0437 [2.0s|41] K11 Allah Allah, nasıl söylenmedi ya?
+0438 [2.2s|43] K16 Bakalım küçük kalbimiz ne durumdaymış?
+0439 [1.4s|28] K5 Kalbi.
+0440 [3.0s|60] K5>K16 Kalbimin sesi değil mi? Gayet sağlıklı görünüyor.
+0441 [1.4s|28] K16 Sonuçlar da gayet iyi.
+0442 [1.5s|30] K5 Pardon, ben
+0443 [3.6s|73] K5>K16 ilk defa duyuyorum da sesini. Artık iki kalbiniz var.
+0444 [1.8s|36] K5 İki can taşıyorum artık.
+0445 [3.0s|59] K16>K13 Teşekkür ederim. Afiyet olsun.
+0446 [4.7s|84] K8>K5 Maviş. Aha [Ali.?] Gel bakayım buraya. Nereden çıktın sen?
+0447 [5.0s|84] K5>K8 Uuu, ne yapıyorsun bakayım sen, ha? İyiyim. Annem buradaymış. Selim abi getirdi.
+0448 [2.0s|39] K5>K8 Hımm. Tarlaya ne zaman gideceksiniz?
+0449 [3.6s|72] K5 Onu biraz erteledik Ali'cim. Dayının biraz işleri varmış.
+0450 [1.3s|25] K8 Hayda!
+0451 [1.9s|37] K8 Sipariş verecektim ya.
+0452 [4.6s|84] K5>K8 Hayda! Ne siparişi ya? Bir tane istediğim bir figür var ama burada yok.
+0453 [3.3s|65] K5>K8 A aa. Yurt dışından almamız lazım.
+0454 [2.7s|53] K8 Daha doğrusu Elif'in sevdiği bir figür.
+0455 [4.2s|84] K5 Bak sen. Hediye paket ediyorsun yani, ha? Gel bakayım sen buraya.
+0456 [4.2s|84] K8 Evet ama kutusu Elif'in en sevdiği renk yeşille olsun.
+0457 [5.0s|84] K5>K8 Bak sen. Kurdelesini de benim en sevdiğim renk mavile yaptırırım.
+0458 [4.5s|84] K5>K8 Sen var ya sen. Bir de pembe çiçek koydururum. Kızlar bayılır.
+0459 [3.5s|70] K5 Bak sen ya. Sen dayın gibi romantik misin, ha?
+0460 [4.2s|84] K8>K5 biz de Emindağ'ız herhalde ya. Sen de mi Emindağ'sın ya?
+0461 [2.5s|50] K5 Gel buraya, gel. Hop bakayım. Sen kahvaltı yaptın mı?
+0462 [2.5s|49] K5>K8 Söyle bakayım bana. Biraz meyve yedim, şimdi yapacağım.
+0463 [3.4s|68] K5>K8 Hah [tamam,?] yap. Dün çok fazla yedim. Hâlâ karnım şiş.
+0464 [1.1s|22] K5 Bakayım.
+0465 [2.8s|56] K5 Bu göbek ne, hı? Bu göbek ne? Bu göbek ne bu göbek?
+0466 [3.7s|73] K5>K8 Biraz fazla mı yemişsin, çok mu fazla yemişsin acaba? Bu göbek ne? Çok fazla.
+0467 [1.2s|24] K5 Gel bakayım buraya.
+0468 [2.1s|42] K5 Oh! Ay ne özlemişim seni ha.
+0469 [3.8s|76] K5 Ben şimdi işe gidiyorum, tamam mı? Buralar
+0470 [2.5s|51] K5 size emanet küçük Emindağ Bey.
+0471 [1.1s|22] K5 Hadi görüşürüz.
+0472 [1.0s|20] K5 Oh.
+0473 [3.4s|67] K16 Neden gittin? Ne için? Hiç aramadın.
+0474 [1.0s|20] K8 Oğuz.
+0475 [2.3s|46] K8 Bak, benim hayatım çok
+0476 [1.3s|26] K8 talihsizlik dolu.
+0477 [1.3s|25] K8 Şans yanımda oldu
+0478 [2.0s|40] K8 ama çoğu zaman karşımda.
+0479 [1.0s|20] K8 Ve bir gün
+0480 [2.4s|48] K8 bir seçim yapmak zorunda kaldım.
+0481 [2.2s|44] K8 Ya yanınızda kalıp
+0482 [3.3s|66] K8 bu dünyadaki en sevdiğim varlıkları tehlikeye atacaktım.
+0483 [1.0s|20] K8 Ya da
+0484 [1.4s|27] K8 sizi korumayı seçip
+0485 [3.1s|61] K8 ömrümün geri kalan kısmının her dakikasını
+0486 [1.7s|33] K8 size hasret geçirecektim.
+0487 [1.0s|20] K16 Nasıl yani?
+0488 [1.2s|23] K8 İşlerim bozuldu.
+0489 [1.3s|26] K17 Tehdit edildim.
+0490 [2.0s|40] K17 Ve ben sizi korumayı seçtim.
+0491 [2.5s|49] K17 Size zarar gelmesin diye sizi bırakıp gittim.
+0492 [1.0s|20] K17 Özür dilerim.
+0493 [2.2s|43] K17 İnsan yaş aldıkça duygusallaşıyor.
+0494 [1.0s|20] K17 Tamam,
+0495 [1.5s|30] K17 annen için geç olabilir
+0496 [1.1s|22] K17 ama
+0497 [2.8s|56] K17 sen ve Defne'yle kaybettiğim zamanı
+0498 [3.3s|66] K17>K1 telafi etmek istiyorum. O nasıl olacakmış?
+0499 [1.0s|20] K17 Ben de bilmiyorum.
+0500 [1.1s|21] K17 Ama öğreneceğim.
+0501 [1.1s|21] K17 Emin ol öğreneceğim.
+0502 [1.7s|33] K17 Kendimi affettirmeyi öğreneceğim.
+0503 [1.0s|20] K17 Söz.
+0504 [1.0s|20] K17 Oğuz.
+0505 [1.6s|31] K17 Bak, bu beceriksiz adam
+0506 [1.4s|28] K17 seni çok seviyor oğlum.
+0507 [2.2s|44] K17 Hadi biraz kendinden bahset, olur mu?
+0508 [1.1s|22] K17 Önce bir şeyler söyleyeyim.
+0509 [1.9s|38] K17 Bakar mısın? Yirmi bir yıllık
+0510 [1.9s|38] K17>K6 [iki?] tane. Tamam beyefendi.
+0511 [3.4s|68] K1 Selo, tamam bak yeter artık. Hadi oğlum, kendini toplaman lazım ya.
+0512 [3.8s|76] K18>K1 Tutamıyorum ki abi kendimi. Ya kardeş tutacaksın, mecbur tutacaksın.
+0513 [2.7s|54] K1 Bak bilhassa Kader'in yanında tutacaksın.
+0514 [1.6s|32] K1 Tamam, iyi düşüneceğiz, iyi olacağız.
+0515 [4.3s|84] K1>K18 Pozitif düşüneceğiz, pozitif sonuç alacağız oğlum. İnşallah, inşallah abi.
+0516 [3.7s|73] K1 Bak kimseye çaktırmaman lazım oğlum durumunu. Bak söyledim ve beni pişman etme.
+0517 [2.5s|50] K1 Kader'i gördüğünde de öyle acıklı bakışlar atayım, döveyim,
+0518 [3.5s|70] K1>K18 ağlayayım kenarda falan. Bunlar yok ha. Tamam abi.
+0519 [4.1s|81] K18>K1 Kader'im ben. Kadersiz Kader- Ya oğlum yeter lan. Hadi.
+0520 [2.7s|53] K18 Bir içimi dökeyim ya. Allah'ım bir daha olmayacak vallahi.
+0521 [4.8s|84] K1 Oğlum olmaz. Öyle bir vaktimiz yok Selo. Senin kendini toplaman lazım oğlum bak.
+0522 [2.4s|47] K1 Senin bana destek olman lazım ha.
+0523 [1.6s|31] K1 Bak benim sana ihtiyacım var.
+0524 [1.0s|20] K1 Tamam?
+0525 [2.2s|43] K18>K1 Tamam abi. Hadi oğlum. Hadi toparla kendini.
+0526 [1.6s|31] K18 Tamam. Ben,
+0527 [1.9s|37] K18 ben gidip kan vereyim abi.
+0528 [1.1s|21] K1 Bak şimdi.
+0529 [2.5s|49] K1 Yani bu donörlük meselesinin falan şeyinin...
+0530 [1.0s|20] K1 Ölüm riski
+0531 [4.2s|83] K1 yüksek yani. Anladın mı? Bak, buradaki herkesin sana çok ihtiyacı var kardeş.
+0532 [2.0s|40] K1 Tamam, benim de sana çok ihtiyacım var.
+0533 [3.8s|76] K1>K18 O yüzden- Abi kurban olayım ya. Ben sizin aileden değil miyim abi?
+0534 [1.3s|25] K18 En [önce?] ben giderim.
+0535 [1.4s|27] K18 Yeter ki o iyi olsun.
+0536 [2.0s|40] K1 Vallahi senin hakkını ödeyemem kardeş.
+0537 [1.4s|27] K1 [Bak?] sen ben var ya.
+0538 [1.9s|38] K18 Her halimle yanındayım abi ben senin.
+0539 [1.1s|21] K18 Yengeme söyledin
+0540 [4.3s|84] K18>K1 mi? Yok, söylemedik daha. Ya şu sabahki bu sonuçlar neyim bir çıksın.
+0541 [4.2s|84] K1 Kim ne yapacak, ne olacak bir anlayalım. Bir o zamana kadar en azından bir
+0542 [2.9s|57] K1 karımla güzel bir gece geçireyim ya. Yeter artık ya.
+0543 [1.9s|39] K1 Bir gecem güzel olsun, anladın?
+0544 [1.2s|23] K18 Abim.
+0545 [1.8s|36] K18 Yine de unutma söylemeyi, tamam?
+0546 [1.4s|27] K1 Söyleyeceğim, söyleyeceğim.
+0547 [1.7s|34] K18>K1 Ben gidiyorum abi. Tamam.
+0548 [1.4s|27] K19 Hiç gelmeseydin, biz hallediyoruz.
+0549 [4.1s|81] K19 Çok bir şey yok zaten. Kader'in işi olunca ben de geleyim işleri halledeyim dedim.
+0550 [3.7s|74] K19 Yani barışmanıza çok sevindim. Ben de sevindim. Yalan yok.
+0551 [3.5s|70] K19 Ama daha ilk günden ne iş bu ya? Balayını iptal edecek kadar.
+0552 [3.8s|75] K20 Melis'cim, adam koskoca holding yönetiyor. İşi çıkmış işte. Ne yapsın?
+0553 [4.3s|84] K19 Tamam da yani üf [ne?] bileyim. Yani düşünsene koskocaman başarılı bir iş adamıyla
+0554 [3.6s|72] K19 evleniyorsun ama adam eve gelemiyor.
+0555 [1.2s|24] K19 Yok ya,
+0556 [4.2s|84] K19 ne alakası var? Biz hiç öyle değiliz bir kere. Olmayın, olmayın da
+0557 [4.6s|84] K19>K20 ilk günden biraz korktu. Korkma canım çünkü senin zengin iş adamı taliplerin yok.
+0558 [2.6s|52] K19 Benim zaten zengin iş adamı talebim de yok.
+0559 [3.5s|70] K19 Artık adam olsun yeter. Dolandırıcı olmasın bana yeter.
+0560 [1.0s|20] K15 Aç lütfen.
+0561 [3.2s|64] K17 yok. Ben yavaştan kalkayım. Zeynep'le buluşacağım.
+0562 [1.1s|21] K15 Kız arkadaşın mı?
+0563 [1.2s|24] K17 İnşallah olur.
+0564 [1.0s|20] K15 Bak ne diyeceğim.
+0565 [1.6s|32] K15 Buraya davet etsene.
+0566 [2.9s|58] K17>K15 Buraya mı? Evet. Mutfağı harika.
+0567 [1.1s|21] K15 Buraya çağır.
+0568 [2.5s|49] K15 Burada ağırla. Hesabı da benim odaya yazdır.
+0569 [2.6s|51] K17>K15 Olur mu ki öyle? Olmaz mı ki ya?
+0570 [2.1s|41] K15 Çok güzel olur. Hadi ara.
+0571 [0.8s|16] K15 Hadi.
+0572 [2.6s|53] K17>K15 Arıyorum abi. Hadi ara. Bekletme.
+0573 [1.6s|32] K17 Alo Zeynep.
+0574 [1.2s|23] K1>K18 Abim. Selo.
+0575 [2.9s|57] K1>K18 Ne yaptın? Hallettin mi? Hallettim abi. Verdim kanı.
+0576 [1.0s|20] K1 İyi.
+0577 [1.1s|22] K1 İyi. Eyvallah.
+0578 [2.5s|50] K1>K18 Vallahi senin hakkını ödeyemem Selo. Öyle deme abi.
+0579 [2.3s|46] K18 Sen de benim için aynısını yapardın.
+0580 [1.1s|22] K18 Hem
+0581 [4.5s|84] K18>K1 Kader de yapardı. [Yapardık,?] yapardık tabii canım. Kader benden önce atlardı.
+0582 [1.0s|20] K1 Selo bak bu
+0583 [1.2s|24] K1 yaptığın şey senin...
+0584 [3.9s|77] K1>K18 Farkındasın, değil mi? Ölümü göze almak yani. Adıdır abim, alınır.
+0585 [3.1s|61] K18>K1 Hem sen dedin ya bir şey olmayacak diye. Olmayacak, olmayacak.
+0586 [3.5s|71] K18 Allah'ın izniyle olmayacak abi. Ben hep içimden dua ediyorum.
+0587 [2.8s|55] K18 Hiçbir şey olmayacak. Biz elimizden geleni yapalım da abi.
+0588 [1.5s|29] K18 Gerisi takdir-i ilahinin.
+0589 [1.5s|30] K9 İyi düşüneceğiz. İyi iyi.
+0590 [2.8s|56] K9 Oğlum benim karım nerede ya? Defne nerede? Valla özledim ya.
+0591 [1.7s|34] K21 Çalışıyorlar abim
+0592 [3.7s|74] K21 evdeler, gelmediler. Bak ben telefon işini hallettim
+0593 [3.0s|59] K21>K9 abicim. Canımsın sen eyvallah.
+0594 [2.9s|58] K9>K21 İyi hadi [çıkıyorum?] ben de. Hadi beraber gidelim.
+0595 [0.8s|16] K8 Dayı.
+0596 [2.0s|39] K22>K8 Dayısının gülü. N'aber?
+0597 [2.5s|49] K22 İyi senden ne haber canımın içi?
+0598 [4.8s|84] K22>K4 Nereye ana? Lunaparka gidiyoruz biz. Çarpışan arabalara bineceğiz.
+0599 [3.2s|64] K22>K4 Sen? He, ben de çarpıştırayım. Benim neyim eksik?
+0600 [3.0s|60] K4 Belki çarpıntının etkisiyle kafam yerine gelir.
+0601 [3.1s|61] K4 Malum sizin gibi deliler insanda akıl bırakmadığı için.
+0602 [4.6s|84] K8 Benim de ehliyetime az kaldı. Şimdi arabalarla orada pratik yapacağım.
+0603 [2.4s|48] K22 Yap tabii koçum. Ama normalde biz çarpmıyoruz, biliyorsun.
+0604 [3.1s|61] K22>K4>K22 Düz gidiyoruz. Yok yok. Yani bilsin de.
+0605 [4.1s|82] K4>K8 Allah'ım korusun ya Rabbim. İyi de anneanne çarpışan arabalara gidiyoruz diye.
+0606 [4.7s|84] K8>K4 Komiksin he. Ya benim akıllı bıdık paşama bak sen yoo
+0607 [3.0s|59] K4>K8 maşallah. Dayı ilk arabamı anneannem alacakmış.
+0608 [1.6s|32] K8>K22 Söz verdi. Ooo.
+0609 [1.7s|33] K4 He alacam tabii.
+0610 [5.2s|84] K4 Ömrüm yeterse alacam. Benim ömrüm yetmezse annen alacak benim yerime.
+0611 [4.0s|79] K22 Yani sen o yaşa gel o arabayı sana birimiz alır.
+0612 [2.7s|54] K22 Ben alırım, teyzen alır, annen alır.
+0613 [4.1s|81] K9>K22 Ben de, ben de alırım. Selo abin bu işin ustası, biliyorsun.
+0614 [4.1s|82] K8 Aaa doğru adamım bundan sonra Selo abidir.
+0615 [3.3s|66] K8 Ooo bu ne şıkılık. Teyzelerin fıstık güzeli.
+0616 [2.5s|50] K4>K22 Bak ya. Nereye Zeyno?
+0617 [4.8s|84] K5>K4 Arkadaşımla buluşacağım. Allah'ım ne arkadaşmış bunlar? Bir bitmedi gitti ya.
+0618 [2.0s|39] K5>K4 Anne, çok ayıp. Kızım.
+0619 [5.3s|84] K4 Asıl anaya ataya sormadan fırt fırt kendi kafasına göre dışarı çıkmak ayıp.
+0620 [2.4s|47] K5 Abart anne, abart.
+0621 [3.3s|66] K5>K21 Arkadaşımla buluşacağım. Evden kaçıyorum sanki. A [lütfen.?]
+0622 [2.0s|39] K21 Evden kaçma kontenjanı benim.
+0623 [4.4s|84] K4 Ey gidi güzel Allah'ım! Benim niye bir tane bile normal evladım yok acaba?
+0624 [4.1s|82] K5>K4 Babama çekmişizdir anneciğim. Çok mümkün, çok mümkün. Hadi [hadi?] geç kalıyoruz.
+0625 [4.1s|81] K4>K5 Gel bakalım. Gel bakalım fındık kurdu. Gel. Sen ne güzel laflar ediyorsun öyle.
+0626 [2.2s|43] K5 Fıstık güzeli bilmem ne.
+0627 [2.1s|42] K21>K5 Evet. Sağ ol canım bunu da.
+0628 [3.4s|68] K21 Bunu da gönderdim ve mesai biter.
+0629 [0.9s|17] K5 Evet.
+0630 [4.3s|84] K5 Nereye gidiyoruz? Pizza gecesi ya bugün [artık?] birazcık şu kurtlarımızı dökelim ya.
+0631 [4.7s|84] K21 Melis'cim Defne evli ya bu akşam Kadir akşamı.
+0632 [1.0s|20] K5 Aaa
+0633 [3.9s|78] K5 doğru canım öyle oluyordu. Unuttum. Yok ya şey öyle olmayacak hep.
+0634 [2.2s|44] K5 Yani şöyle olacak şimdi biz
+0635 [1.8s|36] K5 böyle birkaç hafta şey yapalım.
+0636 [3.5s|69] K5 Düzenimizi iyice oturtalım. Ondan sonra işte
+0637 [3.9s|77] K5 pizza gecelerimize devam ederiz. Ben sizsiz yapamam mümkün değil.
+0638 [4.4s|84] K4>K21 Ben de sensiz yapamam. Zaten senin artık pizza geceleri kebap gecesine döner.
+0639 [1.8s|35] K5>K21 Tamam ya o da olur. Yeni format.
+0640 [1.4s|29] K5 Aynen kebap gecesi.
+0641 [1.1s|21] K9 Bir saat sonra.
+0642 [2.2s|44] K5 görüşürüz. Gidiyorum ben.
+0643 [1.4s|27] K21 Tamam. Hadi.
+0644 [1.0s|20] K5>K21 Bay. Bay bay.
+0645 [1.2s|23] K4 şey
+0646 [2.9s|57] K4 ben de bir üstümü değiştirip çıkıyorum. Görüşürüz.
+0647 [1.0s|20] K21 Vay be Yiğido,
+0648 [1.5s|29] K21 yine yapayalnız kaldın.
+0649 [1.0s|20] K21 Kadere bak.
+0650 [1.1s|22] K21 Kader mi dedim lan?
+0651 [4.6s|84] K5>K9 E alo Selim Bey. Melis Hanım merhabalar. Konuşabilir miyiz?
+0652 [1.9s|38] K5>K9 E dinliyorum. Ya
+0653 [4.1s|82] K9 buluşsak daha iyi olur. Yani müsaitseniz tabii ki.
+0654 [3.1s|61] K5 Olur. Yani aslında pizza gecemiz vardı ama
+0655 [1.1s|22] K5 buluşabiliriz. Olur.
+0656 [4.6s|84] K9>K5 Ben gelip alayım sizi. Yakınlardayım. Yoo. Bana konum atın. Ben gelirim.
+0657 [3.2s|64] K9>K5 Tamamdır. Ben. Ben konum atacağım. Tamam, görüşürüz.
+0658 [1.2s|24] K9 Özlem odada mı?
+0659 [1.1s|23] K11 Hava almaya çıktı.
+0660 [2.4s|48] K11 Tolga Senle bir şey konuşmak istiyorum.
+0661 [2.8s|56] K9>K11 Söyle. Özlem senin Ali'yi isteyeceğini bilmiyordu.
+0662 [1.4s|29] K11 Kader'in geleceğini de.
+0663 [2.4s|48] K11 Kadir'i de rahat bırakmayacak diye düşündü.
+0664 [3.4s|68] K11 Yanlış yaptı. Olaylar büyüdü. Affet demiyorum.
+0665 [2.6s|51] K9>K11 Affetmeyeceğim zaten. Ama o hala senin karın.
+0666 [2.4s|47] K11>K9 Karnında da senin çocuğun. Lütfen.
+0667 [1.1s|21] K11 Kızım hamile.
+0668 [5.3s|84] K11 Bak ne kadar yanlış yapmış olursa olsun bugün o doktora tek başına gitti.
+0669 [3.8s|76] K9>K11 Biliyorum. Eğer ilgilenmeyeceksen ben ilgileneceğim.
+0670 [2.0s|40] K11 Bir daha o doktora tek başına gitmeyecek.
+0671 [1.1s|22] K9 Ben ilgilenirim.
+0672 [3.5s|70] K8>K9 Baba. Baba. Koş geldi. Aferin sana.
+0673 [3.6s|72] K9>K8 Çek çek. Çek. Çek. Çek. Çek. Çek. Hadi çek. Ben çekmeyeyim baba, sen çek baba.
+0674 [3.3s|66] K8>K9>K8 Çabuk çabuk. Niye kızım? Balığı görmeden sen kovaya at.
+0675 [2.9s|57] K8 Canlı görürsem onu yiyemem. Hadi tut tut.
+0676 [4.7s|84] K9 Tamam, tamam. O zaman gözlerini kapat beraber çekelim. Kapat gözlerini.
+0677 [3.2s|63] K9 Şu balığı güzelce tutalım. Haydi bakalım.
+0678 [2.9s|58] K9 Ooo aferin sana harika bir balık tut--
+0679 [3.4s|67] K23 Dünyanın en iyi balıkçısısın. Ben de dünyanın en şanslı babasıyım.
+0680 [2.6s|51] K23 Güzel gözlü mavişim benim. Aferin sana!
+0681 [1.0s|20] K23 Mavişim.
+0682 [2.1s|42] K5>K23 Kadir. Canımın içi.
+0683 [2.7s|53] K23>K5 Gel gülüm. Sana gerçekten inanamıyorum.
+0684 [1.0s|20] K23 Gel bakalım.
+0685 [1.7s|34] K5 Ne yapıyorsun sen?
+0686 [4.8s|84] K23 Seni dedim belki Paris'e götüremedim ama en azından dedim şöyle Boğaz'da güzel bir
+0687 [1.3s|25] K23 yemeğimizi yiyelim.
+0688 [3.2s|63] K23>K5 Yani tabii istersen. İstemez miyim?
+0689 [3.5s|69] K5 Hem bence İstanbul dünyanın en güzel şehri.
+0690 [1.4s|29] K23 Adana'dan sonra diyelim.
+0691 [3.7s|73] K23 Gel seni İstanbul'un çok sevdiğim güzel bir yerine götüreceğim.
+0692 [1.7s|34] K5>K23>K5 Gerçekten mi? Evet. Hadi.
+0693 [1.0s|20] K24 Merhaba.
+0694 [1.0s|20] K10 Neredeydin sen?
+0695 [3.2s|63] K24 Ya şey, öyle bir hava aldım, dolaştım falan.
+0696 [1.0s|20] K10 Hımm,
+0697 [1.0s|20] K10 iyi.
+0698 [2.2s|44] K24>K10 Yatıyorum ben. Doktora gitmişsin.
+0699 [2.3s|46] K24>K10 Hı hı. Niye bana haber vermedin?
+0700 [4.1s|82] K24>K10 Ya zaten senin derdin başından aşkın. Yok sen bana haber ver.
+0701 [2.5s|49] K10 Bir dahakine birlikte gidelim, olur mu?
+0702 [1.0s|20] K24 Olur.
+0703 [1.5s|30] K24 Kader nasıl?
+0704 [1.5s|30] K10 Kader...
+0705 [1.0s|20] K10 Nasıl olsun?
+0706 [1.6s|31] K10 Donör lazım.
+0707 [2.4s|48] K10 Donor [onun?] [için?] bir şans
+0708 [1.0s|20] K10 olacak.
+0709 [2.1s|42] K10 Tabii riskli bir ameliyat.
+0710 [1.5s|29] K10 E iki [tarafın?] da
+0711 [2.4s|47] K10 masada kalma ihtimali var ama tabii
+0712 [2.5s|50] K10>K24 kurtulma ihtimali de var. Çok zor.
+0713 [1.0s|20] K24 Çok üzgünüm.
+0714 [2.6s|52] K24 Umarım bulunur en yakın zamanda donör.
+0715 [1.0s|20] K10 İnşallah.
+0716 [2.3s|46] K10>K24 Ee, ben de verdim kan. Nasıl?
+0717 [2.0s|40] K24 Bir dakika, nasıl yani ya?
+0718 [4.9s|84] K10>K24 Donör olarak. Tolga ya uyarsa? Ya sen delirdin mi Tolga?
+0719 [4.7s|84] K10>K24 Delirmedim ama denemem lazımdı. Ya aşkın daha mı kıymetli senin canından ya?
+0720 [4.2s|83] K10 Ya ne aşkı gözünü seveyim Özlem ya? Belki şanslı olur, belki hayatta kalır.
+0721 [3.6s|71] K10>K24 Ali belki annesiz büyümez. Ya tam tersi olursa, hı?
+0722 [4.2s|84] K24 Bunu düşündün mü hiç? Ya annesi de babası da ölürse ne olacak o zaman?
+0723 [1.8s|36] K24 Ben ne olacağım?
+0724 [2.0s|39] K24 Ya benim karnımdaki bebek ne olacak?
+0725 [4.9s|84] K10>K24 Bak o kız bizim yüzümüzden hasta oldu, anladın mı? Ya saçmalama ya! Yeter artık!
+0726 [3.9s|78] K24 Yok mu canının bir önemi senin? İnanamıyorum sana Tolga ya!
+0727 [2.3s|46] K24 Ya Ali'ye ne olacak sana bir şey olursa?
+0728 [2.4s|47] K24 Bana ne olacak? Bebek?
+0729 [4.4s|84] K24 Ya düşünmüyor musun sen hiç? Beni de bebeğini de düşünmüyor musun ya?
+0730 [2.5s|50] K24 Bu kadar kolay mı gözden çıkartman bizi?
+0731 [1.0s|20] K10 Özlem.
+0732 [5.1s|84] K17 Yani işte özetin özetiyle çok dangalaklık ettim baba ve toparlamaya çalışıyorum.
+0733 [4.3s|84] K10 Toparlarsın, merak etme. Sen benim oğlumsun. Her şey hallolur.
+0734 [1.4s|27] K17>K10 Öyle mi diyorsun? Tabii.
+0735 [3.7s|73] K17>K10 [Ah?] baba, geldi Zeynep. Ben sizi yalnız bırakayım.
+0736 [2.0s|39] K17>K5 Hoş geldin. Hoş bulduk.
+0737 [1.0s|20] K17 Tanıştırayım.
+0738 [0.8s|16] K17 Babam.
+0739 [1.4s|28] K5 Baban. A-a!
+0740 [1.6s|32] K5 Merhaba. Zeynep ben.
+0741 [1.2s|24] K17 Kız arkadaşım.
+0742 [2.4s|47] K10 Ben de Sinan. Oğuz'un babasıyım.
+0743 [3.7s|73] K10>K5 Gelsene. Ben de kalkıyordum zaten. [Yok,?] kalkmayın,
+0744 [1.6s|31] K5 bizle oturun.
+0745 [3.6s|72] K10 Ee, peki madem. Bu güzel prensesi kırmak olmaz.
+0746 [1.3s|26] K10 Beş dakikanızı alayım,
+0747 [1.3s|25] K10 olur mu? Hadi gelin.
+0748 [2.8s|56] K5>K23 Sen balık tutmayı biliyor musun? Biliyorum. Öğreteyim mi sana?
+0749 [2.9s|58] K5 Yo, ben biliyorum da ben sana öğretirim diyecektim.
+0750 [3.0s|59] K23 Vay Defne Derin'in
+0751 [1.7s|33] K23 bir meziyeti daha.
+0752 [3.2s|64] K5>K23 Emindağ'ı unuttun. Defne Derin Emindağ. Unutur muyum?
+0753 [1.0s|20] K23 Kim öğretti?
+0754 [1.0s|20] K5 Babam.
+0755 [2.9s|57] K5 Ben küçükken biz çok balık tutmaya giderdik.
+0756 [4.1s|81] K5 Sonra bir gün yine "Sen önden git, ben geleceğim." dedi. Bekledim, bekledim.
+0757 [2.9s|58] K5 Ne gelen var ne de giden.
+0758 [1.0s|20] K5 Akşam oldu.
+0759 [2.0s|40] K5 Ben de eve döndüm. Ne yapayım.
+0760 [1.2s|23] K5 Eve bir geldim.
+0761 [5.1s|84] K5 Meğer bizi terk etmiş gitmiş. Yani bizi öyle rahat rahat terk edebilmek için
+0762 [2.6s|52] K5 hepimizi evden göndermiş anlayacağın.
+0763 [2.3s|45] K23 Biliyorum aşkım.
+0764 [2.3s|46] K23>K5 Çok özür dilerim canım benim. Yo,
+0765 [1.5s|30] K5 özür dileyeceğin bir şey yok.
+0766 [2.4s|48] K5 Sen boş ver onu.
+0767 [2.5s|50] K5 Zaten onun hakkında konuşmak istemiyordum.
+0768 [2.0s|40] K5 Sen bana kendi babanı anlatsana.
+0769 [1.0s|20] K23 Ya.
+0770 [2.4s|47] K23 Vallahi şeyi hatırlıyorum. Babamla
+0771 [4.2s|83] K23 ilk ben çok ufakken gelmiştik İstanbul'a. Bayağı da bir gezdik.
+0772 [3.0s|59] K23 Hiç unutmuyorum böyle Kapalıçarşı'ya gittik. Var ya
+0773 [3.1s|61] K23 yani ben kafayı yedim ya. Yani o
+0774 [1.6s|31] K23 keş mekeş,
+0775 [6.5s|84] K23 o karışıklık, onun içindeki o ahenk, sokaklar, kokular, insanlar. Yani
+0776 [1.7s|34] K23 aklımı yitirdim ya.
+0777 [1.9s|38] K5 Neyinden etkilendin peki en çok?
+0778 [1.4s|27] K23 Binalar.
+0779 [2.3s|45] K23 Böyle bir şey yapmışlardı bize.
+0780 [4.0s|80] K23>K5>K23 Hani rehberli bir tur. Hımm. İş adamlarına özel falan.
+0781 [2.1s|42] K23 Ben Dolmabahçe'yi gördüm.
+0782 [2.5s|50] K23 Hele gittim Ayasofya'yı gördüm.
+0783 [4.0s|79] K23 Babama dedim ki "Baba ben bunu yapacağım. Ben böyle binalar yapmak istiyorum."
+0784 [2.5s|49] K5 O zaman mı karar verdin inşaat mühendisi olmaya?
+0785 [4.5s|84] K23 Yok, asıl ben mimar olmak istiyordum da işte babam hani "İnşaat mühendisi ol, daha
+0786 [2.7s|54] K23 çok para var." falan deyince biz de öyle yaptık yani.
+0787 [4.4s|84] K23>K5 Hani bizde baba sözü şey gibidir, emir gibidir yani. İçinde [kaldı?] mı peki mimarlık?
+0788 [3.3s|66] K23 Yok ya, zaten böyle çizime falan da çok yeteneğim yoktu.
+0789 [2.2s|43] K23 Bizde o işler aslında hakikaten
+0790 [4.0s|80] K23 Tolga Erez'dir yani. Bütün falsolarına rağmen dahi gibi bir şeydir.
+0791 [1.7s|34] K23 Yani hakikaten çok yetenekli yani.
+0792 [2.0s|39] K5 Ali sizin yeteneğini Tolga'dan almış.
+0793 [3.5s|70] K23 Karakterini dayısından alsın da çiziktirmeyi kimden alıyorsa alsın.
+0794 [3.1s|62] K23 Babadan da bir iki bir şey almış olabilir yani sıkıntı yok.
+0795 [2.5s|50] K5 Amca, sen niye kendine haksızlık ediyorsun?
+0796 [2.6s|52] K5 Öyle sıradan bir inşaat mühendisi değilsin sen.
+0797 [2.3s|46] K5 Amerika'da neler yaptığını gördüm.
+0798 [1.6s|31] K5 Dergilere kapak olmuşsun.
+0799 [1.3s|25] K5 Ne oldu?
+0800 [1.2s|23] K23 Gülüm bak, ben...
+0801 [4.4s|84] K23 Seni bırakıp oralara gittim, gittim de ne olur zannetme ki ben hani orada gittim,
+0802 [1.9s|38] K23 bir düzen kurdum, hayatıma baktım.
+0803 [3.7s|73] K23 Ben sana yemin ediyorum bak. Her gün, her gün ağladım.
+0804 [4.4s|84] K23 Her gün karanlıkta o köşede oturdum bekledim.
+0805 [2.8s|55] K23 Sadece senden haber bekledim.
+0806 [1.9s|38] K23 Sana yemin ediyorum bak,
+0807 [2.5s|50] K23 sen ne zaman ayağa kalktın ben ayağa kalktım.
+0808 [2.4s|48] K23 Sen ne zaman işe gittin ben işe gittim.
+0809 [2.3s|46] K23 Sen nefes aldın, ben seninle nefes aldım.
+0810 [2.1s|41] K5 Sen bana niye anlatmadın ki bunları?
+0811 [3.1s|62] K23 Artık içimde vallahi bir şeyler tutmak istemiyorum Gülüm.
+0812 [2.6s|52] K23>K5 Vallahi ne istiyorum biliyor musun? Ne istiyorsun?
+0813 [1.2s|24] K23 Şöyle senle.
+0814 [5.1s|84] K23 [Hadi?] böyle [yengi?] kaptana, "Kaptan ver elini güneylere çek gidelim" diyeyim.
+0815 [2.1s|41] K23 Yani buradan basalım gidelim güneye.
+0816 [4.8s|84] K23 Oradan okyanusa açılalım. Vallahi bütün dünyayı gezelim bir ömür boyunca.
+0817 [3.4s|68] K23 Yemin ediyorum sana başka hiçbir şey istemiyorum.
+0818 [1.0s|20] K5 Yapalım.
+0819 [1.8s|35] K5 Beni bir daha bırakma, tamam mı?
+0820 [1.1s|21] K5 Hep yanımda ol.
+0821 [1.0s|20] K5 Ha? Ne oldu?
+0822 [4.0s|80] K5>K23 Korktun mu? Ya ben senin yanında olmaktan korkar mıyım?
+0823 [2.5s|49] K23 Aşkım benim. Benim canım.
+0824 [2.3s|46] K23 Seni seviyorum Defneee!
+0825 [4.8s|84] K5>K23 Seni seviyorum Kadir! Ben daha çok seviyorum.
+0826 [3.0s|59] K5 Hayır, ben daha çok seviyorum.
+0827 [1.0s|20] K23 Oh.
+0828 [1.0s|20] K23 Canım benim.
+0829 [1.1s|22] K5 Kocam benim.
+0830 [1.9s|37] K13 Selin Bey. Yani
+0831 [3.4s|67] K13 ilk buluşma deyince açıkçası ben böyle bir yer hayal et--
+0832 [1.0s|20] K13 ne oldu?
+0833 [1.0s|20] K13 Ne oldu?
+0834 [1.3s|26] K13 Selim Bey ne oldu?
+0835 [1.2s|23] K7 Kalbim
+0836 [3.2s|63] K7>K13 o-o kadar ağır ki Melis Hanım. Ni-niye?
+0837 [1.3s|26] K7 Kader çok hasta.
+0838 [1.4s|29] K7 Kader ölüyor.
+0839 [1.1s|21] K13 Levent Bey.
+0840 [2.7s|53] K13>K11 Ay ne yaptınız böyle? Sizin için hazırladım.
+0841 [1.9s|37] K13>K11 Ay teşekkür ederim. Rica
+0842 [2.2s|43] K11 ederim. Hâlâ gelmedi mi?
+0843 [3.3s|65] K11 Gelir, gelir. Merak etmeyin. Kocaman adam.
+0844 [6.1s|84] K13 Gelir de değişmiş gelir. Yani bunca saat onun yanındaysa kesin çok etkilendi.
+0845 [1.2s|25] K11 Etkileyici adam.
+0846 [1.4s|28] K11 Karizmatik,
+0847 [1.0s|20] K11 zeki.
+0848 [2.3s|45] K11>K13 Şeytan tüyü var. [Haa.?]
+0849 [3.0s|59] K13 Şeytan. Evet. Tüyünü de dikmiştir işte.
+0850 [1.3s|25] K11 Sizi çok üzdü,
+0851 [4.2s|83] K11 kandırdı, biliyorum. Bunu uzun uzun konuştuk. Ama şimdi döndü ya,
+0852 [3.9s|78] K11 acaba siz biraz etkilendiniz mi onun dönüşünden? Hani
+0853 [1.6s|31] K11 tüm yaptıklarına rağmen
+0854 [1.6s|31] K11 onu hâlâ seviyor musunuz?
+0855 [3.1s|62] K13 Ben-- yo, aa, aşk olsun Levent Bey.
+0856 [3.0s|60] K13 Olur mu öyle şey Levent Bey? Ne alakası var ya?
+0857 [3.5s|70] K11 Ne bileyim, onu görünce belki eski duygularınız yeniden canlanmıştır.
+0858 [2.4s|47] K11>K13 Yani emin olmak istedim. Yok.
+0859 [1.3s|25] K13 Onu,
+0860 [3.2s|64] K13 onu sevmezsiniz, ona aşık olursunuz.
+0861 [3.9s|78] K11>K13 Ve aradaki fark ne? Levent Bey hayatım, sevgi
+0862 [4.2s|84] K13 bilerek, isteyerek yaptığınız bir şeydir. Aşk başınıza gelir.
+0863 [1.5s|30] K11 Ona Sinan diyorsunuz.
+0864 [1.8s|36] K13>K11 Evet. Bana Levent Bey.
+0865 [4.1s|81] K13 A-a. Ama Levent Bey hayatım, sen de bana Mine Hanım diyorsun.
+0866 [1.0s|20] K11 Mine.
+0867 [2.0s|39] K11 Ya sizin için nelere katlanıyorum.
+0868 [1.3s|26] K11>K13 Mine ben daha yakışıklıyım. Kesinlikle.
+0869 [2.9s|57] K11>K13 Bunu, bunu, bunu-- bu kenarda dursun. Tabii ki.
+0870 [2.6s|52] K13>K11 Bayılıyorum size. Ben de size.
+0871 [3.6s|72] K11 Tamam, tamam. Söz veriyorum bir daha görüşmeyeceğim Sinan, Sinan Bey'le.
+0872 [5.2s|84] K13 Bence söz vermeyin. Yani onunla, [mm,?] biraz görüşülür.
+0873 [2.3s|46] K13 Yani görüşmek istersiniz yani.
+0874 [2.0s|39] K11 Gerçi kârlı bir işten bahsetmişti.
+0875 [2.4s|48] K13>K11 Levent Bey. Tamam. Pardon, pardon, pardon.
+0876 [2.2s|43] K13>K11 Sakın, sakın. [Kini??]
+0877 [2.2s|43] K13>K5 Sakın ha. Mineee!
+0878 [4.5s|84] K13>K5 Ne oldu? Kız korkutma beni ne oldu? [Akkuş,?] Esra ayağını kırmış.
+0879 [0.8s|16] K13>K5 Ne? Sorma.
+0880 [1.7s|33] K5>K13>K5 Ay kalbime iniyordu. İyi mi? İyi, iyi.
+0881 [2.8s|56] K5 Merak etme, bir şeyi yok da acile kaldırmışlar.
+0882 [1.7s|34] K5 Bursa'daki eve gideceğim ben de onun yanına.
+0883 [5.1s|84] K13>K5 Ah ya. Ben de geleyim diyeceğim ama yani- Yok, yok bacım, sen gelme, ben hallederim.
+0884 [2.7s|54] K5>K13 Hadi. Şey, ben sen to-toplanmana
+0885 [1.1s|21] K13 yardım edeyim.
+0886 [2.6s|51] K19 Peki ya donör bulunamazsa yani?
+0887 [1.2s|23] K19 O zaman ne olacak?
+0888 [1.6s|33] K7 Bulunsa da çok riskli.
+0889 [1.6s|31] K7 Belki faydası olmayacak.
+0890 [1.5s|30] K7 Organları iflas ediyor.
+0891 [1.0s|20] K25 Kadir,
+0892 [1.9s|38] K25 Defne'yi söyleyebildi mi?
+0893 [1.0s|20] K1 Yok.
+0894 [1.1s|22] K1 Yeni evlendiler.
+0895 [1.6s|31] K1 İlk günleri, ilk geceleri.
+0896 [1.1s|22] K1 Haber bekliyorum.
+0897 [1.4s|28] K1 Donör uyumu var mı diye.
+0898 [1.5s|30] K1 O da ona tutulmuş galiba.
+0899 [1.6s|32] K1 Defne'sine tutulmuş.
+0900 [1.8s|36] K25 Ne oldu? Niye durduk?
+0901 [3.7s|73] K1 Sana İstanbul'un en güzel hikayelerinden birini anlatacağım. Hazır mısın?
+0902 [1.4s|28] K25>K1 Hazırım. Gel.
+0903 [1.0s|20] K1 Bak şimdi.
+0904 [2.3s|45] K1 Mihrimah Sultan Camii.
+0905 [2.7s|54] K1 İstanbul'un en güzel camilerinden biri.
+0906 [3.2s|64] K1>K25 Gittin mi daha önce hiç? Mimar Sinan'ın eseri. I ıh, gitmedim.
+0907 [1.7s|33] K1 İyi, birlikte gider gezeriz bir gün.
+0908 [2.0s|39] K25>K1>K25 Olur. Çok güzel camidir. Tamam.
+0909 [4.9s|84] K1 Sana şimdi bunun hikayesini anlatacağım. Mihrimah, güneş ve ay demek.
+0910 [4.8s|84] K25>K1 Sen neler biliyorsun böyle ya? Ya tarih, efsane. Bunlar benim işim.
+0911 [3.9s|78] K1 Bunlarda kılavuzum benim. Ben sana daha neler anlatacağım. [Hayır,?] çıldıracaksın.
+0912 [1.6s|32] K25 Anlat bakalım. Hadi.
+0913 [4.3s|84] K1 Şimdi rivayet o ki Mimar Sinan Mihrimah Sultan'a aşık olmuş.
+0914 [1.0s|19] K25 Ee?
+0915 [1.6s|31] K1 Tabii şimdi
+0916 [1.7s|33] K1 Sinan elli yaşında.
+0917 [1.9s|37] K1 Sarayın mimarı.
+0918 [4.0s|80] K1 Adam evli. Mihrimah Sultan padişahın kızı.
+0919 [2.6s|51] K25>K1 Yok, olacak iş değil. İmkansız aşk yani.
+0920 [4.0s|79] K1 Zaten Mihrimah'ı da Diyarbakır valisine vermişler.
+0921 [2.6s|51] K1>K25 Aradan geçmiş yıllar. Ee?
+0922 [1.5s|30] K1 Mihrimah Sultan
+0923 [3.2s|64] K1>K25 Sinan'dan bir cami yapmasını istemiş. A.
+0924 [3.3s|65] K1 Sinan da sormuş. "Sultanım" demiş, "Nereye yapayım?"
+0925 [1.8s|35] K1 O da demiş ki "Yerini sen beğen."
+0926 [2.7s|53] K1 Mimar Sinan da gelmiş burayı seçmiş.
+0927 [2.0s|39] K1 Bir tane daha var bu camiden.
+0928 [2.4s|47] K1 O buradan görünmez. Surların o tarafta o.
+0929 [1.6s|32] K1 Tek minareli.
+0930 [4.5s|84] K25>K1 Niye tek? Yalnız olduğundan ötürü, yalnızlığından derler.
+0931 [4.1s|81] K1 Güneş o tek minareli camiden batarken,
+0932 [1.0s|20] K1 ay
+0933 [1.5s|30] K1 aynı anda
+0934 [4.6s|84] K1 bu caminin iki minaresinin arasından yükselirmiş.
+0935 [1.6s|32] K1 Yani senede bir gün
+0936 [1.9s|38] K1 güneş ve ay
+0937 [2.1s|41] K1 bir araya gelirmiş.
+0938 [1.3s|25] K1 Yani Mihrimah.
+0939 [1.5s|29] K25 Kadir bu gerçek mi?
+0940 [4.2s|84] K1 Galiba değil. Ama olsun, bence çok güzel bir hikaye. Ben seviyorum yani.
+0941 [1.6s|31] K25 Senin bir hüznün var bugün.
+0942 [2.2s|45] K1 Yani düşünüyorum sadece. Hani,
+0943 [3.7s|73] K1 mesela Sinan'ın elinden cami yapmak geliyormuş.
+0944 [3.7s|73] K1 Başka da bir şey değil. Ne kızı kurtarabilmiş, ne kızı alabilmiş, ne istediğini
+0945 [1.2s|23] K1 yaşayabilmiş.
+0946 [1.5s|29] K1 Sadece
+0947 [4.7s|84] K1 cami yapabilmiş. Onu da sonuna kadar yapmış. Yani bazen insanın
+0948 [1.4s|28] K1 elinden tek bir şey geliyor,
+0949 [3.2s|65] K1 başka bir şey yapamıyorsun ve o elinden gelen şeyi
+0950 [1.9s|37] K1 sonuna kadar yapmak önemli yani.
+0951 [1.2s|24] K25 Sen neyi yapıyorsun?
+0952 [1.2s|23] K1 Seni sevmeyi.
+0953 [1.0s|20] K1 Melis Hanım,
+0954 [1.5s|29] K1 beni Emindağlar büyüttü.
+0955 [1.7s|33] K1 Kader benim kardeşim gibi.
+0956 [1.8s|36] K1 Bebesiyle geldi bir de,
+0957 [1.0s|20] K1 Ali'yle.
+0958 [2.9s|58] K1>K25 Allah kimseyi anasız babasız büyütmesin. Amin.
+0959 [1.1s|21] K1 Bu gece herkes
+0960 [2.1s|42] K1 kendince bir hayat yaşıyor.
+0961 [1.4s|27] K1 Abim Defne'siyle.
+0962 [2.2s|44] K1>K25 Kapat gözlerini. A,
+0963 [1.0s|20] K25 niye?
+0964 [1.4s|27] K1 Kapat Zeyno.
+0965 [3.8s|76] K1>K25 Kendini bana bıraksana gülüm. Ne yapıyorsun?
+0966 [1.0s|20] K1>K25 Aç. A-a!
+0967 [1.0s|20] K25 Kadir.
+0968 [3.2s|63] K25>K1 Bunu da mı yaptın, hı? Herhalde.
+0969 [1.7s|34] K1 Senin için ben daha
+0970 [5.0s|84] K1 neler yapacağım, neler. Her günümü seninle son günümmüş gibi yaşayacağım artık.
+0971 [1.7s|34] K25 Sen mükemmel bir kocasın.
+0972 [3.3s|65] K25>K1 Çok güzel olmuş be. Uzaya da yazdırdım adımızı.
+0973 [2.0s|41] K25 Defne Kadir'dir. De-Kad.
+0974 [1.0s|20] K1 Zeyno
+0975 [3.0s|61] K1 yarın olacaklardan habersiz arkadaşlarıyla eğleniyor.
+0976 [4.0s|79] K1 Selma Annem, Ali ve Kader şu anda lunaparkta lar.
+0977 [6.1s|84] K1 Belki de Kader'in son gecesi. Bundan habersiz eğleniyorlar. İnşallah mutludadır.
+0978 [1.0s|20] K1 Tolga,
+0979 [1.7s|34] K1 Kader'e hem yakın
+0980 [1.0s|20] K1 hem çok uzak.
+0981 [1.2s|24] K1 Ama o da yalnız değil.
+0982 [1.7s|34] K1 Bir de ben varım Melis Hanım.
+0983 [1.6s|31] K1 Bunu öğrenince
+0984 [1.0s|20] K1 insan
+0985 [1.9s|37] K1 herkesle de konuşamıyor bunları.
+0986 [3.3s|65] K1 Bana da ağır geldi. Ben de o yüzden sizi aradım.
+0987 [3.1s|61] K25 Tamam, tamam, tamam. İyi ki beni aramışsın.
+0988 [2.5s|50] K25 Bunu yalnız başına taşımak zorunda değilsin.
+0989 [1.7s|33] K25 Geldim. Yalnız değilsin işte.
+0990 [4.0s|79] K1>K6 Ayaz Hocam. Günaydın Kadir Bey. Müjdemi isterim. Sonuçlar geldi.
+0991 [3.1s|62] K6>K1 Uyumlu donör bulundu. Valla mı? E çok iyi haber.
+0992 [5.0s|84] K1>K6 E çok şükür. Şükretmek için çok erken. Zorlu bir süreç ama uyumlu bir donörümüz var.
+0993 [1.0s|20] K1 Kimmiş hocam?
+0994 [1.0s|20] K1 Selo.
+0995 [1.7s|33] K1 Kardeşim bir haberim var sana.
+0996 [1.0s|20] K1 He Tolga.
+0997 [1.2s|24] K1 Bir haberim var sana.
+0998 [4.6s|84] K26>K1 Günaydın. Allah'ım seni yaradana kurban olsun be.
+0999 [1.7s|34] K1 Sen var ya.
+1000 [2.1s|41] K1 Yani şu güzellik,
+1001 [4.8s|84] K1 şu endam sen bana Allah'ın bir lütfu, sen bana bir hediyesin ya.
+1002 [3.7s|73] K26>K1 Kiminle konuşuyordun bakayım sen sabah sabah? Holding işleriyle.
+1003 [3.3s|66] K26>K1 Bu saatte. [Bizim?] Amerika'da da işler var ya.
+1004 [1.7s|34] K1 Yedi yirmi dört.
+1005 [1.2s|23] K26 Ben açım.
+1006 [2.4s|48] K1>K26 Yiyelim canım. Çay varsa mutfağa hazırlayayım.
+1007 [1.0s|20] K1>K26 Hazırla. Tamam.
+1008 [1.0s|20] K26 Hazırlayayım.
+1009 [3.6s|71] K27>K26 Sen karışamazsın bana. Öyle bir karışırım ki alırım seni ayağımın altına.
+1010 [3.3s|65] K26>K28 Görüşmeyeceksin bitti işte. A-a ayol ne oluyorsunuz?
+1011 [2.0s|39] K28>K26 Sesiniz yukarılara geliyor. Ya ne ne olacak?
+1012 [2.4s|47] K26 Görüşeceğim diyor. Babasıyla görüşecekmiş beyefendi.
+1013 [3.2s|64] K26>K27 Bana bak, seni ayağımın altına alırım [he.?] Bacaklarını kırarım senin. Hah.
+1014 [3.5s|70] K27>K28 Bir sen eksiktin teyzeciğim, tam oldu. Tövbe ya Rabbim. Tövbe estağfurullah.
+1015 [2.7s|54] K28 Bu kadın dişini tırnağına takarak sizi yetiştirdi tamam mı?
+1016 [1.8s|35] K28 Sen öyle bir günde babanı affedersin diye değil.
+1017 [3.5s|69] K27 Ya affetmedim, affetmedim. Merak ettim. Tanımak istiyorum sadece o kadar.
+1018 [4.1s|81] K28>K27 Neyini? Neyini? Ayrıca dolandırıcı falansa ben anlarım ya. Çocuk muyum?
+1019 [2.8s|56] K28 Oğlum Allah'ım ya Rabbim oğlum.
+1020 [4.0s|80] K28 Bak o seni beni parmağında oynatır, haberin olmaz.
+1021 [3.1s|61] K28>K27 Görüşmeyeceksin ya bitti. Ya Levent Bey affediliyor.
+1022 [2.3s|45] K27 Kadir iki sene kayboluyor. Gidiyor, geliyor, affediliyor.
+1023 [2.6s|51] K27 Ben-- ben niye kendi öz babamla oturup konuşamıyorum ya?
+1024 [1.6s|33] K27>K28 Ne saçmalıyorsun anne? Oğlum.
+1025 [4.0s|80] K28 Bak Levent Bey hakkında bir daha ağzından tek bir kelime çıkmayacak, anladın mı
+1026 [4.7s|84] K28 beni? Görüşmeyeceksin. Bitti. Onun konuyla ne ilgisi var oğlum?
+1027 [3.3s|66] K27 Yanlış bir evlilik yaptın, kabul edemiyorsun. Onun için söylüyorum.
+1028 [3.5s|70] K27 Adam olsun çıksın babamın karşısına o zaman git desin. Diyemiyor. Neden?
+1029 [2.5s|49] K27>K28 Kılıbık çünkü. Sus [yeter.?]
+1030 [1.1s|21] K28 Hadsizsin.
+1031 [1.0s|20] K27 Aman be.
+1032 [1.2s|23] K28 Sen şey yapma çocuğum.
+1033 [3.4s|67] K26 E hiçbir şey yememişsin. Yumurtana bile dokunmamışsın paşam sen.
+1034 [2.4s|47] K8>K26 Ben okula gitmek istemiyorum ya. A-a
+1035 [3.0s|60] K26 Aliciğim ama sana bir haberim var.
+1036 [3.8s|76] K26 Daha on beş sene daha okula gideceksin. O yüzden alışsan iyi olur.
+1037 [2.9s|57] K8>K26>K8 On beş sene mi? Ya. Hayatta gitmem.
+1038 [2.1s|41] K26 Allah Allah, o niyeymiş o?
+1039 [3.0s|59] K26 Sen okulunu sevmiyor musun Ali ha? Değiştirelim mi senin okulunu?
+1040 [4.4s|84] K8 Yo Elif var, Duru var. Onlar olmasa hiç gitmem zaten.
+1041 [1.4s|28] K26 E sorun ne o zaman?
+1042 [3.3s|66] K8 Ya derslerin hepsi çocuk oyuncağı gibi.
+1043 [5.1s|84] K8 Bir de benimle okulda çok uğraşıyorlar. Lakap takmışlar bana küçük adam diye.
+1044 [3.3s|65] K26 A-a o ne demekmiş öyle? Vallahi benim sinirimi bozmasınlar.
+1045 [1.5s|30] K26 Gelir dağıtırım o okulu ha.
+1046 [1.9s|37] K28 Yok canım dağıtmaz.
+1047 [4.3s|84] K28 Çok sakin bir kadındır anneannen biliyorsun. Ama biz şöyle yaparız.
+1048 [2.4s|48] K28 Annenle babana bahsedelim bu durumdan.
+1049 [4.2s|84] K28 Onlar bir çözüm bulurlar. Tamam, sen sıkma canını. Al benim paşamı.
+1050 [0.7s|13] K26 Günaydın.
+1051 [1.8s|36] K28>K26 Günaydın. Günaydın.
+1052 [2.5s|50] K28 Alikom. Hadi hazırlan. Geç kalacağız okula.
+1053 [3.0s|59] K26>K28 Gel sen de iki lokma bir şey yesene kızım. Yok, aç değilim.
+1054 [2.7s|54] K26 Anneciğim. Kuş kadar kaldın. Zaten zayıfsın. Gel.
+1055 [1.0s|19] K28 Alikom.
+1056 [1.9s|37] K28 Okul çıkışı akvaryuma gidelim mi?
+1057 [2.4s|47] K8 Sen dünyanın en güzel annesisin.
+1058 [3.8s|76] K26 Ya kızım geldiğinizden beri hop oraya hop oraya. Bir gün de evinizde oturun ya.
+1059 [2.6s|51] K28 Hazır fırsat varken. Ah!
+1060 [1.1s|22] K26>K28 Kader. Abla.
+1061 [0.8s|16] K26 Kader.
+1062 [2.2s|44] K26>K28>K26 Ne oldu kız? Anne. Anneciğim.
+1063 [1.4s|28] K8 Anne iyi misin?
+1064 [2.2s|44] K26>K8 Abla kalk kızım. Anne.
+1065 [1.9s|37] K26 Abla kalk, kalk koltuğa.
+1066 [2.6s|51] K26 Gel otur. [Ne?] oldu sana annem?
+1067 [1.5s|29] K26 İyi misin?
+1068 [2.9s|58] K28>K8 İyiyim, iyiyim. Anne geldim. Anne.
+1069 [2.1s|42] K8>K28 İyi misin? İyiyim oğlum.
+1070 [1.4s|27] K1 Buyursana Kader.
+1071 [2.7s|54] K8 Anne özür dilerim. Sinirini bozdum.
+1072 [1.4s|28] K26 Gidiyorsun yani.
+1073 [3.2s|63] K28>K26 Gidiyorum. Ama seni hiç böyle bırakmak istemiyorum Minnoş.
+1074 [3.5s|70] K28 E bırakıp gitme o zaman. Niye gidiyorsun?
+1075 [3.1s|62] K28 Ne yapacağım ben? Ben kiminle dedikodu yapacağım?
+1076 [3.1s|62] K26 A-a sen dedikoduyu Levent Bey'le yapabilirsin.
+1077 [2.1s|42] K26 Onda müthiş bir dedikodu potansiyeli var.
+1078 [3.8s|76] K26>K28 Daha açığa çıkmayı bekliyor öyle söyleyeyim. Aynı şey mi ya ama?
+1079 [1.3s|26] K2 Bana bak Minoş.
+1080 [3.2s|63] K2 Ne zaman sıkılırsan daralırsan atla gel.
+1081 [2.4s|48] K2>K26 Tamam. Merak etme mom buraları hallederim zaten.
+1082 [2.6s|51] K26>K2 Sen benim ödediğime bakma. Ay canım.
+1083 [1.0s|20] K26 Yumuşacık
+1084 [2.8s|55] K26>K2 oldun. Ay saçımı bozdun. Hadi.
+1085 [1.0s|20] K26 Tamam.
+1086 [1.5s|30] K26>K2 Ha Suzi. Ooo!
+1087 [1.5s|29] K26 Ya.
+1088 [1.5s|30] K2 Bak şimdi
+1089 [2.5s|50] K2 bebeğin olduğunda tamam mı? İlk bana haber veriyorsun.
+1090 [1.9s|38] K2 Hemen atlıyorum, geliyorum. Ona göre.
+1091 [3.3s|65] K2>K26>K2 Tamam mı? Tamam, söz. Adını da bu arada Suzan koyabilirsin.
+1092 [2.8s|55] K2 Her zamanlara ait bir isimdir. Asla eskimez.
+1093 [4.4s|84] K26>K1 Düşüneceğim. Aman aman aman aman aman. Bir eve bir Suzi yeter.
+1094 [1.7s|33] K1 Demek gidiyorsun Suzan.
+1095 [1.4s|27] K26 Gidiyorum Levent Bey.
+1096 [1.4s|28] K1 Yine bekleriz.
+1097 [1.4s|28] K1 Ama arayı biraz uzatın ha.
+1098 [1.9s|37] K26 Arayı uzatın diyor. İlahi Levent Bey.
+1099 [4.3s|84] K26>K28 Vallahi en çok sizin bu esprilerinizi özleyeceğim. Çok iyiydi bu. Taksi gelmiş.
+1100 [1.4s|28] K26 Hayır, hayır, çok soğuk. Hiç üşümüyorsun.
+1101 [1.5s|30] K2>K26 Hayır, bırak. Fıt diye gidiveriyorsun.
+1102 [1.8s|35] K2 [Canım?] [kalır?] burada. Allah aşkına.
+1103 [3.7s|74] K26 Hayır, çok soğuk hava. [Ay?] inat. Üşütmeyin. Çok teşekkür ederim.
+1104 [1.0s|20] K26 Güzel ev.
+1105 [1.4s|28] K26 Yani olaylı ama
+1106 [1.0s|20] K26 güzel ev.
+1107 [1.3s|26] K26 Hadi arayacağım seni.
+1108 [1.1s|22] K28 Suzi.
+1109 [3.7s|73] K5 Ben araştırdım. Paris'e çarşamba gitmek en mantıklısıymış.
+1110 [3.4s|68] K5 Yani pazartesi salı falan bazı müzeler kapalı olabiliyormuş çünkü.
+1111 [1.0s|20] K1 Hı hı.
+1112 [1.1s|22] K5 Ne hı hı?
+1113 [1.9s|38] K5 Dinlemiyorsun ki. Ne dediğimi bilmiyorsun bile.
+1114 [3.9s|77] K1>K5 Dinliyorum gülüm. İşte pazartesi gidelim diyorsun. Kadir ya.
+1115 [4.3s|84] K5 Ya şu güzelliğin ortasında kahvaltı yapıyoruz. Aklın hâlâ işte mi senin?
+1116 [3.1s|62] K1 Yok, yok. Vallahi hiç falan düşünmüyorum gülüm ya.
+1117 [2.5s|50] K5>K1 Yemin et. Yemin ediyorum ya.
+1118 [1.0s|20] K5 Bak
+1119 [3.7s|74] K5 ben hayatımın en güzel günlerini seninle geçiriyorum.
+1120 [3.4s|67] K5 Daha önümüzde böyle yaşanacak koskoca bir ömür var.
+1121 [1.1s|22] K1 Öyle gülüm.
+1122 [1.0s|20] K1 Canım benim.
+1123 [3.6s|71] K1>K5 Defne'm. Ben diyorum ki hatta Ali'yi de getirelim mi, ha?
+1124 [2.7s|54] K5 Tekneyle gezeriz, Kader de gelir.
+1125 [1.2s|24] K1 Olur olur,
+1126 [2.2s|43] K1 güzel olur yani gezeriz.
+1127 [1.0s|19] K5 Ne oldu?
+1128 [1.2s|24] K1 Bir şey yok gülüm.
+1129 [2.0s|39] K5>K1 Bir şey oldu. Yok ya. Vallahi bir şey olmadı.
+1130 [3.0s|59] K5 Sen bir şey diyecektin bana. Ben böldüm seni. Ne oldu?
+1131 [2.7s|54] K1 Yok [yani?] şeyi diyecektim. Hani.
+1132 [2.3s|45] K1 Yani [şu?] an biraz geçiyor ya saat.
+1133 [3.8s|76] K1 Ondan. Hani çok gece kalmadan yiyelim içelim şeyimizi
+1134 [1.6s|33] K1 yavaştan çıkalım diye yani.
+1135 [1.5s|29] K5>K1 Tamam. Canım.
+1136 [3.7s|74] K5>K28 Hadi [Aliiko?] [hazırlan?] gidelim biz. Ali bugün,
+1137 [1.8s|35] K28 bugün okula gitmiyor.
+1138 [1.3s|25] K28 Teyzesinden izin.
+1139 [1.0s|20] K28 Dilek.
+1140 [3.7s|74] K28>K29 Ali'yi ahıra götürür müsün? Maviş'le oynasın. Tabii hanımım.
+1141 [1.1s|22] K29 Hadi koş bakalım.
+1142 [1.4s|28] K26 Annem.
+1143 [2.3s|45] K26 Bak günlerdir anlatacağım, anlatacağım diyorsun.
+1144 [2.8s|55] K26 Anlat artık kurban olayım, ne olursun. Neyin var senin?
+1145 [1.1s|21] K2 Çok bekledim.
+1146 [1.4s|27] K2 Size söylemek için.
+1147 [1.2s|24] K2 Söyleyemedim ama
+1148 [2.0s|40] K2 vakti geldi artık hissediyorum.
+1149 [2.0s|39] K26 Kızım neyin zamanı geldi?
+1150 [1.6s|32] K26 Kader Korkutma beni.
+1151 [1.2s|25] K2 Ben çok hastayım
+1152 [1.0s|20] K2 ve çaresi...
+1153 [1.2s|24] K2 Mine ben ölüyorum.
+1154 [1.0s|20] K26 Yok, yok, yok,
+1155 [2.9s|57] K26 yok, yok ya öyle şey olur mu kuzum?
+1156 [1.2s|23] K26 Değildir anneciğim.
+1157 [4.8s|84] K26 Yok, yok kızım. Annem Olur mu öyle şey? Yok, yok,
+1158 [1.8s|35] K26 yok anneciğim.
+1159 [1.8s|36] K26 Yok değildir. Değildir, değildir.
+1160 [1.0s|20] K2 Üzülme.
+1161 [1.0s|20] K26 Gel sen
+1162 [1.0s|20] K26 kuzum.
+1163 [4.6s|84] K26 Annem. Bir yanlışlık vardır. Kurban olduğum. Yanlışlık vardır annem.
+1164 [2.8s|55] K26>K2 Değil mi anneciğim? Hayır
+1165 [1.3s|25] K2 hayır değil.
+1166 [1.0s|20] K26 Yok
+1167 [1.8s|36] K26 [yok?] yok annem yok yok yok.
+1168 [3.0s|59] K2 Değildir. Değildir. Değildir. Değildir.
+1169 [1.3s|25] K2>K26 Değil. Ah kızım.
+1170 [2.2s|44] K6 Bu istediğiniz şey mümkün değil.
+1171 [3.5s|70] K6 Verici rızasını yazısıyla verecek. Kurul görüşecek.
+1172 [2.5s|50] K1>K6 Nasıl yani? Gizli donör diye bir şey olmaz Tolga Bey.
+1173 [2.7s|54] K6 Ben Kader Hanım'ı donörden habersiz o masaya yatırmam.
+1174 [4.2s|84] K1 Ya doktor. Gözünü seveyim ya. Kader bunu kabul etmez.
+1175 [2.2s|43] K1 Bak benim ikizim. Benim canımın yarısı.
+1176 [5.3s|84] K1 Benim gözümün önünde göz göre göre yok olmasına izin verme ya. Gözünü seveyim ya.
+1177 [2.6s|52] K6 Kader Hanım donörünün kim olduğunu öğrenmeli.
+1178 [5.5s|84] K6>K1 Kabul etmezse yapamayız. Kabul etmez ki zaten kabul etmez. Tabii canım, istemez ki.
+1179 [1.3s|26] K6 Başka şansımız yok.
+1180 [1.0s|20] K6 Yani
+1181 [3.2s|65] K6 Kader Hanım'a siz mi söylersiniz donörün kim olduğunu yoksa ben mi söyleyeyim?
+1182 [1.0s|20] K1 Ya.
+1183 [3.5s|69] K0 Kader Hanım'ın donöründen onay formu için imza almamız gerekiyor.
+1184 [1.0s|20] K1 Ben alayım.
+1185 [1.0s|20] K1 Hocam,
+1186 [4.5s|84] K1 abim girmese, ha? Ben de kan verdim. Benim de değerlerim fena sayılmaz.
+1187 [2.1s|42] K6 Ya sizinkiler de uyumlu ama
+1188 [4.0s|80] K6>K1 uygun olan siz değilsiniz. Ya iyi de daha iki gün önce evlendi bu adam ya.
+1189 [2.3s|46] K6 Çok zor bir karar. Çok riskli bir ameliyat.
+1190 [1.7s|33] K6 Karar sizin ve Kader Hanım'ın.
+1191 [1.1s|22] K1 Abi.
+1192 [1.1s|21] K1 Abiler.
+1193 [1.4s|28] K1 [Ya?] biraz daha araştırsak.
+1194 [3.1s|61] K1 Doktor Bey, biz, ee, organ bağışı için sıraya girmiştik.
+1195 [2.0s|40] K6 Sırada bekleyen o kadar çok hasta var ki.
+1196 [2.0s|39] K6 Bizim öyle bir vaktimiz yok.
+1197 [1.6s|32] K6 Kader Hanım'ın günleri sayılı.
+1198 [1.0s|20] K1 Abi
+1199 [1.0s|20] K1 bak,
+1200 [3.2s|63] K1 içimde kötü bir his var. Dilim söylemeye... Selo,
+1201 [1.0s|20] K1 sakin.
+1202 [3.8s|75] K1 Meseleye biraz da iyi tarafından bakalım. Ben donör olabiliyorum.
+1203 [3.8s|75] K1 Tamam? Ben artık bu yoldan geri dönmem. Bunu bir şekilde yapacağız.
+1204 [2.5s|49] K6 Kadir Bey size daha detaylı testler yapacağız.
+1205 [1.0s|20] K1 Kadir.
+1206 [2.1s|42] K1 Ya ben çok dua ettim
+1207 [6.2s|84] K1 donör ben olabileyim diye. Ama işte hem oğluma hem Kader'e olan borcumu ödeyebileyim
+1208 [4.4s|84] K1 diye. Senin kimseye borcun yok Tolga. Senin yapman gereken şey kendine sahip çıkmak.
+1209 [2.1s|42] K1 Bak senden bana söz vermeni istiyorum.
+1210 [4.3s|84] K1 Ne olursa olsun Ali'ye benden de anasından da iyi bakacaksın gerekirse.
+1211 [1.7s|34] K1 Saçma sapan konuşma ya.
+1212 [4.3s|84] K1 Ölecekmişsin gibi. Yok, yok. İyi olacak, iyi olacak da- İyi olacak tabii ki.
+1213 [2.1s|42] K1 Ayrıca bak gerçekçi olalım.
+1214 [4.8s|84] K1 Kader izin vermeyecek. Verse bile daha gidip de Defne'ye söylememişsin.
+1215 [1.4s|27] K1 İki gündür o kadar
+1216 [2.0s|39] K1 mutlu, o kadar masum ki.
+1217 [3.3s|65] K1 Yani kızı şunca yıldır iki günlüğüne mutlu edebildim.
+1218 [4.0s|79] K1 O yüzden yapamıyorum yani. Yapman lazım. Bugün, hemen.
+1219 [2.1s|41] K5 Biz boşanma davasını açtık.
+1220 [3.2s|64] K5 Siz hiç merak etmeyin. Süreçle ilgili de sizi bilgilendireceğiz.
+1221 [2.9s|58] K13>K5 Teşekkürler Defne. Tamam, kolay gelsin. İyi günler.
+1222 [2.0s|40] K5 Of, biz ne yaşadık ya?
+1223 [3.5s|70] K5 Adam resmen evlenince böyle yüz seksen derece dönmüş.
+1224 [3.6s|71] K6>K5 Sen hiç takılma, öyle olmayacaksın. Ay ben niye takılayım ya?
+1225 [3.5s|71] K5 Benim kaderim bir kere, bir tanecik. Kaderim de kaderim.
+1226 [2.5s|49] K5>K30 Hoş geldin. Canım. Nasılsın?
+1227 [0.8s|16] K30 Oh,
+1228 [1.4s|28] K30 iyiyim.
+1229 [3.0s|60] K30>K5 Ee, nasıl geçti dün gecen? Ay
+1230 [3.9s|78] K5 dünyanın en güzel, en romantik, en tatlı gecesini geçirdik.
+1231 [1.7s|34] K5 Böyle baş başa. Çok güzeldi.
+1232 [0.8s|16] K30 hiç
+1233 [3.5s|70] K30 kötü, kötü şey olmadı yani? Kötü bir haber falan almadın?
+1234 [3.8s|76] K6>K30 Sen niye negatif negatif konuşuyorsun yine? Negatif falan konuşmuyorum ya.
+1235 [1.6s|32] K30>K5 Allah Allah. Ne oluyor ya?
+1236 [5.2s|84] K30>K5 Bir şey olmuyor. Sadece seni çok seviyorum. Aşkım, ben de seni çok seviyorum.
+1237 [1.0s|20] K30 Tamam.
+1238 [3.8s|75] K30>K6 Ne oldu şimdi? Aman canım ne olacak? Dün gece bir romantik film izlemiştir.
+1239 [3.6s|72] K6 Onun etkisinden çıkamıyordur. Bıktım ya bunun bu duygusal hezeyanlarından.
+1240 [3.0s|60] K6>K5 Gerçekten bıktım. Hadi abartma ya. Abartma ya.
+1241 [2.4s|47] K6 Dur şey aklıma geldi. Şu dosyaya bir bakacaktım [da.?]
+1242 [1.0s|20] K5 Alo?
+1243 [1.0s|20] K5 Alo?
+1244 [1.0s|20] K1 K-kızım.
+1245 [1.0s|20] K1 Ben baban.
+1246 [1.0s|20] K1 Defne?
+1247 [1.8s|36] K5 Nereden buldun numaramı?
+1248 [3.7s|74] K1 Bak seni rahatsız etmek, üzmek istemiyorum.
+1249 [2.6s|52] K1 Sadece bir kahve içebilir miyiz? Lütfen.
+1250 [1.1s|22] K1 Çok özledim seni.
+1251 [3.1s|62] K6 Defne. Bu temmize gidecek bir dosya vardı, onu gönderiyorum.
+1252 [1.0s|20] K6 Defne?
+1253 [3.7s|74] K5>K13 Efendim anne. Anneciğim iki kere aradım, mesaj attım.
+1254 [3.3s|65] K5>K13 Kusura bakma, işim vardı. Tamam. Sen niye balayına gitmedin?
+1255 [2.0s|39] K13 Gitmemişsin. Melis söyledi.
+1256 [2.8s|55] K5>K13 Erteledik biraz. Bak baban yüzünden değil mi?
+1257 [2.7s|54] K13 Ne olursun onu takma kafana. Yani boş ver onu sen.
+1258 [1.0s|20] K5 Anne,
+1259 [5.2s|84] K5 konuştuk bunları, tamam mı? O adam bizim hayatımıza da giremez, yüzümüzü de göremez.
+1260 [1.3s|26] K5 Sen hiç merak etme.
+1261 [1.4s|28] K13>K5 buraya geldi. Ne?
+1262 [1.1s|21] K5 Sen...
+1263 [1.7s|33] K5>K13 Sen iyi misin peki, ha? İyiyim, iyiyim.
+1264 [4.0s|80] K13 Yani biraz ayıldım, bayıldım, sinirlendim filan ama toparladım yani.
+1265 [3.0s|60] K5>K13 Oğuz gördü mü? Oğuz onunla görüşmek istiyor Defne.
+1266 [1.0s|20] K5 Asla.
+1267 [3.8s|76] K5>K13 Anne, asla. Böyle bir şey olamaz, tamam mı? Ben konuşurum onunla. Ben halledeceğim.
+1268 [2.8s|56] K13 Ben halledemezsem senden yardım isteyeceğim. Tamam, söz.
+1269 [1.0s|20] K5 Tamam.
+1270 [4.1s|81] K5 Ama eğer seni ararsa, kapına falan tekrar gelirse bana haber veriyorsun, tamam mı?
+1271 [1.0s|20] K13 Tamam.
+1272 [1.8s|36] K5 Hadi görüşürüz, haberleşiriz.
+1273 [1.0s|20] K31 Abi ne oldu?
+1274 [2.8s|55] K1 Yarından sonra ameliyatı yapabiliyormuş doktor.
+1275 [2.1s|41] K1 Olay sadece Kader'i ikna etmeye kaldı.
+1276 [3.4s|67] K1 Selo bak sakın dağılma. Sana ihtiyacım var, tamam mı? Kendine gel.
+1277 [2.1s|42] K31>K1 Çiftliğe mi abi? Yok.
+1278 [3.5s|69] K1 Üstümü değiştiririm yolda. Sonra Defne'nin ofisine götür beni.
+1279 [1.5s|30] K31 Yengeme söyleyeceksin değil mi abi?
+1280 [1.0s|20] K31 Abi.
+1281 [5.0s|84] K1>K31 Bana yarım gün lazım Selo. Abi kurban olayım [gün?] mü kaldı ya, ha?
+1282 [1.5s|29] K1 Sevdiğim kadınla
+1283 [3.1s|61] K1 belki de son yarım günümü geçireceğim Selo. Hakkım değil mi?
+1284 [1.0s|20] K31 Hakkındır abi.
+1285 [2.1s|42] K1 Sen de evdekileri idare et tamam mı?
+1286 [3.1s|62] K1 Hani Kader'le vakit geçirsinler, mutlu olsunlar.
+1287 [3.8s|75] K1 Anam da Zeyno da Ali ne istiyorsa yap, tamam mı? Gönüllerini hoş tut.
+1288 [1.0s|20] K31 Tamam abi.
+1289 [1.8s|36] K1 Dönünce anlatacağım zaten her şeyi.
+1290 [1.9s|38] K1 Sevdiğim kadını alacağım karşıma.
+1291 [1.6s|32] K1 Belki ölebilirim diyeceğim.
+1292 [3.8s|75] K1 Neyse şu yarım günü yaşayalım da sonra ne olacaksa olsun. Hadi sür.
+1293 [3.1s|61] K4>K29 Kader'in haberi var, öyle mi? Daha yeni oldu anne.
+1294 [1.1s|22] K29 Anne ne yapıyorsun?
+1295 [2.3s|46] K4>K29 Hastaneyi arıyorum. Anne [otur?] Allah aşkına.
+1296 [1.1s|21] K4 Dur, ben,
+1297 [2.4s|48] K4>K29 ben de vereceğim. Ne vereceksin?
+1298 [2.8s|56] K4>K29 Ciğerimi vereceğim. Anne, sen kaç yaşındasın?
+1299 [1.8s|36] K4 Ya ne alakası var kızım ya?
+1300 [2.8s|56] K4 Neyim var benim? Ben daha bu yaşıma kadar hastaneye bile gitmedim.
+1301 [1.9s|38] K4 Sen ne anlatıyorsun?
+1302 [2.0s|40] K4 Kader. Kızım iyi misin anneciğim?
+1303 [1.1s|22] K29>K4 İyiyim, iyiyim. Hah.
+1304 [1.8s|36] K29 Zaten donör bulundu.
+1305 [1.7s|34] K4 Sen ne diyorsun ya?
+1306 [4.0s|79] K4>K29 Kız niye söylemiyorsun bunu önceden? Biz mahvolduk ya. Abla önden söylesene.
+1307 [2.4s|47] K29 Burada perişan oldum anneciğim.
+1308 [5.5s|84] K4 Yavrum bak Allah bize bir şans vermiş, bir ihtimal vermiş. Bir tanem benim yavrum.
+1309 [2.4s|47] K4>K29 Kimmiş peki bu donör? Henüz bilmiyorum.
+1310 [2.8s|56] K29 Anne vazgeçebilir. Ne olursun sen sakin ol, tamam?
+1311 [3.0s|60] K4 Yok Zeyno. Git arabayı hazırla. Hadi kızım.
+1312 [4.4s|84] K29>K4 Nereye? Hastaneye gidiyoruz. Ben o donörün ellerini, ayaklarını öpeceğim.
+1313 [3.1s|62] K4>K29 Kurban olacağım ona. Haydi, haydi. Anne.
+1314 [1.7s|34] K4>K29 Dur, dur. Zeyno peşinden git.
+1315 [1.8s|35] K29>K4 Daha fazla umutlanmasın. Tamam.
+1316 [1.8s|36] K20 Defneciğim bu dosyayı sen mi alırsın, ben mi alayım?
+1317 [1.6s|33] K5>K20 Sen hallet canım. Tamam.
+1318 [2.6s|52] K1>K5 Kolay gelsin. A a, Kadir.
+1319 [2.5s|50] K5>K1 Senin ne işin var burada? Gülüm. Hadi gidiyoruz.
+1320 [0.8s|16] K5 Nereye?
+1321 [1.2s|23] K1>K20 Paris'e. Aaa!
+1322 [1.0s|20] K5 A-a
+1323 [3.3s|65] K5 ne Paris'i ya? B-benim hiçbir şeyim yok yani.
+1324 [3.9s|77] K1 Ya hazırlığına gerek yok ya. Gideceğiz, güzel bir öğle yemeğimizi yiyeceğiz.
+1325 [2.5s|49] K1 Yarım gün gezineceğiz, geri döneceğiz.
+1326 [1.9s|37] K5 Kadir yarım günlüğüne Paris'e mi gidilir ya?
+1327 [2.8s|56] K5>K1 Delirdin mi sen? Gülüm bak ben sana bir söz verdim.
+1328 [2.9s|57] K1 Yeterince o sözü erteledim. Daha fazla ertelenmeyecek.
+1329 [2.1s|41] K20 Ya Kadir Bey size bir şey söyleyeceğim.
+1330 [3.3s|65] K20 Sizin bir çıtanız var ve o çıtayı böyle sürekli yükseltiyorsunuz.
+1331 [4.5s|84] K20 Yani biz geriye kalan bu erkekler ne yapalım ya? Ne yapalım yani?
+1332 [2.7s|53] K31 Sen önce bir kız bul da ondan sonra endişelenirsin.
+1333 [4.4s|84] K4>K20 Aynen. Ne yaparsan da yap. A, siz benim geceleri ne yaptığımı nereden biliyorsunuz?
+1334 [1.7s|33] K1 Biz Paris'e odaklanalım, gel.
+1335 [3.8s|76] K31 O zaman ben bir ceketimi, çantamı falan alıp geliyorum.
+1336 [4.3s|84] K31 Sen her geçen gün beni kendine daha da aşık ediyorsun buna göre.
+1337 [1.5s|30] K1 Hadi koş.
+1338 [1.0s|20] K1 Hadi koş.
+1339 [1.0s|20] K31 Kadir Bey.
+1340 [0.8s|16] K31 Ben
+1341 [2.2s|44] K31 Selim'le konuştum da.
+1342 [2.3s|46] K1 Melis Hanım farkındayım.
+1343 [1.4s|28] K1 Konuşacağım.
+1344 [2.2s|44] K1 Derdim bir şey saklamak değil. Derdim
+1345 [4.5s|84] K1 en azından bir süre mutlu olmak, güzel vakit geçirmek. Sonra söyleyeceğim. Söz.
+1346 [0.7s|14] K1 Tamam.
+1347 [1.0s|20] K31 Tamam.
+1348 [1.6s|32] K4 Ne konuşuyorsunuz kısır mısır?
+1349 [2.3s|46] K31>K1 Hazır. Hadi. Ne yiyeceksiniz diye soruyorum.
+1350 [0.9s|18] K31 Tamam.
+1351 [1.5s|30] K1>K4 Hadi gidelim. Bay bay [anneciğim.?]
+1352 [1.4s|28] K20>K31 Melis. Hah.
+1353 [1.0s|20] K20 Ne oldu?
+1354 [1.0s|20] K31 Yok bir şey.
+1355 [1.0s|20] K31 [Sağ?] olun.
+1356 [4.3s|84] K31>K6 Kızımın kurtulma ihtimali var ama değil mi doktor? En zor kısmı donör bulmaktı.
+1357 [3.1s|62] K6 Ameliyat da riskli ama umudumuz var. Yoksa yapmazdık.
+1358 [1.1s|22] K31 Çok şükür.
+1359 [3.7s|74] K31>K6 Peki ameliyatı ne zaman düşünüyorsunuz? İzinler alınınca.
+1360 [2.2s|44] K6>K31 Yarından sonra. Doktor.
+1361 [1.0s|20] K31 Kim bu donör?
+1362 [3.8s|75] K31 Kurban olayım, ben onun elini ayağını öpeceğim. Bana adını söyleyin.
+1363 [2.9s|57] K6>K31 Selma Hanım. Ben Kader'in anasıyım.
+1364 [1.5s|29] K6 Siz bir ailenizle konuşun.
+1365 [1.0s|20] K31 Ne?
+1366 [1.0s|20] K6 Peki.
+1367 [2.7s|54] K6 Donörün izni olduğu için bu bilgiyi sizinle paylaşabilirim.
+1368 [1.9s|37] K6 Verici ailenizden.
+1369 [1.2s|25] K31 Ailemizden mi?
+1370 [1.0s|20] K31 Kim hocam?
+1371 [1.0s|20] K31 Oğlum mu?
+1372 [2.8s|56] K31 Doktor? Oğlum mu? Oğlum mu diyorum.
+1373 [3.0s|59] K31 Ya doktor. Benim iki evladım
+1374 [1.4s|28] K31 aynı karından.
+1375 [1.7s|33] K31 İkisini de mi alacaksınız?
+1376 [1.1s|23] K32 Anne ne oluyor?
+1377 [1.2s|24] K32 Anne ne oluyor?
+1378 [1.0s|20] K32 Donör.
+1379 [1.1s|21] K33 Kadir'miş.
+1380 [3.5s|69] K33>K32 Sana ciğerini Kadir verecekmiş. Nasıl?
+1381 [5.2s|84] K32>K33 Hayır, olamaz. Doktor söylemedi bana. Kadir kendi diyecekmiş. Ondan dememiştir.
+1382 [1.4s|27] K32 Zeynep telefonunu verir misin?
+1383 [2.3s|45] K33>K32 Abla. Zeynep telefonumu ver.
+1384 [1.0s|20] K32 Alo hocam.
+1385 [1.3s|25] K32 Ben Kader Emindağ.
+1386 [2.1s|41] K32 Ben ameliyat olmak istemiyorum.
+1387 [1.9s|37] K32 Evet, iptal etmek istiyorum.
+1388 [1.4s|28] K33 Sakın, sakın [annem.?]
+1389 [2.9s|57] K32 Nasıl? Benim imzam gerekmiyor mu?
+1390 [4.2s|83] K32 Tamam imzalamıyorum. Onayımı geri alıyorum. Gereken neyse yapın lütfen.
+1391 [2.1s|41] K33 Kızım ne yaptın sen?
+1392 [2.5s|49] K32>K33 Ameliyatımı iptal ettim. Kader.
+1393 [4.1s|81] K33 Kızım, sen ölüyorsun anneciğim. Ne yapıyorsun sen?
+1394 [1.2s|24] K32 Ne yapsaydım anne?
+1395 [1.6s|31] K32 Kadir'i riske mi atacağız?
+1396 [4.4s|84] K32>K33 Ali'nin hepinize ihtiyacı var. Allah'ım sen bana sabır ver ya Rabbim.
+1397 [3.1s|62] K33 Allah'ım sen bana dayanma gücü ver ya Rabbim.
+1398 [1.8s|36] K32 İşte bu yüzden anlatmadım size.
+1399 [2.0s|39] K32 Belki birkaç günüm daha var.
+1400 [2.6s|52] K32 Ev şimdiden cenaze evine döndü.
+1401 [2.9s|58] K32 Eğer beni birazcık seviyorsanız toparlayın kendinizi.
+1402 [2.2s|43] K32 Bak ben çoktan alıştım bu fikre.
+1403 [4.9s|84] K32 Birazdan Ali gelecek. O geldiğinde normal davranmazsanız yemin ederim çeker giderim.
+1404 [1.2s|23] K33 Tamam abla tamam.
+1405 [3.0s|60] K32>K33 Ne olur toparlayın kendinizi. Anne. Anne otur.
+1406 [1.9s|39] K32 Anne otur bir sakinleş lütfen.
+1407 [1.3s|25] K1 Güzel memleket ya.
+1408 [1.3s|26] K1 Biz de şu
+1409 [3.8s|76] K1 Aşk Köprüsü var ya, biz de oraya gidip bir bizim aşkın kilitlerini taksak acaba?
+1410 [4.3s|84] K1>K5 Hani ölümsüz şey yapmak için. Aşkın bütün klişelerini yaşayalım diyorsun yani.
+1411 [0.9s|18] K1 He.
+1412 [4.5s|84] K5 Ya boş ver ya. Benim kalbimin anahtarı zaten sende Kadir Emindağ.
+1413 [3.9s|78] K1 Ya sen beni var ya sen beni bitirdin, mahvettin be.
+1414 [2.0s|40] K1 Pamuk gibi adam oldum ben.
+1415 [1.2s|23] K5 Allah Allah.
+1416 [2.4s|48] K5>K1 Bu mu senin pamuk hâlin? [Ne?] yazık ki.
+1417 [3.1s|62] K5 Dünyada böyle yarım günlüğüne Paris'e gelen
+1418 [4.0s|80] K5>K1 başka biri var mıdır ya? Bence sadece biz varız. Sadece biz varız gülüm.
+1419 [1.5s|29] K5 Sadece biz varız.
+1420 [1.0s|20] K5 Söyle bakayım,
+1421 [1.6s|31] K5 sen niye getirdin beni buraya?
+1422 [4.8s|84] K1>K5 Söz verdim ya gülüm. Yok onu demiyorum. Niye bugün getirdin diyorum.
+1423 [2.2s|44] K1 Bugünümüz var da ondan.
+1424 [1.0s|20] K5 O ne demek?
+1425 [1.0s|20] K1 E
+1426 [3.0s|59] K1 yani hayat gülüm. Yarın belli değil.
+1427 [2.0s|40] K1 Yarından sonrası
+1428 [2.6s|52] K1 hani kim bilecek yani?
+1429 [1.9s|37] K1 Yarın diye bir şey yok yani. Bugün var.
+1430 [2.4s|47] K5 Yarın yok, bugün var ne demek Kadir?
+1431 [1.6s|32] K1 Hayat yani. Hani
+1432 [4.5s|84] K1 başımıza ne geleceği sonuçta belli değil. Hani şu anda
+1433 [1.0s|20] K1 bence
+1434 [3.7s|73] K1 tam doğru bir an. Onun tadını çıkarmak lazım diye.
+1435 [2.6s|52] K5 Sen romantikken de bir değişik oluyorsun ha.
+1436 [1.0s|20] K1 Farkındayım.
+1437 [1.6s|32] K5 Şimdi böyleysen
+1438 [2.3s|46] K5 Adana'daki düğünde nasıl olacaksın merak ediyorum.
+1439 [2.0s|39] K1 Ooo Adana'daki düğünde sen yandın.
+1440 [4.2s|84] K5>K1 Allah Allah. Adana'daki düğünde ben senin aklını başından alacağım.
+1441 [2.9s|57] K1 Yani seni Adana'nın kraliçesi ilan edeceğiz.
+1442 [4.3s|84] K1 Altına tahtı çekeceğiz, kafana tacı takacağız, kırmızı halıyı sereceğiz. Devam.
+1443 [5.0s|84] K5>K1 Yani şöyle yapsak. Hani normal evli bir çift olarak- Mümkün değil.
+1444 [1.3s|25] K1>K5 Olmaz. Niçin?
+1445 [1.4s|28] K5 Ne yapalım?
+1446 [1.7s|33] K1 Biz böyle bir çift olacağız.
+1447 [1.0s|20] K5 Oluruz.
+1448 [1.0s|20] K5 Kadir.
+1449 [1.0s|20] K5 Kadir.
+1450 [1.0s|20] K1 Gülüm.
+1451 [1.1s|22] K5 Bir şey mi oldu?
+1452 [1.3s|26] K1 Bir şey yok,
+1453 [1.1s|22] K1 her şey yolunda.
+1454 [1.9s|38] K5>K1 Fotoğraf çekilelim o zaman. Hadi gel.
+1455 [1.4s|28] K1 Şey yap [şunu,?] seni.
+1456 [2.5s|50] K1 Şöyle eğ [seni?] şurada parmağımın ucunda şey yapsın.
+1457 [1.1s|22] K32 Neredesin?
+1458 [1.0s|20] K32 Ayaz'ı ara.
+1459 [1.8s|36] K5 Abi annem biliyor.
+1460 [1.0s|20] K5 Kadir
+1461 [1.6s|31] K5>K11 [İyi?] misin? İyiyim gülüm.
+1462 [1.2s|24] K11 Hiçbir sıkıntımız yok.
+1463 [2.6s|52] K11 Ne kadar kalacaksınız burada? Bir servet ödüyorsunuzdur.
+1464 [1.0s|19] K15 Yani
+1465 [1.6s|31] K15 para önemsediğim bir konu değil.
+1466 [1.5s|30] K15 Şu an önceliğim ailem.
+1467 [3.3s|65] K11>K15 Birkaç kez batmışsınız, öyle duydum. Ben onlara deneyim diyorum.
+1468 [2.9s|57] K15 İnsan dibi görmeden zirveye ulaşamaz.
+1469 [2.0s|40] K11 Ben de aynı şeyi söylüyorum.
+1470 [1.5s|29] K11 Hep aynı şeyi söylüyorum.
+1471 [2.4s|48] K15 Levent Bey neden geldiniz?
+1472 [2.6s|52] K11>K15 Ne zaman gideceğinizi öğrenmek için. Şu konu.
+1473 [2.3s|46] K15 Defne'yle konuşmadan hiçbir yere gitmiyorum.
+1474 [3.3s|66] K15 Bütün işimi gücümü bıraktım geldim. Hatta yatırımcılarım sürekli arıyor.
+1475 [1.1s|21] K15 Hepsini erteliyorum.
+1476 [1.2s|23] K11 Ne yatırımı?
+1477 [1.4s|27] K15 Kapalı bir grup.
+1478 [3.6s|72] K15 Yani büyük bir fırsat yakaladık açıkçası. O yüzden oteli falan önemsemiyorum.
+1479 [4.7s|84] K15 Yani bu kadar yıllık sıkıntıdan sonra hakkım diye düşünüyorum. Böyle bir ortam.
+1480 [1.9s|37] K15 Herkes sizin gibi şanslı doğmuyor.
+1481 [4.3s|84] K11 Yani aileden kalan serveti idare etmek de bir dert, inanın.
+1482 [5.2s|84] K11 Bizim ailede hep serveti artıranlar konuşulur nesillerce.
+1483 [4.9s|84] K11>K15 Benim hane ekside maalesef o açıdan. Ama mükemmel bir eşiniz var.
+1484 [1.6s|31] K15 Çok şanslısınız.
+1485 [3.4s|67] K15 Yani sizin yerinizde olabilmek için bütün servetimi verirdim.
+1486 [3.3s|65] K15 Hayır, hayır, yanlış anlamayın, öyle bir niyetim yok.
+1487 [3.1s|62] K15>K11 Mine sizinle çok mutlu. Mutlu. Evet, çok mutlu.
+1488 [1.3s|25] K15 Dediğim gibi
+1489 [2.2s|44] K15 Defne'yle bir kez konuşayım, gideceğim.
+1490 [1.5s|29] K15 Mine merak etmesin.
+1491 [2.7s|53] K15 Şimdi izninizi rica ediyorum. Benim bir online toplantım var.
+1492 [2.7s|54] K15 Odaya çıkmak zorundayım. Teşekkür ediyorum geldiğiniz için.
+1493 [3.6s|72] K11 Defne'yle konuşurum sizin için bir an evvel gidebilin diye.
+1494 [1.9s|38] K15 Eğer bunu ayarlarsanız
+1495 [2.4s|48] K15 ben de sizin için ne isterseniz yaparım.
+1496 [1.6s|32] K11 Şu yatırım işini
+1497 [3.2s|63] K11>K15 çıtlatırsanız bana iyi olur. Bunu bilemedim.
+1498 [1.6s|32] K15 Dedim ya kapalı bir grup diye.
+1499 [1.0s|20] K15 Ama yaparım,
+1500 [1.2s|24] K15 elimden geleni yaparım,
+1501 [1.3s|25] K15 merak etmeyin.
+1502 [1.0s|20] K15 İyi akşamlar.
+1503 [2.7s|53] K11 Çok karizmatik bir herif, çok.
+1504 [1.7s|33] K11 Paçalarından para akıyor.
+1505 [2.1s|41] K17 Buyurun efendim. Hesabınız.
+1506 [1.0s|20] K11 Hesap mı?
+1507 [1.2s|23] K5 Kadir
+1508 [3.6s|73] K5 baksana ne güzel çıkmışız. Bunlardan bastıralım olur mu?
+1509 [1.0s|20] K11 Olur gülüm.
+1510 [3.6s|71] K5 Selim. Ben var ya senin bu abine deli gibi aşığım.
+1511 [3.0s|60] K5 Onsuz böyle bir an, bir saniye bile kalmak istemiyorum.
+1512 [1.8s|35] K11 Selo kenara çek Selo.
+1513 [0.9s|18] K34 Abi.
+1514 [1.2s|23] K11 Kenara çek Selo.
+1515 [1.1s|22] K5 Kadir ne oluyor?
+1516 [1.0s|20] K5 Kadir.
+1517 [1.1s|22] K5 Kadir ne oluyor?
+1518 [1.2s|25] K5 Kadir iyi misin?
+1519 [2.0s|39] K5 Kadir iyi misin? Ne oluyor Kadir?
+1520 [1.9s|37] K5 Kadir korkutma beni. Ne oluyor?
+1521 [1.1s|22] K11 Kader ölecek.
+1522 [1.0s|20] K5 Ne?
+1523 [1.7s|33] K11 Karaciğeri bitmiş.
+1524 [1.0s|20] K5 Ne demek?
+1525 [3.8s|75] K5>K11 Ne demek karaciğeri bitmiş Kadir? Ne diyorsun sen? Bitmiş işte Defne. Ölecek.
+1526 [1.8s|36] K5 Nasıl ölecek ya?
+1527 [1.4s|28] K5 Kadir ne diyorsun?
+1528 [1.4s|27] K11 Birkaç gün, belki
+1529 [2.7s|54] K11 şanslıysak birkaç hafta diyorlar. Çok az vakit var.
+1530 [2.4s|47] K11 Karaciğeri donörle akli olması lazım.
+1531 [1.2s|23] K5 Ne zaman öğrendin?
+1532 [1.8s|35] (?) K11 Dün gece [öğrendim.?]
+1533 [1.0s|20] K11 Bahçede
+1534 [2.1s|42] K11 Tolga'yla Kader konuştuklarını duydum.
+1535 [3.4s|68] K11 Kulübeyi de ondan dağıttım. Sana söyleyemedim. Vallahi özür dilerim.
+1536 [2.6s|51] K5 Sen şimdi bırak bunları. Bunu mu düşünüyorsun?
+1537 [3.0s|59] K5 Biz Kader için ne yapabiliriz? Yok mu bir çaresi? He
+1538 [1.0s|19] K5 he.
+1539 [1.0s|20] K11 Var.
+1540 [4.0s|80] K11>K5 Karaciğerin akli olması lazım donörle de. Tamam, tamam.
+1541 [2.9s|57] K11 Masada kalma riski var yani iki kişi için de.
+1542 [1.6s|32] K5 Bulunun peki donör [he?] [he.?]
+1543 [1.0s|20] K5 Kim?
+1544 [1.0s|20] K5 Hayır.
+1545 [1.3s|25] K11>K5 Defne. Hayır
+1546 [2.0s|39] K5>K11>K5 Kadir. Defne. Hayır Kadir.
+1547 [4.0s|80] K11 Defne [yapmak?] zorundayım. Benden başkası olamaz. Yapmak zorundayım.
+1548 [1.7s|33] K5 Ne kadar riskli?
+1549 [1.0s|20] K5 He?
+1550 [1.1s|23] K5 Ne kadar risk...
+1551 [1.6s|33] K11 Aşkım benim. Melis.
+1552 [1.0s|20] K11 Canım.
+1553 [1.0s|20] K11 Canım.
+1554 [1.0s|20] K11 Yapma. Tamam.
+1555 [1.4s|29] K11 Tamam. Sakin. Sakin.
+1556 [0.9s|18] K11 İyi misin?
+1557 [1.0s|20] K5 Yok bir şey.
+1558 [1.3s|25] K11>K5 Göğsün ağrımıyor, değil mi? Yok bir şey.
+1559 [1.0s|20] K11 Göğsün ağrıyor
+1560 [3.3s|66] K11>K5 mu? İzin vermiyorum, tamam mı? İzin vermiyorum. Sen olamazsın.
+1561 [3.2s|64] K5>K11 Başka biri olsun. İzin vermiyorum. Canım.
+1562 [3.3s|65] K35 Gülüm başkası olamaz. Başka biri yok.
+1563 [1.0s|20] K5 Ben varım ya
+1564 [4.9s|84] K5>K35 ben varım. Bana da baksınlar. Hadi ne olursun. Olmaz. Sen olmazsın gülüm.
+1565 [1.1s|22] K5 Kadir bak.
+1566 [5.0s|84] K5 Kadir [sana?] bir şey olursa hayat sadece bende değil. Annen, Zeynep, Selim, Ali.
+1567 [3.4s|68] K5 Kadir Sana bir şey olmasın. Sana bir şey olursa Sinan [Hanım'ım?] da sana bir şey
+1568 [2.2s|43] K5>K35 olmasın. Canım benim.
+1569 [1.0s|20] (?) K35 Benim [gülüm.?]
+1570 [4.1s|81] K5>K35 Yok gidiyoruz. Şimdi bana da bakacaklar. Defne gülüm
+1571 [3.3s|66] K35 sen olamazsın. Kalbimde mermi var.
+1572 [2.9s|58] K35 Yapamazsın gülüm. Benden başkası olamaz.
+1573 [1.7s|34] K35 İkizim o benim.
+1574 [1.0s|20] K35 Canım benim.
+1575 [4.2s|84] K5 Sen o yüzden mi götürdün beni Paris'e? Biz o yüzden mi masal gibi bir gün geçirdik?
+1576 [2.0s|39] K5 Masal gibi bir hayat yaşıyoruz.
+1577 [1.0s|20] K5 O yüzden mi
+1578 [1.6s|31] K5 belki son kez diye.
+1579 [1.1s|23] K35 Korkuyorum gülüm.
+1580 [1.6s|31] K35 Korkuyorum. Ben de çok korkuyorum.
+1581 [1.3s|26] K35 Tamam,
+1582 [1.7s|34] K35 tamam bir tanem.
+1583 [1.0s|20] K35 Tamam.
+1584 [1.0s|20] K35 Bir şey de bana.
+1585 [1.0s|20] K5 Ne diyeyim?
+1586 [2.0s|39] K5 Kardeşini ölüme mi terk edeyim?
+1587 [1.9s|37] K5 Yoksa kendi hayatını
+1588 [1.3s|26] K5 mı? Ne diyeyim?
+1589 [4.4s|84] K35 İyi olacak de. İyi olacak de. İyi olacak de. Seni seviyorum de.
+1590 [1.4s|27] K35 Hepsi geçecek de.
+1591 [1.3s|25] (?) K35 Sen dersen [ben,?]
+1592 [2.0s|39] K35 sen dersen [ben?] gülüm.
+1593 [1.5s|29] K5 Seni seviyorum.
+1594 [2.5s|49] K35>K5 Ben de seni çok seviyorum. Seni çok seviyorum.
+1595 [1.3s|26] K5 İyi olacak,
+1596 [1.5s|29] K5 iyi olacaksın,
+1597 [1.6s|32] K5 iyi olacaksınız.
+1598 [3.9s|78] K5 Hem sen beni terk edip gitmezsin ki. Gidemezsin.
+1599 [3.1s|62] K5 Sen beni bırakmazsın. Hem ne diyoruz ya?
+1600 [2.7s|54] K5 Bunlar bizim daha evliliğimizin ilk günleri.
+1601 [4.3s|84] K5 Biz daha ne günler yaşayacağız. Biz daha kavga edeceğiz, barışacağız, küseceğiz.
+1602 [3.8s|75] K5 Ben sana yemekler yapacağım. Kilo alacağız,
+1603 [4.2s|84] K5 kedi alacağız, köpek alacağız. Biz daha bir sürü şey yapacağız.
+1604 [1.7s|34] K35 Hepsini yapacağız gülüm.
+1605 [5.1s|84] K35>K5 Hepsini yapacağız. Seni çok seviyorum. Beni bırakma ne olur.
+1606 [1.0s|20] K35 Işık.
+1607 [1.6s|33] K5 Beni bırakma. [Beni?] bırakma.
+1608 [1.0s|20] K8 Sıra sende.
+1609 [1.7s|34] K0 [Ya?] bir durun bize biraz.
+1610 [1.7s|33] K8 Merak etme duyuluyor.
+1611 [1.0s|20] K0>K5 Abi bir durun. Bize biraz saygı gösterin. Bir dakika. [Bir?] dakika. Ali'm
+1612 [2.0s|41] K5>K8 iyi misin? Maviş.
+1613 [5.7s|84] K8 Herkes bağırıyor ama ben bağırınca ceza alıyorum. Haksızlık değil mi?
+1614 [2.0s|39] K5 Çok büyük haksızlık hem de.
+1615 [4.5s|84] K5 Ben avukatın olarak seni savunacağım. Sen hiç merak etme, tamam mı?
+1616 [1.9s|37] K8 Annem ameliyat olacak mı?
+1617 [1.4s|28] K5 Bilmiyorum Ali.
+1618 [2.4s|48] K8 Dayım ona ciğerini verecekmiş.
+1619 [3.4s|68] K5>K8 Sen nereden biliyorsun? Anneannem konuşurken duydum.
+1620 [1.9s|37] K8 Ama annem istemiyormuş.
+1621 [2.9s|57] K8 Niye istemiyor ki? Ben bebek değilim.
+1622 [4.2s|84] K8 Annem hasta uzun zamandır bana anlattı. Bizim sırrımız buydu.
+1623 [1.2s|23] K5 Ali'cim annen
+1624 [1.3s|26] K5 istemiyor çünkü.
+1625 [2.2s|44] K5 Dayına bir şey olsun istemiyor.
+1626 [4.7s|84] K8 Anneannem ikisine de bir şey olsun istemiyor. Bir öyle bir böyle diyor.
+1627 [4.5s|84] K5>K8 En zoru onun durumu. Ama ben de anneme bir şey olmasını istemiyorum.
+1628 [2.0s|39] K8 İkisini birden istiyorum ben.
+1629 [2.4s|48] K8 Hem dayımı hem annemi. Olmuyor mu?
+1630 [1.2s|25] K8 Olmuyor değil mi?
+1631 [1.0s|20] K5 Ali'cim
+1632 [1.0s|20] K5 bak şimdi.
+1633 [2.4s|47] K5 Neyin olup olmayacağını biz bilemeyiz.
+1634 [2.6s|52] K5 Ama hep iyi şeyler düşünebiliriz
+1635 [1.1s|23] K5 ki iyi olsun
+1636 [1.4s|28] K5 umut edebiliriz.
+1637 [1.9s|39] K5 Bizim elimizden bu kadarı gelir.
+1638 [1.4s|28] K5 Tamam mı?
+1639 [2.5s|49] K8 Evet, annem bana bunları öğretti.
+1640 [3.6s|71] K5 Senin annen çok güçlü, çok zeki
+1641 [1.0s|20] K5 ve
+1642 [3.5s|70] K5>K8 biraz da fazla inatçı bir kadın. Of
+1643 [1.4s|28] K8 söyleme ya.
+1644 [2.6s|52] K5 Ben şimdi annenle konuşmaya gidiyorum.
+1645 [1.8s|35] K5>K8 Sen burada bekle, tamam mı? Tamam.
+1646 [1.0s|20] K0 [Ya?] bir
+1647 [1.4s|27] K0 durun bize
+1648 [3.7s|74] K0 bir dakika. Bir dakika, bir dakika. Bir dakika abi. [Abi?] bir dakika.
+1649 [4.0s|80] K0>K35 Bir ablamı dinleyebilir miyiz? Ya neyini dinleyeceğiz? Neyini dinleyeyim ben ya?
+1650 [1.5s|30] K0 Nesini dinleyeceksin değil mi?
+1651 [3.3s|66] K0 Nesini dinleyeceksin? Zaten söz konusu olan benim hayatım değil çünkü.
+1652 [2.7s|54] K35 Ya senin benim hayatım diye bir şey yok. Senin hayatın diye bir şey yok.
+1653 [5.0s|84] K35>K0 Bizim hayatımız ya. Bu hepimizin hayatı. Bir gram değişmemişsiniz ya. Bir gram.
+1654 [2.9s|58] K5 Allah'ım sen bana sabır ver ya Rabbim Allah'ım.
+1655 [1.8s|36] K5 Allah'ım sen bize doğruyu.
+1656 [4.7s|84] K5>K0 Kurban olayım ne olursun. Anne kesintisiz ağlıyorsun ya [ne?] olur,
+1657 [3.8s|75] K0>K5 ne olur yeter. Bıktım valla. Ben iki evladımı da
+1658 [2.8s|55] K5>K35 masada mı bırakayım? Ya ne masası?
+1659 [5.5s|84] K35 Ne masada kalması? Ne demek-- ya sen niye bizi gömüyorsun hemen ana? Umut var umut.
+1660 [1.7s|34] K35 Umut diye bir şey var.
+1661 [3.5s|69] K35 Umut olmasa doktor yapar mı ameliyat? Öldürmeye mi girecek adam?
+1662 [1.4s|27] K35 Demek ki bir,
+1663 [3.0s|60] K35 bir kurtuluşu var. Bunun bir çözümü var ya.
+1664 [2.4s|47] K35 Ya biraz iyi düşünsenize.
+1665 [2.5s|49] K35 Olumlu düşüneceğiz, olumlu olacak.
+1666 [2.9s|57] K35 Selo anlatsana oğlum doktorun dediklerini. Bir söyle bir.
+1667 [1.0s|20] K35 Alo.
+1668 [2.0s|39] K35 Selo'yu da kaybettik. Çok güzel.
+1669 [2.3s|46] K35 Vallahi çok güzel. Bana bakın bak.
+1670 [1.0s|20] K35 Bu
+1671 [3.8s|75] K35 pozitif bir konuşma. Kader'i kurtarma konuşması bu.
+1672 [3.8s|75] K35 Ya öyle ağlama, zırlama bilmem ne, bir-- istemiyorum ben. Ne oluyoruz ya?
+1673 [3.6s|72] K35 Tolga ver. Ver şu kağıdı [imzalasin.?] Hadi yeter artık.
+1674 [3.2s|63] K35 Tamam böyle bak keçi inadı gibi orada oturamazsın. Böyle bir şey yok.
+1675 [1.7s|34] K10 Kader bak bu kadar insan toplandık.
+1676 [3.0s|59] K10 Bir tane imza atacaksın. Allah aşkına at şu imzayı bitsin gitsin.
+1677 [2.4s|47] K10>K35>K0 Hadi. Hadi ya. Atmıyorum. Atmayacağım.
+1678 [2.1s|42] K0 Ben size en başında söyledim ya.
+1679 [1.7s|34] K0 Yeter, üstüme gelmeyin.
+1680 [3.4s|67] K0>K35 Hem ben planladım her şeyi zaten. Ya ney senin planın ne ya?
+1681 [2.4s|48] K35 Bu nasıl bir plan ya? Sen öleceksin Ali'ye biz bakacağız.
+1682 [3.0s|60] K35 Vallahi maşallah süper, dahice bir plan.
+1683 [2.6s|51] K0 Gerçekçi, mantıklı, olması gereken.
+1684 [1.3s|25] K0 Ya Kadir,
+1685 [4.3s|84] K0>K35 benim çocuğumun sana ihtiyacı var. Senin çocuğunun sana da ihtiyacı var.
+1686 [2.4s|47] K35 Senin çocuğunun hepimize ihtiyacı var.
+1687 [3.5s|69] K35 Ana, hadi ya bir toparla kendini bir gözünü seveyim. Git hadi yüzünü gözünü yıka.
+1688 [3.1s|61] K35 Ali'nin yanına bir git, modunu bir değiştir. Hadi. Selo sen de.
+1689 [2.7s|53] K35 Bir zahmet bir değiştirin şu şeyin havasından bir çıkın ya.
+1690 [2.3s|46] K0 Yeter! Ben de diyeceğimi dedim. Yatmaya gidiyorum.
+1691 [3.2s|64] K10>K0 Bir yere gidemezsin ya. Nereye gidiyorsun? Pardon [sen?] kimsin?
+1692 [1.7s|33] K10 Çocuğunun babası.
+1693 [1.1s|22] K10 Tamam.
+1694 [2.5s|51] K5 Lütfen tartışmadan konuşabilir miyiz?
+1695 [1.4s|28] K35 Kader'im,
+1696 [0.9s|18] K35 gülüm,
+1697 [4.0s|80] K35 bak canımın yarısı. Bunu hepimiz için yapman lazım.
+1698 [1.0s|20] K35 Tamam.
+1699 [1.7s|34] K35 Bak sana bir şey olursa
+1700 [3.0s|60] K35 ben zaten üçüncü günde deliririm, tamam.
+1701 [1.6s|31] K35 Gözünü seveyim bak,
+1702 [1.9s|38] K35 hepimiz için bunu yapmamız lazım.
+1703 [1.0s|20] K35 Ne olursun.
+1704 [1.6s|32] K10 Ben Ali'ye ne diyeceğim?
+1705 [1.0s|20] K10 Hı?
+1706 [2.5s|49] K10 Anneni göz göre göre mezara verdik mi diyeceğim,
+1707 [2.3s|46] K10 ha? Kurtaramadık mı diyeceğim.
+1708 [3.7s|73] K10>K0 Bu mu yani Kader? Yeter. Yeter. Ne olur gelmeyin üstüme.
+1709 [1.7s|33] K0 Bakın ben sizi çok seviyorum.
+1710 [3.5s|69] K0 Son günlerimi sizinle geçirmek için geldim zaten buraya. Mutlu olalım diye.
+1711 [2.2s|43] K0 Ne olur yapmayın bana bunu.
+1712 [1.0s|20] K0 Kadir,
+1713 [3.2s|63] K0>K35 sen benim diğer yarımsın. Gülüm. Ben senin işte diğer yarınım.
+1714 [4.5s|84] K35 Ben onu söylüyorum sana. Bak sen daha bu hastalığı yaşarken benim baş dönmelerim
+1715 [4.1s|82] K35 oldu. Senin Allah korusun başına bir şey gelse, daha büyük bir şey gelse
+1716 [2.5s|49] K35 vallahi bak ben hayatta kalamam.
+1717 [1.0s|20] K35 Diyorum sana.
+1718 [1.4s|28] K0 Böyle olacağını biliyordum.
+1719 [1.6s|31] K0 Ben her şeye hazırlıklı geldim.
+1720 [3.7s|74] K0 Benim kararım net. Tamam mı? Beni ikna edemeyeceksiniz hiçbiriniz.
+1721 [1.3s|25] K35 Kader yapma.
+1722 [2.5s|50] K0>K5 Konuşmak istemiyorum. Hiçbir şey demedim.
+1723 [2.4s|47] K0>K5 Eğer beni ikna etmeye geldiysen- Yo,
+1724 [1.1s|23] K5 tam tersine.
+1725 [1.1s|21] K5 Oturabilir miyim?
+1726 [1.0s|20] K0 Gel.
+1727 [1.2s|23] K0 Konuşmayacak mısın?
+1728 [1.1s|21] K5 Yo, konuşma dedin.
+1729 [1.0s|20] K0 Niye geldin?
+1730 [2.4s|47] K5 Kadir'in ameliyata girmesine izin vermedin ya,
+1731 [1.6s|31] K5 onun için teşekkür etmeye.
+1732 [1.9s|37] K5 Kocamı bana bağışladın. Sağ ol.
+1733 [1.6s|31] K0 Sen ciddi misin?
+1734 [1.0s|20] K5 Evet.
+1735 [2.7s|54] K5 Yani beni asla ikna edemezdin.
+1736 [1.4s|28] K5 Ayrıca
+1737 [1.9s|38] K5 bu senin hayatın.
+1738 [1.2s|23] K5 Senin kararın.
+1739 [1.0s|20] K5 Bak,
+1740 [3.4s|67] K5 insanlar benim yerime o kadar çok karar verdiler ki. Bunun
+1741 [2.7s|54] K5 ne kadar yorucu, ne kadar
+1742 [1.8s|35] K5 ağır olduğunu çok iyi biliyorum.
+1743 [2.3s|46] K0 O zaman Kadir'le işin zor.
+1744 [2.2s|44] K0 O başkaları adına karar vermeye bayılır.
+1745 [1.0s|20] K5 Farkındayım.
+1746 [1.4s|29] K0 Bir şey istiyorsun benden.
+1747 [1.0s|19] K5 Evet.
+1748 [1.0s|20] K0 Nedir?
+1749 [2.2s|43] K5 Sana sormam gereken sorular var.
+1750 [1.2s|24] K5 Hiç yorum yapmayacağım,
+1751 [1.2s|24] K5 hiç bölmeyeceğim,
+1752 [1.2s|24] K5 hiç karışmayacağım.
+1753 [1.4s|27] K5 Sorularım bitince de
+1754 [1.1s|21] K5 çıkıp gideceğim.
+1755 [1.0s|20] K0 Olur,
+1756 [1.0s|20] K0 istediğini sor.
+1757 [1.0s|20] K5 Ali.
+1758 [1.8s|35] K5 Sen ölünce Ali'ye kim bakacak?
+1759 [1.7s|34] K0 Tolga ve Özlem.
+1760 [1.3s|26] K0 Özlem'le konuştum.
+1761 [1.6s|32] K0 Ali'ye bakacağına söz verdi.
+1762 [2.6s|51] K5 Ya Tolga Özlem'le evli kalmak istemezse?
+1763 [1.2s|23] K0 O zaman Tolga.
+1764 [3.1s|61] K0 Annem, Zeyno, Kadir ve sen.
+1765 [1.6s|31] K0 Onu seven çok insan var.
+1766 [1.7s|34] K5 İçin rahat mı peki?
+1767 [1.2s|23] K0 Evet.
+1768 [1.0s|20] K5 Evet.
+1769 [1.4s|27] K5 Sevindim senin adına.
+1770 [1.9s|37] K5 Peki sence ne kadar ömrün kaldı?
+1771 [2.8s|55] K32 Buraya gelirken birkaç ayım var diye düşünüyordum ama.
+1772 [1.2s|23] K32 Belki birkaç gün.
+1773 [1.3s|26] K32 Gittikçe kötüleşiyorum.
+1774 [2.1s|41] K5 Kader [Nasıl?] dayanıyorsun?
+1775 [1.0s|20] K5 Hı?
+1776 [1.9s|39] K5 Nasıl bu kadar güçlü olabiliyorsun?
+1777 [1.4s|27] K32 Başka şansım yok.
+1778 [1.4s|29] K32 Mutlu olmak dışında.
+1779 [2.5s|49] K32 Benim de ömrüm bu kadarmış demek dışında.
+1780 [1.5s|29] K32 Ağlamak zaman kaybı.
+1781 [1.7s|33] K32 Benim kaybedecek zamanım yok.
+1782 [1.4s|28] K5 Ali'yi çözdük o zaman.
+1783 [1.2s|24] K5 Sıra Kadir'de.
+1784 [2.7s|54] K5 Sen öldükten sonra Kadir'e ne olacak,
+1785 [1.0s|20] K5 hı?
+1786 [1.1s|23] K32 Çok üzülecek.
+1787 [1.4s|27] K32 Ölmüş gibi olacak.
+1788 [1.6s|31] K32 Sanki yarısı ölmüş gibi.
+1789 [1.4s|28] K32 Bana da aynısı olurdu.
+1790 [3.4s|68] K32 Ama sonra alışacak zamanla. Çünkü yanında sen varsın.
+1791 [1.6s|33] K5 Ne zaman alışacak sence?
+1792 [1.1s|21] K32 Bilmiyorum.
+1793 [1.0s|20] K5 Kader.
+1794 [2.8s|55] K5 Bana içinden geçen gerçek cevabı söylesene.
+1795 [2.1s|41] K5 Kadir ne zaman toparlar sence?
+1796 [1.0s|20] K32 Hiçbir zaman.
+1797 [1.9s|37] K32 Yani tam olarak hiçbir zaman.
+1798 [1.0s|20] K5 Peki.
+1799 [1.0s|20] K5 Sence
+1800 [1.1s|22] K5 annem ve Zeynep
+1801 [2.8s|55] K5 Kadir'i suçlar mı seni ikna edemediği için, hı?
+1802 [1.2s|25] K32 Suçlamazlar.
+1803 [3.0s|61] K32 Yani bilmiyorum. Belki içlerinden suçlarlar ama
+1804 [2.1s|42] K32 önemli olan Kadir'in hayatta olması.
+1805 [1.5s|30] K32 Ali'nin yanında olması.
+1806 [1.0s|20] K5 Ali.
+1807 [1.3s|25] K5 Ali suçlar mı?
+1808 [1.8s|36] K5 Sen kendi hayatına baktın.
+1809 [1.7s|34] K5 Annemi ikna edemedin.
+1810 [3.5s|70] K5 Etseydin belki de ikiniz de yaşardınız der miydi, hı?
+1811 [1.0s|20] K5 Kader.
+1812 [1.6s|31] K5 Ali affeder mi seni?
+1813 [1.0s|20] K5 Affeder mi?
+1814 [1.7s|34] K5 Annem denemedi der mi?
+1815 [2.6s|51] K5 Onu başkalarına bırakmak yerine
+1816 [3.9s|77] K5 yaşamayı denemedi der mi? Bu riski göze almadı der mi?
+1817 [1.7s|33] K5 Sormaz mı
+1818 [1.4s|27] K5 annem deneseydi
+1819 [2.0s|41] K5 belki de hayatta kalırdı diye.
+1820 [1.0s|20] K32 Sorar.
+1821 [1.2s|24] K32 Sorar.
+1822 [1.5s|30] K32 Affetmez.
+1823 [1.1s|21] K32 Unutmaz.
+1824 [1.9s|39] K32 Annesiz küçücük bir çocuk.
+1825 [1.9s|37] K32 Hayatı boyunca unutmaz.
+1826 [1.0s|20] K5 Kader.
+1827 [1.3s|25] K5 Senin ikisin.
+1828 [3.3s|65] K5 Benim, benim bu dünyada en sevdiğim insan.
+1829 [1.1s|22] K5 Benim canım.
+1830 [1.4s|28] K5 Benim nefesim.
+1831 [1.0s|20] K5 Bak
+1832 [3.1s|62] K5 en doğrusu bu olmasa ben istemezdim bunu senden.
+1833 [1.0s|20] K5 Lütfen.
+1834 [1.4s|28] K32 Lütfen evet de.
+1835 [1.0s|20] K5 Lütfen.
+1836 [4.5s|84] K1 Ya kaç saattir bunlar valla içeride ya. [Uyuyamıyor?] kaldılar. Ne oldu?
+1837 [2.5s|49] K5 Ben gidip bir bakayım. Anne dur dur dur.
+1838 [1.2s|25] K5 Sen karışma şimdi.
+1839 [4.5s|84] K10 Kadir. Şimdi bu Ayaz Bey yarın ameliyat için bekliyordu.
+1840 [1.0s|20] K10 Ne yapacağız?
+1841 [2.1s|42] K1 Ne diyeceğiz? Yapam-- yani yapamıyoruz diyeceğiz.
+1842 [3.3s|66] K1>K10 Kabul etmiyor diyeceğiz. Ne diyeceğiz? Oğlum Vaz mı geçeceğiz? Nasıl yani?
+1843 [2.4s|48] K1 Vazgeçmedik oğlum. Vazgeçer miyiz?
+1844 [1.9s|38] K1 Yapacağız. Bir şekilde yapacağız.
+1845 [2.2s|44] K1 İkna edeceğiz. Edeceğiz.
+1846 [1.1s|21] K1 Ona söyleyeceğiz.
+1847 [2.2s|43] K32 Sen sadece çok güzel,
+1848 [1.5s|29] K32 çok iyi bir kadınla değil,
+1849 [2.5s|49] K32 çok iyi bir avukatla evlenmişsin, haberin olsun.
+1850 [1.7s|34] K1 O kadar haberim var ki.
+1851 [2.2s|44] K32 Ameliyat olmaya karar verdim.
+1852 [1.0s|20] K5 Oh!
+1853 [2.2s|43] K5 Ay şükürler olsun Allah'ım.
+1854 [3.3s|66] K32 İnşallah bize bir şey olmaz. İkimizden birine.
+1855 [1.3s|25] K1 Olmaz canım.
+1856 [2.2s|43] K1 Gel buraya gel. Benim kalbim temiz.
+1857 [3.8s|75] K1 Benim kalbim bana diyor ki pırıl pırıl gireceksiniz bu ameliyata çıkacaksınız.
+1858 [2.7s|53] K1>K5 Hiçbir sıkıntı olmayacak. Allah'a şükürler olsun kızım.
+1859 [1.9s|37] K32 Senin kalbin temizdir,
+1860 [1.7s|34] K32 inanıyorum. Dua edeceğim.
+1861 [1.5s|30] K10 Sıkma canını artık, tamam.
+1862 [4.2s|84] K10 Ben sana diyorum, içimden çok iyi şeyler geçiyor. Başımdan beri söylüyorum.
+1863 [1.3s|26] K10 Çok güzel olacak.
+1864 [1.3s|26] K10 Şimdi bakın,
+1865 [2.8s|56] K10 herkes güzelce duasını etsin. Tamam.
+1866 [1.6s|32] K10 Bak yarın
+1867 [4.5s|84] K10 öyle surat asanı, ağlayanı, zırlayanı vallahi hastaneye almam.
+1868 [3.9s|78] K10 Şimdi hepiniz gidin güzel bir uyku çekin. Ben de karımı özledim.
+1869 [2.3s|46] K10 Alacağım Can'ımı güzel bir uyku çekeceğim.
+1870 [3.2s|64] K10 Yarın büyük gün. İyi düşüneceğiz, iyi olacak. Tamam.
+1871 [1.0s|20] K5>K10 Tamam. Hadi.
+1872 [1.8s|36] K10 Evet herkes köşesine çekildi.
+1873 [3.5s|70] K10 Halk bir güzel sakinleşti şimdi. Halim de mışıl mışıl uyuyor.
+1874 [1.4s|27] K5 Saçımı tarar mısın?
+1875 [1.0s|20] K10 Tararım gülüm.
+1876 [1.7s|33] K10 Sevdin mi ailemi biraz daha?
+1877 [4.3s|84] K10 Ne kadar tatlı, anlayışlı, sakin insanlar değil mi? Seveceksin.
+1878 [1.7s|33] K10 Bilesen anam,
+1879 [1.3s|26] K10 vallahi
+1880 [2.0s|40] K10 bir tutarlılık abidesi.
+1881 [3.6s|73] K10 Bir zaman da bir hoşgörü makinesi. Yani
+1882 [1.1s|23] K10 sana da hayran.
+1883 [3.0s|59] K5>K10 Abartma. O kadar da değil. Vallahi diyorum ya.
+1884 [3.7s|73] K10 [Bir?] görmedin mi? Elleriyle böyle tuttu. Senin kafanı, şey yanaklarını tuttu ya.
+1885 [3.2s|63] K10 Bizde en büyük nişan budur. Onur nişanı yani. Ben hiç yaşamadım.
+1886 [2.0s|40] K10 Vallahi müthiş bir kadınsın sen ya.
+1887 [2.2s|45] K10 Canım benim, neye dokunsan güzelleşiyor.
+1888 [1.5s|29] K10 Herkes seni çok seviyor.
+1889 [1.5s|29] K5 Seni de.
+1890 [1.8s|35] K5 Seni de herkes çok seviyor.
+1891 [1.8s|35] K5 Emin Dağlar'ın sevgisi de,
+1892 [2.2s|44] K5 öfkesi de, nefreti de bir. Garip.
+1893 [1.0s|20] K10 Öyle. Gülüm.
+1894 [1.0s|20] K5 Hı?
+1895 [1.8s|35] K10 Bak, ben bu evde kalmak istiyorum.
+1896 [1.6s|32] K10 Vallahi ben ailemi bırakamam.
+1897 [0.9s|18] K10 Yani
+1898 [3.8s|76] K10 her türlü manyaklık, kavga dövüş her şey var Eyvallah'ta.
+1899 [4.4s|84] K10 Ben öyle yani şehrin ortasında bir villada vallahi böyle yani nefes alamam.
+1900 [0.9s|17] K10 Yani.
+1901 [4.2s|84] K5>K10 Tamam. Sen dersen ki hani villada ben bunlarla olmasın, başka yere gidelim,
+1902 [4.3s|84] K10>K5 tamam istemeyerek de olsa ben sonuçta seninle giderim. Tamam dedim ya Kadir.
+1903 [3.5s|69] K10 Tamam. Yani evlendikten sonra burada kalmayalım mı, tamam?
+1904 [1.0s|20] K5 Evet.
+1905 [1.4s|27] K5 Ama bir şartım var.
+1906 [1.0s|20] K10 Söyle gülüm.
+1907 [1.0s|20] K5 Yarın
+1908 [3.4s|67] K5 ameliyattan sapa sağlam çıkıp bana döneceksin.
+1909 [1.1s|21] K5 Tamam.
+1910 [1.0s|20] K10 Söz.
+1911 [0.9s|18] K10 Söz.
+1912 [1.0s|20] K5 Söz.
+1913 [2.4s|47] K10 Gel, şöyle bir yat bakayım boynuma.
+1914 [1.0s|20] K10 Birazcık.
+1915 [3.0s|60] K10>K36 Oh. Sen uyumadın mı hâlâ? Yok. Uyku tutmadı.
+1916 [3.2s|64] K36>K10 Donör sen misin? Sen nereden biliyorsun donör bulunduğunu?
+1917 [4.0s|79] K36 Sabah Kadir'le konuşurken duydum ama çekip gittim. Bir şey soramadım.
+1918 [1.2s|23] K36 Sen misin Tolga?
+1919 [1.0s|20] K10 Değilim.
+1920 [1.0s|20] K36 Kadir mi?
+1921 [2.1s|41] K36 Özür dilerim. Yani şey, ee.
+1922 [2.8s|56] K36 Ya ben de işte seviniyorum sen çıkmadın diye.
+1923 [3.8s|76] K36 Kadir yarın ameliyata girecek falan. Çok pardon ayıp oldu biraz.
+1924 [1.4s|28] K10 Yo, yo ayıp değil.
+1925 [1.6s|31] K36 Yok, ayıp oldu.
+1926 [3.1s|61] K10 Yarın neyle karşılaşacağımızı bile bilmiyoruz.
+1927 [2.4s|48] K10 Yarın çok büyük bir felaket yaşayabiliriz.
+1928 [1.0s|20] K36 Biliyorum.
+1929 [2.6s|51] K10>K36 Sen nereden biliyorsun? Araştırdım bugün.
+1930 [1.3s|26] K36 Doktoruma da sordum.
+1931 [3.8s|76] K36>K10 Tolga ben de gelebilir miyim? Yok gelemezsin ya hamile halinle.
+1932 [3.0s|59] K10 Gerek yok. Hastane ortamı falan şimdi yani.
+1933 [1.1s|22] K10 Ayrıca
+1934 [1.7s|33] K10 neyle karşılaşacağımızı bile-
+1935 [1.0s|20] K36 Haklısın.
+1936 [2.2s|43] K36 Doğru. Tamam, haklısın yani.
+1937 [3.4s|68] K36>K10 Kader'in umarım çok iyi olur Tolga. İnşallah. İnşallah.
+1938 [3.6s|72] K36 Kadir için de, Kader için de tüm kalbimle dua edeceğim.
+1939 [1.7s|33] K10 Tamam, hadi sen yat artık.
+1940 [1.0s|20] K10 İyi geceler.
+1941 [4.7s|84] K10 Ha ee, bu arada bizim bir sonraki muayenemiz ne zaman?
+1942 [3.6s|71] K36>K10 Bir ay sonra. Tamam, o bir ay beklemeye gerek yok. Daha
+1943 [2.1s|43] K10 erken bir tarihte gidelim beraber. Olur mu?
+1944 [3.4s|67] K10 Bebeğimizin kalbinin sesini duymak istiyorum. İlkini kaçırdım,
+1945 [2.1s|43] K10 ikincisinin her anında olmak istiyorum.
+1946 [1.0s|20] K36 Tamam,
+1947 [1.0s|20] K36 ayarlarım.
+1948 [3.4s|67] K32 Ne güzel bakıyorsun atına. Aferin benim oğluma.
+1949 [1.9s|38] K32 Taradın mı güzelce?
+1950 [1.0s|20] K8 Taradım.
+1951 [3.2s|64] K8 Bak anne Mavi, annesinin yanından hiç ayrılmıyor.
+1952 [1.0s|20] K32 Ali.
+1953 [1.8s|35] K32 Ben bugün hastaneye yatacağım.
+1954 [1.0s|20] K8 Biliyorum.
+1955 [3.9s|78] K32>K8 Nereden biliyorsun? Anneannem telefonda bağırırken duydum.
+1956 [2.8s|56] K8 Bir de okula gitme dediler. Ondan anladım.
+1957 [1.3s|26] K32 Tabii ki anlardın.
+1958 [1.4s|27] K32 Akıllı bıdığım benim.
+1959 [1.5s|29] K8 Kaç gün kalacaksın?
+1960 [1.2s|23] K32 Bilmiyorum oğlum.
+1961 [1.4s|28] K32 Birkaç gün.
+1962 [3.3s|65] K8 Birkaç gün ne demek? İki mi, beş mi?
+1963 [1.0s|20] K32 Beş.
+1964 [3.2s|64] K8>K32 Mavi'ye kim bakacak? Sen bakacaksın.
+1965 [3.0s|61] K8 Ben her gün bakarım zaten. Ben seni soruyorum.
+1966 [1.0s|20] K8 Anne.
+1967 [1.5s|30] K32>K8 Hı? Sen ölecek
+1968 [2.0s|39] K8>K32 misin? Kim söyledi sana bunu?
+1969 [2.8s|55] K8 Herkes yalan söylüyor. Oradan anladım.
+1970 [1.0s|20] K32 Ali.
+1971 [1.8s|35] K32 Ben bugün ameliyat olacağım.
+1972 [1.1s|22] K8 Ölecek misin?
+1973 [1.0s|20] K32 Ölmemek için
+1974 [2.5s|50] K32>K8 oluyorum. Ben de geliyorum.
+1975 [4.2s|83] K32>K8 Hastaneye mi? Kapının önünde oturacağım. İçeri girmeyeceğim.
+1976 [2.8s|56] K32>K8 Orada çok sıkılırsın oğlum. Sıkılmayacağım.
+1977 [0.9s|18] K32 Peki
+1978 [1.0s|20] K32 geliyorsun.
+1979 [2.0s|39] K8>K32 Anne. Hı?
+1980 [3.4s|67] K8 Sen gidersen Mavi'ye kim bakacak? Kim tarayacak onu?
+1981 [1.5s|29] K32 Dayın tarar.
+1982 [1.6s|31] K32 Selim abin,
+1983 [1.3s|25] K32 Zeyno,
+1984 [1.4s|28] K32 baban.
+1985 [1.2s|25] K32 Hepsi tarar.
+1986 [1.0s|20] K32 Hadi gidelim.
+1987 [1.7s|33] K32 Kader nasılsın?
+1988 [2.8s|55] K32 Ben bir karar verdim. Şimdi Kader karar verecek.
+1989 [1.9s|38] K32 Anneciğim. Yavrum.
+1990 [3.4s|68] K32 Ali üzgünüm moral olsun diye bir kutu çikolata yedi. Oyy.
+1991 [3.3s|66] K32 Zeynep'e söyle daha fazla vermesin. Vallahi şeker komasına sokacak çocuğu.
+1992 [3.8s|76] K32 Tamam tamam kuzum, sen hiç merak etme. Bir de şımartmayın o kadar.
+1993 [2.3s|46] K32 Sonra Kadir gibi her istediği olsun isteyecek.
+1994 [2.3s|46] K32 Ben bir Kadir'e bakayım. Dur ben de geleyim.
+1995 [1.6s|31] K32 Dışarıdayım. Tamam.
+1996 [1.2s|24] K32 Ne düşünüyorsun?
+1997 [1.4s|27] K10 Gidişin ayrı bir olaydı,
+1998 [1.5s|29] K10 gelişin ayrı bir olay oldu.
+1999 [1.7s|33] K32 Benimle ilgisi yok.
+2000 [3.0s|60] K32 Emindağlarız biz, öyle yüksek yaşarız her şeyi.
+2001 [1.0s|20] K10 İyi misin?
+2002 [1.6s|31] K10 Hazır mısın?
+2003 [1.1s|22] K32 Çok korkuyorum.
+2004 [1.4s|28] K10 Ben de çok korkuyorum.
+2005 [1.5s|30] K10 Ben de çok korkuyorum ama...
+2006 [1.7s|33] K10 Ben senin inadına,
+2007 [1.8s|36] K10 hayata olan tutkuna,
+2008 [2.0s|39] K10 Ali'ye olan sevgine,
+2009 [1.0s|20] K10 Kadir'le olan o
+2010 [1.8s|36] K10 garip bağına güveniyorum.
+2011 [1.5s|30] K10 Ben inanıyorum Kader.
+2012 [1.3s|25] K32 Hâlâ takıyor musun?
+2013 [1.2s|25] K10 Hiç çıkarmadım ki.
+2014 [1.4s|27] K32 Kadir ne yapıyor acaba?
+2015 [1.0s|20] K10 Ne yapsın,
+2016 [1.1s|23] K10 fırsatını buldu
+2017 [1.6s|31] K10 Defne'ye nazlanıyor işte.
+2018 [1.3s|25] K32 Deli aşık ya.
+2019 [1.0s|20] K32 Ona söyle,
+2020 [2.4s|47] K32>K10 vazoyu ben kırdım. Ne vazosu?
+2021 [1.0s|20] K32 O anlar.
+2022 [2.9s|57] K1 Ya gülüm neredesin? Beni böyle bırakıp gidilir mi ya?
+2023 [3.9s|77] K32>K1 İki dakika Kader'e bakayım dedim. Ne oldu? Kader'in yanına mı gittin? Git git.
+2024 [3.5s|69] K1 İyi, güzel, git de yani beni bu zombiyle baş başa bıraktın ya.
+2025 [2.8s|55] K1 Hiçbir tepki vermiyor, ses çıkarmıyor, konuşmuyor.
+2026 [3.2s|64] K32 Bravo Sanselim gerçekten. Yani çok güzel moral oluyorsun.
+2027 [2.9s|58] K1 Vallahi bitkisel hayata girdi ya. Böyle bir şey olabilir mi?
+2028 [3.3s|66] K1 Hadi git bir şeyler ye, git bir bir şeyler yap dışarıda. Hadi.
+2029 [1.0s|20] K10 Canım benim.
+2030 [1.3s|25] K10 Bana bir öpücük ver.
+2031 [2.6s|51] K5 Bana güzel bir şey söyle Selim. Hı?
+2032 [2.4s|48] K5 Yalan da olsa inanmak istiyorum.
+2033 [1.9s|37] K10 Bu akşam yanında olacağım.
+2034 [1.4s|27] K5 Olacak mısın?
+2035 [2.5s|50] K10>K5 Olacağım güzelim. Bana döneceğim de.
+2036 [1.6s|32] K10 Sana döneceğim.
+2037 [1.0s|20] K5 Söz mü?
+2038 [1.0s|20] K10 Söz gülüm.
+2039 [2.5s|49] K5>K10 Seni çok seviyorum. Ben de seni çok seviyorum güzelim.
+2040 [1.9s|38] K0 Sizi ameliyata götürmeye geldik Kadir Bey.
+2041 [2.3s|46] K0 Acilsiniz. Eşinizi teslim edebilir misiniz?
+2042 [1.4s|28] K10 Benim meslek olmuyor [değil?] mi?
+2043 [3.1s|62] K10 Vallahi bir boşluk hissettim. Bir çıplak hissettim kendimi ha.
+2044 [1.1s|21] K10 Sana emanet.
+2045 [2.8s|55] K10>K37 Bir dakika, bir dakika. Anneciğim.
+2046 [1.6s|32] K10>K37 Annem. Annem.
+2047 [1.3s|26] K10 Canım annem.
+2048 [2.7s|53] K37>K10 Oğlum. Yavrum. Hiç merak etme, tamam mı?
+2049 [1.3s|25] K37 Annem.
+2050 [2.9s|58] K10>K37 Sıkıntı yok anam, merak etme. Ay kızım benim.
+2051 [1.6s|32] K37 Oy canımsınız,
+2052 [1.5s|29] K37 meleğim.
+2053 [1.5s|30] K37>K10 Yavrum. Gireceğiz, çıkacağız. Tamam mı?
+2054 [2.1s|43] K10>K37 Sıkıntı yok. İnşallah annem, inşallah.
+2055 [1.5s|29] K37 Yavrularım
+2056 [1.3s|26] K37 benim.
+2057 [1.5s|29] K37 Allah'ım korusun sizi.
+2058 [1.0s|20] K10 Selma anne gel.
+2059 [3.1s|61] K37>K10 Kızım. Tamam. Gel, gel. Tamam. Hadi gel.
+2060 [1.0s|20] K10 Gel.
+2061 [1.4s|27] K0 Ali [size?] emanet.
+2062 [3.6s|72] K37 Allah'ım sen yardım et yarabbim. Sen koru çocuklarımı. Allah'ım sen büyüksün.
+2063 [1.4s|27] K37 Allah'ım yardım et.
+2064 [1.4s|28] K37 Oğlum.
+2065 [1.0s|19] K37 Oğlum.
+2066 [2.0s|40] K10 Selma anne sana güçlü olmak yaraşır.
+2067 [3.1s|63] K10 Sen güçlü duracaksın ki bak sağ salim onlara kavuşacağız. Tamam mı?
+2068 [1.0s|20] K10 Gel.
+2069 [1.0s|20] K10 Tamam.
+2070 [1.3s|25] K10 Bir şey diyeceğim.
+2071 [1.0s|20] K0 De.
+2072 [4.9s|84] K10 Ben senden yedi dakika değil, sekiz dakika büyüğüm ve senin abinim.
+2073 [1.2s|24] K10 Bunu sakın unutma.
+2074 [1.8s|36] K0 Bunu sonra konuşuruz.
+2075 [2.2s|44] K0 Zayıflığından faydalanılmaz.
+2076 [3.0s|59] K10>K0 Birkaç saate görüşürüz. Görüşürüz.
+2077 [1.5s|30] K11 Evet. Hazır mıyız?
+2078 [1.4s|28] K11 Alalım hastalarımızı.
+2079 [1.2s|24] K37 Defne.
+2080 [1.4s|28] K5>K37 Anne. Anneciğim.
+2081 [1.0s|20] K5 Anne.
+2082 [1.1s|21] K5 Oh.
+2083 [1.0s|20] K37 Kızım.
+2084 [1.6s|31] K37 Korkma kızım,
+2085 [3.4s|68] K37>K11 korkma. Hiçbir şey olmayacak. Dualarım sizinle Selma Hanım.
+2086 [1.0s|20] K37 Sağ ol.
+2087 [1.0s|20] K5 Anne.
+2088 [2.5s|49] (?) K5 [Anne?] Kader'i ben ikna ettim.
+2089 [4.4s|84] K5>K13 Onu o masaya ben yatırdım. Sen her şeyi düşünüp ona göre karar vermişsindir kızım.
+2090 [1.5s|29] K13 Hiç merak etme.
+2091 [4.2s|84] K13>K5 Korkma, iyi olacaklar. İkisi de iyi olacak. [Ya?] [dün?] mü ya en doğrusu neyse.
+2092 [2.1s|41] K13 Hiç merak etme kızım.
+2093 [1.3s|26] K13 Hiç merak etme.
+2094 [1.2s|25] K13 Selma Hanımcığım.
+2095 [1.9s|38] K5 Benim iki çocuğum da içeride.
+2096 [3.3s|66] K13 Biliyorum. Allah sabır versin.
+2097 [1.4s|28] K5 Amin.
+2098 [2.6s|52] K13 Kadir'e de Kader'e de güç versin.
+2099 [4.4s|84] K5>K13 Amin. İlk doğdukları gün gibi yine doğsunlar birlikte inşallah.
+2100 [3.1s|61] K13 Birazdan uyuyacaksınız. Merak etmeyin.
+2101 [1.4s|27] K14 Başlayabilirsiniz.
+2102 [1.0s|20] K6 Üsteli.
+2103 [1.7s|33] K14 Başlayabiliriz.
+2104 [1.0s|20] K6 Üsteli.
+2105 [1.6s|32] (?) K6 Çabuk tamponi [et?] damara.
+2106 [2.5s|51] K6 [Tanıma?] artıyor. Departasyonu arttır.
+2107 [1.0s|20] K5 Kadir.
+2108 [1.0s|20] K5 Kadir.
+2109 [1.0s|20] K5 Kadir bırakma.
+2110 [2.0s|40] K5 Kadir bırakma beni.
+2111 [3.0s|60] K5 Bırakma beni. Bırakma beni. Bırakma beni.
+2112 [1.6s|32] K5 Kadir bırakma beni.
+2113 [1.0s|20] K5 Kadir.
