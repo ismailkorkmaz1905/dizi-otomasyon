@@ -1,0 +1,49 @@
+name: Deneme - statik ffmpeg
+# Gecici: BtbN statik ffmpeg ile apt ffmpeg'in altyazi yakmasini karsilastirir. Test bitince silinecek.
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/deneme-ffmpeg.yml']
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: BtbN surumleri
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api 'repos/BtbN/FFmpeg-Builds/releases?per_page=3' --jq '.[] | .tag_name + " " + .published_at, (.assets[] | select(.name | test("linux64-gpl-[0-9.]+\\.tar\\.xz$")) | "   " + .name + " " + (.size|tostring))'
+      - name: Statik indir
+        run: |
+          set -x
+          u=https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n7.1-latest-linux64-gpl-7.1.tar.xz
+          mkdir -p /tmp/st && cd /tmp/st
+          time curl -fsSL --retry 3 --max-time 300 "$u" -o f.tar.xz
+          ls -la f.tar.xz
+          time tar -xJf f.tar.xz --strip-components=2 --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
+          ./ffmpeg -hide_banner -version | head -3
+          ./ffmpeg -hide_banner -buildconf | tr ' ' '\n' | grep -E 'libass|libx264|fontconfig|freetype|fribidi|harfbuzz'
+      - name: apt ffmpeg
+        run: time sudo DEBIAN_FRONTEND=noninteractive apt-get -qq install -y ffmpeg fonts-liberation > /dev/null; ffmpeg -version | head -1
+      - name: Karsilastir
+        run: |
+          cd /tmp
+          printf '1\n00:00:01,000 --> 00:00:09,000\n- Aku nggak tahu, Kak.\n- Kenapa kamu bilang begitu?\n\n2\n00:00:10,000 --> 00:00:19,000\nTakdir berpihak pada yang berusaha.\n' > alt.srt
+          ffmpeg -v error -y -f lavfi -i testsrc2=s=1920x1080:r=25:d=20 -c:v libx264 -preset ultrafast src.mp4
+          ST='Fontname=Liberation Sans,Bold=0,Fontsize=16,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H99000000,BorderStyle=1,Outline=1.1,Shadow=0.6,MarginV=28,Alignment=2'
+          for f in apt:ffmpeg st:/tmp/st/ffmpeg; do n=${f%%:*}; b=${f#*:}
+            vf="setpts=PTS+0.000000/TB,subtitles=/tmp/alt.srt:charenc=UTF-8:force_style='$ST',setpts=PTS-STARTPTS"
+            /usr/bin/time -f "$n yakma %e sn" $b -v error -y -i src.mp4 -frames:v 500 -an -vf "$vf" -c:v libx264 -preset medium -b:v 2.5M -maxrate 3.75M -bufsize 5M -r 25 out_$n.mp4
+            $b -v error -y -i out_$n.mp4 -vf "select=eq(n\,125)" -frames:v 1 kare_$n.png
+            $b -v error -y -i src.mp4 -vf "select=eq(n\,125)" -frames:v 1 ham_$n.png
+            ls -la out_$n.mp4
+          done
+          echo "--- yakili kareler arasi PSNR (statik vs apt, yuksek = ayni):"
+          ffmpeg -hide_banner -i kare_apt.png -i kare_st.png -lavfi psnr -f null - 2>&1 | grep -o 'average:[^ ]*'
+          echo "--- altyazi gercekten ciziliyor mu (yakili vs ham, dusuk = cizilmis):"
+          ffmpeg -hide_banner -i kare_st.png -i ham_st.png -lavfi psnr -f null - 2>&1 | grep -o 'average:[^ ]*'
+          ffmpeg -hide_banner -i kare_apt.png -i ham_apt.png -lavfi psnr -f null - 2>&1 | grep -o 'average:[^ ]*'
+          echo "--- karisik concat (apt parca + statik parca) calisiyor mu:"
+          printf "file 'out_apt.mp4'\nfile 'out_st.mp4'\n" > l.txt
+          /tmp/st/ffmpeg -v error -y -f concat -safe 0 -i l.txt -c copy birlesik.mp4 && /tmp/st/ffprobe -v error -show_entries format=duration -of csv=p=0 birlesik.mp4
