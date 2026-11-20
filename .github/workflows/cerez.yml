@@ -2,14 +2,9 @@ name: 3 - Çerez kontrol
 run-name: YouTube çerez kontrolü
 
 # Indirmeden, Scribe'a dokunmadan YouTube cerezinin hala calistigini dener; olmazsa Telegram'a yenileme tarifiyle yazar.
-# Saatler UTC: her gun 02:00, Muhtemel Ask persembe 10:00 (yuklenme persembe 22:00), Baskalarinin Hayati cumartesi 11:00
-# (yuklenme ~20:30). Cron gecikebilir/atlayabilir; elle de calisir.
+# Zamanlanmis calisma yok (20 Kasim 2026, Ismail: hic cron kalmasin), sadece elle.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * *'
-    - cron: '0 10 * * 4'
-    - cron: '0 11 * * 6'
 
 permissions:
   contents: read
