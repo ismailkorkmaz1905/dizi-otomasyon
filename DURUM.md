@@ -1,4 +1,4 @@
-# Son durum ve notlar (10 Kasım 2026)
+# Son durum ve notlar (20 Kasım 2026)
 
 Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.md`'yi okusun. Akışın kendisi `README.md`'de.
 
@@ -6,7 +6,7 @@ Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.
 
 | Dizi | `dizi` değeri | Son teslim | Yayın | YouTube'a düşme | Otomatik arama |
 |---|---|---|---|---|---|
-| Muhtemel Aşk | `muhtemel_ask` | S01E20 (6 Kasım) | perşembe gecesi | cuma 01:00-01:04 TR | var (`bolum.yml` cron), ama güvenilmez |
+| Muhtemel Aşk | `muhtemel_ask` | S01E22 (20 Kasım) | perşembe gecesi | cuma 01:00-01:04 TR | var (`bolum.yml` cron), ama güvenilmez |
 | Başkalarının Hayatı | `baskalarinin_hayati` | S01E07 (15 Kasım) | cumartesi 20:00 Star TV | gece 23:30-00:30 TR (E3: 00:16, E4: 23:39, E5: 04:34 SGT = 23:34 TR) | **yok**, elle başlat |
 | Yeraltı | `yeralti` | - | - | - | 16 Ekim'de takipten çıktı |
 
@@ -27,7 +27,9 @@ Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.
 
 ## Son değişiklikler
 
-- **ffmpeg önbelleği** (`.github/actions/ffmpeg/`): runner'ın Azure Ubuntu mirror'ı aralıklı ~60 KB/sn'ye düşüyor, 94 MB'lık ffmpeg 16-33 dk sürüyordu (S01E19 yakması ~1 saat gecikti). Artık `.deb`'ler GitHub cache'inde (anahtar runner image sürümüne bağlı), kurulum 8-18 sn. Cache yoksa apt: 3 dk varsayılan mirror, olmazsa Azure çıkarılıp ana Ubuntu sunucusundan 10 dk. Yedek yol gerçek bir yavaşlıkta henüz denenmedi.
+- **ffmpeg (20 Kasım):** apt yerine BtbN statik ffmpeg 8.1 (sabit sürüm, libass ve x264 içinde), `.github/actions/ffmpeg/`. Cache'te sabit anahtarla durur (`ffmpeg-statik-8.1-20261119`), yoksa github.com'dan ~10 sn'de iner; o da olmazsa apt (2. denemede bütün mirror'lar `archive.ubuntu.com` olur). Neden: 20 Kasım'da MA S01E22 yakmasında yeni runner image'i (AWS, `us-east-2.ec2` mirror'ı) eski cache anahtarını bulamadı, apt iki denemede 13 dk sonra düştü; aynı gün testte apt 14,5 dk sürüp yine düştü, statik 10 sn. Test: font Liberation Sans seçiliyor, parçalar birleşiyor. Gerçek yakmada henüz denenmedi (ilk: BH S01E08). `yak.yml`'de `fail-fast: false`: bir parça düşerse diğerleri biter, sadece o tekrar çalışır.
+- **Otomatik arama (20 Kasım):** `bolum.yml` cron'u 14 Kasım'dan beri hiç çalışmadı (`cerez.yml` cron'u çalışıyor). MA S01E22 elle başlatıldı. 15 Ekim'de aynı durum İsmail'in github.com'dan `bolum.yml`'e attığı tek satırlık commit'le düzelmişti. Perşembe gecesi MA için hazırlığı elle başlatmak gerekebilir.
+- **YouTube çerezi:** 16 Kasım'dan beri ölü, yenilenmedi. Hazırlık WARP ile çerezsiz indiriyor (S01E22: 9 dk).
 - **YONTEM.md (10 Kasım):** parça başına ~450 satır (4-5 ajan), ajanlar sadece kendi `girdi_<k>.txt` dosyasını okur, kontrol ajanı sadece değişen satırları yazar (`ceviri/arac.py`). Kontrol effort'u başta sorulur, cevap beklenmez; yoksa `medium`. Kıyas için iki turda düzeltilen satırlar: E3 95+30, E4 83+62, MA E19 135+22, E5 83+19 (Opus çevirmen, `medium`); BH E6 307+59 (Sonnet çevirmen).
 
 ## Bilinen tuhaflıklar
