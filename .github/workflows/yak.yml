@@ -66,7 +66,7 @@ jobs:
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
-      - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
+      - uses: ./.github/actions/ffmpeg   # statik ffmpeg, cache'ten (apt mirror'lari bazen takiliyor)
       - name: Kurulum
         run: |
           sudo mkdir -p /content && sudo chown "$USER" /content
@@ -92,12 +92,12 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 120
     strategy:
-      fail-fast: true
+      fail-fast: false   # bir parca duserse digerleri bitsin, sadece o tekrar calissin
       matrix:
         i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     steps:
       - uses: actions/checkout@v6
-      - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
+      - uses: ./.github/actions/ffmpeg   # statik ffmpeg, cache'ten (apt mirror'lari bazen takiliyor)
       - uses: actions/cache/restore@v5
         with:
           path: /tmp/video
@@ -125,7 +125,7 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      - uses: ./.github/actions/ffmpeg   # .deb'ler cache'ten; Azure mirror'i bazen 60 KB/sn
+      - uses: ./.github/actions/ffmpeg   # statik ffmpeg, cache'ten (apt mirror'lari bazen takiliyor)
       - run: pip install -q -r requirements.txt
       - uses: actions/cache/restore@v5
         with:

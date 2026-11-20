@@ -1,20 +1,19 @@
 name: ffmpeg kur
-description: ffmpeg ve fonts-liberation; .deb'ler GitHub cache'inden, cache yoksa apt'den indirilip cache'e konur (bkz. kur.sh)
+description: Statik ffmpeg (BtbN 8.1) GitHub cache'inden ya da github.com'dan; o da olmazsa apt (bkz. kur.sh)
 runs:
   using: composite
   steps:
-    - id: k   # runner image'i degisince yeni cache (paket surumleri ona gore)
-      shell: bash
-      run: echo "anahtar=apt-ffmpeg-$ImageOS-$ImageVersion" >> "$GITHUB_OUTPUT"
-    - id: c
+    - id: c   # sabit anahtar: runner image'i degisse de ayni statik ffmpeg (eskisi image surumune bagliydi, 20 Kasim'da kacti)
       uses: actions/cache/restore@v5
       with:
-        path: /tmp/apt-deb
-        key: ${{ steps.k.outputs.anahtar }}
-    - shell: bash
+        path: /tmp/ffmpeg-kur
+        key: ffmpeg-statik-8.1-20261119
+    - id: k
+      shell: bash
       run: bash "$GITHUB_ACTION_PATH/kur.sh"
-    - if: steps.c.outputs.cache-hit != 'true'
+    - if: steps.k.outputs.yeni == '1'
       uses: actions/cache/save@v5
+      continue-on-error: true   # paralel isler ayni anahtari ayni anda kaydetmeye calisir, biri kazanir
       with:
-        path: /tmp/apt-deb
-        key: ${{ steps.k.outputs.anahtar }}
+        path: /tmp/ffmpeg-kur
+        key: ffmpeg-statik-8.1-20261119
