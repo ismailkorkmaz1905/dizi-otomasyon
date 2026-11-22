@@ -155,7 +155,8 @@ def yedekli(pipeline):
             except (Exception, SystemExit) as e:
                 kaynaklar.log(f'YouTube indirme (cerez) olmadi ({str(e)[:100]}); WARP ile cerezsiz deneniyor')
             try:
-                dl(url, dest, warp.baslat())
+                # 22 Kasim BH E08: tek parca istekte %56'dan sonra hiz 100 KiB/s'ye dustu, sonra 403. 10 MB'lik parcalarla iste.
+                dl(url, dest, warp.baslat() + ['--http-chunk-size', '10M', '--retries', '20'])
                 pipeline.log('AKIS YouTube 1080p, WARP, cerezsiz')
                 pipeline.log('UYARI: YouTube cerezsiz, WARP uzerinden indi (cerez olu olabilir, yenile)')
                 return
