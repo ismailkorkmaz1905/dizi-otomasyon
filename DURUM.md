@@ -1,4 +1,4 @@
-# Son durum ve notlar (20 Kasım 2026)
+# Son durum ve notlar (22 Kasım 2026)
 
 Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.md`'yi okusun. Akışın kendisi `README.md`'de.
 
@@ -7,7 +7,7 @@ Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.
 | Dizi | `dizi` değeri | Son teslim | Yayın | YouTube'a düşme | Otomatik arama |
 |---|---|---|---|---|---|
 | Muhtemel Aşk | `muhtemel_ask` | S01E22 (20 Kasım) | perşembe gecesi | cuma 01:00-01:04 TR | **yok** (20 Kasım'da kaldırıldı), elle başlat |
-| Başkalarının Hayatı | `baskalarinin_hayati` | S01E07 (15 Kasım) | cumartesi 20:00 Star TV | gece 23:30-00:30 TR (E3: 00:16, E4: 23:39, E5: 04:34 SGT = 23:34 TR) | **yok**, elle başlat |
+| Başkalarının Hayatı | `baskalarinin_hayati` | S01E08 (22 Kasım) | cumartesi 20:00 Star TV | gece 23:30-00:30 TR (E3: 00:16, E4: 23:39, E5: 04:34 SGT = 23:34 TR) | **yok**, elle başlat |
 | Yeraltı | `yeralti` | - | - | - | 16 Ekim'de takipten çıktı |
 
 ## Bölüm nasıl başlatılır
@@ -27,6 +27,7 @@ Yeni bir Claude oturumu buradan devam edecekse önce bunu, sonra `ceviri/YONTEM.
 
 ## Son değişiklikler
 
+- **WARP indirmesi (22 Kasım, BH S01E08):** çerez ölü, WARP'la indirme %22-85'te googlevideo `403` alıp düştü, aynı IP sonra bot engeline girdi (3 deneme, Scribe'a gitmeden). Şimdi `otomasyon.py`: başarısız her turdan sonra `warp.yenile()` ile yeni WARP IP'si, `--continue` yarım dosyadan devam eder; parçalı istek (`--http-chunk-size`) bir tur açık bir tur kapalı. Ayar repo Variables'tan: `WARP_TUR` (boş: 5), `WARP_PARCA` (boş: `10M`, `0`: parçalama yok). Saklanan WARP hesabı silinmez, yeni kayıt tutmazsa son denemede o kullanılır. 4. deneme 1. turda geçti (1,51 GB 35 sn); yeni IP turu gerçek koşuda henüz denenmedi.
 - **ffmpeg (20 Kasım):** apt yerine BtbN statik ffmpeg 8.1 (sabit sürüm, libass ve x264 içinde), `.github/actions/ffmpeg/`. Cache'te sabit anahtarla durur (`ffmpeg-statik-8.1-20261119`), yoksa github.com'dan ~10 sn'de iner; o da olmazsa apt (2. denemede bütün mirror'lar `archive.ubuntu.com` olur). Neden: 20 Kasım'da MA S01E22 yakmasında yeni runner image'i (AWS, `us-east-2.ec2` mirror'ı) eski cache anahtarını bulamadı, apt iki denemede 13 dk sonra düştü; aynı gün testte apt 14,5 dk sürüp yine düştü, statik 10 sn. Test: font Liberation Sans seçiliyor, parçalar birleşiyor. Gerçek yakmada henüz denenmedi (ilk: BH S01E08). `yak.yml`'de `fail-fast: false`: bir parça düşerse diğerleri biter, sadece o tekrar çalışır.
 - **Otomatik arama kaldırıldı (20 Kasım):** İsmail istemedi; `bolum.yml`'de cron yok, her bölüm elle başlatılır. (Cron 14 Kasım'dan beri zaten hiç çalışmamıştı.)
 - **YouTube çerezi:** 16 Kasım'dan beri ölü, yenilenmedi. Hazırlık WARP ile çerezsiz indiriyor (S01E22: 9 dk).
