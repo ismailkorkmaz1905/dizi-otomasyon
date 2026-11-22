@@ -35,6 +35,8 @@ jobs:
     timeout-minutes: 120
     env:
       DIZI: ${{ inputs.dizi || 'muhtemel_ask' }}
+      WARP_TUR: ${{ vars.WARP_TUR }}       # bos: 5
+      WARP_PARCA: ${{ vars.WARP_PARCA }}   # bos: 10M, '0': parcalama yok
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6

@@ -155,17 +155,22 @@ def yedekli(pipeline):
             except (Exception, SystemExit) as e:
                 kaynaklar.log(f'YouTube indirme (cerez) olmadi ({str(e)[:100]}); WARP ile cerezsiz deneniyor')
             # 22 Kasim BH E08: WARP IP'si indirmenin ortasinda (%22-85) 403 aliyor, sonra ayni IP bot engeline giriyor.
-            # Her turda yeni WARP hesabi (yeni IP); --continue yarim .part dosyasindan devam eder.
-            for tur in range(1, 6):
+            # Her basarisiz turdan sonra yeni WARP IP'si; --continue yarim .part dosyasindan devam eder.
+            # Parcali istek (WARP_PARCA, varsayilan 10M) bir tur acik bir tur kapali: hangisinin yardim ettigi belli degil.
+            # Ayarlar repo Variables'tan: WARP_TUR (varsayilan 5), WARP_PARCA ('0' = hic parcalama).
+            turlar = int(os.environ.get('WARP_TUR') or 5)
+            parca = os.environ.get('WARP_PARCA') or '10M'
+            for tur in range(1, turlar + 1):
+                ek = ['--http-chunk-size', parca] if parca != '0' and tur % 2 else []
                 try:
-                    dl(url, dest, warp.baslat() + ['--http-chunk-size', '10M', '--retries', '20'])
-                    pipeline.log('AKIS YouTube 1080p, WARP, cerezsiz')
+                    dl(url, dest, warp.baslat() + ek + ['--retries', '20'])
+                    pipeline.log(f'AKIS YouTube 1080p, WARP, cerezsiz (tur {tur}, parca {ek[1] if ek else "yok"})')
                     pipeline.log('UYARI: YouTube cerezsiz, WARP uzerinden indi (cerez olu olabilir, yenile)')
                     return
                 except (Exception, SystemExit) as e:
-                    kaynaklar.log(f'WARP ile indirme olmadi (tur {tur}/5: {str(e)[:100]})')
+                    kaynaklar.log(f'WARP ile indirme olmadi (tur {tur}/{turlar}: {str(e)[:100]})')
                     warp.yenile()
-            kaynaklar.log('WARP 5 turda olmadi; dizinin sitesi deneniyor')
+            kaynaklar.log(f'WARP {turlar} turda olmadi; dizinin sitesi deneniyor')
         ep = kaynaklar.ep_numarasi(dest)
         alt = ep and kaynaklar.bul(DIZI, ep)
         if not alt:

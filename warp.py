@@ -20,7 +20,7 @@ PORT = 25344
 DIR = Path('/tmp/warp')
 HESAP = Path('/tmp/warp-hesap')   # actions/cache ile kosular arasi saklanir: her kosuda yeni kayit Cloudflare'de 429 veriyor
 PROBE = 'https://www.youtube.com/watch?v=jNQXAC9IBTc'   # kisa, herkese acik; sadece "bot engeli yok mu" sinanir
-_state = {'args': None, 'proc': None}
+_state = {'args': None, 'proc': None, 'yeni': False}
 
 
 def log(*a):
@@ -42,11 +42,11 @@ def _kur():
 
 
 def yenile():
-    """Saklanan hesabi birakir; sonraki baslat() yeni kayitla (yeni Cloudflare IP'si) kurar."""
+    """Sonraki baslat() once yeni kayitla (yeni Cloudflare IP'si) kurar. Saklanan hesap silinmez:
+    yeni kayit tutarsa onun yerine yazilir, hic tutmazsa (Cloudflare 429) son denemede saklanan hesap kullanilir."""
     _durdur()
     _state['args'] = None
-    for f in HESAP.glob('wgcf-*'):
-        f.unlink()
+    _state['yeni'] = True
 
 
 def _durdur():
@@ -69,7 +69,9 @@ def baslat(deneme: int = 0) -> list[str]:
         _durdur()
         for f in DIR.glob('wgcf-*'):
             f.unlink()
-        kayitli = n == 1 and (HESAP / 'wgcf-profile.conf').exists()   # ilk deneme: saklanan hesap; olmazsa yeni kayit
+        # ilk deneme saklanan hesap, sonra yeni kayit; yenile()'den sonra tersi (saklanan hesap son deneme)
+        sira = deneme if _state.get('yeni') else 1
+        kayitli = n == sira and (HESAP / 'wgcf-profile.conf').exists()
         if kayitli:
             for f in HESAP.glob('wgcf-*'):
                 shutil.copyfile(f, DIR / f.name)
