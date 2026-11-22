@@ -1,0 +1,1712 @@
+0001 Kamu ngapain masih di sini? Pergi dari rumahku!
+0002 Ada apa?
+0003 Sayang, kamu oke?
+0004 Baik? Aku baik. Iya, aku baik-baik aja.
+0005 Oh. Papa.
+0006 - Kalian lihat Hülya?|- Hülya urusan terakhirku sekarang.
+0007 Ya ampun. Ke mana sih anak itu?
+0008 Hülya.
+0009 Hülya. Hülya. Hülya.
+0010 Hülya.
+0011 Hülya. Tolong! Tolong! Hülya, kamu nggak apa-apa?
+0012 Hülya. Tolong.
+0013 Tolong! Ada apa?
+0014 Hülya. Ada apa? Tolong. Hülya.
+0015 Gülizar, minggir. Hülya. Sarp.
+0016 Siapa pelakunya? Hülya. Siapa?
+0017 Nggak tahu. Aku nemu dia udah begini. Hülya, dengar aku?
+0018 Lihat aku. Jangan tutup mata. Tetap sama aku.
+0019 Tetap sama aku. Bagus. Ya.
+0020 Ada tandu di sini. Cepat! Jangan tutup mata.
+0021 Iya, gitu. Bagus banget.
+0022 Tenang, ya.
+0023 Aku di sini, tenang. Aku nggak ke mana-mana.
+0024 Aku mau Mama.
+0025 Aku mau Mama.
+0026 Dia bakal datang. Janji dia datang. Oke.
+0027 Janji.
+0028 Oke. Bertahan. Jangan menyerah. Lari cepat!
+0029 Lari!
+0030 Saya dokter. Ada luka tusuk di perut. Sudah saya tekan.
+0031 Pendarahan parah. Nadi lemah.
+0032 Kesadarannya naik turun. Tekanan darah harus dicek.
+0033 Oke, Hülya. Kami di sini, lihat. Semua di sini. Oke?
+0034 Jangan menyerah. Jangan. Hülya. Dengar aku?
+0035 Dengar aku? Lihat aku.
+0036 Hülya. Hülya. Hülya. Dengar aku?
+0037 Cuma satu orang.
+0038 Saya suaminya. Saya ikut.
+0039 Pak Fikret, saya perlu ikut ambulans.
+0040 - Sarp, aku harus ikut.|- Nggak bisa, Pak Fikret. Waktu kita mepet.
+0041 Siapkan mobil. Cepat, cepat.
+0042 Sarp.
+0043 Sarp. Kamu kan dokter.
+0044 Keadaannya nggak separah itu, kan? Dia selamat, kan?
+0045 Nggak tahu, Pak Fikret.
+0046 - Saya juga nunggu kayak Bapak.|- Kok nggak tahu, Sarp?
+0047 Kamu di ambulans sama dia. Kamu yang nanganin pertama.
+0048 Saya nggak bisa bilang apa-apa, sungguh.
+0049 Jangan sembunyiin apa-apa dari aku, Sarp.
+0050 Bilang. Jujur. Dia selamat, kan? Bilang sesuatu, Sarp.
+0051 Papa, jangan gitu. Dokternya sebentar lagi bilang kok.
+0052 Sarp, tolong
+0053 bilang sesuatu. Jangan lihat aku begitu, Sarp.
+0054 Di mana?
+0055 Hülya di mana, Nak? Tante Nermin.
+0056 - Tante Nermin.|- Sarp, mana anakku? Di mana anakku?
+0057 Dia di dalam, Tante Nermin, tenang aja, lagi ditangani.
+0058 Sebentar lagi dibawa ke sini. Aku mau lihat anakku.
+0059 Dia kecil banget. Dia takut sendirian di dalam, gimana anakku?
+0060 Dia pasti pengin dekat ibunya. Bawa aku.
+0061 Bawa aku ke dia. Aku-- harus lihat anakku.
+0062 Tante Nermin, sudah, ya.
+0063 Kumohon jangan gitu. Sarp, siapa yang ngelakuin ini?
+0064 - Nggak tahu, Sema.|- Kok bisa? Nggak ada yang lihat?
+0065 Nggak.
+0066 Kamu...
+0067 Ibumu.
+0068 Gara-gara kamu.
+0069 Kamu nggak becus jaga anakku. Padahal mau kuambil dia darimu.
+0070 Kamu-- semua gara-gara kamu. Semua salahmu.
+0071 - Ma!|- Kamu nggak becus jaga anakku!
+0072 Ma. Ma.
+0073 Ma. Lepasin. Ma. Gimana kalau anakku kenapa-napa?
+0074 Gimana kalau anakku? Ma.
+0075 Keluarga Hülya Özkaran?
+0076 Ya, saya suaminya. Gimana keadaannya?
+0077 Pendarahannya parah. Harus segera dioperasi.
+0078 - Tapi dia selamat, kan, Dok?|- Sekarang belum bisa dipastikan.
+0079 Kami berusaha sebaik mungkin.
+0080 Maksudnya apa? Jangan bilang "kami berusaha", Dok.
+0081 Bilang "dia selamat."
+0082 Dok, maksud "kami berusaha" apa?
+0083 Pak Fikret, sabar. Waktunya mepet.
+0084 Biarkan mereka cepat bawa Hülya masuk.
+0085 Terima kasih, Dok.
+0086 Selamatkan anakku.
+0087 - Ma...|- Tolonglah, selamatkan anakku.
+0088 Ma.
+0089 Ibu, tenang. Sudah, Bu.
+0090 Pendarahan berlanjut. Siapkan 1 liter sel darah merah.
+0091 Oke, ketemu. Klem.
+0092 Siapkan defibrilator.
+0093 200 joule.
+0094 250 joule.
+0095 Kamu datang.
+0096 Aku datang.
+0097 Akhirnya.
+0098 Akhirnya.
+0099 Tunggu!
+0100 Jangan pergi.
+0101 Nadinya kembali, Dok.
+0102 Gimana keadaannya?
+0103 Operasinya sulit sekali. Pendarahannya hebat, tapi kami berhasil
+0104 mengendalikannya. Dia sudah lewat masa kritis. Kondisinya stabil. Dia selamat.
+0105 Kami pindah ke ICU.
+0106 Tapi dia masih perlu diawasi ketat beberapa waktu.
+0107 Jangan khawatir. Dia sudah lewat bahaya.
+0108 Terima kasih. Ya Allah, alhamdulillah, ya Rabb.
+0109 - Ya Allah, syukurlah.|- Dia selamat, Ma.
+0110 Selamat. Dia selamat.
+0111 Dia selamat, Nak.
+0112 Selamat. Selamat.
+0113 Ma.
+0114 Alhamdulillah.
+0115 Alhamdulillah, dia selamat, Nak.
+0116 Makasih. Ya Allah, alhamdulillah, ya Rabb.
+0117 Alhamdulillah, ya Rabb. Anakku.
+0118 - Dia baik, kan?|- Iya, Ma.
+0119 Baik-baik aja, kan? Iya.
+0120 Oke. Oke.
+0121 Oke, Nak.
+0122 Kamu takut banget, ya?
+0123 Kita semua takut.
+0124 Aku belum pernah lihat kamu gini.
+0125 Pasien sudah sadar. Satu orang boleh masuk sebentar.
+0126 Saya,
+0127 Tolonglah, saya aja. Saya ibunya.
+0128 - Boleh, tapi sebentar, ya. Silakan.|- Saya juga mau lihat.
+0129 Ibunya dulu, ya, Pak Fikret. Jangan sampai pasien kelelahan.
+0130 Ya sudah. Ayo.
+0131 Oke.
+0132 Ayo, kita pulang juga.
+0133 Ke mana?
+0134 Maksudnya apa?
+0135 Pulang.
+0136 Kan besok pagi kita berangkat.
+0137 Menurutmu sekarang waktunya bulan madu?
+0138 Hülya katanya baik-baik aja.
+0139 Kamu juga dengar.
+0140 Terus papamu kita tinggal?
+0141 Yang nggak mau kamu tinggalin itu papaku atau Hülya?
+0142 Apa sih? Dia nyaris mati. Wajar aku khawatir.
+0143 Lagian aku dokter. Lupa?
+0144 Aku yang nanganin pertama. Aku merasa wajib.
+0145 Bulan madunya bisa nanti.
+0146 Ya udah,
+0147 aku pulang dulu
+0148 ambilin baju ganti buat kalian.
+0149 Oke, Nak.
+0150 Ayo.
+0151 - Semoga cepat sembuh.|- Makasih.
+0152 Ayo, Mediş, pergi.
+0153 Anakku.
+0154 Aku datang, Nak, Mama datang.
+0155 Hülya-ku.
+0156 Siapa yang ngelakuin ini?
+0157 Kamu ngapain masih di sini? Pergi dari rumahku!
+0158 Bilang, Nak.
+0159 Siapa?
+0160 Nggak tahu.
+0161 Nggak tahu. Ya,
+0162 ya udah, Nak.
+0163 Sudah, Nak.
+0164 Sayangku.
+0165 Sayang. Sudah.
+0166 Nggak mau keluar.
+0167 Ah.
+0168 Ma, hari ini harusnya jadi hari paling indah dan bahagia buatku.
+0169 Andai Mama juga ada. Andai Mama lihat.
+0170 Padahal bakal indah banget.
+0171 Mereka hancurin
+0172 semuanya. Hancurin. Hancurin. Hancurin.
+0173 Ma.
+0174 Andai Mama ada di sini.
+0175 Hari ini aku sendirian banget, Ma.
+0176 Andai Mama ada di sampingku.
+0177 Suatu hari,
+0178 aku cuma pengin bahagia banget.
+0179 Apa itu permintaan berlebihan?
+0180 Udah siap?
+0181 - Mobilnya datang 45 menit lagi.|- Lho, secepat itu?
+0182 Nggak, menurutku nggak.
+0183 Akhirnya! Malam ini kita di Istanbul.
+0184 Akhirnya? Kamu kangen banget sama Istanbul cuma seminggu?
+0185 Kangen.
+0186 Istanbul masa nggak dikangenin?
+0187 Dikangenin sih, tapi
+0188 kayaknya ini kangen yang lain.
+0189 Maksudnya?
+0190 Nggak tahu.
+0191 Sini, biar aku.
+0192 Aku aja. Udah, udah. Nih, udah selesai.
+0193 Oke. Aku nggak bilang kamu nggak bisa. Ini kerjaan suami.
+0194 Kok cemberut?
+0195 Aku bahagia banget di sini, Sarp.
+0196 Berduaan sama kamu di sini indah banget.
+0197 Mau aku bilangin sesuatu?
+0198 Hmm?
+0199 Paris mahal banget.
+0200 Sekarang ngerti kenapa aku mau pulang ke Istanbul? Kamu kok lucu banget, sih?
+0201 Tapi kan udah kubilang. Kamu nggak perlu bayarin semuanya.
+0202 Ah, nggak segitunya, Sayang. Gimana kalau gini?
+0203 Pas pulang, malamnya kita keluar berdua.
+0204 Berdua. Kamu pilih tempatnya. Kita matiin HP.
+0205 Cuma kita berdua.
+0206 Janji? Janji.
+0207 Oke.
+0208 Aku cek kamar mandi dulu. Ada yang ketinggalan? Oke.
+0209 Nah. Kübra.
+0210 Bawa ini ke kamar Nona Hülya. Terus periksa apa masih ada yang kurang.
+0211 Habis itu keluarin set di dapur, ya.
+0212 - Nanti aku nyusul.|- Baik, Bu Mediha.
+0213 Suster, kami juga siapkan kamar di atas buat Suster.
+0214 Kalau ada yang kurang, bilang, ya.
+0215 Terima kasih, Bu Mediha. Pak Fikret sebentar lagi sampai.
+0216 Hari ini putri kami juga pulang bulan madu bareng menantu.
+0217 - Makanya kami agak sibuk. Maaf, ya.|- Nggak apa-apa.
+0218 Nah, mereka datang.
+0219 Sini.
+0220 Pelan-pelan, Sayang, jangan buru-buru.
+0221 Nak,
+0222 - Kok lari-larian gitu? Pelanan dikit.|- Aku baik-baik aja.
+0223 Nona Hülya, sekali ini aja dengerin omongan, ya? Pelan. Di tangga pelan-pelan.
+0224 Selamat datang, Nona Hülya. Sekali lagi, cepat sembuh.
+0225 Makasih, Bu Mediha.
+0226 Cepat sembuh, ya.
+0227 Makasih.
+0228 Sini, begini.
+0229 Pelan.
+0230 Tenang.
+0231 Iya, iya, aku baik. Oke.
+0232 Bu Nermin, silakan.
+0233 Sema, masuk.
+0234 Suster Duygu, silakan.
+0235 Makasih. Hülya, suster kita ini
+0236 yang nemenin kamu.
+0237 Halo, Bu Hülya. Senang bertemu. Cepat sembuh.
+0238 Makasih.
+0239 Sayang. Makasih, tapi nggak perlu.
+0240 - Aku baik-baik aja.|- Ada, ada. Ada perban, ada obat.
+0241 Biar kita tenang, kan? Baru keluar rumah sakit, kamu bikin rumah sakit di rumah.
+0242 Sembuh dulu, baru lanjut ngomel.
+0243 Bu Mediha, Neslihan jam berapa?
+0244 Katanya jam delapan malam sampai, Pak Fikret.
+0245 Saya udah bicara sama Pak Sarp. Mereka segera jalan.
+0246 Sayang.
+0247 Ayo, Nak, kamu jangan
+0248 rebahan di sini, ke kamar sana, istirahat.
+0249 Ayo, Nak. Ma, udah sepuluh hari aku tiduran. Bosen. Sumpah, aku baik-baik aja.
+0250 Hülya-ku
+0251 dengerin omongan dikit, dong?
+0252 Sema, antar adikmu ke kamarnya, ya.
+0253 Aku perlu bicara sebentar sama Pak Fikret.
+0254 Oke.
+0255 Ayo, Nak. Iya, aku baik.
+0256 Nggak usah. Suster Duygu temenin.
+0257 Tentu.
+0258 Fikret.
+0259 Aku nggak kabur. Biar aku beres-beres dulu.
+0260 Suster juga pasti ikut. Ya udah. Ya udah.
+0261 Suster Duygu, Suster boleh ke kamar. Terima kasih.
+0262 Pelan-pelan, Hülya-ku. Hati-hati.
+0263 Pelan begini, sampai kamar bisa malam.
+0264 Kamu masih bisa ngomel begini, berarti udah sembuh.
+0265 - Mati pun aku tetap ngomong terakhir.|- Ya ampun, siapa yang nggak tahu?
+0266 Kenapa? Sakit?
+0267 Tadi sempat nyeri, tapi udah lewat.
+0268 Makasih.
+0269 Silakan.
+0270 Coba bilang, Pak Fikret,
+0271 mulai sekarang gimana Bapak jaga putri saya?
+0272 Bu Nermin, jangan khawatir. Semua langkah sudah kami ambil.
+0273 Kamera dipasang di seluruh rumah. Sistem alarm diperbarui.
+0274 Setiap pintu masuk dijaga 24 jam.
+0275 Dia nggak akan keluar sendirian. Kalau keluar, pengawal selalu bersamanya.
+0276 Sungguh, jangan khawatir.
+0277 Pak Fikret.
+0278 Bapak kaya raya,
+0279 dan sangat berkuasa.
+0280 Bapak kira
+0281 kekuasaan Bapak cukup untuk segalanya,
+0282 kan?
+0283 Tapi nyatanya nggak.
+0284 Kali ini nggak cukup.
+0285 Dengar,
+0286 yang saya minta dari Bapak bukan uang.
+0287 Bapak harus menjaga nyawa anak saya.
+0288 Kalau ke depannya
+0289 anak saya sampai terluka sedikit pun...
+0290 Bapak berurusan dengan saya.
+0291 Bapak boleh bilang saya lancang.
+0292 Bapak pikir, "Siapa dia? Bisa apa?" Tapi jangan remehkan
+0293 kutukan seorang ibu.
+0294 - Paham, Pak Fikret?|- Bu Nermin...
+0295 Dengar, Hülya segalanya buat saya.
+0296 Dunia terbalik pun dia nggak akan kenapa-napa lagi.
+0297 Percayalah sama saya.
+0298 Percayalah, tolong.
+0299 Baik,
+0300 semoga begitu.
+0301 Permisi, saya mau naik ke tempat anak saya.
+0302 Tentu.
+0303 Udah lebih baik, kan?
+0304 Hm-hm.
+0305 Nah, bagus.
+0306 Akhirnya kamu rebahan, ya? Hmm.
+0307 Kolonelku yang maksa tiduran.
+0308 Hmm.
+0309 Kalau Kolonel, pasti bisa.
+0310 Sema.
+0311 Nak, kamu keluar lima menit, ya? Kasih kami waktu.
+0312 - Aku mau ngomong sama Hülya.|- Iya, Ma.
+0313 Makasih, Sayang.
+0314 Sampai nanti. Sampai nanti.
+0315 Hülya.
+0316 Hm?
+0317 Siapa yang ngelakuin ini? Bilang yang jujur.
+0318 Ma,
+0319 udah lima puluh kali aku ceritain ke polisi dan Mama. Aku nggak lihat.
+0320 Dia datang dari belakang. Aku nggak ngerti kejadiannya. Ingat jelas aja nggak.
+0321 Bapakmu juga ada di sana.
+0322 Iya.
+0323 Dia datang karena ada minuman gratis. Aku suruh pergi.
+0324 Terus?
+0325 Ya ampun. Nggak ada terusnya, Ma. Udah kuusir, dia pergi. Nggak ketemu lagi.
+0326 Ah, masa sih sampai segitunya.
+0327 Masa orang tega nyakitin anaknya sendiri.
+0328 Oke.
+0329 Aku pergi dulu, ya.
+0330 Oke. Jaga diri baik-baik, ya, Nak?
+0331 Iya. Iya.
+0332 - Tapi datang lagi, ya.|- Aduh, Nak, kok "datang lagi" sih?
+0333 Mulai sekarang Mama selalu datang. Mama nggak akan ninggalin kamu lagi, sayang.
+0334 Andai Mama nggak ngambek sampai nggak datang ke pernikahan, mungkin semua ini
+0335 nggak terjadi. Mama marah sama diri sendiri.
+0336 - Mama nggak bisa maafin diri sendiri.|- Udah, Ma, udah.
+0337 Udah lewat kok. Lihat, aku baik-baik aja.
+0338 Kamu baik, Nak,
+0339 bakal makin baik, insyaallah.
+0340 Kesayangan Mama. Ayo.
+0341 Sayangku. Satu-satunya buat Mama.
+0342 Mau apa-apa?
+0343 - Nggak.|- Oke, Mama pergi. Obatnya semua di situ, ya, Nak.
+0344 Hati-hati, ya, Nak. Nanti Mama telepon.
+0345 Nona Hülya.
+0346 Orhan, gimana?
+0347 Kami nemu tempat persembunyian bapak Nona.
+0348 Tadinya mau kasih kabar.
+0349 Di mana?
+0350 Oke.
+0351 Siapkan semua yang perlu buat besok.
+0352 Baik, tenang aja, Nona.
+0353 Kasih dong! Itu punyaku! Lepas!
+0354 Ah!
+0355 Ah! Aduh!
+0356 Terus, terus.
+0357 Coba lihat apa yang keluar.
+0358 Gali, gali lagi.
+0359 Gali, hei.
+0360 Lihat gue.
+0361 Lo beli apa pakai duit itu?
+0362 Keluarin dari tas.
+0363 Keluarin, hei.
+0364 Masukin.
+0365 Masukin, hei.
+0366 Tutup sekarang.
+0367 Tutup dong.
+0368 Gimana sekarang,
+0369 hah?
+0370 Lihat? Lo jatuh ke sumur yang lo gali sendiri.
+0371 Nah. Erim,
+0372 kamu pernah lihat studio pilates di sekitar sini?
+0373 Di taman kota ada alat-alatnya, Ma, ke sana aja.
+0374 Ah.
+0375 Ma, tolong hari ini jangan bikin ulah.
+0376 Aku ngomong apa?
+0377 Aku bilang apa? Kamu dengar aku.
+0378 Udah, ayo.
+0379 - Selamat datang.|- Makasih.
+0380 Selamat datang.
+0381 - Gimana Hülya? Baik?|- Baik, syukurlah hari ini dia pulang.
+0382 Syukurlah, aku lega. Cepat sembuh. Ya ampun, aku khawatir banget.
+0383 Gimana dia sekarang, kasihan?
+0384 Baik,
+0385 baik banget, syukurlah. Insyaallah makin baik.|- Iya, masih muda, cepat pulih.
+0386 Belum ketahuan siapa pelakunya?
+0387 Belum. Polisi nyelidikin, tapi belum ada hasil.
+0388 Astaga! Nggak masuk akal.
+0389 Masa kejadian begitu di tempat yang pengamanannya ketat.
+0390 Orang kena musibah begitu, gimana bisa tinggal di rumah itu?
+0391 Aku nggak ngerti.
+0392 Terus gimana? Masa dia nggak boleh tinggal di rumahnya?
+0393 Bukan itu maksudku, Bu Nermin. Maksudku hati jadi nggak tenang.
+0394 Demi ketenangan kami, sungguh, biar kami tenang,
+0395 Pak Fikret sudah menambah semua pengamanan. Iya, kan, Nak? Hm.
+0396 Mau bilang "lebih baik terlambat daripada tidak",
+0397 tapi nggak pas. Soalnya udah telat, udah parah pula.
+0398 Ma, udah. Bu Nermin baru pulang dari rumah sakit. Jangan dicapekin, ya.
+0399 Aku capekin? Aku cuma nanyain kabar anaknya.
+0400 Sema, Mama ganti baju dulu, Nak. Kamu bikinin teh, ya.
+0401 Iya, Ma. Ayo.
+0402 Eh!
+0403 Hati-hati.
+0404 Di kamarmu aja kenapa?
+0405 Aku ngapain? Kamu ngapain emang?
+0406 Maafin mamaku, ya.
+0407 Nggak, nggak apa-apa.
+0408 Kamu baik-baik aja?
+0409 Baik. Cuma agak capek.
+0410 - Makasih, ya.|- Sama-sama.
+0411 Sema.
+0412 Kamu tetap di kamarmu, ya?
+0413 Aku tidur di sofa.
+0414 - Nggak usah, masa gitu?|- Boleh kok. Kamu kan capek.
+0415 Istirahat yang enak, ya.
+0416 Ya udah.
+0417 Andai keadaannya beda, aku
+0418 bisa bawa kamu ke tempat bagus.
+0419 Setidaknya pikiranmu lega.
+0420 Maksudnya, biar kita bisa
+0421 lepas sebentar dari semua ini.
+0422 Berdua.
+0423 Ya udahlah, aku nggak nahan kamu lagi.
+0424 Erim.
+0425 Katamu mau bawa aku ke tempat bagus.
+0426 Iya.
+0427 Nggak harus tempat bagus.
+0428 Bagus.
+0429 Kalau gitu, malam ini keluar?
+0430 Boleh.
+0431 Tekanan darahnya juga bagus.
+0432 Semuanya normal.
+0433 Bagus.
+0434 - Bagus.|- Saya di kamar. Kalau butuh apa-apa, panggil ya.
+0435 Makasih. Makasih.
+0436 Sayang.
+0437 - Kamu baik-baik aja? Mau bantal?|- Nggak, aku baik.
+0438 Sayang, pas ganti kamera, sekalian ganti alarm kebakarannya juga.
+0439 Jaga-jaga aja.
+0440 Tenang, semuanya udah kita urus.
+0441 Ah, mereka udah datang.
+0442 Selamat datang.
+0443 Makasih, Papa.
+0444 - Selamat datang.|- Makasih.
+0445 Selamat datang, Nak.
+0446 Sarp. Mediş.
+0447 - Pak Fikret.|- Selamat datang.
+0448 Makasih.
+0449 - Gimana tadi?|- Bagus kok. Bagus.
+0450 Selamat datang.
+0451 Ayo, masuk.
+0452 Gimana keadaanmu?
+0453 Ya, kayak yang kamu lihat.
+0454 Aduh!
+0455 Sakit banget?
+0456 Nggak terlalu sakit sih. Cuma capek nggak bisa gerak sebebas maunya.
+0457 Kayak apa ya rasanya nggak bisa ngelakuin apa pun yang kita mau.
+0458 Jadi, gimana Paris, kota para kekasih? Cerita dong.
+0459 Bagus banget.
+0460 Untung cuacanya juga bagus banget. Kita jalan-jalan.
+0461 Kok pulangnya cepet banget? Kalian di sana aja dulu.
+0462 Aduh! Mana mungkin, Mediş-ku mau ulang tahun.
+0463 Lho!
+0464 Bu Mediha ulang tahun?
+0465 Iya, besok.
+0466 Udahlah, ayo cerita, ngapain aja?
+0467 Sarp reservasi restoran bagus banget, yang bisa lihat Menara Eiffel gitu.
+0468 Lilin, bunga. Aduh, romantis banget pokoknya.
+0469 Bagus, Nak.
+0470 Hebat kamu.
+0471 Wah, aku jadi iri.
+0472 Fikret, kita juga pengantin baru. Aku juga mau.
+0473 Kamu sembuh dulu.
+0474 Nanti kubawa kamu ke kota-kota paling indah, ke tempat-tempat paling bagus.
+0475 Ke mana pun kamu mau.
+0476 Ah, hampir lupa hadiahnya. Sayang, tolong ambilin, ya?
+0477 Iya, bener.
+0478 Iya.
+0479 Iya.
+0480 - Tentu aja Mediş-ku duluan.|- Aduh, sayang, makasih banyak, ya.
+0481 - Ngapain repot?|- Hadiah aslinya besok, pas ultahmu.
+0482 Coba lihat.
+0483 Wah!
+0484 Ah, bagus banget. Pasti cocok banget.
+0485 Papa,
+0486 ini buat Papa.
+0487 Makasih, Nak.
+0488 Oo,
+0489 bagus banget.
+0490 Bagus. Makasih.
+0491 Selamat dipakai, ya.
+0492 Dan ini
+0493 buat pasien kita.
+0494 Aku mikirin lama banget mau beliin apa.
+0495 Begitu lihat ini, langsung kepikiran: ini Hülya banget.
+0496 - Sini kubantu.|- Aduh, lumayan berat.
+0497 Hup.
+0498 Gimana? Suka?
+0499 Kamu kan suka main game.
+0500 Bagus banget. Makasih.
+0501 - Aku naik dulu, mau mandi.|- Aku beresin koper juga.
+0502 - Pak Fikret, saya siapkan kopinya, ya.|- Boleh, boleh, bagus.
+0503 - Kenapa?|- Nggak, nggak apa-apa. Cuma agak nyeri.
+0504 Aku kasih tahu Suster Duygu, ya.
+0505 Dia lagi di kamarnya. Nggak ada apa-apa kok.
+0506 Kuperiksa, ya. Sakit di mana?
+0507 Kalian tenang dikit, dong. Aku belum minum obat.
+0508 Ketinggalan di kamar. Udah lewat waktunya, makanya nyeri.
+0509 Di kamarmu?
+0510 Iya, di kamar.
+0511 Di samping ranjang.
+0512 Aduh.
+0513 Kalau nyerinya makin parah, bilang, ya.
+0514 - Operasi kayak gini nggak boleh dianggap enteng.|- Iya, Dok.
+0515 Aku serius, Hülya.
+0516 Aku tahu.
+0517 Aku baik-baik aja.
+0518 Kamu sendiri baik-baik aja?
+0519 - Iya.|- Kukira bakal lihat kamu lebih bahagia.
+0520 Kamu baru pulang dari Paris. Bulan madunya pasti indah.
+0521 Tapi wajahmu nggak bilang gitu.
+0522 Cuma capek.
+0523 Neslihan milih hadiah yang bagus banget.
+0524 Tapi aku nggak bisa mainnya.
+0525 Ajarin aku, ya?
+0526 Kayaknya Pak Fikret lebih jago dari aku.
+0527 Mainnya sekarang sama dia aja.
+0528 Taruh punya Fikret di situ, dong. Bentar lagi dia juga datang.
+0529 Makasih, ya.
+0530 Makasih.
+0531 Nah.
+0532 - Ini?|- Iya. Tepat.
+0533 - Makasih.|- Aku lihat Neslihan dulu, ya.
+0534 Aduh, manisnya.
+0535 Sedetik pun nggak mau pisah.
+0536 Bagus, Nak. Terus gitu.
+0537 Pokoknya
+0538 terusin gitu.
+0539 Sayang, mau nggak mereka sekalian bikin bayi pas bulan madu?
+0540 Boleh, boleh. Sini.
+0541 Enak banget bisa keluar. Aku udah sumpek banget.
+0542 Kedinginan?
+0543 Sedikit. Pinggir laut ternyata lebih dingin.
+0544 - Jangan, nanti kamu kedinginan.|- Aku nggak.
+0545 Sini.
+0546 Makasih.
+0547 Sama-sama.
+0548 Ya jalanan aja, gitu.
+0549 Duduk dulu, yuk?
+0550 Boleh.
+0551 Sema.
+0552 Ya?
+0553 Ada yang mau kubilang.
+0554 Bilang aja.
+0555 Sema. Aku suka banget sama kamu.
+0556 Kok kaget banget?
+0557 Nggak kelihatan, ya?
+0558 Ngobrol sama kamu, lihat kamu,
+0559 jadi hal yang kutunggu-tunggu seharian.
+0560 Tiap bangun pagi, aku mikir, apa bakal ketemu kamu di dapur.
+0561 Aku juga.
+0562 Kamu juga apa?
+0563 Aku juga suka sama kamu.
+0564 Boleh aku cium kamu?
+0565 Berdiri, yuk?
+0566 Yuk.
+0567 Bantu bangun.
+0568 Sini.
+0569 - Hadiah Nona Hülya ketinggalan. Saya bawakan.|- Perhatian banget kamu.
+0570 Taruh di situ aja.
+0571 Nasibmu aneh banget ya, Bu Mediha?
+0572 Kok bisa nyonya rumah yang satu meninggal, yang satu balik dari kematian?
+0573 Mending kamu tolak bala deh.
+0574 Yang serumah sama kamu, nasibnya jelek.
+0575 Nona Hülya memang diberkahi. Seperti kata Nona, tidak gampang terjadi apa-apa.
+0576 Semoga aja di rumah ini nggak ada kebakaran segala,
+0577 itu bikin aku repot juga.
+0578 Kenapa?
+0579 Kok kamu jadi sensi tiap aku bilang kebakaran?
+0580 Selamat malam.
+0581 Malam juga, Bu Mediha.
+0582 Kamu baik-baik aja?
+0583 Maaf. Sst. Sst.
+0584 Selamat malam.
+0585 Selamat malam.
+0586 Udah, sana pergi.
+0587 Aku kan tidur di sini.
+0588 Ya udah, sana.
+0589 Sana, ah. Selamat malam.
+0590 Selamat malam.
+0591 Siapa?
+0592 Aku.
+0593 Kenapa?
+0594 Baterai ponselku habis.
+0595 Charger-nya nggak ketemu lagi.
+0596 Oke, aku ada.
+0597 Nanti mereka dengar.
+0598 Biarin.
+0599 Kita bisa pelan-pelan.
+0600 Kamu baik-baik aja?
+0601 Tutup pintunya.
+0602 Woi!
+0603 Woi, lepasin!
+0604 Lepasin gue, woi!
+0605 Lepasin, woi. Dasar preman. Lepasin gue. Ah,
+0606 ah,
+0607 ah!
+0608 Apa-apaan sih, woi? Kalian ngapain? Nona Hülya nyuruh gebukin gue lagi?
+0609 Nggak. Kali ini Nona Hülya punya rencana lain buat Anda.
+0610 Selamat pagi.
+0611 - Gimana keadaannya?|- Semua baik, Pak Fikret, tenang aja.
+0612 Bagus.
+0613 - Nanti saya mampir lagi.|- Iya. Terima kasih.
+0614 Hari ini kamu kelihatan lebih baik.
+0615 Iya, tidurku nyenyak.
+0616 Mungkin aku kangen rumah.
+0617 - Orang-orang rumah lagi apa?|- Baik-baik aja.
+0618 Neslihan keluar sama Mediha. Sarp pergi wawancara kerja.
+0619 Jadi rumah ini buat kamu sendiri.
+0620 Kenapa? Kamu kenapa?
+0621 Pasti ada sesuatu.
+0622 - Nggak ada apa-apa.|- Hülya, ayo bilang.
+0623 Mama baru telepon sambil nangis.
+0624 Mama berantem parah sama Kak Sema. Katanya Kak Sema mau minggat dari rumah.
+0625 Di telepon udah susah payah kutenangin, tapi Mama nungguin aku. Aku harus ke sana.
+0626 Kenapa mereka berantem?
+0627 Hal sepele.
+0628 Udahlah.
+0629 Aku malah malu sendiri cerita ini ke kamu.
+0630 Sayang, kalau nggak cerita ke aku, mau cerita ke siapa, hm?
+0631 Fikret, kalau kamu izinin, aku boleh ke rumah Mama?
+0632 Hülya-ku, aku tahu kamu sayang keluargamu, tapi kesehatanmu
+0633 penting banget buatku.
+0634 Tapi aku baik-baik aja.
+0635 Beneran.
+0636 Mereka keluargaku.
+0637 Kalau Kak Sema pergi, Mama gimana sendirian di rumah?
+0638 Aku juga udah nggak di sana.
+0639 Sedih banget aku.
+0640 Aku cuma sebentar. Aku bakal jaga diri. Nggak bakal maksain diri.
+0641 Janji.
+0642 Ya udah, oke. Ertan dari keamanan ikut nemenin. Tapi aku bakal tahu semuanya, ya.
+0643 Oke.
+0644 Apa yang kulakuin sampai pantas dapat kamu?
+0645 Sst.
+0646 Nggak, nggak, nggak. Justru kamu yang berharga banget buatku.
+0647 Berharga banget.
+0648 Hasan.
+0649 Hülya sebentar lagi keluar. Jangan lepas dari dia. Dia ke mana, ngapain?
+0650 Laporin terus tiap saat.
+0651 Orhan.
+0652 Gimana situasinya?
+0653 Oke, sebentar lagi kita berangkat.
+0654 - Ini selai apa, Bu Nermin?|- Ceri.
+0655 Oh. Hm.
+0656 Makan, makan.
+0657 Naik seratus gram nggak apa-apa kok.
+0658 Aduh, nggak usah, saya nggak mau nambah kalori percuma. Minta timunnya aja.
+0659 Maksudnya?
+0660 Anda bilang
+0661 selai ceri saya yang enak ini percuma, gitu?|- Bukan itu maksud saya.
+0662 Saya lagi diet, itu maksud saya.
+0663 Sema.
+0664 Hm? Kok kamu nggak makan, Nak? Semuanya masih utuh di piring.
+0665 Nggak, lagi nggak nafsu, Ma.
+0666 - Kamu sakit, Nak?|- Nggak, aku baik-baik aja.
+0667 Mungkin dia kurang tidur, kasihan.
+0668 Selamat pagi. Aduh
+0669 selamat pagi, oh! Pagi, Nak.
+0670 Selamat pagi, Bu Nermin.
+0671 Selamat pagi.
+0672 Pagi, sayang. Kehadiranmu bikin pagiku ceria.
+0673 Habis Sema.
+0674 - Anakku!|- Maaf, Ma.
+0675 Ibu dan anak sama-sama ceroboh. Ada apa sih pagi-pagi gini?
+0676 Sayang, jangan dimarahin. Mereka masih muda, wajar.
+0677 Wajar gimana? Dia mimpi buruk kali, masih kebawa. Wajar apanya?
+0678 Jangan keras sama Sema.
+0679 Nona Hülya mau sesuatu?
+0680 Aku mau air.
+0681 - Duduk aja.|- Mana boleh? Saya ambilin.
+0682 Duduk, duduk.
+0683 Kübra, coba lihat aku.
+0684 - Kamu kenapa?|- Nggak apa-apa.
+0685 Pasti ada apa-apa. Tadi pas masuk kamu nangis.
+0686 Kenapa? Cerita sama aku.
+0687 Bapak saya dirawat di rumah sakit, Nona Hülya,
+0688 saya sedih banget.
+0689 - Dia kenapa?|- Harus operasi, tapi saya nggak tahu gimana caranya. Mahal banget.
+0690 Selama ini dia ngerawat saya. Nyekolahin, membesarkan saya.
+0691 - Sekarang saya nggak bisa apa-apa.|- Kok nggak bilang aku?
+0692 Aku yang urus.
+0693 - Tapi--|- Nggak pakai tapi.
+0694 Kalau kamu sampai sesedih ini, berarti bapakmu baik banget.
+0695 Banget, Nona. Nggak ada duanya.
+0696 Udah, sayang,
+0697 jangan sedih,
+0698 aku yang urus.
+0699 Semuanya bakal beres.
+0700 Ya?
+0701 Sepakat?
+0702 Maaf banget. Tadi saya nggak bisa nahan diri.
+0703 - Udah, jangan sedih.|- Makasih banyak, Nona.
+0704 Saya langsung kasih tahu Bapak.
+0705 Pa! Pa!
+0706 Halo,
+0707 Gülizar, belum siap juga?
+0708 Ayo, berangkat.
+0709 Ayo.
+0710 Adikku.
+0711 Jangan stres.
+0712 Nggak.
+0713 Cuma tegang.
+0714 Sayangku. Jangan tegang. Semuanya bakal baik-baik aja.
+0715 Kita bakal dapat kabar baik.
+0716 Percaya sama aku.
+0717 Makasih.
+0718 Dek, lihat aku.
+0719 - Kamu lagi ngerjain apa sih? Ceritain dong.|- Nggak ada apa-apa.
+0720 - Habis dari rumah Mama, aku mampir ke satu tempat.|- Tempat apa?
+0721 Kalau kubilang, kamu pasti nyoba nyegah aku.
+0722 Dan aku nggak mau mundur.
+0723 Nona Hülya, kalau siap kita berangkat.
+0724 Aku siap.
+0725 Hülya. Hülya. Jangan bikin aku naik darah.
+0726 - Ceritain bentar aja dong.|- Nanti aku ceritain pas pulang.
+0727 Oke?
+0728 Bantu aku lepas dari orang itu pas keluar rumah Mama.
+0729 Nanti malam aku ceritain semuanya.
+0730 Janji.
+0731 Ya udah, oke. Ayo.
+0732 Aduh
+0733 - Ma, aku kaget setengah mati.|- Jangan takut, Nak, Mama di sini. Lho!
+0734 Itu lho, Sema sayang. Mama mau nyalain mesin cuci.
+0735 Kalau ada yang kotor, sekalian Mama cuci.
+0736 - Nggak usah, Ma.|- Ya udah, sini kita ganti sprei.
+0737 Nggak, aku udah masukin ke mesin, udah ganti.
+0738 - Pagi-pagi gini.|- Oh.
+0739 Bagus.
+0740 Sema, ini apa nih, kotor semua? Tuh, berserakan di lantai.
+0741 - Pikiranmu kok melayang terus.|- Mama benar, aku nggak sadar.
+0742 Lho! Ini apa?
+0743 Punya siapa ini?
+0744 - Nggak tahu.|- Kok nggak tahu, Nak? Ini kamarmu. Siapa lagi yang tahu?
+0745 Coba lihat.
+0746 Oh, ini
+0747 anu, ee,
+0748 - Punya Pak Erim, kayaknya.|- Apa?
+0749 Dia kan nginep di sini.
+0750 Lupa dibawa.
+0751 Bilangin Erim, suruh ambil semua barangnya di sini.
+0752 Iya, Ma.
+0753 Nah, Dokter Sarp,
+0754 CV Anda bagus banget.
+0755 Dari rumah sakit lama Anda, saya dengar banyak pujian soal Anda.
+0756 Terima kasih.
+0757 Terus terang,
+0758 kami pengin punya dokter seperti Anda di tim kami.
+0759 Kalau begitu, selamat, ya. Kita ke HRD, mulai prosesnya.
+0760 Terima kasih banyak, Pak.
+0761 Justru saya yang berterima kasih. Titip salam hangat buat Pak Fikret, ya.
+0762 Pak Fikret?
+0763 Iya. Kemarin beliau telepon saya.
+0764 Anda bicara sama Pak Fikret soal saya?
+0765 Tentu. Pak Fikret itu sahabat lama saya.
+0766 Saya nggak tahu Pak Fikret tahu soal pertemuan ini.
+0767 Nak, nggak ada yang salah kok.
+0768 Beliau pengin menantunya kerja di tempat yang lebih baik. Wajar.
+0769 Kenapa kamu sampai nggak nyaman gitu?
+0770 Saya ke sini bukan sebagai menantu Pak Fikret.
+0771 Makasih atas tawarannya, tapi saya nggak bisa lanjut begini.
+0772 Ya, tentu itu keputusanmu. Terserah. Tapi kalau tanya saya,
+0773 kamu salah langkah.|- Biarlah, toh saya juga nggak bakal tenang.
+0774 Selamat siang.
+0775 Orhan,
+0776 tunggu di gang bawah. Aku bentar lagi ke sana.
+0777 Nona, berapa kali harus kami bilang, jangan nerobos ke jalan?
+0778 Dengerin kata kami dikit.
+0779 Makasih.
+0780 - Saya di sini, Nona Hülya.|- Iya, makasih.
+0781 Lho, Hülya,
+0782 kamu ngapain di sini?
+0783 - Aku kangen rumah, Kak.|- Nanti Pak Fikret marah kamu ke sini.
+0784 Kak, dia tahu kok. Minggir dong, kita mau masuk.
+0785 - Selamat datang, Gülizar.|- Makasih.
+0786 Pak Ertan.
+0787 Saya nunggu di parkiran gang bawah sampai Nona Hülya keluar.
+0788 Oke. Semangat.
+0789 Nggak usah seneng banget lihat aku.
+0790 Kenapa mukamu begitu? Kamu kenapa?
+0791 Nggak apa-apa.
+0792 Sema. Lihat ponselku nggak?
+0793 Waduh!
+0794 Ya ampun.
+0795 Apa-apaan? Ngapain dia di rumah ini?
+0796 - Hülya.|- Kak.
+0797 - Hülya, tenang, aku jelasin.|- Jelasin.
+0798 Hülya, Nak, kamu kok bangun dari tempat tidur?
+0799 - Kamu belum sembuh betul.|- Ma, aku baik-baik aja.
+0800 Ngapain dia di sini?
+0801 Oh, mereka anak kos kita, Nak.
+0802 Anak kos? Memangnya ada siapa lagi?
+0803 Aduh, ada apa sih? Teriak-teriak.
+0804 Astaga.
+0805 Lho
+0806 semoga cepat sembuh. Selamat datang, sayang.
+0807 Gimana kabarmu? Udah agak baikan?
+0808 Nggak percaya. Kalian bisa-bisanya masukin orang-orang ini ke rumah.
+0809 Ada apa sih?
+0810 Tunggu, tunggu. Memangnya kami orang macam apa?
+0811 Beneran?
+0812 - Hülya.|- Jelasin.
+0813 Hülya, dengar, kami mau bilang, tapi nggak sempat.
+0814 Banyak hal terjadi, Nak. Sebentar dulu,
+0815 Nak, ada apa sih? Anak ini temanmu, kan? Kakakmu bilang begitu.
+0816 Teman apanya? Dia nyusup ke rumah ini buat balas dendam sama aku.
+0817 - Dia ngira kalian bodoh.|- Apa?
+0818 Balas dendam apa, Hülya?
+0819 - Kamu baik-baik aja?|- Dunia nggak muter di sekitar kamu, Hülya.
+0820 Nggak semua yang orang lakuin ada hubungannya sama kamu.
+0821 Tapi ada.
+0822 - Kali ini nggak ada.|- Ada, Kak, ada.
+0823 - Keluar dari rumah ini.|- Hülya.
+0824 Keluar.
+0825 Erim, kamu dengar nggak?
+0826 - Kemasi barangmu, bawa ibumu juga, keluar.|- Udah, cukup dong.
+0827 Sayang, kami juga nggak betah di sini.
+0828 - Kami kemasi barang, terus pergi.|- Nggak, Bu Jale, jangan.
+0829 Kalian nggak ke mana-mana. Hülya, udah, kamu juga diam.
+0830 Kalian semua cocok banget. Nak, mukamu pucat pasi, lihat.
+0831 Udah, lepasin, Ma. Duduk dulu, yuk?
+0832 Lepasin, aku mau cari udara. Aku nggak enak badan. Gülizar. Ayo
+0833 ayo.
+0834 Dek, ini bercanda, kan?
+0835 - Dari mana mereka muncul?|- Mana aku tahu.
+0836 Ya udah, kuberesin.
+0837 - Gülizar, bantu aku. Aku mau keluar diam-diam.|- Oke.
+0838 Mobil itu udah ada tadi.
+0839 - Coba lihat.|- Tunggu di situ.
+0840 - Ini apa?|- Siapa dia?
+0841 Nggak tahu, tapi kayaknya suruhan Fikret.
+0842 Ayo, Güli, tunjukin aksimu.
+0843 Kamu nyeret kita ke masalah apa lagi, Hülya?
+0844 Udah, ayo, kamu bisa.
+0845 - Ayo.|- Oke, oke, aku telepon. Angkat.
+0846 Oke.
+0847 Tes suara. Tes suara. Kedengaran nggak? Kedengaran nggak?
+0848 Masuk nggak?
+0849 Iya,
+0850 oke.
+0851 Aku ke warung dulu. Kamu mau titip apa?
+0852 Nggak. Makasih.
+0853 Tolong lihat sebentar.
+0854 Aku mau bilang sesuatu.
+0855 Mobil ini bukan mobil orang kampung sini.
+0856 Ngapain sih orang itu nunggu di sana?
+0857 Tampangnya juga aneh.
+0858 Jangan-jangan ngikutin Nona Hülya. Tunggu di sini.
+0859 Adikku, siap-siap.
+0860 Ya, ada apa?
+0861 - Bang, ngapain di sini?|- Bukan urusanmu.
+0862 Adikku, keluar, keluar, cepat!
+0863 - Turun dulu, sini.|- Dengar, Mbak, jangan nantang aku.
+0864 Aku kerja sama Pak Fikret.
+0865 Udah, tenang aja.
+0866 Ayo, ayo.
+0867 Ayo, lanjut kerja.
+0868 Sema.
+0869 - Sst.|- Ha?
+0870 Ada apa sih? Kok tiba-tiba dia gila gitu?
+0871 - Mereka ada dendam apa sih?|- Nggak tahu, Mama. Tanya anak Mama sana.
+0872 Maksudnya apa nggak tahu, Nak?
+0873 Ya ampun. Bukannya kamu yang bawa mereka ke sini?
+0874 Aku bilang nggak tahu, Ma. Ya ampun, sumpah aku bisa gila.
+0875 Di rumah ini aku nggak tahu apa-apa, Sema.
+0876 Selalu aku yang tahu paling akhir.
+0877 Ya udah, tanya aja semuanya ke Hülya, Mama.
+0878 - Toh cuma omongan dia yang dianggap di sini.|- Sema,
+0879 - kamu kok ngomong gitu sama Mama?|- Aku capek, Ma. Sumpah capek.
+0880 Sekolah Hülya, beasiswa Hülya, suami Hülya, pernikahan Hülya,
+0881 - Hülya ini, Hülya itu. Cukup!|- Sst. Udah, udah.
+0882 Aku juga hidup di rumah ini, sadar nggak?
+0883 Aku juga punya hal lain selain jadi kakaknya Hülya.
+0884 Ya Allah, kasih aku kesabaran.
+0885 Aduh.
+0886 Nesli, ini pas banget buat kamar bayi. Luas, lega, terang. Lihat deh.
+0887 Lihat, di situ kita taruh tempat tidurnya.
+0888 - Hm-hm.|- Terus di sini
+0889 kita taruh meja ganti popok. Semuanya kita bikin pink. Wah!
+0890 Jadi menurutmu anaknya perempuan?
+0891 Menurutku iya. Firasatku bilang gitu. Dia bakal cantik banget kayak ibunya.
+0892 - Kamu bakal jagain dia kayak jagain aku?|- Pasti, dong.
+0893 Ya pasti aku jagain.
+0894 Halo, Neslihan.
+0895 Sarp. Selamat datang.
+0896 Makasih. Ayşe bilang kamu di sini. Lagi ngapain?
+0897 Aku tinggal kalian berdua aja, ya.
+0898 Ada yang mau kubilang ke kamu.
+0899 Aku dengerin.
+0900 - Ke taman, yuk? Di sini berantakan banget.|- Oke, ayo.
+0901 Iya.
+0902 Ya, bilang aja.
+0903 - Hari ini aku ke dokter.|- Kenapa? Ada apa?
+0904 Ada masalah?
+0905 Nggak, nggak.
+0906 Nggak ada yang perlu ditakutin. Aku cuma mau memastikan sesuatu.
+0907 Soal bisa punya anak atau nggak.
+0908 Maksudnya?
+0909 Habis kebakaran itu aku terus kepikiran, nanti bisa jadi ibu nggak.
+0910 Aku jadi nggak tenang terus.
+0911 Akhirnya aku beraniin diri ke sana.
+0912 Terus?
+0913 Nggak ada masalah apa-apa.
+0914 Kata dokter nggak ada yang menghalangi aku hamil.
+0915 Aku bisa jadi ibu, Sarp.
+0916 Kamu nggak senang?
+0917 Oh, nggak,
+0918 nggak. Senang dong. Senang. Iya, senang.
+0919 Kamu nggak kelihatan senang.
+0920 Bukan gitu, soalnya
+0921 aku agak kaget.
+0922 Tapi ini kabar yang bagus banget. Aku senang banget.
+0923 Aku mau kita punya anak. Banyak malah.
+0924 Aku mau kita jadi keluarga besar.
+0925 Neslihan.
+0926 Sayang, maksudku
+0927 nggak terlalu cepat, ya?
+0928 Biarin. Memangnya kenapa? Toh kita punya segalanya.
+0929 - Aku kan belum punya kerjaan.|- Ada Papa, Sarp. Kamu nggak perlu kerja.
+0930 Kerja buat papamu, gitu, Neslihan?
+0931 Aku datang ke rumah ini demi kamu.
+0932 Bukan buat hidup di bawah naungan papamu.
+0933 Begitu dapat kerja, kita langsung pindah dari sini.
+0934 Aku tahu, tapi Papa nggak bakal izinin.
+0935 Aku nggak ngerti.
+0936 Siapa minta izin?
+0937 Sayang,
+0938 menurutku selama kamu belum berani lepas dari papamu,
+0939 jangan mimpi dulu.
+0940 - Sarp, tapi-|- Nggak ada tapi.
+0941 Kalau kamu mau bangun hidupmu sendiri,
+0942 kamu harus dewasa.
+0943 Ya udah. Ayo masuk.
+0944 Nak.
+0945 Suruh anak buah lo lepasin tangan gue.
+0946 Diam.
+0947 Nak.
+0948 Lo mau ngapain? Udah gila, ya?
+0949 - Suruh mereka lepasin gue.|- Udah kubilang diam.
+0950 Lo mau ngapain, hah?
+0951 Lo mau ngapain?
+0952 - Lo mau bunuh gue lagi?|- Diam, kubilang!
+0953 Dengerin, kecoak hitam.
+0954 Lo belum tahu lawan lo siapa.
+0955 Pembunuh.
+0956 Pembunuh apaan, hah?
+0957 Gue mati?
+0958 Gue sehat walafiat di depan lo.
+0959 Sumpal mulutnya.
+0960 Dia nggak bakal diam.
+0961 Disumpal apanya, hah?
+0962 Lepas.
+0963 Aduh!
+0964 Angkat dia.
+0965 Lepasin tangannya.
+0966 Gali.
+0967 Kubilang gali.
+0968 Tahu kenapa nggak kupolisiin?
+0969 Kamu cuma bakal dipenjara lagi.
+0970 Beberapa tahun,
+0971 mungkin lebih lama.
+0972 Terus kamu keluar lagi.
+0973 Seolah nggak terjadi apa-apa.
+0974 Dan waktu itu kamu bakal ngincer nyawa ibuku. Atau kakakku.
+0975 Kamu udah gelap mata.
+0976 Kamu sanggup ngelakuin apa aja.
+0977 Tapi kali ini
+0978 nggak bakal begitu, Salih.
+0979 Kali ini
+0980 kamu nggak bakal lolos segampang itu.
+0981 Soalnya aku sendiri yang bakal ngehukum kamu.
+0982 Kamu bilang apa?
+0983 Kamu mau aku kasihan sama kamu?
+0984 Kamu pernah kasihan?
+0985 Kamu pernah kasihan sama anak kandungmu?
+0986 Pas nusuk pakai pisau, kamu ingat nggak ini anakmu?
+0987 Siapa sih yang tega bunuh anak sendiri?
+0988 Kamu ini makhluk macam apa?
+0989 Gara-gara kamu aku nyaris mati di meja operasi. Sekarang minta dikasihani?
+0990 Lanjut.
+0991 Kubilang gali.
+0992 Hasan.
+0993 - Gimana situasinya? Hülya di mana?|- Masih di rumah ibunya, Pak. Belum keluar.
+0994 Oke, paham.
+0995 Kabari aku kalau ada apa-apa.
+0996 Boleh masuk?
+0997 Gimana kabarmu?
+0998 Gimana lagi? Kamu lihat sendiri.
+0999 Soal kelakuan Hülya, maaf banget, ya.
+1000 Kamu nggak perlu minta maaf apa-apa.
+1001 Aku nggak ngerti kenapa dia begitu.
+1002 Kamu salah apa sama dia?
+1003 Dulu
+1004 antara aku dan Hülya
+1005 pernah ada sesuatu, walau sebentar.
+1006 Bukan hal penting.
+1007 Udah lewat.
+1008 Aku nggak mau nyembunyiin dari kamu
+1009 tapi nggak nemu waktu yang pas.
+1010 Pantesan dia semarah itu pas lihat kamu.
+1011 Tapi Hülya kan udah nikah.
+1012 Sayangnya dia juga nggak terima aku move on.
+1013 Dia cemburu sama kamu, gitu?
+1014 Bukan sama aku.
+1015 Dia cemburu sama kamu.
+1016 Dia kan adikmu.
+1017 Aku nggak mau hubungan kalian rusak.
+1018 Tapi masa cuma karena maunya Hülya, kita
+1019 jadi saling menjauh?
+1020 Nggak.
+1021 Andai aku kenal kamu lebih awal.
+1022 Lho, mau ke mana, Bu Nermin?
+1023 Ada urusan sebentar.
+1024 Sema!
+1025 Sema!
+1026 Mama.
+1027 Nak, Mama mau
+1028 cari pakaian. Kamu perlu sesuatu?
+1029 Nggak, Mama, makasih.
+1030 - Mau kukasih kartuku?|- Nggak usah. Kartu apaan.
+1031 Gaji yang kamu terima udah habis buat utang. Jangan nambah utang kartu.
+1032 - Mama kan punya uang dari jahitan.|- Ya udah.
+1033 - Bu Nermin.|- Ya?
+1034 Pakaian? Maksudnya kayak baju gitu?
+1035 Iya, kayak baju.
+1036 Aku ikut, ya.
+1037 Itu hal yang paling kusuka. Lagian bisa bikin mood-ku naik.
+1038 Setelah omongan Hülya, aku beneran sakit hati.
+1039 - Aku bisa jadi konsultan gayamu juga.|- Aku konsultasi apa sama kamu? Ya ampun.
+1040 Ya udah, nggak usah konsultasi. Tapi aku ikut, ya? Aku mohon.
+1041 Ayo dong, jalan-jalan bentar.
+1042 Ya udah. Siap-siap, aku tunggu. Ayo.
+1043 Wah! Kita jadi sahabat banget, ya.
+1044 Banget
+1045 banget.
+1046 - Gara-gara kamu dia nempel ke Mama.|- Kok Mama ngomong gitu?
+1047 Diam dong!
+1048 Ayo, aku tunggu. Ayo.
+1049 Udah, lepasin.
+1050 Ikat dia.
+1051 Berbaring.
+1052 Kubilang berbaring.
+1053 Kubilang berbaring.
+1054 Tutup.
+1055 Anak ini mirip siapa sih?
+1056 Hah?
+1057 Mirip lo atau mirip gue?
+1058 Gue tahu dia mirip siapa.
+1059 Persis gue.
+1060 Mati pun aku nggak mau mirip kamu.
+1061 - Kamu jahat.|- Ya ampun.
+1062 Lo itu apaan, hah?
+1063 Malaikat, gitu?
+1064 Aku
+1065 nggak bakal jadi kamu waktu besar nanti.
+1066 Aku nggak bakal ngelakuin hal-hal yang kamu lakuin.
+1067 Puas, Salih?
+1068 Akhirnya aku jadi kayak kamu.
+1069 Nona Hülya.
+1070 Mereka beneran mau ngubur dia hidup-hidup?
+1071 Jangan ikut campur.
+1072 Udah kubilang apa yang harus mereka lakuin.
+1073 Halo, Gülizar.
+1074 Aku datang.
+1075 Alihkan lagi yang di depan. Aku lewat kebun, jemput kamu.
+1076 Orhan.
+1077 Jangan cerita apa-apa ke siapa pun.
+1078 Tenang aja, Nona,
+1079 saya diam kok.
+1080 Ini toko ya, Bu Nermin?
+1081 Bukan, museum.
+1082 Ini museum kampung kita.
+1083 Kok barangnya ditumpuk gini?
+1084 Terus mau gimana? Digantung satu-satu?
+1085 - Ya iya dong.|- Kalau gitu nggak bakal dapat harga segini.
+1086 Tapi aku udah bertahun-tahun belanja di sini. Semua barangnya bagus.
+1087 Eh, coba lihat ini.
+1088 - Aduh, Jale.|- Hm?
+1089 Sumpah, ini pas banget buat kamu. Warnanya juga bagus. Coba deh.
+1090 Jangan ditempelin ke aku.
+1091 - Nggak jelas asalnya dari mana.|- Yang kamu beli di tokomu juga
+1092 nggak jelas asalnya. Semua dari tempat yang sama.
+1093 - Gitu ya?|- Iya.
+1094 Aduh.
+1095 Kalau gitu aku coba yang ini.
+1096 Tunggu.
+1097 Nggak ada ruang ganti, lho. Nggak bisa dicoba. Eh!
+1098 - Kok nggak ada? Terus gimana?|- Coba di rumah. Kalau nggak muat kasih Sema.
+1099 - Kalau Sema juga nggak muat?|- Kita jadiin kain pel.
+1100 Nggak bisa. Blusku jangan dijadiin kain pel.
+1101 Wah, bagus.
+1102 - Eh, Nermin.|- Hm?
+1103 - Ini poliester.|- Terus?
+1104 Terus
+1105 kulit butuh bernapas.
+1106 Ya udah,
+1107 buka aja jendela.
+1108 Udah, lihat ini dulu.
+1109 Aku nemu training ini buat kamu. Ukurannya pas. Ambil, pakai di rumah. Nih.
+1110 Nggak ah, aku nggak pakai training di rumah.
+1111 Aduh.
+1112 Sebentar.
+1113 Ini
+1114 - seratus lima puluh dolar?|- Apa?
+1115 Dolar apaan? Lira.
+1116 Kaus kaki aja aku nggak pernah beli semurah 150 lira.
+1117 Ya udah,
+1118 mulai sekarang beli banyak.
+1119 Ini ada ukuran S nggak ya?
+1120 Cari sendiri, sayang.
+1121 Memangnya aku konsultanmu? Ya ampun!
+1122 Ayo, cari, cari. Ayo tangannya kerja. Hop hop. Nah.
+1123 Nona Hülya udah pulang, Pak.
+1124 Adikku.
+1125 Berhenti dulu, dong. Kamu kenapa? Di mobil juga diam aja.
+1126 Tadi dari mana? Katanya mau cerita.
+1127 Aku nggak mau cerita.
+1128 Ya ampun. Sama aku nggak mau cerita.
+1129 Iya.
+1130 - Justru sama kamu.|- Kok gitu?
+1131 Soalnya lebih baik kamu nggak tahu.
+1132 Hülya. Kamu bikin aku takut.
+1133 Gülizar, jangan desak aku.
+1134 Semuanya selalu kuceritain ke kamu, tapi ini nggak bisa.
+1135 Ya udah.
+1136 Kalau kamu bilang gitu, ya udah, adikku.
+1137 Pasti ada alasanmu.
+1138 - Kübra, buatin aku kopi, dong.|- Baik, Bu Mediha.
+1139 Bu Mediha, saya mau tanya sesuatu.
+1140 - Tanya aja.|- Penyerang Nona Hülya nggak balik, kan?
+1141 - Nggak lah. Kok mikir gitu? Amit-amit.|- Ya namanya juga takut.
+1142 Pelakunya aja belum ketahuan.
+1143 Nggak,
+1144 nggak. Sekarang ada kamera di mana-mana.
+1145 Bukan cuma di rumah kita, rumah sebelah juga ada kamera. Di pintu ada satpam.
+1146 Nggak bakal ada yang bisa lolos, tenang aja.
+1147 Kamera rumah sebelah...
+1148 - Silakan.|- Halo. Saya dari rumah sebelah.
+1149 Dari rumah keluarga Özkaran. Saya kerja di sana.
+1150 - Saya mau minta tolong.|- Tentu.
+1151 Kemarin gelang kami hilang di dekat kolam.
+1152 Saya lihat kamera rumah ini ngarah ke kebun kami.
+1153 Jadi saya pikir, mending tanya tetangga. Kata orang apa tuh?
+1154 Tetangga butuh kamera tetangga, kan?
+1155 Nah, kira-kira bisa nggak kita cek gelangnya lewat kamera di sini?
+1156 Kalau ada rekamannya.
+1157 Wah, saya nggak ngerti urusan begitu. Tanya Pak Akif aja.
+1158 - Dia yang ngurusin urusan rumah.|- Oh, oke, boleh.
+1159 Beliau ada?
+1160 Ada. Silakan.
+1161 - Hari apa?|- Minggu lalu, pagi hari.
+1162 Lihat, di pojok ini kebun kalian.
+1163 - Kolamnya di mana?|- Di situ, di belakang pohon.
+1164 - Nggak ada kamera sisi lain rumah?|- Nggak ada.
+1165 Semua kamera kami ngarah ke kebun sendiri.
+1166 Cuma kamera ini yang kebetulan kelihatan sebagian kolam kalian.
+1167 Oh, gitu.
+1168 Oke.
+1169 Gelangnya juga hilang di situ. Coba buka.
+1170 Oh,
+1171 ada kecelakaan?
+1172 Iya,
+1173 begitulah.
+1174 Nona Neslihan baik-baik aja, untungnya.
+1175 - Gelangnya jatuh pas di situ.|- Nggak cukup jelas buat lihat gelang.
+1176 - Anda lihat sendiri.|- Ya udahlah,
+1177 nggak bisa apa-apa.
+1178 Tapi boleh nggak saya ambil rekamannya?
+1179 Saya harus izin pemilik rumah dulu.
+1180 - Boleh. Silakan.|- Oke, saya coba dulu.
+1181 Iya.
+1182 Wah, kriminal Medişko, wah!
+1183 Tamat riwayatmu sekarang.
+1184 Dadah, ya.
+1185 Hülya.
+1186 Sini, Gülizar, sini.
+1187 Dek, aku bawa berita heboh buat kamu.
+1188 Duduk sini.
+1189 Berita apa?
+1190 Lihat.
+1191 Sebentar.
+1192 Mediha?
+1193 Dia sendiri, Dek. Lihat, pakaian pengasuhnya sama persis.
+1194 Kamu kan udah bilang. Ternyata dia sendiri yang bakar. Lihat, lihat.
+1195 Kamu dapat dari mana ini?
+1196 Dari kamera keamanan rumah sebelah.
+1197 Aku datang, minta,
+1198 - mereka kasih.|- Masa sih, Gülizar?
+1199 Dek. Kita juga bukan orang bodoh, lho.
+1200 Kamu emang yang terbaik.
+1201 Harusnya dia nggak cari gara-gara sama kamu, mademoiselle KW itu. Rasain.
+1202 Selama ada kamu, aku nggak bakal kalah.
+1203 Nggak bakal.
+1204 Kalau gitu hadiah ultah buat Bu Mediha udah siap.
+1205 Wih!
+1206 Dan tahu nggak hadiah ultah macam apa?
+1207 Dari dalam kue bakal keluar penari perut. Penari peruuut!
+1208 Kami mikirin sesuatu.
+1209 Nih, Nak.
+1210 Ini apa, Bu Nermin?
+1211 Rebusan daging sayur.
+1212 - Dagingnya mana?|- Di dalam.
+1213 - Selamat makan.|- Selamat makan, Nak.
+1214 Nah, ketemu juga satu.
+1215 Sedikit dari sini.
+1216 Menurutku enak banget, Tante Nermin. Makasih, ya.
+1217 - Selamat makan, Nak.|- Bu Nermin.
+1218 Hm?
+1219 Kapan-kapan bisa nggak kita bikin salad gitu?
+1220 Salad ada tuh, Bu Jale sayang. Nih, makan.
+1221 Bukan, maksudku yang lebih sehat gitu. Misalnya quinoa, alpukat.
+1222 Aku nggak tahu yang begituan. Nggak ada di sini.
+1223 Makasih.
+1224 Kasih ini ke Tante Jale, Nak. Dia kan minta daging.
+1225 Aku taruh di sini ya.
+1226 -
+1227 Hmm. Ada yoghurt nggak?
+1228 Bu Jale, yoghurt kan udah di depan Ibu. Silakan.
+1229 Bukan, yang light,
+1230 - yang nggak berlemak ada?|- Nggak ada.
+1231 Nggak ada yang light di sini. Tapi dengar, Bu Jale. Lho! Apa-apaan sih ini?
+1232 Ini restoran, apa? Yang itu atau yang ini? Nggak ada. Ini aja. Duduk, makan.
+1233 - Tega banget. Aku bilang gitu?|- Iya, kamu bilang.
+1234 Minum, Nak.
+1235 Kasih air buat Mesut deh.
+1236 Minum.
+1237 Sarp.
+1238 Gimana wawancara kerjanya?
+1239 Kamu kan juga tahu.
+1240 Iya.
+1241 Fikret yang bilang. Rahasia, ya?
+1242 Nggak lah, ngapain dirahasiain?
+1243 Iya, bukan rahasia.
+1244 Saya baru tahu Anda turun tangan.
+1245 - Anda hubungi kepala rumah sakitnya.|- Iya, dia sahabat lama.
+1246 - Cuma telepon, apa salahnya?|- Harusnya Anda nggak telepon.
+1247 Kenapa?
+1248 Soalnya saya nggak butuh telepon itu.
+1249 Aku tahu kamu nggak butuh siapa pun buat cari kerja, Sarp.
+1250 Aku cuma mau bantu mempercepat prosesnya.
+1251 Iya. Tapi saya nggak minta bantuan Anda.
+1252 Sarp.
+1253 Papa niatnya baik.
+1254 Itu juga aku tahu, Neslihan.
+1255 Tapi aku nggak suka hal kayak gini.
+1256 Tapi Sarp, waktu nikah sama Neslihan kamu kan tahu siapa ayahnya.
+1257 Orang sekuat itu pasti pengin ngelakuin sesuatu buat menantunya.
+1258 Kamu nggak bisa masuk keluarga Özkaran tapi berharap nggak ada yang ikut campur,
+1259 kan?
+1260 Apalagi tinggal di rumah mereka.
+1261 Aku nikah sama Neslihan, Hülya.
+1262 Bukan kuasa Pak Fikret.
+1263 Tapi kadang pernikahan bawa hal yang nggak kamu mau.
+1264 Maksudmu apa lagi?
+1265 Aku nggak ngomong jelek, Neslihan.
+1266 Namanya juga keluarga.
+1267 Kita kan berbagi hidup.
+1268 Udah, udah. Jangan diperpanjang.
+1269 Aku nggak ikut campur hidup siapa pun.
+1270 Aku cuma mau bantu menantuku. Itu aja.
+1271 Lain kali kalau mau begitu, saya senang kalau Anda kabari saya dulu.
+1272 Sepakat, Nak.
+1273 Sepakat.
+1274 Nah, ayo, cukup ya tegangnya.
+1275 Kita belum rayain ultah Mediçko. Bisa nggak semua agak semangat?
+1276 - Iya, kita mulai pelan-pelan, ya.|- Ayo.
+1277 Iya.
+1278 Ayo, Sayang.
+1279 Nesli sayang,
+1280 - Kamu nggak usah repot. Suasana lagi tegang.|- Lho, Mediş, mana boleh gitu?
+1281 Kamu kan berharga buat kami.
+1282 Lagian jangan terlalu dianggap omongan mereka.
+1283 Sarp sama Papa pasti lama-lama terbiasa.
+1284 Ayo.
+1285 Udah siap?
+1286 -
+1287 Sini, sini.
+1288 <i>♪ Selamat ulang tahun ♪</i>
+1289 <i>♪ Mediş, selamat ulang tahun ♪</i>
+1290 <i>♪ Mediş, selamat ♪</i>
+1291 <i>♪ ulang tahun, selamat ulang tahun ♪</i>
+1292 <i>♪ Selamat ulang tahun untukmu ♪</i>
+1293 Aduh.
+1294 Ayo, tiup dong.
+1295 Tunggu!
+1296 Make a wish dulu.
+1297 Iya, iya.
+1298 Aduh, makasih banyak. Nggak usah repot-repot. Kalian bikin aku seneng banget.
+1299 Ah, jangan bilang gitu, Bu Mediha.
+1300 Kamu udah jadi bagian rumah ini bertahun-tahun.
+1301 - Untung ada Pak Fikret.|- Ini nggak seberapa dibanding jasamu, Mediş.
+1302 Aduh, sayangku.
+1303 Ah, iya dong, Bu Mediha. Dibanding jasamu ini apa sih?
+1304 Lihat dulu hadiah yang asli.
+1305 Makasih.
+1306 Makasih.
+1307 Makasih.
+1308 Semoga panjang umur, ya.
+1309 Pelan-pelan, Bu Mediha.
+1310 Nanti kualat, lho. Kami masih butuh kamu.
+1311 Iya.
+1312 Nih, Sayang.
+1313 Ini
+1314 - Hadiah dari aku sama Sarp.|- Aduh, sayangku.
+1315 Aduh Nesli, bagus banget. Tapi pasti mahal, nggak usah repot-repot.
+1316 Jangan gitu, kamu pantas kok.
+1317 Sini kupasangin. Sarp.
+1318 Iya, sebentar.
+1319 Makasih banyak.
+1320 Neslihan milih ini khusus buat Bu Mediha. Bagus banget.
+1321 - Cocok banget. Semoga awet, ya.|- Makasih banyak.
+1322 Agak miring, kita benerin dulu.
+1323 Bu Mediha.
+1324 Makasih banyak, Pak Fikret.
+1325 - Semoga bahagia selalu.|- Makasih banyak, Pak Fikret.
+1326 Bagus banget, tapi pasti mahal. Nggak usah repot-repot.
+1327 Ini belum seberapa dibanding jasamu.
+1328 - Makasih banyak.|- Orang kayak Bu Mediha emang langka.
+1329 Nah, kalau semua udah, sekarang giliranku.
+1330 Tapi dari awal aku bilang, hadiahku agak lebih heboh dari kalian.
+1331 Baik oleh-oleh Neslihan dari Paris, maupun ini,
+1332 nggak ada yang nyaingin punyaku.
+1333 Ya ampun, aku jadi penasaran. Apaan, sih?
+1334 Penasaranmu bakal terbayar, Nesli.
+1335 Nggak pakai lama,
+1336 langsung mulai.
+1337 Gülizar!
+1338 Siap, Mediş?
+1339 Lampunya, tolong.
+1340 Apa ini?
+1341 Sabar dikit.
+1342 Tonton aja, ya.
+1343 Lho,
+1344 ini kan kebun kita.
+1345 Kamu belum lihat apa-apa, Fikretku.
+1346 - Apa ini? Matiin cepat!|- Lho! Lagi seru-serunya, Nesli. Tolong.
+1347 Lampunya, tolong.
+1348 Apa ini sekarang?
+1349 Bu Mediha, ini maksudnya apa?
+1350 - Pak Fikret--|- Udah jelas banget, kan, Sayang?
+1351 Bu Mediha kita yang nyemplungin Neslihan ke kolam.
+1352 Sumpah, bukan seperti yang kelihatan, Pak Fikret.
+1353 Terus kayak gimana? Coba ceritain biar kita semua tahu.
+1354 Bu Mediha.
+1355 - Bu Mediha, kok bisa tega?|- Pa,
+1356 dia nggak sengaja.
+1357 Masa? Kayaknya nggak gitu, tuh.
+1358 - Saya nggak niat nyakitin Neslihan.|- Iya dong, pasti.
+1359 Cuma nyoba nenggelamin anak itu, gitu aja.
+1360 Padahal kamu tetap belain dia terus.
+1361 Salut banget buat kamu, ya.
+1362 Hebat banget.
+1363 Fikret.
+1364 Kamu lihat, kan, jebakan yang dibuat anakmu sama Bu Mediha?
+1365 Polisi datang,
+1366 dan bawa aku, bukan dia.
+1367 Aku nyaris dipenjara gara-gara itu.
+1368 Nak, kamu nggak punya hati? Kamu kenapa jadi gini?
+1369 Pa, Mediş nggak bakal nyakitin aku. Cuma salah paham.
+1370 - Cuma sesaat aja.|- Oh, sesaat, gitu? Wah, bagus banget.
+1371 Hebat banget. Jadi kamu nyerahin aku ke polisi juga cuma sesaat?
+1372 Gitu, Neslihan?
+1373 Kamu nuduh aku di depan semua orang.
+1374 Kamu hampir bikin aku dicap pembunuh.
+1375 Nak, kok kamu bisa berbuat begini?
+1376 Kok bisa bohong terang-terangan sama Papa, Neslihan?
+1377 Demi nyalahin istriku, kamu tega bohongin Papa?
+1378 Tenang, Pak Fikret.
+1379 - Jangan ikut campur, Sarp.|- Saya harus. Dia istri saya.
+1380 Yang Neslihan lakuin memang salah, saya akui.
+1381 Tapi cara Anda begini nggak nyelesain apa-apa. Saya salah?
+1382 Oh ya?
+1383 - Dia fitnah aku, kamu sebut salah paham?|- Hülya.
+1384 - Aku nggak belain dia.|- Itu persis yang kamu lakuin.
+1385 Nggak. Teriak-teriak ke dia nggak bakal ngubah apa-apa
+1386 - Maksudku gitu.|- Oh iya. Biar Neslihan nggak sedih, kan?
+1387 Semuanya timpain aja ke Hülya.
+1388 Biar Neslihan yang malang dan anteknya, Bu Mediha, lolos.
+1389 Nggak,
+1390 nggak.
+1391 Kali ini nggak ada yang lolos.
+1392 Bu Mediha.
+1393 Kamu dipecat.
+1394 Pa, tolong, demi tahun-tahun itu, jangan pecat dia.
+1395 Bu Mediha.
+1396 Sekarang juga kemasi barangmu
+1397 dan tinggalin rumah ini.
+1398 Sekarang.
+1399 Baik, Pak Fikret.
+1400 Mediş, jangan pergi, kumohon, Pa.
+1401 Pa, kumohon, jangan usir dia. Dia beneran nggak sengaja. Kumohon.
+1402 Nak, Papa nggak akan nitipin kamu ke dia lagi. Nggak bisa. Kamu ngerti, nggak?
+1403 Bersyukurlah
+1404 atas pengabdianmu bertahun-tahun.
+1405 Kalau nggak, udah kupanggil polisi.
+1406 Pergi dari rumah ini.
+1407 Selamat ulang tahun.
+1408 Mediş. Kumohon.
+1409 Kepalaku pusing. Aku cari udara dulu.
+1410 Setelah libur tengah semester berakhir, para siswa kembali belajar.
+1411 Pekan ini para siswa melanjutkan pendidikan
+1412 dari tempat mereka berhenti.
+1413 Guru dan siswa mulai menyiapkan diri untuk semester baru
+1414 setelah libur.
+1415 Cuaca berawan di Istanbul disertai hujan di beberapa tempat
+1416 mengganggu aktivitas.
+1417 Menurut pihak meteorologi, suhu udara...
+1418 Tante Nermin.
+1419 - Hah?|- Pindah channel aja, yuk?
+1420 Nggak,
+1421 kan enak nonton berita, Nak.
+1422 Warga perlu waspada, terutama terhadap perubahan cuaca mendadak.
+1423 Nermin sayang.
+1424 - Hm?|- Tolong lihat ini, udah pas belum?
+1425 Sini, coba kulihat.
+1426 Cuaca Istanbul beberapa hari ke depan berub-- Aaa!
+1427 Aduh bagus banget, Bu Jale. Cocok banget, lho.
+1428 Baru kali ini aku lihat Mama pakai training.
+1429 Nggak cocok, ya?
+1430 Ya...
+1431 Nggak kok, cocok banget menurutku.
+1432 Aduh, aku seneng banget. Rasanya lega banget, deh.
+1433 Aduh.
+1434 Pertama-tama, selamat untuk kalian.
+1435 Ada apa? Pernikahan kalian bikin heboh kalangan sosialita.
+1436 Lihat itu? Apa itu? Kami penasaran sama kisah cinta ini.
+1437 Lho!
+1438 Itu Hülya.
+1439 Dia wawancara sama Fikret.
+1440 Bentar, kulihat.
+1441 - Lihat.|- Saya besar di keluarga yang sangat kreatif.
+1442 Ibu saya desainer busana yang luar biasa berbakat.
+1443 - Besarin suaranya.|- Masa kecil saya dihabiskan di antara kain
+1444 bisa dibilang.
+1445 - Di tahap hidup ini, kejutan kayak--|- Kita nggak bakal nonton selamanya
+1446 kan?
+1447 Sst.
+1448 Kadang
+1449 - hal tak terduga--|- Pak Fikret orang baik, ya.
+1450 Bagus ya yang dia bilang, Ma? Hmm,
+1451 dia baik banget, kok.
+1452 Ya gitu deh. Tapi sayang, kamu juga mesti mulai bersuara.
+1453 Jangan iyain semua kata Fikret, misalnya.
+1454 Dia minum lagi, nggak?
+1455 Aku takut masalah minum ini bakal bikin repot.
+1456 Kamu kan nggak kenal Fikret selama aku kenal.
+1457 Wah,
+1458 Bu Jale.
+1459 Lho!
+1460 Selamat datang. Cerita apa lagi, nih?
+1461 - Selamat datang, Sayang.|- Makasih, ya.
+1462 Tuh kan, kita kepergok lagi ngegosip.
+1463 Ah nggak, sayang, cuma ngomongin udah berapa lama kita kenal.
+1464 Hmm.
+1465 - Kamu nggak ngejelekin aku ke istriku, kan?|- Ih, masa sih?
+1466 Aku bilang Fikret dari dulu pas kita pacaran juga gini.
+1467 Pacaran? Lho!
+1468 Kamu nggak tahu?
+1469 Kupikir Fikret udah bilang ke kamu.
+1470 Sayang, itu dulu banget. Pas muda. Cuma beberapa hari kok.
+1471 Tapi sesudahnya
+1472 kami jadi teman baik.
+1473 Iya kan, Jale?
+1474 Tentu
+1475 tentu.
+1476 Kita nggak ke meja makan?
+1477 Jale juga udah mau pulang, kan.
+1478 Lho! Udah jam berapa, nih?
+1479 Aku pamit juga, deh.
+1480 Aduh,
+1481 Nisan sayang,
+1482 kamu nggak marah, kan?
+1483 Kalau tahu kamu belum tahu, aku nggak bakal ngomong.
+1484 Nggak, nggak apa-apa.
+1485 Malah bagus aku jadi tahu. Ah, sayang.
+1486 Apalagi kalau tahu suamimu orang kayak gimana.
+1487 Maksudnya?
+1488 Ah, aku
+1489 cuma ngomong asal, kok.
+1490 Udah, aku pergi dulu.
+1491 Lagian dia baik kok.
+1492 Sebulan lagi dia kumpulin semua anak buahnya. Ya Allah, ya Rabb.
+1493 Satu per satu,
+1494 dia bakal ngehajar mereka.
+1495 Ma.
+1496 Ngapain kamu di kamar anakku?
+1497 - Tante Nermin, aku--|- Bejat kamu!
+1498 - Ma--|- Berani-beraninya kamu di kamar anakku, bejat!
+1499 - Ma--|- Kubukain rumah buat kamu, bajingan!
+1500 Ma, jangan. Ma, nggak ada yang salah. Tolong jangan.
+1501 Kamu juga, kamu juga nanti kuurus.
+1502 Bukan gitu!
+1503 - Pergi, bajingan!|- Bukan gitu!
+1504 Bejat! Apanya yang bukan gitu?
+1505 Bajingan! Mau lihat apa lagi? Semua udah kulihat sendiri!
+1506 - Terkutuklah kamu!|- Tante, ngapain? Tunggu, pelan-pelan!
+1507 Tante, tunggu, pelan-pelan dong!
+1508 - Bejat, bajingan!|- Ma, ada apa?
+1509 - Bajingan!|- Bu Nermin, kok anak saya dipukul? Lepasin!
+1510 Gitu, ya? Nih! Bu Nermin! Nih, anakmu yang bejat, nih,
+1511 nih, nih.
+1512 Kupergoki ular ini di kamar anakku.
+1513 Erim.
+1514 Dengar,
+1515 aku nggak maksa siapa pun.
+1516 Iya, bukan salahmu. Salah anakku yang bodoh ini.
+1517 Ma, nggak ada yang salah, nggak ada pelaku.
+1518 Aku cinta Erim. Dia juga cinta aku.
+1519 Apa?
+1520 - Ma, dengar--|- Nih cinta buat kamu! Nih! Nih! Kubunuh kamu!
+1521 Kubunuh kamu! Lepasin aku! Lepasin!
+1522 Lepas. Masa urusan anakku harus izin kamu, hah?
+1523 Bajingan! Bu Nermin.
+1524 Kamu siapa?
+1525 Ah,
+1526 Hülya-ku udah ngingetin.
+1527 Dia bilang jangan bawa mereka. Nggak kudengerin.
+1528 Ah, aku nggak dengerin anakku. Dasar bodoh, bodoh.
+1529 Tolong, saya mohon, kita tenang dulu.
+1530 Mereka berdua udah dewasa.
+1531 Reaksi Ibu ini sama sekali nggak wajar.
+1532 Lihat aku, lihat aku!
+1533 Kuhajar kamu nanti. Cukup!
+1534 Tante Nermin, udah, cukup.
+1535 Cukup, Bu
+1536 Nermin! Pergi dari rumahku!
+1537 Kalian berdua pergi dari rumahku.
+1538 Jangan ngawur.
+1539 - Malam-malam begini kami mau ke mana?|- Ke neraka sana!
+1540 Bu Nermin.
+1541 Apa-- Ibu ngapain? Lepaskan,
+1542 lepaskan! Ibu ngapain? Singkirkan tangan Ibu! Singkirkan!
+1543 Ngapain kamu? Minggir. Minggir dari depanku. Lepas.
+1544 Bu Nermin. Ibu kok nggak mau dengerin?
+1545 Bu Nermin.
+1546 Pergi! A--
+1547 Awas, awas, awas! Ini krim-krim mahal!
+1548 Jual rumah pun kamu nggak sanggup beli. Minggir! Keluar dari situ! Minggir!
+1549 Bu Nermin, bisa tenang nggak sih?
+1550 Ayo, ayo, ayo.
+1551 Pergi! Jalan! Kayak gitu-- Lepas!
+1552 Lepas. Ayo. Ya Allah. Jalan. Ayo.
+1553 Krim kamu juga-- Iya, iya.
+1554 Ini juga kuhancurin.
+1555 Udah, Ma. Udah.
+1556 Ayo, Ma, udah. Kita pergi.
+1557 Nih, bawa ini. Ayo.
+1558 Nih, bawa ini. Ayo pergi, jalan! Cukup, Bu Nermin, cukup!
+1559 Ma, udah. Ayo kita pergi.
+1560 Mau ke mana, Nak? Malam-malam gini kita mau ke mana?
+1561 Udah, ayo keluar, Ma.
+1562 Lihat apa kalian?
+1563 Nih, bawa. Ayo, pergi. Pergi.
+1564 - Ayo, pergi sana!|- Anak saya kalian hajar. Dasar orang kampungan!
+1565 Kalian kampungan banget!
+1566 Sana! Pergi!
+1567 Kenapa sih anak ini?
+1568 Sema, kamu.
+1569 Apa yang kamu lakuin, Nak,
+1570 hah?
+1571 Apa Mama ngedidik kamu begini?
+1572 Ma.
+1573 Jangan sebut aku Mama.
+1574 Jadi begini kamu, Sema?
+1575 Anakku Sema ternyata begini?
+1576 Kamu memalukan.
+1577 Kenapa, Ma?
+1578 Ada yang sayang aku, ngingetin aku kalau aku perempuan. Itu memalukan?
+1579 Hülya nikah sama orang seumuran bapaknya, Mama nggak segininya. Aku?
+1580 Baru sekali ada yang nanya "Kamu gimana?" ke aku. Dia perhatian.
+1581 - Bahagia secuil ini aja Mama keberatan?|- Diam, diam!
+1582 Aku nggak mau diam. Nggak mau.
+1583 Bertahun-tahun aku kerja, ngurus rumah ini.
+1584 Aku nggak kuliah biar Hülya bisa kuliah. Seusia itu aku udah kerja.
+1585 Sekali pun aku nggak ngeluh. Nggak pernah protes. Aku diam terus.
+1586 Tiap gajiku kuserahin ke tangan Mama. Waktu itu aku anak baik, kan?
+1587 Sekarang Mama ngomong gitu, nyakitin aku begini.
+1588 Justru Mama yang memalukan.
+1589 Bukannya kamu harusnya sama Neslihan? Dia lagi bantuin Mediha beres-beres.
+1590 Pasti
+1591 mereka lagi saling menghibur.
+1592 Gimana rasanya lihat wajah asli seseorang?
+1593 Neslihan kita yang malang, selalu jadi korban, baru sekarang kamu kenal?
+1594 Aku nggak belain perbuatan Neslihan,
+1595 oke.
+1596 Tapi kamu nggak harus nayangin rekamannya di depan semua orang.
+1597 - Aku harus apa? Diam lagi?|- Kamu bisa tunjukin ke Pak Fikret aja.
+1598 Nanti nggak ada yang tahu ulah Neslihan.
+1599 Iya, karena kamu mau semua orang tahu, kan?
+1600 Kamu pengin pertunjukan besar. Pembalasan dendam yang megah.
+1601 Iya,
+1602 persis. Ngakuin aku benar nggak bakal bikin kamu mati, Sarp.
+1603 Kadang aku mikir kamu beneran musuhku.
+1604 Berhenti ngelawan aku.
+1605 Udahlah.
+1606 Semuanya,
+1607 semua salahmu.
+1608 - Jebakan istrimu itu salahku, gitu?|- Kamu tahu bukan itu maksudku.
+1609 Kita jadi kayak gini
+1610 itu salahmu.
+1611 Kamu udah milih.
+1612 Nggak usah dibahas.
+1613 Pilihanku juga,
+1614 salahmu.
+1615 Bagus, deh.
+1616 Aku juga bayar mahal.
+1617 Mediş, udah, jangan gitu. Besok pagi aku bicara sama Papa.
+1618 Jangan! Semua ini gara-gara aku.
+1619 - Aku nggak mau kamu pergi.|- Tunggu, sayang. Jangan, jangan.
+1620 Kamu nggak salah apa-apa. Aku kalah sama amarahku waktu nyoba nahan kamu.
+1621 - Aku pantas dapet semua ini.|- Tapi aku gimana tanpamu? Kamu nanti gimana?
+1622 - Kamu mau pergi ke mana?|- Lupain aku. Aku bisa urus diri sendiri.
+1623 Gimana nggak kepikiran? Kamu segalanya buatku. Mati pun nggak kulepasin.
+1624 Ah, sayangku.
+1625 - Kalau kamu pergi, aku sendirian.|- Nggak kok.
+1626 Sekarang kan ada Sarp.
+1627 Kamu punya keluarga sendiri. Nanti punya bayi.
+1628 Tapi aku mau kamu ada di keluarga itu.
+1629 Anakku udah nggak butuh aku lagi.
+1630 Anak kecilku udah besar, bikin keluarga sendiri, udah nikah.
+1631 Jangan ngomong gitu. Aku bakal selalu butuh kamu.
+1632 Udah, jangan nangis. Kamu yang paling kusayang di dunia ini.
+1633 Jangan pernah lupa, ya?
+1634 Jangan ikut. Di sini aja.
+1635 - Nggak bisa.|- Bisa, bisa. Ini kan bukan perpisahan, sayang.
+1636 - Kalau kamu ke pintu, aku nggak bisa pergi.|- Ya jangan pergi!
+1637 Udah waktunya.
+1638 Toh suatu hari pasti terjadi.
+1639 Sst,
+1640 jangan ikut.
+1641 Selamat tinggal.
+1642 Dadah, sayang.
+1643 Bu Mediha.
+1644 Orhan.
+1645 - Ada yang mau saya bilang.|- Ada apa?
+1646 Soal Nona Hülya.
+1647 Kita ke sana, Bu?
+1648 Oke.
+1649 Ayo, bilang.
+1650 Bu Mediha, Nona Hülya orang berbahaya.
+1651 Orhan, kasih tahu yang aku belum tahu.
+1652 Saya takut dia bakal nyakitin Nona Neslihan.
+1653 Dia bisa nekat.
+1654 Kok tiba-tiba gini? Ada apa? Kamu tahu sesuatu?
+1655 Nona Hülya
+1656 - Mau bunuh bapaknya.|- Apa?
+1657 Dikubur hidup-hidup.
+1658 - Apa katamu?|- Kalau nggak lihat sendiri, saya nggak percaya
+1659 tapi
+1660 hati nurani saya nggak tega.
+1661 Saya balik, saya tarik dia keluar detik terakhir.
+1662 Kalau nggak dia udah mati.
+1663 Sekarang dia di mana?
+1664 Sema?
+1665 Halo? Erim?
+1666 Aku ke tempatmu. Kamu di mana?
+1667 Bu Mediha.
+1668 Bu Mediha.
+1669 Mediha.
+1670 Ya ampun, aku ini.
+1671 Bu Mediha kan udah nggak ada.
+1672 Kübra.
+1673 Kübra.
+1674 Bu Mediha.
+1675 Pagi, Sayang.
+1676 Pagi.
+1677 - Neslihan kayaknya nggak turun.|- Nggak, Tuan. Selamat makan.
+1678 Makasih.
+1679 Aku nggak percaya.
+1680 Orang yang bertahun-tahun di rumah ini.
+1681 Orang yang paling kupercaya tega begini, aku nggak habis pikir.
+1682 Nggak masuk akal.
+1683 Sayangnya kita nggak pernah bener-bener kenal seseorang.
+1684 Jangan salahin diri sendiri.
+1685 Siapa pun yang kujaga, pasti kena celaka.
+1686 Coba pikir, kalau kamu nggak jagain kami, entah apa jadinya, Fikret.
+1687 Kami gimana tanpa kamu?
+1688 Aku,
+1689 Neslihan,
+1690 bahkan Sarp.
+1691 Kamu pria impian setiap wanita, Fikret.
+1692 Jangan terlalu keras sama dirimu.
+1693 Aku sayang banget sama kamu.
+1694 Banget.
+1695 Aku juga.
+1696 Tapi ada yang harus kubilang.
+1697 -
+1698 Apa?
+1699 Menurutku Mediha juga bertanggung jawab atas kematian Nisan.
+1700 Kamu juga udah kenal perempuan itu sekarang.
+1701 Dia mampu ngelakuin apa pun.
+1702 Ya, aku emang nggak punya bukti, tapi
+1703 tiap bahas kebakaran, dia aneh banget.
+1704 Dia terus berusaha nutup topiknya.
+1705 Maksudku, laporan kebakaran dari asuransi itu
+1706 mending kamu cek lagi.
+1707 Ada apa?
+1708 Fikret?
+1709 Kamu nakutin aku.
+1710 Bu Mediha nggak mungkin bunuh Nisan.
+1711 Kenapa?
+1712 Soalnya Nisan masih hidup.
