@@ -154,14 +154,18 @@ def yedekli(pipeline):
                 return dl(url, dest, cookies)
             except (Exception, SystemExit) as e:
                 kaynaklar.log(f'YouTube indirme (cerez) olmadi ({str(e)[:100]}); WARP ile cerezsiz deneniyor')
-            try:
-                # 22 Kasim BH E08: tek parca istekte %56'dan sonra hiz 100 KiB/s'ye dustu, sonra 403. 10 MB'lik parcalarla iste.
-                dl(url, dest, warp.baslat() + ['--http-chunk-size', '10M', '--retries', '20'])
-                pipeline.log('AKIS YouTube 1080p, WARP, cerezsiz')
-                pipeline.log('UYARI: YouTube cerezsiz, WARP uzerinden indi (cerez olu olabilir, yenile)')
-                return
-            except (Exception, SystemExit) as e:
-                kaynaklar.log(f'WARP ile indirme olmadi ({str(e)[:100]}); dizinin sitesi deneniyor')
+            # 22 Kasim BH E08: WARP IP'si indirmenin ortasinda (%22-85) 403 aliyor, sonra ayni IP bot engeline giriyor.
+            # Her turda yeni WARP hesabi (yeni IP); --continue yarim .part dosyasindan devam eder.
+            for tur in range(1, 6):
+                try:
+                    dl(url, dest, warp.baslat() + ['--http-chunk-size', '10M', '--retries', '20'])
+                    pipeline.log('AKIS YouTube 1080p, WARP, cerezsiz')
+                    pipeline.log('UYARI: YouTube cerezsiz, WARP uzerinden indi (cerez olu olabilir, yenile)')
+                    return
+                except (Exception, SystemExit) as e:
+                    kaynaklar.log(f'WARP ile indirme olmadi (tur {tur}/5: {str(e)[:100]})')
+                    warp.yenile()
+            kaynaklar.log('WARP 5 turda olmadi; dizinin sitesi deneniyor')
         ep = kaynaklar.ep_numarasi(dest)
         alt = ep and kaynaklar.bul(DIZI, ep)
         if not alt:

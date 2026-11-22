@@ -41,6 +41,14 @@ def _kur():
         _sh(['tar', 'xzf', str(DIR / 'w.tgz'), '-C', str(DIR)], check=True)
 
 
+def yenile():
+    """Saklanan hesabi birakir; sonraki baslat() yeni kayitla (yeni Cloudflare IP'si) kurar."""
+    _durdur()
+    _state['args'] = None
+    for f in HESAP.glob('wgcf-*'):
+        f.unlink()
+
+
 def _durdur():
     p = _state.get('proc')
     if p and p.poll() is None:
