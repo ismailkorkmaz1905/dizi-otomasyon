@@ -1,0 +1,459 @@
+=== BAGLAM (cevirme) ===
+1226 [1.5s|29] K2 Düşme gerisinin peşine.
+1227 [4.3s|84] K2 Melek'i de alın. Sultan sen falan şöyle bir çıkın, alışveriş yapın.
+1228 [1.1s|21] K2 Havanız değişsin.
+1229 [1.6s|31] K2 Yarın akşam nişanımız var.
+1230 [2.3s|46] K10 Kızım [ben?] sana daha önce de söyledim,
+1231 [2.3s|45] K10 bu Ferhat senin kaderinde yok.
+1232 [4.8s|84] K7 İşte sen bunları abime söylüyorsun, söylüyorsun. Abim de gidip kafasına yazıyor.
+1233 [5.4s|84] K7 Yok neymiş efendim, Ferhat benim kaderimde yokmuş da tanımadığım bir adam varmış.
+1234 [4.5s|84] K11 Şimdi Sultan. Haydar Ali bizim o kadar da tanımadığımız biri değil.
+1235 [3.0s|59] K11 Biz onu cezaevinde birçok kez test ettik.
+1236 [2.6s|51] K7 E iyi o zaman Efo, siz evlenin.
+1237 [2.7s|54] K11 Yav annem senin kötülüğüne bir şey demiyor.
+1238 [3.2s|63] K11 Hele bir Haydar Ali bir gelsin bir baksın kaderinde var mı yok mu?
+1239 [1.8s|35] K11 Elbet bir şey söyleyecek.
+1240 [2.4s|48] K11 Bozo da annemin dediklerine hayır demez yani.
+1241 [1.1s|22] K7 Bakın
+1242 [2.4s|48] K7 hep söyledim, yine söylüyorum.
+1243 [4.5s|84] K7 Ben insanların kaderinin şu fincanda, alnının üstünde,
+1244 [4.9s|84] K7 avucunun içinde yazdığına inanmıyorum. Her insan kaderini kendi yazar.
+1245 [2.4s|48] K10 Sultan güzel kızım.
+1246 [5.6s|84] K10 Hiç boşuna yorma kendini. Ben gördüğümü söyleyeceğim. Abin de bildiğini yapacak.
+1247 [3.8s|76] K10 Öyle Yavuz'un söylediği gibi her dediğimi yapmışlığı da yok.
+1248 [1.2s|23] K10 Öyle olsa
+1249 [6.2s|84] K10>K11 Ceylan'ı almazdı. Yani şimdi abla ne oldu yani? Ceylan'ı aldı da fena mı yaptı?
+1250 [3.3s|65] K11 Ne güzel işte. Evinde barkında gül gibi geçinip gidiyorlar.
+1251 [3.3s|66] K10 Siz bugüne bakıyorsunuz, ben yarına.
+1252 [1.0s|20] K7 Yavuz.
+1253 [4.2s|84] K7>K11 Sen de mi güvenmiyorsun Ferhat'a? Ya benim Ferhat'la bir problemim yok.
+1254 [1.5s|30] K11 Ferhat'ı severim de ben.
+1255 [3.5s|71] K11 Yani bana Haydar Ali mi Ferhat mı desen ben Ferhat derim yani.
+1256 [1.0s|20] K11 Ama
+1257 [2.1s|42] K11 Ferhat o kulüpten çıkıyor.
+1258 [2.0s|39] K11 Kurşunlar havalarda uçuşuyor.
+1259 [4.0s|80] K11 Abin de senin hatrına çocuğun hayatını bağışlıyor. Sen daha ne istiyorsun ya?
+1260 [3.2s|64] K7 Ya tamam da bugün gelen adamlarmış işte yapanlar.
+1261 [2.1s|42] K7 Ferhat'la ne alakası var?
+1262 [1.5s|30] K7 Denk gelmiş işte.
+1263 [1.1s|21] K11 Sultan.
+1264 [5.1s|84] K11 Sonuçta abim parmağına bir nişan yüzüğü takacak, boynuna ilmeği geçirmeyecek.
+1265 [2.7s|53] K11 Biraz sabırlı ol. Gün [olur?] harman olur.
+=== CEVIR: 1266-1661 ===
+1266 [1.0s|20] K5 Ferhat.
+1267 [1.0s|20] K5 Ayşen nerede?
+1268 [2.2s|44] K17 Kahvaltıyı hazırlamış. Gidebilir miyim dedi.
+1269 [1.4s|27] K17 Ben de yolladım.
+1270 [1.0s|20] K5 Nereye yolladın?
+1271 [1.9s|38] K17 Bozkurt Bey mahalleye gidecekmiş.
+1272 [1.8s|35] K17>K5 Onu karşılamaya. Ha.
+1273 [3.7s|73] K5>K17 El öpüp öpecekler illa. E, ben sana elli defa söyledim gönderelim diye.
+1274 [1.0s|20] K17 Sen dinlemedin.
+1275 [1.4s|27] K5 Ferhat.
+1276 [4.0s|79] K5 Ayşen buradan oraya laflaşıyorsa oradan da buraya laflaşıyor.
+1277 [1.6s|31] K5 Lazım o bize.
+1278 [1.5s|29] K17 İyi tamam. Neyse sen bilirsin.
+1279 [1.0s|20] K17 Ne diyor Bozo?
+1280 [1.7s|33] K17 Nişan işi iptal mi?
+1281 [1.5s|30] K17 Hamburglu'nun adamları da öldürmüş.
+1282 [1.0s|20] K5 Değilmiş.
+1283 [1.3s|25] K17 Ne değilmiş?
+1284 [2.3s|46] K5 O ayrı, o ayrı dedi Bozkurt.
+1285 [1.6s|31] K5 Ama Ferhat'a söyle
+1286 [3.1s|62] K5 canını sıkmasın. Ona birini düşünüyorum dedi.
+1287 [1.0s|20] K17 Ya abi
+1288 [3.2s|63] K17 [abi?] gözünü seveyim şu Hamburglu'yla konuş bitirsin artık işi.
+1289 [4.0s|80] K17 Sonra onunla anlaşırız. Bak iç piyasada ne istiyorsa bizzat kendim yapacağım ya.
+1290 [2.5s|49] K17>K5 Yetmedi mi [bu?] Bozo'dan çektiğimiz artık. Ferhat.
+1291 [3.5s|70] K5 Sırf senin aşkın için bütün planlarımı değiştiremeyeceğim ben ha.
+1292 [1.9s|37] K5 Tek başımıza karar vermiyoruz burada değil mi?
+1293 [1.9s|38] K17 Mardinli amcamla konuştun mu?
+1294 [0.9s|18] K17 O ne diyor?
+1295 [1.4s|27] K5 Haber göndermiş.
+1296 [1.3s|25] K5 Beni aramasınlar,
+1297 [3.0s|59] K5 ben İstanbul'a gelene kadar da hayatta kalsınlar demiş.
+1298 [1.0s|20] K17 Abi.
+1299 [4.3s|84] K17 Abi sana samimi söylüyorum, eğer o yüzük takılırsa o Haydar Ali'yi indiririm haberin
+1300 [2.2s|43] K17>K5 olsun. Ya bırak şimdi Haydar Ali'yi. Tamam ya.
+1301 [1.0s|20] K5 Bak ne diyeceğim.
+1302 [1.3s|26] K16 Dün biriyle tanıştım ben.
+1303 [1.4s|27] K16 Bayağı da hoşlandım ha.
+1304 [2.8s|56] K16 Kocası da istihbaratta önemli bir yerdeymiş.
+1305 [2.8s|55] K16 Bir araştır bakalım adamı. Kimmiş, neymiş?
+1306 [1.3s|26] K17 Abi sen benle
+1307 [1.1s|22] K17 dalga mı geçiyorsun?
+1308 [3.9s|78] K17 Bir istihbaratçının karısıyla fingirdiyorsun, bir de adamın peşine düşüyorsun, öyle
+1309 [1.0s|20] K17 mi?
+1310 [1.9s|37] K16 Ayrılacaklarmış oğlum.
+1311 [1.5s|30] K16 Evli sayılmaz yani.
+1312 [2.1s|41] K17 E ayrılsın öyle gelsin o zaman.
+1313 [1.9s|38] K17 Tabii mesele sadece kadınsa.
+1314 [2.9s|58] K16 Mesele hiçbir zaman sadece kadın değildir Ferhat'ım.
+1315 [1.2s|23] K16 Beni iyi bilirsin.
+1316 [1.6s|32] K16 Sen dediğimi yap,
+1317 [1.1s|21] K16 araştır adamı.
+1318 [2.3s|46] K15 Gel Aslı gel. Sen bu manyağın ne yaptığını gördün mü?
+1319 [2.2s|43] K14 Hııı, gördüm, gördüm haberim var.
+1320 [1.5s|29] K14 Aldırttım tüm kayıtları.
+1321 [3.2s|64] K15 Yani nasıl böyle bir açık verir bu adam Aslı ya?
+1322 [1.0s|20] K15 Yani
+1323 [4.3s|84] K15 bir gören duyan olsa. Ulu orta bir yerde iki aşık gibi atışmak ne demek?
+1324 [2.6s|51] K15 Bizden önce Boz'a ulaşsaydı bu kayıtlara ne olacaktı?
+1325 [4.2s|83] K14 biz adamı boş yatırmıyoruz, adam da bizi boş yatırmıyor.
+1326 [2.6s|53] K14 Zaten ne bekliyorduk ki Ceylan'ı unutmasını mı?
+1327 [1.1s|22] K15 Neyse
+1328 [3.3s|66] K15>K14 sen ne yaptın? Dediğim işi hallettin mi? Merdan bende.
+1329 [2.7s|54] K15>K14 Ne demek bende? Avucumun içinde.
+1330 [2.9s|57] K15 Aslı. Bu adamlar ele avuca sığacak adamlar değil.
+1331 [1.9s|38] K15 Konunun ciddiyetine göre mi konuşsak?
+1332 [2.4s|47] K14 Seninle evli olduğumu duyunca kendi atladı.
+1333 [1.4s|27] K15 Neyi duyunca?
+1334 [2.0s|40] K14 Bir içeride konuşabilir miyiz?
+1335 [1.4s|27] K14 Şimdi şöyle oldu.
+1336 [7.2s|84] K14 Merdan'a dedim ki "Kocam var, ayrılmak üzereyim ama istihbaratta üst düzey.
+1337 [2.3s|46] K14 Ondan kurtulmamı sağla, ne istersen." dedim.
+1338 [3.6s|72] K14 O da tabii kocan kim diye sorunca aklıma ilk senin ismin geldi.
+1339 [1.9s|38] K14 Senin ismini söyledim.
+1340 [3.2s|65] K14 Yani böyle bir durumda senden başka kimseye güvenemezdim sonuçta.
+1341 [1.7s|34] K15 Merdan avucunun içindeydi, öyle mi?
+1342 [2.2s|43] K15 Adam seni avucunun içine almış haberin yok.
+1343 [2.0s|39] K15 Beni bu işe katman hiç doğru olmadı.
+1344 [1.0s|20] K14 Evet ama
+1345 [2.5s|49] K14 senin de beni bu işe katman hiç doğru olmadı.
+1346 [2.2s|44] K14 Ama bu doğru olmayan şeylerle
+1347 [2.1s|42] K14 hayatımıza devam etmek zorundayız.
+1348 [1.0s|20] K14 Bu arada
+1349 [3.1s|62] K14 Merdan benden önce Hamburglu Sezai ile beraberdi.
+1350 [1.2s|24] K15 Hamburglu Sezai mi?
+1351 [3.4s|68] K15 Demek ki neymiş? Seni boşuna Merdan'ın yanına koymamışım, değil mi?
+1352 [1.2s|23] K15 Bir de hata diyordun.
+1353 [1.2s|24] K16 Anlatacaklarım var.
+1354 [1.2s|24] K2 Öyle bırak.
+1355 [1.0s|20] K16 Sağ ol.
+1356 [2.2s|44] K16 Bu dünkü adamlar
+1357 [5.2s|84] K16 Hamburglu Sezai'nin has adamlarıymış. Onun için bugün yarın gelir diyorlar.
+1358 [2.9s|57] K2 Bu adam Interpol tarafından kırmızı bültenle aranmıyor muydu?
+1359 [3.2s|63] K16 Herkes aranır Bozo. Demek ki bulunamıyor.
+1360 [3.7s|74] K16 Yani adam ben Hamburglu Sezai'yim diye elini kolunu sallaya sallaya ortalıklarda
+1361 [1.6s|31] K16 gezinmiyordur.
+1362 [1.4s|28] K2 Devam et.
+1363 [3.9s|77] K16 Şimdi bu Hamburglu Sezai'nin Almanya'da yüz, iki yüz tane gece kulübü varmış.
+1364 [1.1s|21] K2 Yüz mü, iki yüz mü?
+1365 [4.8s|84] K16 Yüz kırk gece kulübü varmış. Yetmiş, seksen tane de kafeteryanın sahibiymiş bu.
+1366 [1.0s|20] K2 Efo be.
+1367 [1.3s|26] K2 Yetmiş mi, seksen mi?
+1368 [3.9s|77] K16>K2 Ne fark eder Bozo? Belki adamın malına mülküne çökeceğim Efraim.
+1369 [3.0s|60] K2 Nasıl işleteceğim diye kafamda kurmaya çalışıyorum. Sana ne?
+1370 [1.3s|26] K2 Sen bana net bilgi ver.
+1371 [3.9s|78] K16 Şuraya yetmiş iki diye bir şey yazmışım ama bu konuyla ilgili hatırlamıyorum.
+1372 [1.9s|38] K2 Sen bu defteri niye tutuyorsun Efraim?
+1373 [2.0s|40] K2 Bana doğru bilgi aktarmak için.
+1374 [2.6s|52] K16 Bozo, her şeyi kayıt altına alamayız, değil mi?
+1375 [2.6s|51] K2 Devlet seni bu defterden mi sorgulayacak sanıyorsun,
+1376 [1.0s|20] K2 hı?
+1377 [2.8s|56] K16>K2 Hamburglu'ya dönecek olursak. Dönelim.
+1378 [1.2s|23] K16 Şimdi
+1379 [4.1s|81] K16 bu Hamburglu Sezai arkasına Alman gizli servisini almış.
+1380 [1.2s|24] K2 Hımm.
+1381 [4.7s|84] K16 Alman polisi buna ne kadar operasyon düzenlediyse her defasında karakoldan elini
+1382 [3.2s|63] K16 kolunu sallaya sallaya çıkıyormuş [benim?] arkamda [beyendi?] var diye.
+1383 [1.0s|20] K2 BND.
+1384 [2.0s|39] K2 Bundesnachrichtendienst.
+1385 [3.4s|67] K16>K2 Hah, o işte. Alman KGB'si. KGB.
+1386 [3.2s|64] K2 Komitet Gosudarstvennoy Bezopasnosti.
+1387 [2.4s|48] K16 Hadi diyelim beni düzelttin, eyvallah.
+1388 [3.0s|60] K16 Bütün dünyayı düzeltebileceğini mi düşünüyorsun Bozo?
+1389 [4.1s|81] K16 Ben sana diyorum ki karşımızda çok değişik bir adam var.
+1390 [2.7s|53] K16 Bu adamın milyarlarca euro serveti var.
+1391 [3.6s|72] K16 Adam Alman devletinden işsizlik parası alıyor utanmadan ya.
+1392 [1.1s|22] K2 Bu mu zoruna gitti?
+1393 [2.2s|43] K16 Bu bir adamın ti'niyetini belli eder.
+1394 [2.9s|58] K16 Adam buna tevessül ediyorsa vay halimize.
+1395 [1.6s|32] K2 Çok tırstın Efo.
+1396 [3.6s|72] K16 Ya korkacak değiliz tabii ama tetikte olmak lazım.
+1397 [1.7s|34] K2 Ol o zaman Efo.
+1398 [1.0s|20] K2 Tetikte ol.
+1399 [1.0s|20] K2 Ben silahım,
+1400 [1.0s|20] K2 sen tetiksin.
+1401 [1.0s|20] K16 Eyvallah.
+1402 [1.4s|28] K16>K2 Hadi. [Allah'a?] emanet.
+1403 [1.5s|30] K13 Bana bak yakışıklı.
+1404 [2.0s|40] K13 Dün akşam beni ektin.
+1405 [3.3s|65] K13 Bu akşam da ekersen yemin ederim aldırırım seni.
+1406 [1.4s|27] K3 Aldırırsın.
+1407 [1.4s|28] K13 Ters kelepçeyle.
+1408 [1.8s|35] K3 Tersin terstir canım, bilirim.
+1409 [2.5s|50] K3 Akşam her türlü beraberiz hayatım. Sen merak etme.
+1410 [1.4s|27] K13 Ben gidiyorum.
+1411 [2.5s|50] K3 Nereye gidiyorsun ya? Daha yeni geldin. Kahvaltı bitmedi.
+1412 [1.5s|29] K13 Mesaj geldi de.
+1413 [1.2s|23] K13>K3 Aşkım. He?
+1414 [3.9s|77] K13 Ben normalde aşkla işi birbirine karıştırmam, biliyorsun.
+1415 [3.3s|66] K13 Ama sana birini soracağım. Sen tanırsın erkesin.
+1416 [1.0s|20] K3 Sor bakalım.
+1417 [5.3s|84] K13 Hamburglu Sezai diye bir adam varmış. Avrupa'nın [en?] [büyük?] nark mafyalarından biri.
+1418 [1.0s|20] K13 Tanıyor musun?
+1419 [3.5s|69] K3 Yani şahsen tanımıyorum ama biliyorum.
+1420 [1.4s|27] K3 Karşılıklı giderim.
+1421 [2.5s|50] K3 Yani ben de aşkla işi karıştırmam, biliyorsun.
+1422 [2.9s|58] K3 Nereden radarlarınıza girdi bu Hamburglu Sezai?
+1423 [1.3s|25] K13 İstanbul'a gelmiş.
+1424 [3.0s|60] K13 Bize de takip emri verildi istihbaratla birlikte.
+1425 [1.0s|20] K3 Gelmiş, ha.
+1426 [1.4s|27] K13 Allah Allah.
+1427 [3.0s|60] K13>K3 Beklediğiniz biri miydi? Yok canım,
+1428 [4.8s|84] K3 bizim ne işimiz olur pislikle? Ha pislik gelir bize ulaşır, orası ayrı mesele.
+1429 [2.5s|50] K13>K3 Niyeyse. Adımız çıkmış hayatım.
+1430 [2.6s|51] K3 Yani biz işimizle gücümüzle insanlarız.
+1431 [2.6s|53] K3>K13 Ailemiz büyük diye her şeyi yakıştırıyorlar bize. Paşa.
+1432 [5.5s|84] K13 Biz uzun süredir birlikteyiz. Bu ilk günkü laflarını tekrarlama istersen.
+1433 [2.4s|47] K13 Bir şey sordum mu pişman etme beni.
+1434 [1.0s|20] K3 Amirim.
+1435 [2.0s|39] K3 Yakın takipteyiz falan dedin de
+1436 [2.0s|39] K3 dikkat et, sen yakın takipte olma.
+1437 [2.6s|52] K13 Sen bu kadar önemsediğine göre.
+1438 [1.8s|35] K3 Ben seni önemsiyorum hayatım.
+1439 [1.7s|34] K3 Yoksa kimseyi iplemem, biliyorsun.
+1440 [1.1s|22] K13 İyi,
+1441 [1.0s|20] K13 gittim ben.
+1442 [1.8s|36] K13 Akşam sekizde
+1443 [1.2s|24] K13 Boğaz'da.
+1444 [1.0s|20] K3 Tamam hayatım.
+1445 [1.0s|20] K13 Görüşürüz.
+1446 [2.3s|46] K16>K3 Buyur Paşa. Alo Efo, abim nerede?
+1447 [3.5s|70] K16>K3 Berbere gidiyoruz. Hay ben o Kasap Hasan'ın ya.
+1448 [1.9s|38] K3 Ne diye hâlâ gidip onda tıraş oluyorsa.
+1449 [3.3s|65] K16>K3 Abine diyecek bir şeyin var mı Paşa? Var.
+1450 [5.0s|84] K3>K16 Ama telefonla olmaz. Hasan'la ilgili konuşacaksan telefonda da konuşabilirsin Paşa.
+1451 [3.5s|71] K3 Ya Efo, bu Hasan kim ki ben onu telefonda mevzu edeceğim ya.
+1452 [1.5s|30] K3 Bu konu önemli.
+1453 [1.6s|31] K3 Şu Avrupa'daki adamla ilgili.
+1454 [1.0s|20] K3 Alo.
+1455 [2.3s|45] K16 Mahalle dönüşü eve gelsin dedi abim.
+1456 [2.1s|43] K2 Takık bu çocuk bu Hasan'a, takık.
+1457 [2.8s|56] K16 Vallahi Bozo o Hasan'a ben de takığım da.
+1458 [3.6s|72] K16 Sen niye hâlâ ondan vazgeçemedin onu anlamış değilim.
+1459 [1.6s|31] K16 Haydar Ali.
+1460 [4.9s|84] K16 Allah'tan Bozo Ceylan'la evlendi de kızcağız her tıraştan sonra ensesini tekrar
+1461 [1.2s|24] K16 düzeltiyor.
+1462 [3.3s|66] K16 Yoksa o bozuk ense tıraşıyla gezecek ortada.
+1463 [1.9s|38] K2 Adnan'ın sesi aç. Aç sesini.
+1464 [1.0s|20] K16 Açtım abi.
+1465 [2.2s|44] K2 Haydar'ım bu türküyü niye seviyorum biliyor musun?
+1466 [1.0s|20] K16 Niye?
+1467 [1.8s|35] K2 Hepimiz bir gün öleceğiz.
+1468 [2.0s|40] K2 Ne kadar gafil gezmesek
+1469 [1.0s|20] K2 o kadar iyi.
+1470 [3.1s|62] K5 Gafil gezme şaşkın,
+1471 [3.1s|61] K5 bir gün ölürsün.
+1472 [3.0s|60] K5 Hey can, ölürsün.
+1473 [4.9s|84] K5 Dünya kadar malın. Leyli leyli, leyli leyli, leyli leyli.
+1474 [3.5s|70] K3 Bozo abi geliyor. Bozo abi geliyor. Bozo abi geliyor. Bozo abi geliyor. Bozo abi
+1475 [3.9s|78] K3>K5 geliyor. Olsa ne fayda.
+1476 [2.6s|51] K5 Söyleyen dillerin.
+1477 [2.2s|43] K5 Söylemez olur.
+1478 [2.4s|47] K5 Söylemez olur.
+1479 [3.1s|62] K5 Bülbül gibi dilin.
+1480 [2.4s|47] K5 Olsa ne fayda,
+1481 [2.5s|50] K5 olsa ne fayda.
+1482 [3.2s|63] K5 Sen söylersin söz
+1483 [3.2s|65] K5 içinde sözün var.
+1484 [3.0s|60] K5 Hey can sözün var.
+1485 [4.9s|84] K5 Çalarsın çırparsın. Leyli leyli, leyli leyli, leyli
+1486 [2.4s|47] K5 leyli, leyli leyli.
+1487 [2.9s|58] K5 Oğlun kızın var.
+1488 [3.2s|64] K5 Şu dünyada üç beş
+1489 [3.0s|60] K5 arşın bezin dar,
+1490 [3.0s|60] K5 arşın bezin dar.
+1491 [3.2s|63] K5 Cümle desten senin.
+1492 [3.0s|60] K5 Olsa ne fayda,
+1493 [2.5s|50] K5 olsa ne fayda.
+1494 [4.6s|84] K3>K5 Yavuz abi. Bozo abi geldi. Kul himmet üstadın
+1495 [3.1s|61] K5 gelse otursa.
+1496 [3.1s|62] K5 Hey can otursa
+1497 [2.4s|48] K5 Hakk'ın kelamını.
+1498 [6.2s|84] K5 Leyli leyli, leyli leyli, leyli leyli, leyli leyli.
+1499 [3.1s|61] K5 Bir yere getirse
+1500 [3.0s|60] K5 dünya benim değil.
+1501 [3.1s|62] K5 Zapta geçirse.
+1502 [1.0s|20] K5 Hey can...
+1503 [2.0s|39] K9>K2 Hoş geldin Bozo. Hoş gördük Yavuz.
+1504 [2.8s|55] K2 [Ana'ya?] söyle, Hasan'dan sonra direkt ona uğrayacağım.
+1505 [1.4s|28] K9 Tabii, tabii. Bekliyor zaten.
+1506 [1.7s|33] K2 Hasan Ustam.
+1507 [3.0s|60] K23>K2 Hoş geldin Bozo. Hoş gördük. İyi misin?
+1508 [3.5s|70] K23>K2 İyiyim çok şükür. Sen nasılsın? İyiyim, iyiyim, iyiyim.
+1509 [1.0s|20] K2 Gel Haydar'ım.
+1510 [1.6s|31] K2 [Hasan?] Usta,
+1511 [1.5s|30] K2 bu Haydar Ali.
+1512 [1.6s|31] K2 Benim küçük var ya Sultan,
+1513 [3.0s|60] K2>K23 onunla nişanladık. Duydum, duydum.
+1514 [3.4s|67] K23>K18 Hayırlı olsun Haydar Ali. Sağ olun, teşekkür ederim.
+1515 [1.2s|23] K23 Gel bakalım Bozo.
+1516 [1.4s|28] K2 Haydar'ım,
+1517 [2.0s|39] K2 gelmişken kırpsın mı seni de Hasan Usta?
+1518 [4.4s|84] K18>K2 Yo, iyiyim ya ben böyle. Vallahi [köle?] bir ense mense.
+1519 [1.0s|20] K18 Gerek var mı diyorsun?
+1520 [1.2s|23] K2 Sen biliyorsun.
+1521 [2.1s|41] K18 Sen işini hallet de bakarız.
+1522 [1.0s|20] K2 Hasan Usta,
+1523 [3.6s|72] K2>K23 enseleri biraz düzeltirsin. Tamam Bozo.
+1524 [4.6s|84] K2 O arada da anlat bakalım mahallede neler oluyor, hangi yaprak üstte, hangi yaprak
+1525 [3.3s|65] K2 altta, kimin kimle ne mevzusu var bir dinleyelim.
+1526 [1.2s|25] K23 Hepsini anlatayım.
+1527 [2.7s|54] K9>K2 Hava topladı gene ha Yavuz. Birden karardı.
+1528 [1.8s|35] K9 Bir günü bir günü tutmuyor ki.
+1529 [1.5s|30] K2 Sabah güneş vardı hem.
+1530 [1.2s|24] K9 Yaşar abi geldi.
+1531 [1.4s|29] K2 Duymuştur Bozayı.
+1532 [1.6s|32] K9>K23 Hoş geldin Yaşar Ağa. Hoş gördük.
+1533 [0.8s|16] K9 Ceylan hoş geldin.
+1534 [2.9s|57] K2>K23 Yaşar abim. Hoş geldin abi. Hoş bulduk.
+1535 [3.8s|76] K2>K23 Vallahi Bozo gelmese yüzünü göremeyeceğiz abim. Adım yok Yavuz.
+1536 [2.8s|55] K23 Eski mahalle mi kaldı ki buralarda çıkayım gezeyim.
+1537 [3.8s|76] K23 Eskiden biz bu sokakta yürümeye başladık mı baştan sona üç saatte yürürdük.
+1538 [4.4s|84] K23 Tokalaşmaktan, selamlaşmaktan. Şimdi öyle mi, ha?
+1539 [4.2s|83] K23 İpini kazığını koparan, tanımadığımız milletten ne kadar adam varsa hepsi geldi
+1540 [5.0s|84] K23>K9 doluştu buraya. E, üç saat yol yarım saate inmiş Yaşar. Daha ne istiyorsun?
+1541 [1.4s|27] K23 Saygı, saygı.
+1542 [1.7s|33] K23 İbrahim saygı kalmadı.
+1543 [4.7s|84] K23 Bozo'nun geldiğini duydum. Gideyim bir de ona şikayetleneyim dedim. Haber ver hele.
+1544 [2.9s|57] K2 Gel Yaşar, gel. Korkma, otur yanıma.
+1545 [2.3s|45] K2 Hasan Usta senden para almaz.
+1546 [2.2s|45] K23 Bir o saygısızlık eksikti zaten.
+1547 [1.4s|28] K23 Merhaba yeğenim.
+1548 [2.4s|47] K18>K2 Merhaba. Haydar Ali.
+1549 [1.5s|30] K2 Namını duymuşsundur.
+1550 [1.1s|22] K18 Duydum, duydum.
+1551 [1.3s|26] K2 Bu da
+1552 [1.0s|20] K2 Yaşar Ağa.
+1553 [1.6s|32] K2 Mahallenin
+1554 [1.5s|29] K2 önde gidenlerinden.
+1555 [1.0s|20] K18 Memnun oldum.
+1556 [2.0s|41] K23 Bozo müsaitsen baş başa görüşelim.
+1557 [1.2s|24] K18 Ben dışarıdayım Bozo.
+1558 [1.2s|24] K2 Yaşar,
+1559 [1.4s|27] K2 kimi şikayete geldin?
+1560 [3.1s|62] K23 Vallahi şikayetlenmek demeyelim de Bozo,
+1561 [3.2s|65] K23 mahalleyi bu aralar biraz fazla ihmal eder oldun.
+1562 [5.3s|84] K23 Yani sana ne anlatıyorlar, ne söylüyorlar, ne kadarını biliyorsun bilmiyorum.
+1563 [4.0s|80] K23 Onun için kalktım kendim geldim. Bizzat benden duy diye.
+1564 [1.0s|20] K2 Dinliyorum.
+1565 [2.2s|44] K23 Birileri mahallede mal sattırıyor Bozo.
+1566 [1.5s|30] K2 Benim mahallemde.
+1567 [1.3s|25] K23 Gördün mü,
+1568 [1.5s|30] K23 hiçbir şeyden haberin yok.
+1569 [1.7s|34] K23 Mahalleyi ele geçirdiler.
+1570 [1.8s|36] K23 Geçenlerde yeğenlerimden biri
+1571 [4.8s|84] K23 "bu mahalle Bozo'nun mahallesi" diye çıkışınca bu neyi [diye?] belirsiz tiplerden
+1572 [1.2s|24] K23 birine,
+1573 [2.1s|42] K23 çocuğun üstüne on kişi çullanmışlar.
+1574 [1.3s|26] K2 Çok geçmiş olsun.
+1575 [1.1s|22] K2 Sen ne yaptın?
+1576 [1.0s|20] K2 Dedikodu mu o?
+1577 [1.9s|37] K2 Madem mahalle benim mahallem,
+1578 [2.1s|42] K2 sen de bu mahallenin önde gidenisin.
+1579 [1.4s|28] K2 Yapsaydın ya gereğini.
+1580 [2.4s|48] K23 Hangi birine ne yapacağım Bozo,
+1581 [1.0s|20] K23 ha?
+1582 [1.8s|36] K23 Vallahi benden sana tavsiye.
+1583 [1.4s|29] K23 Mahalle elden gidiyor.
+1584 [2.9s|58] K23 Bu adamların arkasında kim var bilmiyorum
+1585 [2.4s|47] K23 ama mahalleyi kaybedersen
+1586 [2.2s|44] K23 seni o adada yaşatmazlar.
+1587 [1.5s|30] K2 Bunu sen mi söylüyorsun,
+1588 [1.2s|24] K2 biri mi söyletiyor?
+1589 [2.1s|43] K23 Bana kimse bir şey söyletemez Bozo.
+1590 [1.4s|28] K2 Söyletir, söyletir.
+1591 [1.6s|33] K2 Sen bana onun adını söyle.
+1592 [2.4s|48] K23 Ben kimseyle görüşmüyorum.
+1593 [1.9s|37] K2 Vallahi yalnızlık zor be Yaşar'ım.
+1594 [2.5s|49] K2 Mardin'deki donçiçiyle de mi görüşmüyorsun?
+1595 [1.9s|38] K23 Amcanla yıllardır görüşmedim.
+1596 [1.4s|27] K2 Yıllardır ha.
+1597 [1.0s|20] K23 He.
+1598 [3.0s|60] K23 Hanımım vefat ettiğinde baş sağlığı için aramıştı.
+1599 [2.3s|46] K23 Sen ona görüşme diyorsan
+1600 [1.4s|27] K23 ne diyeyim?
+1601 [2.1s|42] K2 Ne diyeceksen de Yaşar.
+1602 [2.6s|53] K2 Ağzında bir şeyler daha var. Geveleyip duruyorsun.
+1603 [3.0s|61] K2 Anlatacağını anlat da tıraşı kısa keselim.
+1604 [2.2s|43] K23 Ben şimdi sana ne desem
+1605 [1.2s|23] K23 ters yapacaksın.
+1606 [4.3s|84] K23>K2 Nereden çıkıyor bunlar diyeceksin. Sen benim ne diyeceğime karışma Yaşar.
+1607 [1.0s|20] K2 Diyeceğini de.
+1608 [1.4s|27] K23 Bu Haydar Ali
+1609 [1.5s|30] K23 iyi bir çocuğa benziyor.
+1610 [1.4s|27] K23 Duydum.
+1611 [3.7s|74] K23 Senin yanında da yiğitçe çatışmış.
+1612 [0.9s|18] K23 Ama
+1613 [1.5s|29] K23 başka şeyler de duydum.
+1614 [1.0s|20] K2 [Ne?] gibi?
+1615 [1.9s|37] K23 Birilerinin adamı diyorlar.
+1616 [1.1s|21] K2 Öyle mi diyorlar?
+1617 [1.0s|20] K2 Kim diyor?
+1618 [1.4s|29] K2 Kimlerin adamıymış?
+1619 [1.2s|25] K8 Teyze geldiler.
+1620 [2.4s|48] K10 Niye heyecanlanıyorsun? Sana mı geldiler kızım?
+1621 [2.9s|58] K8>K10 Ya bana gelmese bile yüzünü göreceğim. Yıldız.
+1622 [2.0s|39] K8 Ee, Paşa yok.
+1623 [1.8s|35] K10 Tüh, gelmemiş mi?
+1624 [1.9s|37] K10 Paşamın yolunu gözlerken.
+1625 [2.1s|41] K2 Yavuz'a söyle akşam Yaşar'a gitsin.
+1626 [1.0s|20] K16 Sebep?
+1627 [1.6s|31] K2 Uğurlasın Efrahim,
+1628 [4.0s|80] K2>K16 uğurlasın. Nasıl? Bozo, Yaşar'dan bahsediyoruz.
+1629 [1.8s|36] K2 Bir gün herkes gidecek Efrahim.
+1630 [1.6s|31] K2 Yaşar'ınki de bugün.
+1631 [3.0s|60] K2>K16 Yeter amcamın ağzıyla konuştuğu. Ne-- ne dedi ki?
+1632 [5.3s|84] K16 Yani Yavuz Yaşar'a düşkündür, ben uğurlayayım manasında söyledim.
+1633 [1.6s|32] K2 Ben de Yavuz uğurlasın dedim.
+1634 [1.0s|20] K16 Vay.
+1635 [2.4s|48] K2 Gel Haydar'ım, [Günsumana'yı?] bekletmeyelim. Gel.
+1636 [2.7s|54] K2>K10 Anacığım. Oğlum.
+1637 [2.4s|47] K10>K2 Hoş geldin oğlum. Hoş gördük anam.
+1638 [1.2s|24] K2 Bak
+1639 [2.0s|40] K2 sana bir kardeş daha getirdim.
+1640 [2.3s|46] K18 Bozom'un anne dediği benim için de annedir.
+1641 [1.6s|32] K10 Sana da analık yaparım.
+1642 [2.0s|40] K10 Yeter ki sen benim bozkurduma
+1643 [1.1s|22] K10 kardeş ol.
+1644 [1.0s|20] K10 Buyurun.
+1645 [3.5s|70] K2>K8 Yıldız. Kız yine parlıyorsun ha. Hoş geldin abi.
+1646 [1.0s|20] K18 Merhaba.
+1647 [1.6s|31] K10>K2 Alayım oğlum. Sağ ol anacığım.
+1648 [1.1s|22] K8 Alayım teyzem.
+1649 [2.9s|57] K2 Vay vay vay vay vay vay vay vay.
+1650 [4.0s|79] K10>K2 Oturalım mı hemen sofraya? Yıldız getirsin yemeği. Yok anam yok.
+1651 [2.8s|56] K2 Önce bir çay kahve içelim sonra bakarız.
+1652 [1.0s|20] K10 Geçin.
+1653 [4.2s|84] K8>K18 Haydar Ali nasıl alırsın kahveni? Hiç fark etmez, siz nasıl yaparsanız.
+1654 [1.0s|20] K8 Tamamdır.
+1655 [3.7s|74] K10 Bu bana kendini sevdirmeye mi çalışıyor yoksa hep mi böyle?
+1656 [1.6s|32] K2 Hep böyle anacığım.
+1657 [2.1s|42] K2 Ceylan dışında aramızda sevmeyeni yok.
+1658 [1.7s|34] K10 İyi, bu da iyi.
+1659 [1.2s|25] K10 Sultan seviyor mu?
+1660 [2.9s|57] K2 Bunu da sen söyleyeceksin anacığım. Sevecek mi, sevmeyecek mi?
+1661 [1.0s|20] (?) K10 [Razı?] ol.
+=== BAGLAM (cevirme) ===
+1662 [5.1s|84] K11 Ya dayı [ben?] niye vuruyormuşum Yaşar abiyi ya? Ha? Vuracak başka adam mı yok?
+1663 [2.0s|39] K16 Bozo Yavuz yapsın dedi.
+1664 [1.5s|30] K16 Ben yapayım dedim.
+1665 [1.3s|25] K16 Yavuz yapsın dedi.
+1666 [4.8s|84] K11 Yav Yavuz yapsın dedi de bu adamın üzerimde emeği büyük, sen daha iyi biliyorsun ya.
+1667 [1.9s|39] K11 Ya ilk silahımı belime bu koymuş.
+1668 [2.4s|48] K11 Akşam karşısına çıkıp ne diyeceğim ben bu adama?
+1669 [2.6s|52] K16 Bir şey demeyeceksin Yavuz. Gireceksin, sıkacaksın, çıkacaksın.
+1670 [3.2s|65] K16>K11 İlk defa mı yapıyorsun oğlum? Ya ilk defa yapmıyorum da
+1671 [3.0s|59] K11 a-a-adam hasmımız değil, bir şeyimiz değil abi. Ne yapmış bu adam?
+1672 [2.0s|39] K11 Ne-ne yaptı bu adam? Bir söylesene.
+1673 [2.7s|53] K16>K11 Ben yapayım Efraim abi. He, Adnan yapsın.
+1674 [2.8s|56] K16 Ben ne anlatıyorum oğlum deminden beri, ha?
+1675 [1.1s|22] K16 Senin adın Yavuz mu?
+1676 [1.1s|23] K16 Bozo Yavuz dedi.
+1677 [1.3s|25] K11 Bozo Yavuz dedi.
+1678 [1.3s|26] K11 Bozo Yavuz dedi de
+1679 [2.5s|49] K11 akşam ne anlatacağım, ne diyeceğim, ne yapacağım?
+1680 [1.9s|37] K16 Yavuz. Yeğenim.
+1681 [2.9s|58] K16 Bir şey demeyeceksin. Bir şey anlatmayacaksın.
