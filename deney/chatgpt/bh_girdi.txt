@@ -1,0 +1,530 @@
+=== BAGLAM (cevirme) ===
+0390 [1.0s|20] K13 Çok iyi.
+0391 [1.3s|25] K13 Çok güzel.
+0392 [2.4s|48] K13 Çok güzel. Görüyor musun nasıl intikam alıyorlar bizden?
+0393 [2.0s|39] K8 Başka ne yapabiliriz Yusuf Bey?
+0394 [3.2s|64] K15 Bir sonraki adım maalesef konkordato başvurusunda bulunmak.
+0395 [1.1s|22] K8 Tamam.
+0396 [1.6s|33] K8 Teşekkürler. Çıkabilirsiniz.
+0397 [1.4s|29] K13 Her şey benim suçum.
+0398 [3.4s|67] K13 Neslihan'la evlenseydim bunların hiçbiri başımıza gelmezdi.
+0399 [1.0s|20] K8 Hayır.
+0400 [3.3s|66] K8 Hepsi o Hülya denen kızın suçu.
+0401 [2.5s|50] K8 O senin aklını bulandırdı,
+0402 [1.7s|33] K8 işte bugün buradayız.
+0403 [1.7s|34] K8 Ama ben halledeceğim.
+0404 [1.1s|22] K8 O Hülya
+0405 [2.2s|43] K8 kendi kazdığı kuyuya düşecek.
+0406 [1.0s|19] K15 Efendim.
+0407 [1.6s|31] K0 Yusuf.
+0408 [1.0s|20] K0 Nedir durumlar?
+0409 [4.7s|84] K0>K15 Söylediklerimi yaptın mı? Evet, merak etmeyin. Her şey harfi harfine işliyor.
+0410 [3.6s|72] K15>K0 Yakında iflas haberini alırsınız. Güzel. Güzel.
+0411 [3.1s|61] K0>K15 Her şeyden haberim olacak. Tabii Fikret Bey.
+0412 [1.3s|25] K15 Siz hiç merak etmeyin.
+0413 [2.5s|49] K6>K14 Alo? Hülya. Jale Korhanlı ben.
+0414 [1.0s|20] K6 Hayırdır,
+0415 [2.6s|51] K6>K14 ne oldu Jale Hanım? Görüşebilir miyiz?
+0416 [1.1s|22] K6 Neden?
+0417 [4.0s|80] K14>K6 Yüz yüze anlatmak isterim. Uygun musun? Yani
+0418 [3.7s|74] K6>K14 bilemedim ki böyle bir anda. Lütfen Hülya.
+0419 [1.8s|36] K14 Önemli bir mesele.
+0420 [1.2s|23] K6 E peki,
+0421 [2.2s|44] K6 madem bu kadar ısrar ediyorsunuz,
+0422 [1.0s|20] K6 görüşelim.
+0423 [3.0s|59] K13 Tabii, tabii Doğukan Bey, tabii. Seve seve bekleriz.
+0424 [3.8s|76] K13 Başımla beraber, başımla beraber. Yusuf amcaya selamlar.
+0425 [1.0s|20] K13 Çok sağ olun.
+0426 [1.0s|20] K13 Gel.
+0427 [1.0s|20] K16 Erim Bey.
+0428 [2.4s|48] K16 Sabah bunu güvenliğe bırakmışlar sizin adınıza.
+0429 [1.3s|25] K13 tamam, sağ ol Merve.
+=== CEVIR: 0430-0896 ===
+0430 [2.5s|50] K13 Kurur yapmak şimdi mi aklına geldi [doktor?] bey?
+0431 [5.2s|84] K8 Kübra sen misafir odasındaki nevresim takımlarını değiştireceksin. Hepsi değişecek.
+0432 [3.7s|74] K8 Zeynep sen de camları sil. Bütün odaların camları silinsin, olur mu?
+0433 [1.8s|36] K8 Nihat Bey siz de garajı toparlayın.
+0434 [3.7s|73] K8 Çok dağılmış orası. İyice güzelce bir toparlansın orası.
+0435 [1.0s|19] K8 Hah.
+0436 [1.0s|20] K4 Hayırdır,
+0437 [3.2s|63] K4>K8 içtima mı var? Hoş geldin Gülizar.
+0438 [1.0s|20] K8 Nihayet.
+0439 [2.9s|58] K8 Sen de kileri düzenleyeceksin.
+0440 [5.0s|84] K8 Bütün raflar düzenlenecek. Tarihi geçmiş her şey atılacak. Anladın mı?
+0441 [1.7s|33] K4 Canım.
+0442 [2.3s|45] K4 Ben senin asistanın değilim yalnız.
+0443 [2.8s|55] K4>K8 Abartma istersen. Canım derken?
+0444 [1.4s|28] K8 Gülizar.
+0445 [2.9s|58] K8 Bu evde herkesin bir görevi var.
+0446 [3.6s|73] K8 Sen de üzerine ne düşüyorsa onu yapacaksın, anladın mı?
+0447 [2.3s|46] K8 Nihat Bey, siz hâlâ burada mısınız?
+0448 [1.5s|29] K4 Gitmeyin Nihat Bey.
+0449 [1.6s|31] K4 Ben de size bir iş vereceğim.
+0450 [4.1s|82] K4>K8 Hülya Hanım'ın odasına çiçek alınacak. Siz önce benim dediğimi yapın lütfen.
+0451 [2.1s|42] K4 Hayır, önce benim dediğimi yapın Nihat Bey.
+0452 [1.9s|38] K8>K4 Gülizar. Mediha.
+0453 [1.0s|20] K0 Aaa,
+0454 [4.4s|84] K0 ben önce garajı halledeyim, sonra çiçek işine bakarız.
+0455 [1.3s|26] K8 Siz de gidebilirsiniz.
+0456 [4.3s|84] K8 Sen de benimle doğru kilere canım.
+0457 [1.6s|32] K8 Hadi marş marş.
+0458 [1.2s|23] K4 [Meda?] Hanım.
+0459 [3.1s|62] K4 Sen kaç senedir Fikret Beylerle çalışıyorsun?
+0460 [2.5s|49] K6 Yirmi küsur sene olmuştur.
+0461 [1.0s|20] K4 Yuh!
+0462 [2.5s|49] K4 E o zaman sen bu yangında da vardın.
+0463 [1.3s|25] K6 Evet vardım.
+0464 [3.2s|64] K4 Nasıl çıktı o yangın ya? Ne oldu yani?
+0465 [1.8s|35] K6 Ne yapacaksın?
+0466 [3.9s|78] K4 A a! Merak ettim canım. Ama bir şey yapacağımdan değil.
+0467 [5.4s|84] K4 O değil de, yani o kadar koca yangında bir tek Nisan Hanım vefat etmiş.
+0468 [4.0s|80] K4 Yani nasıl oldu yani? Bir tek nasıl o vefat etti ben-
+0469 [1.6s|31] K8 Gülizar.
+0470 [2.9s|58] K8 Bu evde biz bu konuyu konuşmuyoruz.
+0471 [2.7s|53] K8 Sen de bundan sonra bu konuyu açma, tamam mı?
+0472 [2.7s|54] K8 Gerisini sen hallet. Burayı da topla, tamam mı?
+0473 [1.2s|23] K4 Tırnaklar ya.
+0474 [1.5s|30] K14 Hoş geldin.
+0475 [1.4s|27] K6 Hoş bulduk Jale Hanım.
+0476 [4.0s|79] K11>K6 Hoş geldiniz. Ne alırdınız? Merhabalar. Ee, sade kahve lütfen.
+0477 [1.6s|31] K11 Tabii ki efendim. Hemen getiriyorum.
+0478 [4.8s|84] K14>K6 Sizi dinliyorum. Çok merak ettim. Bana anlatacağınız o çok önemli şey neymiş acaba?
+0479 [2.0s|41] K14 Lafı hiç uzatmayacağım Hülya.
+0480 [2.1s|43] K14 Erim'le aranızda geçenleri biliyorum.
+0481 [1.0s|20] K6 Öyle mi?
+0482 [1.6s|32] K6 Ne geçmiş aramızda?
+0483 [5.5s|84] K14 Erim'in Neslihan'la evlenmekten vazgeçmesine yetecek kadar bir şeyler geçmiş.
+0484 [2.0s|40] K6 Oğlunuz mu anlattı size bunları?
+0485 [3.6s|71] K6 Neslihan'ı nikah masasında terk etmesinin sebebi de ben miymişim?
+0486 [1.4s|27] K6 Teşekkürler.
+0487 [1.2s|23] K11 Afiyet olsun.
+0488 [3.9s|78] K14 Ağanın büyüsü çok tehlikeli olabiliyor bazen.
+0489 [2.0s|39] K14 Dikkatli olmak gerek.
+0490 [2.7s|54] K14 Bu senin Erim'e attığın mesaj değil mi?
+0491 [4.1s|82] K14 Erim Neslihan'ı terk ettiği gece ilk kimi aramış?
+0492 [1.0s|20] K14 Seni.
+0493 [2.0s|40] K14 Bak sen şu Allah'ın işine.
+0494 [2.9s|58] K14 Daha sayısız aramanız var.
+0495 [2.3s|46] K14 Ben her şeyi biliyorum Hülya.
+0496 [2.3s|45] K14 Hiç inkar etme.
+0497 [4.0s|80] K6>K14 Siz oğlunuz üzerinden tehdit mi ediyorsunuz beni? A a!
+0498 [1.2s|25] K14 Aşk olsun.
+0499 [1.7s|34] K14 Onu mu dedim ben şimdi?
+0500 [2.8s|55] K14 Bunlar Fikret'in kulağına giderse
+0501 [3.1s|62] K14 senin için tatsız olur, onu söylüyorum ben.
+0502 [2.9s|58] K6 Fikret sizin laflarınıza göre hareket etmez.
+0503 [2.9s|58] K6>K14 Kocam bana güveniyor. Fikret'i tanıyorsan
+0504 [1.9s|37] K14 midesini bulandırır.
+0505 [2.3s|46] K14 Hem de çok fena bulandırır.
+0506 [2.0s|40] K14 Kocanı pek tanıyamamışsın.
+0507 [2.8s|55] K14 Fikret çok kıskanç bir adamdır.
+0508 [1.4s|29] K6 Siz benden ne istiyorsunuz?
+0509 [2.4s|48] K14 Erim ve Neslihan'ı barıştırmanı.
+0510 [2.5s|49] K14 Herkes için en hayırlısı bu.
+0511 [1.0s|20] K6 Hadi ya!
+0512 [1.6s|32] K6 Ben nasıl düşünemedim bunu?
+0513 [1.0s|20] K6 Hmm.
+0514 [2.2s|45] K6 Peki Jale Hanım.
+0515 [1.5s|29] K6 Şimdi
+0516 [2.0s|39] K6 ben Erim'le konuşurken
+0517 [3.7s|74] K6 siz de gidip Fikret'e mesajları gösterirseniz mesela,
+0518 [4.7s|84] K6>K14 e ben boşuna uğraşmış olacağım. Senden istediğim şeyi yaparsan buna gerek kalmaz.
+0519 [4.9s|84] K6 Ah Jale Hanımcığım, Jale Hanımcığım, ne kadar amatörsünüz.
+0520 [5.8s|84] K6 Siz gidip Fikret'e benim mesajlarımı gösterirseniz ve benim kocamla aram bozulursa
+0521 [1.4s|27] K6 eğer,
+0522 [4.1s|81] K6 benim Erim'e yardım etmek için bir sebebim kalmaz, değil mi?
+0523 [1.8s|36] K6 E biraz matematik
+0524 [1.0s|20] K6 Jale Hanım.
+0525 [1.9s|37] K6 Merak etme, merak etme.
+0526 [1.3s|25] K6 İstediğini yapacağım.
+0527 [4.9s|84] K14>K6 Seninle görüştüğümü Erim bilmeyecek. Sen şimdi bu cek caklı lafları bırakıyorsun.
+0528 [3.4s|67] K6 Evine gidiyorsun ve benden haber bekliyorsun. Tamam.
+0529 [1.0s|20] K6 Ha bir de...
+0530 [4.3s|84] K17 Bir daha sakın benimle senli benli konuşma.
+0531 [1.4s|27] K17 Anladın mı?
+0532 [1.5s|30] K17 Geçti o günler artık.
+0533 [3.7s|73] K17 Erim'i elimden aldığın yetmedi, bir de babamı da mı elimden aldın?
+0534 [2.2s|44] K6 Ben kimseyi kimsenin elinden almadım.
+0535 [1.0s|20] K17 Hülya.
+0536 [4.5s|84] K17>K6 Bu işin sırrı ne? Anlatsana biraz. Neyin sırrından bahsediyorsun Nesriciğim?
+0537 [2.7s|54] K17>K0 Zengin erkek avcılığının. Neslihan.
+0538 [1.8s|36] K17 Ama merak ettim sadece.
+0539 [4.7s|84] K17 E Hülya bu işin uzmanı sonuçta. Önce Erim, sonra sen.
+0540 [1.7s|33] K17 E bakalım kim var şimdi sırada?
+0541 [2.1s|41] K17 Ben geldim.
+0542 [1.0s|20] K0 Hülya.
+0543 [2.0s|40] K0>K6 Hoş geldin. Hoş buldum.
+0544 [4.2s|83] K6 Dedim ki hazır dışarıdayken ben neden kocamı görmeye gitmiyorum?
+0545 [1.2s|24] K0 İyi yaptın.
+0546 [2.9s|57] K0>K6 Hoş geldin. Gel. Hoş buldum.
+0547 [2.7s|54] K0>K6 Saçlarını mı kestirdin sen? Hı hı.
+0548 [1.3s|26] K6 Güzel olmuş mu?
+0549 [1.6s|31] K0>K6 Elbette. Beğendin mi?
+0550 [2.2s|45] K0 Güzel olmuş, hem de çok.
+0551 [1.0s|20] K6 Ay.
+0552 [2.0s|39] K6 Ben de anneme uğradım.
+0553 [2.5s|50] K6 Sonra kuaför işlerimi hallettim.
+0554 [2.7s|54] K6 Şimdi de beraber eve geçeriz diye sana geldim.
+0555 [1.1s|22] K0 Annen nasıl?
+0556 [4.4s|84] K0>K6 Aradım onu bugün telefonla. Hat kesildi. Konuşamadık. Ha evet ya.
+0557 [3.0s|59] K6 Onun telefonuna bir şey olmuş herhalde. Bozuldu. Anlamadım ben de.
+0558 [1.2s|23] K6 Gayet iyi,
+0559 [1.9s|38] K6 gayet iyi. Merak etme.
+0560 [1.9s|38] K0 İyi, iyi. Sevindim.
+0561 [1.3s|25] K6>K0 Fikret. Hı?
+0562 [1.1s|21] K6 İyi misin sen?
+0563 [1.3s|25] K6 Sabah da böyleydin.
+0564 [4.2s|84] K0 Aslında ben de seninle bir şey konuşacaktım. İyi oldu geldiğin. Bu sabah
+0565 [2.9s|58] K0 Neslihan'ın söyledikleri takıldı aklıma da.
+0566 [1.5s|30] K6 Hangisi?
+0567 [2.1s|41] K6 Çok fazla şey saçmaladı çünkü.
+0568 [0.9s|18] K0 Şu
+0569 [1.7s|34] K0 Erim'le ilgili olan.
+0570 [0.9s|18] K0 Hani
+0571 [2.0s|39] K0 onu elinden aldığını söylüyor ya.
+0572 [1.0s|20] K6 Yani
+0573 [1.4s|27] K6 ne demek istiyorsun?
+0574 [3.5s|70] K0 Bir şey demek istemiyorum hayatım. Aklıma takıldı sadece.
+0575 [1.5s|29] K6 Bravo Fikret.
+0576 [1.0s|20] K6 Bravo.
+0577 [4.0s|80] K6 Sen bayağı bayağı Neslihan'ın bu deli saçması laflarına inanıyorsun yani.
+0578 [0.9s|18] K0 Hülya.
+0579 [3.6s|71] K0>K6 Sana bir soru sordum. Sen bana bunu soramazsın Fikret.
+0580 [2.0s|40] K6 Ben zaten fazlasıyla idare ediyorum.
+0581 [3.3s|65] K6 Alttan alıyorum Neslihan'ı ama bu kadarı da fazla artık.
+0582 [1.7s|34] K0 Bir dakika. Bir dakika. Bir dakika. Gitme.
+0583 [1.0s|20] K6 Gidiyorum.
+0584 [2.0s|39] K6 Çünkü eğer kalırsam
+0585 [3.9s|78] K6>K0 çok daha fazla kırıcı konuşacağız birbirimize. Gitme.
+0586 [3.3s|65] K0>K6 Gitme. Kal. Fikret daha dün söz verdin üstelik bana.
+0587 [2.0s|39] K0 Kal lütfen.
+0588 [1.0s|20] K0 Otur.
+0589 [1.0s|20] K0 Haklısın,
+0590 [1.1s|23] K0 haklısın.
+0591 [1.2s|24] K0 Bu soruyu sormak
+0592 [3.0s|60] K0 benim için de çok zor. Çok zor. Hiç kolay değil. Ama
+0593 [3.9s|78] K0 aklıma gelince kendimi çok kıskanmış yakalıyorum. Çok.
+0594 [1.4s|28] K0 Çünkü seni seviyorum.
+0595 [1.7s|34] K0 Çünkü sana çok aşığım.
+0596 [2.6s|51] K6 Benim için sadece sen varsın.
+0597 [1.5s|29] K6 Sadece sen.
+0598 [1.0s|20] K0 Gel.
+0599 [3.3s|65] K4 Fikret Bey. Selim Bey geldi. Toplantı odasına aldım.
+0600 [1.0s|20] K0 Tamam, geliyorum.
+0601 [3.6s|72] K0 Kısa bir toplantım var. Hemen bitirip dönerim. Sonra da birlikte çıkarız.
+0602 [1.0s|20] K6 Tamam.
+0603 [3.2s|65] K0>K3>K0 Şşt. Selamünaleyküm. Ooo aleykümselam.
+0604 [3.0s|59] K0 Ooo Salih paçayı düzeltmişsin.
+0605 [3.1s|61] K3 Tabii oğlum, biraz da bir süslenelim dedik.
+0606 [1.1s|21] K3 Oğlum
+0607 [4.1s|82] K3 içeride sabah akşam bir ömür geçirdik lan aynı kıyafetle.
+0608 [3.5s|70] K0>K3 Yakışır sana. Biraz da bir süslenelim Hülya Hanım gibi.
+0609 [0.8s|16] K3 Lan
+0610 [4.1s|81] K3 bak Hülya Hanım dedim, burnum da tüttü ha canım kızım.
+0611 [2.1s|42] K3>K0 Ben bir arayayım şunu. Ara bakalım.
+0612 [1.4s|28] K3 Canım kızım.
+0613 [4.1s|82] K6>K3 [Sen?] misin? Hadi kapatıyorum. Dur kız. Bak bakalım babana.
+0614 [1.0s|20] K0 Gördün mü?
+0615 [1.4s|28] K0 Nasıl olmuşum?
+0616 [4.0s|80] K6>K3 Tamam, hadi defilen bittiyse kapatıyorum. Şşt. Dur kız. Acelen ne?
+0617 [2.0s|40] K3 Bana bir beş yüz ateşlesene.
+0618 [2.5s|50] K6 Yok ya. Var mı başka isteğin?
+0619 [2.6s|52] K3 Bende istekler bitmez.
+0620 [3.3s|66] K6 Avucunu yalarsın. Hadi bay bay.
+0621 [1.0s|20] K3 Kız...
+0622 [1.0s|20] K6 Orhan
+0623 [1.0s|20] K6 şunu bana ver.
+0624 [3.0s|59] K6>K4 Diğerlerini odama bırak. Tabii Hülya Hanım.
+0625 [2.9s|58] K6>K0 Hoş geldiniz Fikret Bey. Hoş bulduk Mediha Hanım.
+0626 [1.5s|29] K0 Neslihan yok mu?
+0627 [2.9s|58] K6 Sarp Bey'le birlikte dışarıdalar. Çağırayım mı?
+0628 [1.0s|20] K0 Olur.
+0629 [1.0s|20] K6 Fikret.
+0630 [4.5s|84] K6 Ama yani Sarp'a bu kadar yüz verme dedikçe adam evden çıkmaz oldu.
+0631 [4.6s|84] K6>K0 Daha nişanlısı bile değil. Biliyorum, biliyorum ama Neslihan çok mutlu.
+0632 [3.8s|76] K0>K6 Hem böyle gözümün önünde olmaları da ayrıca iyi. Sen bilirsin.
+0633 [2.6s|52] K6 Yani bence çok hızlı gidiyorlar. Benden söylemesi.
+0634 [3.5s|69] K9>K0 Fikret Bey merhabalar. Hoş geldin Sarp.
+0635 [2.2s|43] K0>K6 Buyurun. Babacığım
+0636 [1.1s|21] K6 hoş geldin.
+0637 [1.1s|22] K0 Hoş bulduk yavrum.
+0638 [1.0s|20] K0 Gel Sarp.
+0639 [3.2s|64] K6 Sarp Gittik buradasın, geldik buradasın.
+0640 [3.4s|68] K9>K6 Merak etmeyin gidiyordum zaten. Hatta çıkmak üzereyim. Sarp
+0641 [3.2s|63] K6 gitme zaten yarın İzmir'e gidiyorsun. Göremeyeceğim seni.
+0642 [1.1s|21] K0 Öyle mi?
+0643 [3.0s|59] K0>K9 Annen için galiba. Evet evet.
+0644 [2.0s|40] K0 E bu akşam yemekte birlikte olalım.
+0645 [1.0s|20] K9 Peki.
+0646 [3.0s|59] K6 Mediha'cığım, bir tane daha servis alalım lütfen. Teşekkürler.
+0647 [3.6s|71] K6 Nesli'ciğim, ben sana bugün küçük bir hediye aldım.
+0648 [4.0s|81] K0 Aaa! Hediye mi? Bak ben bunu bilmiyordum. Çok iyi.
+0649 [3.7s|74] K6 Yani bu aramızdaki gerginlik artık son bulsun istiyorum.
+0650 [1.7s|34] K6 Kabul edersen çok sevinirim.
+0651 [1.3s|26] K0 Neslihan.
+0652 [2.5s|50] K0 Ama hediyeyi kabul etmemek büyük kabalık.
+0653 [1.0s|20] K6 Lütfen.
+0654 [1.1s|21] K9 Yardım edeyim sana.
+0655 [1.0s|20] K6 Sen
+0656 [2.3s|45] K6 bana benim paramla bunu mu aldın?
+0657 [1.0s|20] K6 Beğenmedin mi?
+0658 [3.3s|66] K6 Kendime de aynısından aldım. Sen benimle dalga mı geçiyorsun?
+0659 [2.6s|52] K0>K6 Neslihan [Ne?] yapıyorsun kızım? Baba görmüyor musun ya?
+0660 [4.6s|84] K6 Resmen sakatlığımla dalga geçiyor. Ne? Ne alakası var ya? Neslihan iyi misin sen?
+0661 [2.5s|49] K6 Allah kahretsin seni. Çekil.
+0662 [3.1s|62] K9>K6 Ben bir bakayım. İyi de dur. Ben bakarım.
+0663 [4.0s|79] K6 Seni ilgilendiren bir şey yok burada. Neslihan'la benim aramda bu. Karışma lütfen.
+0664 [2.5s|50] K6 Ne yapsam olmuyor. Görüyorsun değil mi Fikret?
+0665 [2.2s|43] K6 Bu kız var ya gerçekten.
+0666 [2.6s|52] K6 Çık dışarı. Neslihan büyü artık.
+0667 [2.4s|47] K6 Sürekli böyle zavallı zengin [kız?] melodramı çekilmez.
+0668 [4.5s|84] K6 Sen neden sürekli benimle uğraşıyorsun ya? Ben seninle uğraşmıyorum.
+0669 [4.6s|84] K6 Sen her şeyi üstüne alınıyorsun. Bana bak, seni var ya. Ne yaparsın?
+0670 [2.1s|42] K6 Döver misin beni, ha?
+0671 [2.7s|53] K6 Üstüme mi saldırırsın yine daha önce yaptığın gibi?
+0672 [1.0s|20] K6 Ya da.
+0673 [2.0s|40] K6 Tokat mı atarsın mesela,
+0674 [1.0s|20] K6 ha?
+0675 [5.4s|84] K6 Tırmalar mısın ha? Ruh hastasısın sen. Ruh hastasısın sen.
+0676 [1.1s|22] K6 Ya da ne bileyim
+0677 [2.6s|51] (?) K6 bunu alıp kafana [geçiririm.?]
+0678 [5.1s|84] K6 Psikopatsın sen. Psikopatsın sen. Psikopatsın.
+0679 [1.8s|35] K6 Baba. Baba.
+0680 [1.0s|20] K6 Hıh.
+0681 [1.0s|20] K6 Baba. Baba.
+0682 [1.1s|22] K4 Ne oluyor be?
+0683 [1.0s|20] K0 Kızım
+0684 [1.5s|29] K0 ne oluyor Neslihan?
+0685 [3.7s|73] K6 Baba Psikopat bu kız baba delirmiş, resmen delirmiş.
+0686 [2.8s|56] K0>K6 Neslihan ne oluyor kızım? Yemin ederim ben bir şey yapmadım.
+0687 [1.6s|31] K6 Yemin ederim kendi kendine yaptı.
+0688 [3.8s|76] K6>K9 Her şeyi kendi kendine yaptı. Neyi kendi kendine yaptı?
+0689 [2.7s|54] K0 Gel benimle gel gel benimle gel.
+0690 [1.0s|20] K6 E hadi ama.
+0691 [3.0s|60] K0 Kızım ne oluyor? Nedir bu halin Allah aşkına ya?
+0692 [4.2s|84] K6 Baba kendi kendine yaptı. Gerçekten kendi kendine yaptı ya.
+0693 [1.0s|20] K0 Hülya.
+0694 [1.1s|21] K0 Hülya Ne oldu?
+0695 [2.7s|53] K0 Hülya Ne oldu? Hülya Ne oldu? Nedir bu halin?
+0696 [3.7s|74] K6>K4 Bak bak gör yaptıklarını bak. Hülya ne oldu?
+0697 [1.2s|23] K6 Ben bir şey yapmadım.
+0698 [3.9s|77] K0>K6 Ne oldu kızım? Ne bu durumun açıklaması ya? Baba yalan söylüyor baba.
+0699 [3.3s|66] K18 Neslihan'ın kolunun durumu ortada. Ne oldu böyle? Ne yapıyorsunuz siz?
+0700 [2.6s|51] K16 Fikret Zaten o yüzden karşılık vermedim ben de.
+0701 [2.5s|50] K16 Baba kendi kendine yaptı. Gözümün önünde yaptı ya.
+0702 [3.2s|64] K16 Tırmaladı kendini. Aldı buradan vazoyu vurdu kafasına ya.
+0703 [3.8s|75] K4 Fikret Bey, Neslihan yani karıncayı bile incitemez, bilmiyor musunuz?
+0704 [4.7s|84] K18 Ya yeter yeter! Ben bıktım. İkinizin arasında kalmaktan bıktım.
+0705 [3.4s|68] K16 Fikret Ben Neslihan'a kız demiyorum.
+0706 [4.2s|84] K16 Sadece bu evde can güvenliğim olsun istiyorum. Çok mu şey istiyorum?
+0707 [3.8s|76] K18 Çıkın dışarı. Çık dışarı. Çık. Çık dışarı. Mediha Hanım, götür Neslihan'ı.
+0708 [3.8s|75] K16>K9 Oğlum. Tamam tamam tamam tamam tamam. Sakin ol. Sakin ol tamam.
+0709 [1.0s|20] K16 Abla.
+0710 [1.0s|20] K18 Hülya.
+0711 [1.4s|27] K18 Dur bir bakayım.
+0712 [1.4s|27] K18 Bir bakayım. Dur.
+0713 [1.2s|24] K18 Dur dur dur dur dur dur dur dur dur.
+0714 [3.1s|61] K16 Sarp Yemin ederim bak yemin ederim sana yalan söylemiyorum.
+0715 [2.9s|58] K16>K9 Hiçbir şey yapmadım. Bak yemin ederim. Biliyorum.
+0716 [2.4s|48] K9 Biliyorum. Senin böyle bir şey yapacağına beni kimse inandıramaz.
+0717 [3.3s|66] K9>K16 Tamam mı? Kendini bu kadar hırpalama. Babam niye inanmıyor o zaman bana ya?
+0718 [2.1s|41] K16 Niye inanmıyor? Ben delirmek üzereyim ya.
+0719 [4.2s|83] K9 Tamam, sakin, sakin, sakin. Gel biraz hava alalım. Gel bahçeye çıkalım. Gel.
+0720 [2.5s|49] K18 Tamam canım, tamam gel.
+0721 [4.1s|82] K18 Hadi çıkalım buradan. Hadi dışarı çıkalım. Orada konuşalım biraz. Hadi.
+0722 [1.0s|20] K16 İstemiyorum.
+0723 [1.6s|33] K16 Gülizar beni odama götür.
+0724 [1.0s|20] K4 Hadi gel.
+0725 [2.5s|49] K4 Gel bacım gel. Otur şöyle.
+0726 [1.0s|20] K4 Otur.
+0727 [1.9s|37] K4 Tamam, tamam. Tamam.
+0728 [1.0s|20] K4 Gel.
+0729 [2.0s|40] K4 Ay tamam, tamam. Tamam. Tamam, tamam.
+0730 [2.1s|41] K4 Of [pardon?] ya offf!
+0731 [1.2s|24] K4 Tamam, tamam.
+0732 [3.1s|62] K4 Kızım bu Neslihan nasıl yaptı sana bunu ya?
+0733 [3.3s|66] K4 Bir de o pamuk prenses kıyafetleriyle.
+0734 [3.2s|64] K4 Bir bu kadar daha mı varmış Neslihan'dan yerin dibinde?
+0735 [3.1s|62] K16 Bilmiyorum Gülizar. Çok kötüyüm.
+0736 [2.8s|56] K4 Ay kıyamam sana ya.
+0737 [1.0s|20] K4 Acıyor mu çok?
+0738 [1.9s|37] K4 Bismillahirrahmanirrahim.
+0739 [1.7s|34] K5 Kızım sen kafayı mı yedin?
+0740 [1.6s|33] K5 O kız bana ne yapabilir be?
+0741 [2.8s|56] K4 Ay Hülya ya üff
+0742 [4.6s|84] K4>K5 yemin ediyorum inandım ya. Ya Gülizar sen beni hiç mi tanımadın,
+0743 [1.0s|20] K5 ha?
+0744 [2.9s|58] K5 Beni bu hale benden başka kimse getiremez.
+0745 [3.0s|60] K4 Ama korkuyorum ben şu an senden.
+0746 [1.6s|31] K5 Kork Güli.
+0747 [5.1s|84] K5 Kork Güli. Seni de bu gece uykunda boğacağım.
+0748 [1.2s|24] K4 Ya öf gitme.
+0749 [3.2s|64] K4>K5>K4 A manyak. Boğacağım. Yapma şunu.
+0750 [1.0s|20] K4 [Ay?]
+0751 [1.5s|30] K4 Allah'ım ya Rabbim ya. Kızım.
+0752 [3.7s|74] K5>K4 [Ayle.?] Ne oldu da sen bu kadar tırlattın ya?
+0753 [1.1s|22] K5 Seni seviyorum.
+0754 [1.4s|28] K5 Beklenti çok
+0755 [2.0s|40] K5 kötü bir şey biliyor musun Gülizar?
+0756 [2.1s|41] K5 Sürekli sızlayan bir yara gibi.
+0757 [2.0s|40] K5 Seni işte böyle
+0758 [1.1s|21] K5 delirtebilir.
+0759 [1.4s|27] K4 Hiçbir şey anlamadım.
+0760 [1.0s|20] K5 Boş ver.
+0761 [3.5s|70] K5 Ben bir üstümü değiştireyim. Sen de bir kahve yap bize içelim hadi.
+0762 [2.1s|41] K4 Ay Hülya otur. Aa
+0763 [1.7s|33] K4 deli misin? Şunu bir sileyim.
+0764 [3.8s|75] K4 [Off?] valla manyaksın sen ya. Manyaksın.
+0765 [1.3s|26] K5 [Aa?] yavaş
+0766 [2.0s|40] K5>K4 o kadar da değil. Tamam.
+0767 [2.7s|53] K4 Yavrum nasılsın? Daha iyi misin?
+0768 [2.5s|49] K9>K5 Elinize sağlık Mediha Hanım. Afiyet olsun.
+0769 [2.5s|49] K16>K5 Değilim Mediciğim. Ah
+0770 [2.7s|54] K5 nereden musallat oldu bu şeytan başımıza?
+0771 [2.7s|54] K9 Tamam Mediha Hanım, yangına körükle gitmeyelim biz de.
+0772 [1.0s|20] K5 Peki.
+0773 [3.7s|74] K5 Ben içeri geçiyorum. Bir şeye ihtiyacın olursa söylersin, olur mu?
+0774 [1.9s|37] K5 Siz de çok durmayın. Soğuk hava.
+0775 [1.1s|22] K16 Sağ ol Mediciğim.
+0776 [2.4s|47] K16 Biz kızdan intikam alalım derken
+0777 [1.1s|21] K16 olanlara bak.
+0778 [1.4s|27] K16 İnanamıyorum hâlâ.
+0779 [3.4s|67] K9 Sana daha önce söylemiştim Neslihan. Bu iş sana zarar vermeye başladı.
+0780 [4.9s|84] K16 Ben karşımda normal bir insan var sandım. Mücadele edebilirim sandım ama...
+0781 [1.3s|26] K16 Hale bak.
+0782 [4.0s|79] K9 Hülya hayatta kalmak için çok badireler atlatmış. Şimdi yeni o modunu açtı.
+0783 [2.9s|57] K9 Dozer gibi önüne gelen her şeyi eziyor.
+0784 [1.1s|22] K16 Allah Allah.
+0785 [2.2s|44] K16 Oturup bir de üzülelim istersen.
+0786 [3.5s|70] K16 Hülya'nın kötü geçen çocukluğunun bedelini ben mi ödeyeceğim Sarp?
+0787 [2.6s|51] K16>K9 Ne diyorsun sen? Hayır tabii Neslihan. Hayır.
+0788 [2.1s|42] K9 Ayrıca hayatta herkesin başına bir şeyler geliyor.
+0789 [2.3s|45] K9 Nasıl biri olacağını seçmen tamamen sana kalmış.
+0790 [2.0s|41] K9 O yakan yıkan biri olmayı tercih etmiş.
+0791 [1.9s|37] K9 Benim asıl derdim senin üzülmen.
+0792 [2.7s|54] K9 Bak, ben İzmir'deyken sakın onun oyunlarına gelme.
+0793 [1.0s|20] K9 Tamam?
+0794 [1.4s|27] K9 Aklım sende kalmasın.
+0795 [1.0s|20] K7 Tamam,
+0796 [1.1s|23] K7 merak etme.
+0797 [3.5s|69] K7 Belki de Hülya benim hayatıma seni getirmek için girmiştir.
+0798 [2.3s|45] K7 Belki de her şeyin sebebi budur.
+0799 [3.6s|72] K9 Mediha Hanım haklı. Çok soğuk olduğu için burası.
+0800 [1.8s|35] K9 Hadi içeri geçelim, üşütmeyelim seni.
+0801 [1.0s|20] K9 Gel.
+0802 [2.1s|41] K9 Hadi bakalım rahatça yat, uyu.
+0803 [1.1s|22] K9 Yarın konuşuruz.
+0804 [1.9s|38] K7 Teşekkür ederim Sarp.
+0805 [1.5s|30] K7 Yine çok iyi geldin bana.
+0806 [1.0s|20] K9 İyi geceler.
+0807 [1.0s|20] K7 İyi geceler.
+0808 [1.9s|37] K19 Sen ne yaptın bu arada bugün Mediha'yla?
+0809 [3.4s|68] K4 Kızım sorma ya. Canımı çıkarttı.
+0810 [2.9s|58] K4 Irgat gibi kullandı kadın beni resmen ya.
+0811 [1.0s|20] K19 Seni?
+0812 [6.7s|84] K19>K4 Benim Gülizar'ımı? Ya! Beni, beni. Senin Gülizar'ını. Mahvoldum resmen ya.
+0813 [2.6s|51] K19 Bugün Fikret'in yanında emrivaki yaptı ama bir daha böyle bir şey olmayacak.
+0814 [1.1s|22] K19 Merak etme.
+0815 [0.9s|18] K19 Halledeceğim ben.
+0816 [3.5s|70] K4>K19 Vallahi mi kız? E herhalde. Kimse benim arkadaşımı ezemez.
+0817 [2.0s|41] K4 Hah şöyle be [Hülin?] be.
+0818 [4.2s|84] K4 Hadi kalk, hadi kalk yatalım. Geberiyorum ben yorgunluktan. Hadi.
+0819 [1.1s|21] K19 [Ben?] de içemedim.
+0820 [3.7s|74] K4>K19 İçeriz sonra. Evet, gece gece boş ver. Bırak, bırak, bırak, bırak.
+0821 [3.3s|65] K19>K4 Sabah toplasın Mediha işte. Hakikaten ha.
+0822 [2.8s|55] (?) K19>K4 Bakalım. Şöyle [şöyle.?]
+0823 [1.1s|21] K4 Ben odadayım.
+0824 [1.0s|20] K9 Dur.
+0825 [1.0s|20] K9 Bir yarana bakayım.
+0826 [1.2s|23] K19>K9 Gerek yok. Var.
+0827 [1.4s|27] K9 Çok kıymamışsın kendine.
+0828 [1.6s|31] K9 Merak etme, birkaç güne geçer.
+0829 [1.4s|27] K19 O ne demek?
+0830 [1.4s|28] K19 Ben mi yaptım bunu yani?
+0831 [2.8s|55] K19 Aman minik tatlı Neslihan'ınıza da toz kondurmayın ya.
+0832 [1.2s|23] K9 Ya ne yapıyorsun sen?
+0833 [2.4s|48] K9 Kazanamayacağın bir savaşın içinde debelenip duruyorsun böyle.
+0834 [1.5s|30] K9 Ne istiyorsun bu kızdan?
+0835 [3.4s|68] K19>K9 Benim kazanamayacağım savaş yok Sarp. Öyle mi? Sana kolay gelsin o zaman.
+0836 [2.8s|55] K9 Çünkü önünde bir meydan muharebesi var gibi.
+0837 [4.4s|84] K9 Bak, sen kendi babandan yaralısın diye Fikret Bey'le kızının arasına giremezsin.
+0838 [3.5s|69] K9>K19 Hayattan böyle intikam alınmaz. Hadi ya.
+0839 [1.0s|20] K19 Nasıl alınır?
+0840 [2.7s|54] K19 Aşık olduğun kadının evine başkasıyla evlenip girerek mi alınır?
+0841 [1.0s|20] K19 Ne oldu?
+0842 [1.0s|20] K19 Yalan mı?
+0843 [1.4s|27] K19 Aşık değil misin bana?
+0844 [1.0s|20] K9 Ama
+0845 [1.4s|29] K9 seni sevmiyorum.
+0846 [1.4s|28] K9 Sen bir virüs gibisin.
+0847 [2.3s|46] K9 İnsanın kanına girip zehirliyorsun.
+0848 [4.2s|83] K9 Senden kurtulamamam seni sevdiğim anlamına gelmiyor.
+0849 [2.4s|47] K19 Pişman olacaksın bana bunları söylediğin için.
+0850 [2.0s|39] K19 Yemin ederim pişman olacaksın.
+0851 [1.0s|20] K19 Ay.
+0852 [1.2s|23] K19>K20 Anne? Hı?
+0853 [1.2s|25] K19 Yatmadın mı sen?
+0854 [2.4s|47] K19>K20 Başın mı ağrıyor? He.
+0855 [1.6s|32] K19 İlaç getireyim mi sana?
+0856 [2.8s|55] K20>K19 İstemem. Aldım zaten. Anne.
+0857 [4.7s|84] K19 Ya bir şey olmuş. Söyler misin bana da? Bütün akşam konuşmadın zaten. Hadi anlat.
+0858 [2.8s|55] K20 Kardeşin geldi bugün. Demedim sana.
+0859 [3.9s|77] K19>K20 Ee? Ne eesi? Kovdum kapıdan, gitti işte.
+0860 [2.8s|55] K19>K20 Niye kovdun anneciğim? Ne demek niye Sema?
+0861 [2.0s|39] K20 Yapmadığı rezillik kalmadı da ondan.
+0862 [2.2s|43] K19 Anne, ben sana bir şey söyleyeceğim.
+0863 [2.7s|53] K19 Biz hani geçen Fikret Bey'in evine gittik ya.
+0864 [1.9s|38] K19 Sen tabii dikkat etmedin.
+0865 [3.7s|73] K19>K20 Ben Fikret Bey'in rahmetli eşinin fotoğrafını gördüm. Ee?
+0866 [2.4s|47] K19 Anne, kadın aynı Hülya.
+0867 [4.1s|82] K20>K19 Ne diyorsun kızım? Vallahi çok benziyor Hülya'ya.
+0868 [1.0s|20] K20 Ay!
+0869 [1.1s|21] K20 Ay Sema, bu,
+0870 [3.1s|62] K20 bu adam o yüzden mi kafayı taktı benim çocuğuma?
+0871 [3.0s|59] K20>K19 Ah. Bilmiyorum ki. Öyle galiba.
+0872 [2.1s|42] K20 Allah'ım başımıza gelenler.
+0873 [3.9s|77] K20 Allah'ım ya Rabbim. Kızım biz neyin içine düştük böyle?
+0874 [1.0s|20] K20 Yok,
+0875 [1.6s|31] K20 yok böyle olmaz.
+0876 [2.9s|58] K20 Ben gideceğim, çocuğumu alacağım oradan. Çekip çıkaracağım çocuğumu.
+0877 [3.1s|61] K6 Gelmez anneciğim, gelmez. Görmedin mi halini?
+0878 [2.5s|49] K20 O gelmesin. Ben onu alacağım.
+0879 [2.6s|52] K20 Allah'ım ya Rabbim, aklıma mukayyet ol.
+0880 [1.0s|20] K20 Ay!
+0881 [4.6s|84] K6 Evet, biraz daha bekleyelim çünkü gelmek üzeredir.
+0882 [3.0s|59] K6 Ve karşınızda Mediha.
+0883 [1.0s|20] K6 Geldi.
+0884 [1.8s|35] K8 Ne oluyor burada?
+0885 [3.9s|77] K6>K8 Biz de seni bekliyorduk, Mediş. Niçin?
+0886 [2.3s|46] K6 Kambersiz düğün olmaz da ondan.
+0887 [1.3s|25] K6 Geçin yerinize.
+0888 [1.4s|28] K8 Efendim?
+0889 [2.3s|46] K6 Mediha, Mediha.
+0890 [2.7s|53] K6 Her şeye bu kadar şaşırılmaz ama.
+0891 [2.8s|56] K6>K8 Geçer misin yerine? Ne münasebetle?
+0892 [1.0s|20] K6 Mediş.
+0893 [2.3s|45] K6 Pardon, bu evin çalışanı değil misin sen?
+0894 [3.4s|68] K8>K6 Evet, çalışanıyım. O zaman yerin burası değil,
+0895 [1.2s|24] K6 orası.
+0896 [1.0s|20] K6 Geç.
+=== BAGLAM (cevirme) ===
+0897 [1.0s|20] K6 Hah.
+0898 [1.9s|37] K6 Bütün ekibimiz bir arada.
+0899 [1.1s|21] K6 Gülizar'cığım.
+0900 [1.0s|20] K6 Mediha Hanım,
+0901 [4.0s|80] K6 dün siz Gülizar'ı bayağı bir çalıştırmışsınız.
+0902 [1.2s|23] K8 Evet,
+0903 [2.0s|40] K8 ona da bir değişiklik olmuştur.
+0904 [1.3s|25] K6 Çok güzel,
+0905 [1.4s|27] K6 çok hoş.
+0906 [5.8s|84] K6 Mediha Hanım, haddinizi herkesin içinde bildirmek istemezdim ama bunu sen istedin.
+0907 [5.5s|84] K6 Bir daha benim asistanımdan isteyeceğin herhangi bir şey olursa
+0908 [2.1s|42] K6 önce bana rapor edeceksin.
+0909 [1.6s|32] K8 Yok artık.
+0910 [2.7s|53] K6 Bu evin fahri hanımı sen değilsin. Kendine gel artık.
+0911 [1.2s|24] K6 Bu evde
+0912 [2.5s|49] K6 ben ne dersem o olacak.
+0913 [3.3s|66] K6 E sen alıştın tabii başıboş gezmeye.
+0914 [2.7s|54] K6 Ondan böyle laf dinlemek zor geliyor artık.
+0915 [2.2s|44] K6 Artık ben varım.
+0916 [2.5s|50] K6 Ha, baktım çok zorlanıyorsun,
