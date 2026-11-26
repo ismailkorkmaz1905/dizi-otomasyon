@@ -19,7 +19,7 @@ Bölüm başına harcamanın çoğu çeviri metninden değil, tekrar okunan bağ
 |---|---|---|
 | Ana oturum (thread) | Sonnet | varsayılan |
 | Çeviri | İsmail seçer: ChatGPT Codex (GPT-6.2 Sol High), Opus ya da Sonnet | Opus/Sonnet ajanlarına effort verme |
-| Kontrol ajanı, iki tur | Opus | medium (İsmail `high` derse high) |
+| Kontrol ajanı, iki tur (Codex çevirisinde tek tur, 26 Kasım) | Opus | medium (İsmail `high` derse high) |
 
 10 Kasım 2026 testi (BH E06 430-896 ve MA E20 882-1336, toplam 922 satır, kör Opus hakem, önemli hata sayısı): Opus taslak + kontrol 0, Sonnet taslak + kontrol 9, eski akışla teslim edilen 11. Kontrol, Opus taslağın %7-13'ünü, Sonnet taslağın %24-30'unu değiştirdi. Sonnet çevirmen ucuz ama kontrolden sonra da hata kalıyor.
 
@@ -66,7 +66,7 @@ Dönen raporları `raporlar.md`'ye yaz. Sonra `python3 arac.py birlestir <çalı
 > - Oku: `talimat.md`, varsa `onceki_ozet.md`, `raporlar.md`, sonra `yan_yana.txt` (her satır: `NNNN [süre|sınır] Türkçe => Endonezce`). Başka dosya okuma.
 > - Baştan sona oku ve şunlara bak: anlam hataları; hitap tutarlılığı (aynı iki kişi her yerde aynı hitap); isim yazımları ve talimattaki karıştırılan isimler; parça sınırları (<sınırlar>) çevresinde kopukluk ya da tekrar; `(?)` ve `[kelime?]` işaretli ve raporlarda şüpheli denen satırlar; "Yalancı eşdeğerler" tablosu; kitap dili. `|` eksikliği hata değil, sadece bunun için satır değiştirme.
 > - Bütün çeviriyi yeniden YAZMA. Sadece değiştirdiğin satırları `duzeltme_1.txt`'ye yaz (`NNNN yeni metin`, satırın tamamı). Sonra `python3 arac.py uygula . duzeltme_1.txt`. Hata verirse düzeltme dosyasını onar ve tekrar çalıştır. `DEGISEN n satir` çıkınca `ceviri_tum.txt` ve `yan_yana.txt` güncellenmiştir.
-> - İkinci tur: güncel `yan_yana.txt`'yi baştan sona bir kez daha oku; kaçan anlam hatalarını, hitap/isim tutarsızlıklarını ve doğal olmayan satırları `duzeltme_2.txt`'ye yaz ve aynı şekilde uygula. Üçüncü tur yok.
+> - İkinci tur (Codex çevirisinde YOK, İsmail 26 Kasım'da tek tura indirdi; E02'de 2. tur 10, E03'te 6 satır yakaladı): güncel `yan_yana.txt`'yi baştan sona bir kez daha oku; kaçan anlam hatalarını, hitap/isim tutarsızlıklarını ve doğal olmayan satırları `duzeltme_2.txt`'ye yaz ve aynı şekilde uygula. Üçüncü tur yok. Codex çevirisinde sadece 1. turu yap ve `duzeltme_2.txt` yazma.
 > - Döndür: iki turun `DEGISEN` sayıları ve en önemli 10 değişiklik.
 
 45 dakika içinde dönmezse ajanı durdur; `ceviri_tum.txt` her zaman doğrulanmış son hâldir, onu kullan.
