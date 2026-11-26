@@ -1,6 +1,6 @@
 # ChatGPT çeviri deneyi (26 Kasım 2026)
 
-Amaç: GPT-6.2 Sol ve GPT-6.1 Terra'nın Türkçe -> Endonezce altyazı kalitesini Opus ile kıyaslamak. Aynı iki parça, 10 Kasım Opus/Sonnet testinde kullanılanlarla aynı.
+Amaç: GPT-6.2 Sol'un Türkçe -> Endonezce altyazı kalitesini Opus ile kıyaslamak. Aynı iki parça, 10 Kasım Opus/Sonnet testinde kullanılanlarla aynı.
 
 | Dosya | İçerik |
 |---|---|
@@ -11,7 +11,7 @@ Amaç: GPT-6.2 Sol ve GPT-6.1 Terra'nın Türkçe -> Endonezce altyazı kalitesi
 | `ma_ceviri_girdi.txt`, `bh_ceviri_girdi.txt` | Bölümün tamamı, sadece `check.py` için |
 | `check.py` | Numara ve karakter sınırı kontrolü |
 
-Kollar: `sol_xhigh` (GPT-6.2 Sol, Extra high), `sol_high` (GPT-6.2 Sol, High), `terra_xhigh` (GPT-6.1 Terra, Extra high).
+Kollar: `sol_xhigh` (GPT-6.2 Sol, Extra high), `sol_high` (GPT-6.2 Sol, High). Terra çıkarıldı (26 Kas).
 Her kol çıktısını kendi klasörüne yazar: `deney/chatgpt/<kol>/ma.txt`, `bh.txt`, `rapor.md`.
 
 ## Codex promptu (KOL yerine kol adını yaz)
