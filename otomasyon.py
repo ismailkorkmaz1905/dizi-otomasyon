@@ -521,6 +521,8 @@ def plan():
                            '-of', 'csv=p=0', str(video)], capture_output=True, text=True, check=True).stdout.split('/')
     fps = int(a) / int(b)
     h, mb = pipeline._target('1080p', src)
+    # 27 Kasim: Telegram en fazla 2 parca (<= 3,4 GB toplam, parca basi ~1,7 GB < 1,9 GB siniri); buyuk kaynakta bit hizi dusurulur
+    mb = min(mb, round(3.4e9 * 8 / src['duration'] / 1e6 - pipeline.AUDIO_MBPS, 2))
     n = int(os.environ.get('PARCA') or 12)
     frames = round(src['duration'] * fps)
     p = dict(dizi=DIZI, bolum=bolum, srt=str(srt), video=str(video), name=name, fps=fps,
