@@ -41,8 +41,8 @@ API = 'https://www.googleapis.com/drive/v3/files'
 FOLDER = 'application/vnd.google-apps.folder'
 SYSTEM_FILES = ('pipeline.py', 'elevenlabs.json', 'youtube_cookies.txt', 'telegram.json', 'Çeviri Talimatı.md')
 NAMES = {'muhtemel_ask': 'Muhtemel Aşk', 'yeralti': 'Yeraltı', 'baskalarinin_hayati': 'Başkalarının Hayatı'}
-# Drive'daki pipeline.py'de olmayan diziler (pipeline.py'ye dokunulmaz, ayar buradan eklenir). Bunlarin sistem/
-# klasorunde sadece Çeviri Talimatı.md durur; pipeline.py, anahtarlar, cerez ve Telegram Muhtemel Ask'tan alinir.
+# Drive'daki pipeline.py'de olmayan diziler (pipeline.py'ye dokunulmaz, ayar buradan eklenir).
+# Butun diziler (Yeralti dahil) sistem/ dosyalarini Muhtemel Ask'tan alir; kendi sistem/'lerinden sadece Çeviri Talimatı.md.
 EXTRA = {'baskalarinin_hayati': dict(
     root='Başkalarının Hayatı', prefix='Baskalarinin.Hayati',
     search='Başkalarının Hayatı {ep}. Bölüm',   # Star TV, cumartesi 20:00 TR; tam bolum resmi YouTube kanalinda
@@ -92,8 +92,9 @@ def load_pipeline():
     system = MIRROR / root['name'] / 'sistem'
     system.mkdir(parents=True, exist_ok=True)
     have = ls(s, root['kids']['sistem']['id'])
-    if DIZI in EXTRA:
-        have = ls(s, series_root(s, 'muhtemel_ask')['kids']['sistem']['id']) | have
+    if DIZI != 'muhtemel_ask':   # tek sistem: pipeline.py, ElevenLabs anahtarlari, cerez, Telegram MA'dan; dizinin kendisinden sadece talimat
+        have = ls(s, series_root(s, 'muhtemel_ask')['kids']['sistem']['id']) | \
+            {k: v for k, v in have.items() if k == 'Çeviri Talimatı.md'}
     for name in SYSTEM_FILES:
         if name in have:
             r = s.get(f"{API}/{have[name]['id']}", params={'alt': 'media'}, timeout=120)
