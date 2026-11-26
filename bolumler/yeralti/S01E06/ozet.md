@@ -1,0 +1,15 @@
+# Yeraltı S01E06 özeti
+
+- Paşa, Pınar'ın evinin önünde vuruluyor. Pınar tetikçiyi öldürüp Paşa'yı hastaneye yetiştiriyor; Paşa ameliyattan sonra yoğun bakımda uyanıyor. Bozo öfkeli, hastaneye gitmiyor: Paşa onun sözünü dinlemeden Caner'i öldürmüştü.
+- Adnan, Orhan'ın Paşa'yı kışkırttığını fark ediyor. Ferhat ve Derman Rıfat'ın emriyle Tuzla'da Orhan, adamları ve Fevzi'yi öldürüyor; Yavuz onları suçüstü yakalayıp Bozo'ya getiriyor. Bozo Ferhat'ı "sivrisinek"e benzetip tehdit ediyor ve Rıfat'a "benim adıma talimat verme" diyor.
+- Sultan Haydar'la birlikte Hülya'nın otel ve uçuş kayıtlarını buluyor: Hülya ile Merdan Roma'da üç kez buluşmuş. Haydar ve Ceylan bunu Hülya ve Azize'nin yüzüne vuruyor. Hülya Merdan'la sevgili olduğunu kabul ediyor; Ceylan "evlilik ve aile olma" önerisini sunuyor.
+- Aslı (Yılmaz'ın yardımcısı), Bozo'nun yanında Pınar'a avukat Hande ile yardım edecekmiş gibi davranıyor; gizlice Pınar'ı istihbarata bilgi vermeye zorluyor. Pınar Bozo'ya istihbaratın kendisine yaklaştığını söylüyor ama Aslı'nın adını vermiyor. Paşa'dan ayrılacağını da söylüyor; Bozo "Paşa'ya ben söylerim" diyor.
+- İsmail, Bozo ile Zafer arasında arabuluculuk yapıyor. Zafer ve ortakları İsmail'e 400-500 milyon dolar ve %10 pay teklif ediyor; plan Bozo'yu buluşmada öldürmek. Sezai Merdan'dan Haydar'ı tuzağa çekmesini, Ferhat'ı da hastaneye keşfe göndermesini istiyor; plan Haydar ve Paşa'yı da öldürmek.
+- Final: İsmail Bozo'ya sadık çıkıyor, Zafer'in planını açık ediyor. Bozo "kanını dökmeyeceğim" sözünü tutup Zafer'i başka yolla öldürüyor (yere naylon serilmiş). Haydar Merdan'ın çiftliğine gidiyor; Selim bagajda, Ayşen yok. Bölüm "On dört bin yıl gezdim" şarkısıyla bitiyor.
+- Ferhat hastanede Sultan'a "sen benimsin" diyor; Sultan "Hastasın sen" diye kovuyor. Ferhat Hande'yle de yakınlaşıyor.
+- Şadiye ve Rıfat, Paşa ile Çiğdem'in nişanını zorluyor. Ceylan onları yoğun bakıma almıyor, Haydar hastaneden gönderiyor. Rıfat check-up bahanesiyle hastanede kalıyor.
+- Hitaplar: Bozo-Ceylan aku/kamu ("Sayang", "Sayangku"); Bozo-Haydar, Bozo-Efraim, Bozo-Yavuz, Bozo-Zafer, Bozo-İsmail, Haydar-Paşa, Haydar-Adnan, Ferhat-Merdan, Ferhat-Fevzi gue/lo. Bozo-Sultan aku/kamu, Sultan "Bang"; Haydar-Sultan aku/kamu ("Sayang"); Haydar-Ceylan aku/kamu (Ceylan "Ali" diyor).
+- Hitaplar (devam): Paşa Ceylan'a "Mbak"; Rıfat-Derman aku/kamu ("Pa"); Rıfat Ceylan'a "Nak"; Yavuz ve Haydar Efraim'e "dayı" -> "Om"; Şadiye'ye "yenge" -> "Tante"; Gülsüm "Ma Gülsüm". Aslı Bozo'ya saya/Anda, Bozo Aslı'ya kamu; Yılmaz-Aslı Pak/saya. Pınar'a "Komisarisku", Pınar Bozo'ya "Bang".
+- Lakaplar: Efraim "Gölge" -> "Bayangan"; Derman "Derdo", Ferhat "Ferdo", Gülsüm "Gülo", Çiğdem "Çido", Rıfat "Don Çiçi".
+- Yeni isimler: İsmail (Bozo'nun güvendiği emlakçı/arabulucu), Fevzi (Orhan'ın abisi, öldürüldü), Emirhan (hastanede koruma), Selim ve Ayşen (Merdan'ın adamları/evi), İbrahim (Zafer'in adamı). Belirsiz: "Ümran" (0753), "Diabos" (0035). Hamburglu = Sezai; Azize ve Hülya onun kız kardeşleri.
+- Ses tanıma: "Bozok/Ozo/Boz" = Bozo, "Efrahim/Efrain/Efran" = Efraim, "Klara" (0369) = Pınar. K etiketleri sahneler arasında kayıyor.
