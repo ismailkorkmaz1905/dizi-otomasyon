@@ -28,7 +28,7 @@ Türkçe dizi altyazısını Endonezceye çeviriyorsun. Bu bir kalite deneyi: ç
 4. Kontrol: python3 deney/chatgpt/check.py deney/chatgpt/X_ceviri_girdi.txt deney/chatgpt/KOL/X.txt BAS SON
    (ma için BAS SON = 882 1336, bh için 430 896). MISSING, DUP, FORMAT ya da LONG çıkarsa ilgili satırları düzelt ve tekrar çalıştır. "OK" çıkıp LONG kalmayınca bitti.
 
-Sonunda deney/chatgpt/KOL/rapor.md yaz (Türkçe): kullandığın model ve effort, iki işin check sonucu, emin olmadığın en fazla 10 satır (numara + bir cümle), kaba süre.
+Sonunda deney/chatgpt/KOL/rapor.md yaz (Türkçe): kullandığın model ve effort, iki işin check sonucu, emin olmadığın en fazla 10 satır (numara + bir cümle), kaba süre, check kaç turda geçti ve hangi hataları düzelttin, takıldığın ya da tekrar denediğin yerler, biliyorsan harcadığın token (bilmiyorsan "bilinmiyor" yaz, tahmin etme).
 
 Sadece deney/chatgpt/KOL/ klasörüne yaz, başka dosyaya dokunma. Bitince tek commit: "Deney KOL: ceviri". Sonra PR aç (ya da branch'i push et).
 ```
