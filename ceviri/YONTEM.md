@@ -18,10 +18,12 @@ Bölüm başına harcamanın çoğu çeviri metninden değil, tekrar okunan bağ
 | İş | Model | Effort |
 |---|---|---|
 | Ana oturum (thread) | Sonnet | varsayılan |
-| Çeviri ajanları | Opus | verme (medium) |
+| Çeviri | İsmail seçer: ChatGPT Codex (GPT-6.2 Sol High), Opus ya da Sonnet | Opus/Sonnet ajanlarına effort verme |
 | Kontrol ajanı, iki tur | Opus | medium (İsmail `high` derse high) |
 
-10 Kasım 2026 testi (BH E06 430-896 ve MA E20 882-1336, toplam 922 satır, kör Opus hakem, önemli hata sayısı): Opus taslak + kontrol 0, Sonnet taslak + kontrol 9, eski akışla teslim edilen 11. Kontrol, Opus taslağın %7-13'ünü, Sonnet taslağın %24-30'unu değiştirdi. Sonnet çevirmen ucuz ama kontrolden sonra da hata kalıyor; İsmail açıkça istemedikçe kullanma.
+10 Kasım 2026 testi (BH E06 430-896 ve MA E20 882-1336, toplam 922 satır, kör Opus hakem, önemli hata sayısı): Opus taslak + kontrol 0, Sonnet taslak + kontrol 9, eski akışla teslim edilen 11. Kontrol, Opus taslağın %7-13'ünü, Sonnet taslağın %24-30'unu değiştirdi. Sonnet çevirmen ucuz ama kontrolden sonra da hata kalıyor.
+
+26 Kasım 2026 testi (aynı 922 satır, kör Opus hakem, ciddi hata): Sol 6.2 High ham 4, Sol xhigh ham 10, teslim edilen Opus final 7. 2 turlu Opus kontrol Sol High'ın %5'ini, xhigh'ın %11'ini değiştirdi; kontrolden sonra Sol High 2, xhigh 4, Opus final 3 (hakem gürültüsü ~4). Sonuç: Sol High taslak + Opus kontrol = Opus kalitesi, çevirmen için Claude limiti harcanmaz. Ayrıntı: proje dosyası `notes/chatgpt-deney-sonuc-2026-11-26.md`.
 
 ## 0. Hazırlık
 
@@ -29,7 +31,9 @@ Bölüm başına harcamanın çoğu çeviri metninden değil, tekrar okunan bağ
 - Bekleyen bölüm: `ceviri_girdi.txt` olan ama `ceviri.txt` ya da `*.ind.srt` olmayan `bolumler/*/*/` klasörü. Yoksa "Bekleyen bölüm yok" de ve bitir. Birden fazlaysa eskisinden başla.
 - Son 2 saatte kırmızı biten iş varsa (`actions_list` ya da `gh api 'repos/ismailkorkmaz1905/dizi-otomasyon/actions/runs?status=failure&per_page=5'`) thread'e kısa yaz. Scribe'a tekrar para gidebilecek bir işi kendiliğinden yeniden çalıştırma.
 - Böl: `python3 ceviri/arac.py bol bolumler/<dizi>/<SxxEyy> /tmp/ceviri/<dizi>_<SxxEyy>`. Çalışma klasörüne `talimat.md`, `onceki_ozet.md` (varsa), `check.py`, `arac.py`, `girdi_<k>.txt` dosyalarını koyar, parça sınırlarını sahne arası sessizliklere denk getirir ve yazdırır.
-- Aynı mesajda İsmail'e tek satır sor: kontrol ajanının effort'u `medium` mı `high` mı? Cevabı BEKLEME, çeviri ajanlarını hemen başlat. Çeviri bittiğinde cevap yoksa `medium` kullan ve thread'e not düş.
+- Bölmeden ÖNCE İsmail'e tek soru sor (`request_decision` kartı, cevabı BEKLE): çevirmen kim? Seçenekler: **ChatGPT Codex (Sol 6.2 High)** (önerilen: Claude limiti harcamaz, 26 Kasım testinde Opus ile aynı kalite), **Opus**, **Sonnet**. Kontrol ajanı her zaman Opus medium; İsmail `high` derse high.
+  - Opus / Sonnet: aşağıdaki gibi böl ve 1. adıma geç.
+  - ChatGPT Codex: 1B'ye geç, 1. adımı atla.
 
 ## 1. Çeviri ajanları (paralel, tek mesajda)
 
@@ -44,6 +48,17 @@ Model `opus`, effort verme. Her parça için Agent aracıyla şunu gönder:
 > Başka dosyaya ve git'e dokunma. Bitince kısa döndür: check sonucu; emin olmadığın en fazla 10 satır (birer cümle); bu aralıktaki önemli olaylar ve yeni hitaplar (3-6 madde, Türkçe).
 
 Dönen raporları `raporlar.md`'ye yaz. Sonra `python3 arac.py birlestir <çalışma klasörü>`: parçaları `ceviri_v1.txt` ve `ceviri_tum.txt` yapar, doğrular, `yan_yana.txt`'yi üretir. Hata verirse ilgili ajana düzelttir.
+
+## 1B. ChatGPT Codex yolu (İsmail Codex'i seçtiyse)
+
+- `python3 ceviri/arac.py codex bolumler/<dizi>/<SxxEyy>`. Parçaları, talimatı, önceki özeti ve görev dosyası `CODEX.md`'yi `bolumler/<dizi>/<SxxEyy>/codex/` altına koyar. Commit `<Dizi adı> <SxxEyy> - codex girdisi` (tek satır), `main`'e push.
+- İsmail'e tek mesajla ne yapacağını yaz:
+  1. chatgpt.com/codex'te yeni task aç, repo `dizi-otomasyon`, model **GPT-6.2 Sol**, effort **High**.
+  2. Şu satırı yapıştır: `bolumler/<dizi>/<SxxEyy>/codex/CODEX.md dosyasını oku ve aynen uygula.`
+  3. Bitince (bir bölüm ~10-15 dk) thread'e "bitti" yaz.
+- "bitti" gelince: `git fetch origin` ve Codex'in commit'ini bul (`main` ya da `git branch -r` içinde `<Dizi> <SxxEyy> - codex ceviri` mesajlı yeni dal). `codex/` klasörünü çalışma klasörüne kopyala (`/tmp/ceviri/<dizi>_<SxxEyy>`), içine `ceviri/arac.py`'yi koy, `codex_rapor.md`'yi `raporlar.md` olarak kopyala, `python3 arac.py birlestir <çalışma klasörü>`. Hata verirse eksik parçayı İsmail'e söyle; kendin çevirme.
+- Sonra 2. adım (Opus kontrol) aynen. Teslimde `ozet.md`'yi `raporlar.md`'den yaz. Codex'in açtığı dal kalırsa İsmail'e söyle. `codex/` klasörünü `temizle()` bölüm bitince kendisi siler.
+- Rapora ekle: kontrolün değiştirdiği satır oranı. %15'i geçerse İsmail'e "Sol bu bölümde zayıftı" diye yaz (26 Kasım testinde %5).
 
 ## 2. İki turlu kontrol (1 Opus ajan, effort İsmail'in cevabı)
 

@@ -1,7 +1,8 @@
 """Ceviri rutininin dosya isleri. Ana oturum buyuk dosyalari okumaz, bunlari calistirir (token harcamaz).
   python3 arac.py bol <bolumler/dizi/SxxEyy> <is klasoru> [parca basina satir=450]
   python3 arac.py birlestir <is klasoru>
-  python3 arac.py uygula <is klasoru> <duzeltme dosyasi>"""
+  python3 arac.py uygula <is klasoru> <duzeltme dosyasi>
+  python3 arac.py codex <bolumler/dizi/SxxEyy>   (ChatGPT Codex cevirmen yolu: parcalar ve CODEX.md repoya)"""
 import json, re, shutil, subprocess, sys
 from pathlib import Path
 
@@ -83,12 +84,50 @@ def uygula(d: Path, duzeltme: Path):
     print(f'DEGISEN {len(degisen)} satir')
 
 
+CODEX_PROMPT = """# Codex ceviri gorevi: {ad} {bolum}
+
+Bu dosyayi okuyan Codex: Turkce dizi altyazisini Endonezceye ceviriyorsun. Ceviriyi SEN yapacaksin, satir satir, kendi dil bilginle. Ceviri icin script, sozluk, kutuphane ya da dis servis KULLANMA; Python sadece check.py icin.
+
+Klasor: `{yol}`. Butun komutlari repo kokunden calistir.
+
+## 1. Oku
+Sirayla ve tamamen: `{yol}/talimat.md` (her kuralina uy), varsa `{yol}/onceki_ozet.md`. Baska dosya okuma, sadece asagidaki girdi dosyalari.
+
+## 2. Cevir (parcalari sirayla, birer birer)
+{parcalar}
+Her parca icin: `girdi_<k>.txt` oku. Sadece `=== CEVIR: BAS-SON ===` altindaki satirlari cevir; `=== BAGLAM ===` altindakiler sadece baglam. Ciktiyi `{yol}/parca_<k>.txt` dosyasina yaz: her satir `NNNN metin`, araliktaki her numara tam bir kez, sirayla, bos satir yok. 100-150 satirlik bolumler halinde ekleyerek yazabilirsin ama hicbir satiri atlama ya da kisaltma.
+Kontrol: `python3 {yol}/check.py {yol}/ceviri_girdi.txt {yol}/parca_<k>.txt BAS SON`. MISSING, DUP, FORMAT ya da LONG cikarsa duzelt ve tekrar calistir; `OK` cikip LONG kalmayinca sonraki parcaya gec.
+
+## 3. Kendi kontrolun (bir tur)
+Butun parcalar bitince hepsini Turkce kaynakla yan yana bastan sona bir kez oku. Bak: anlam hatalari, hitap tutarliligi (ayni iki kisi her yerde ayni hitap), isim yazimlari ve talimattaki karistirilan isimler, parca sinirlarinda kopukluk, `(?)` ve `[kelime?]` isaretli satirlar, kitap dili. Sadece gereken satirlari duzelt, sonra her parca icin check'i tekrar calistir.
+
+## 4. Rapor ve push
+`{yol}/codex_rapor.md` yaz (Turkce): model ve effort, her parcanin check sonucu, kontrol turunda degistirdigin satir sayisi, emin olmadigin en fazla 15 satir (numara + bir cumle), bu bolumdeki onemli olaylar ve yeni hitaplar/isimler (5-10 madde), kaba sure.
+Sadece `{yol}/` altina yaz, `ceviri.txt` adinda dosya OLUSTURMA, baska dosyaya dokunma. Tek commit: "{ad} {bolum} - codex ceviri". `main`'e push et; edemiyorsan branch'e push et.
+"""
+
+
+def codex(bolum: Path):
+    """Cevirmen ChatGPT Codex olunca: parcalari ve gorev dosyasini repoya koyar. Thread commit + push eder."""
+    d = bolum / 'codex'
+    bol(bolum, d)
+    (d / 'arac.py').unlink(missing_ok=True)
+    parcalar = json.loads((d / 'parcalar.json').read_text())
+    adlar = {'muhtemel_ask': 'Muhtemel Ask', 'yeralti': 'Yeralti', 'baskalarinin_hayati': 'Baskalarinin Hayati'}
+    satirlar = ''.join(f'- `{d}/girdi_{k}.txt` -> `parca_{k}.txt`, BAS SON = {a} {b}\n' for k, (a, b) in enumerate(parcalar, 1))
+    (d / 'CODEX.md').write_text(CODEX_PROMPT.format(ad=adlar.get(bolum.parent.name, bolum.parent.name), bolum=bolum.name,
+                                                    yol=d, parcalar=satirlar), encoding='utf-8')
+    print(f'Codex promptu: {d}/CODEX.md dosyasini oku ve aynen uygula.')
+
+
 if __name__ == '__main__':
     is_, *a = sys.argv[1:]
     if is_ == 'bol':
         bol(Path(a[0]), Path(a[1]), int(a[2]) if len(a) > 2 else 450)
     elif is_ == 'birlestir':
         birlestir(Path(a[0]))
+    elif is_ == 'codex':
+        codex(Path(a[0]))
     elif is_ == 'uygula':
         uygula(Path(a[0]), Path(a[1]))
     else:
