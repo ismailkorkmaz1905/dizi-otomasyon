@@ -572,6 +572,9 @@ def telegram(pipeline, video: Path, workers: int = 16):
         pdir.mkdir()
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(video), '-map', '0', '-c', 'copy', '-f', 'segment',
                         '-segment_time', str(math.ceil(pipeline.probe(video)['duration'] / n)), '-reset_timestamps', '1',
+                        # 26 Kasim (MA S01E22 2/2 Telegram'da acilmadi): segment parcalarinda moov sondaydi (Telegram
+                        # akisi bastan okur) ve 2. parcanin sesi eksi zamanla basliyordu. Ikisi de burada duzelir.
+                        '-segment_format_options', 'movflags=+faststart:avoid_negative_ts=make_zero',
                         str(pdir / f'{video.stem}_%d.mp4')], check=True)
         parts = sorted(pdir.glob('*.mp4'), key=lambda x: int(x.stem.rsplit('_', 1)[1]))
         print(f'{size / 1e9:.2f} GB > 2 GB: {len(parts)} parcaya bolundu.', flush=True)
