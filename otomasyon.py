@@ -41,7 +41,7 @@ PARTS = Path('/tmp/parcalar')
 GTA_VI_FONT = REPO / 'fonts' / 'Figtree-Regular.ttf'
 GTA_VI_STYLE = (
     'PlayResX=1920,PlayResY=1080,ScaledBorderAndShadow=yes,Kerning=yes,'
-    'FontSize=38,Bold=0,Italic=0,Spacing=0,'
+    'FontSize=60,Bold=0,Italic=0,Spacing=0,'
     'PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H50000000,'
     'BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginL=96,MarginR=96,MarginV=124'
 )
@@ -498,7 +498,7 @@ def hazirla():
 # ---------------------------------------------------------------- yakma (paralel) ve gonderme
 
 def plan():
-    preset = os.environ.get('ALTYAZI_PRESET') or 'Mevcut'
+    preset = os.environ.get('ALTYAZI_PRESET') or 'GTA VI'
     if preset not in ('Mevcut', 'GTA VI'):
         raise SystemExit('ALTYAZI_PRESET için "Mevcut" veya "GTA VI" seçin.')
     bolum = (os.environ.get('BOLUM') or '').strip().upper()

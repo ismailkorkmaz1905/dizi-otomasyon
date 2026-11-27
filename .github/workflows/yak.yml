@@ -24,8 +24,8 @@ on:
       altyazi:
         description: 'Altyazı stili'
         type: choice
-        options: [Mevcut, 'GTA VI']
-        default: Mevcut
+        options: ['GTA VI', Mevcut]
+        default: 'GTA VI'
       telegram:
         description: "Telegram'a gonder"
         type: boolean
@@ -87,7 +87,7 @@ jobs:
           GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
           DIZI: ${{ steps.b.outputs.dizi }}
           BOLUM: ${{ steps.b.outputs.bolum }}
-          ALTYAZI_PRESET: ${{ inputs.altyazi || vars.ALTYAZI_PRESET || 'Mevcut' }}
+          ALTYAZI_PRESET: ${{ inputs.altyazi || vars.ALTYAZI_PRESET || 'GTA VI' }}
       - uses: actions/cache/save@v5   # bu calismanin makineleri icin
         with:
           path: /tmp/video
