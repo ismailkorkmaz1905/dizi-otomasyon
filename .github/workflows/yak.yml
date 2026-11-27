@@ -6,7 +6,7 @@ run-name: >-
 # Ceviri bitince Claude rutini bolumler/<dizi>/SxxEyy/ceviri.txt'yi koyar (ya da elle .ind.srt); bu is o push'la baslar.
 # SRT, Turkce zamanlarla burada kurulur.
 # Video 12 parcaya bolunur, 12 makinede ayni anda yakilir, birlestirilip Telegram'a gonderilir.
-# Kalite, yazi stili ve Telegram gonderimi Drive'daki pipeline.py'den gelir (Colab'daki "2 - Yak ve Gonder" ile ayni).
+# Kalite, varsayilan yazi stili ve Telegram gonderimi Drive'daki pipeline.py'den gelir.
 on:
   push:
     branches: [main]
@@ -21,6 +21,11 @@ on:
         description: 'SxxEyy (bolumler/ altinda ceviri.txt ya da .ind.srt olan)'
         required: true
         type: string
+      altyazi:
+        description: 'Altyazı stili'
+        type: choice
+        options: [Mevcut, 'GTA VI']
+        default: Mevcut
       telegram:
         description: "Telegram'a gonder"
         type: boolean
@@ -82,6 +87,7 @@ jobs:
           GDRIVE_SA: ${{ secrets.GDRIVE_SA }}
           DIZI: ${{ steps.b.outputs.dizi }}
           BOLUM: ${{ steps.b.outputs.bolum }}
+          ALTYAZI_PRESET: ${{ inputs.altyazi || vars.ALTYAZI_PRESET || 'Mevcut' }}
       - uses: actions/cache/save@v5   # bu calismanin makineleri icin
         with:
           path: /tmp/video

@@ -29,6 +29,7 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import kaynaklar
 import warp
@@ -37,6 +38,13 @@ REPO = Path(__file__).resolve().parent
 MIRROR = Path('/tmp/drive')   # Drive'in yerel kopyasi: pipeline.py burayi Drive sanar
 VIDEO_DIR = Path('/tmp/video')
 PARTS = Path('/tmp/parcalar')
+GTA_VI_FONT = REPO / 'fonts' / 'Figtree-Regular.ttf'
+GTA_VI_STYLE = (
+    'PlayResX=1920,PlayResY=1080,ScaledBorderAndShadow=yes,Kerning=yes,'
+    'FontSize=38,Bold=0,Italic=0,Spacing=0,'
+    'PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H50000000,'
+    'BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginL=96,MarginR=96,MarginV=124'
+)
 API = 'https://www.googleapis.com/drive/v3/files'
 FOLDER = 'application/vnd.google-apps.folder'
 SYSTEM_FILES = ('pipeline.py', 'elevenlabs.json', 'youtube_cookies.txt', 'telegram.json', 'Çeviri Talimatı.md')
@@ -490,6 +498,9 @@ def hazirla():
 # ---------------------------------------------------------------- yakma (paralel) ve gonderme
 
 def plan():
+    preset = os.environ.get('ALTYAZI_PRESET') or 'Mevcut'
+    if preset not in ('Mevcut', 'GTA VI'):
+        raise SystemExit('ALTYAZI_PRESET için "Mevcut" veya "GTA VI" seçin.')
     bolum = (os.environ.get('BOLUM') or '').strip().upper()
     work = REPO / 'bolumler' / DIZI / bolum
     m = re.fullmatch(r'S(\d+)E(\d+)', bolum)
@@ -527,10 +538,33 @@ def plan():
     frames = round(src['duration'] * fps)
     p = dict(dizi=DIZI, bolum=bolum, srt=str(srt), video=str(video), name=name, fps=fps,
              frames=frames, per=-(-frames // n), n=n, height=h, src_height=src['height'], mbps=mb,
-             style=pipeline.BURN_STYLE, duration=src['duration'])
+             preset=preset, style=pipeline.BURN_STYLE, duration=src['duration'])
     print(f"{name}: {src['duration'] / 60:.0f} dk, {fps:.3f} fps, kaynak {src['height']}p {src['codec']} "
-          f"-> {h}p {mb} Mbps, {n} parca", flush=True)
+          f"-> {h}p {mb} Mbps, {n} parca, altyazı: {preset}", flush=True)
     (VIDEO_DIR / 'plan.json').write_text(json.dumps(p))   # videoyla ayni cache'te makinelere gider
+
+
+def altyazi_filtresi(p: dict, calisma: Path) -> str:
+    shutil.copyfile(REPO / p['srt'], calisma / 'alt.srt')
+    filtre = 'subtitles=alt.srt:charenc=UTF-8'
+    if p.get('preset') != 'GTA VI':
+        return f"{filtre}:force_style='{p['style']}'"
+
+    font_dosyasi = os.environ.get('GTA_VI_FONT_FILE')
+    font_adi = os.environ.get('GTA_VI_FONT_NAME')
+    if bool(font_dosyasi) != bool(font_adi):
+        raise SystemExit('GTA_VI_FONT_FILE ve GTA_VI_FONT_NAME birlikte ayarlanmalı.')
+    font = Path(font_dosyasi).expanduser() if font_dosyasi else GTA_VI_FONT
+    font_adi = font_adi or 'Figtree'
+    if not font.is_file() or font.suffix.lower() not in ('.ttf', '.otf', '.woff'):
+        raise SystemExit(f'TTF, OTF veya WOFF font dosyası bulunamadı: {font}')
+    if not re.fullmatch(r'[\w .-]+', font_adi):
+        raise SystemExit('GTA_VI_FONT_NAME için fontun tam adını kullanın.')
+
+    fontlar = calisma / 'fonts'
+    fontlar.mkdir()
+    shutil.copyfile(font, fontlar / f'face{font.suffix.lower()}')
+    return f"{filtre}:fontsdir=fonts:force_style='FontName={font_adi},{GTA_VI_STYLE}'"
 
 
 def parca(i: int):
@@ -540,17 +574,18 @@ def parca(i: int):
         return
     PARTS.mkdir(exist_ok=True)
     out = PARTS / f'{i:03d}.mp4'
-    shutil.copyfile(REPO / p['srt'], '/tmp/alt.srt')
     mb = p['mbps']
     scale = f"scale=-2:{p['height']}," if p['height'] < p['src_height'] else ''
-    # parca 0 sn'den baslar: altyazi zamanlari tutsun diye once gercek zamana kaydirilir, sonra geri alinir
-    vf = (f"setpts=PTS+{start:.6f}/TB,{scale}subtitles=/tmp/alt.srt:charenc=UTF-8:force_style='{p['style']}',"
-          'setpts=PTS-STARTPTS')
     t0 = time.time()
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{start:.6f}', '-i', p['video'], '-frames:v', str(count),
-                    '-an', '-vf', vf, '-c:v', 'libx264', '-preset', 'medium', '-b:v', f'{mb}M',
-                    '-maxrate', f'{mb * 1.5:.2f}M', '-bufsize', f'{mb * 2:.2f}M', '-r', str(p['fps']), str(out)],
-                   check=True)
+    with TemporaryDirectory() as gecici:
+        altyazi = altyazi_filtresi(p, Path(gecici))
+        # Parça 0 sn'den başlar. Altyazı zamanları için önce gerçek zamana kaydırılır, sonra geri alınır.
+        vf = f'setpts=PTS+{start:.6f}/TB,{scale}{altyazi},setpts=PTS-STARTPTS'
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{start:.6f}', '-i', str(Path(p['video']).absolute()),
+                        '-frames:v', str(count),
+                        '-an', '-vf', vf, '-c:v', 'libx264', '-preset', 'medium', '-b:v', f'{mb}M',
+                        '-maxrate', f'{mb * 1.5:.2f}M', '-bufsize', f'{mb * 2:.2f}M', '-r', str(p['fps']), str(out)],
+                       cwd=gecici, check=True)
     print(f'Parca {i}: {count} kare, {time.time() - t0:.0f} sn, {out.stat().st_size / 1e6:.0f} MB', flush=True)
 
 

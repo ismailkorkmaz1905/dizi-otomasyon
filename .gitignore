@@ -1,1 +1,7 @@
 __pycache__/
+*.ttf
+*.otf
+*.ttc
+*.woff
+*.woff2
+!fonts/Figtree-Regular.ttf
